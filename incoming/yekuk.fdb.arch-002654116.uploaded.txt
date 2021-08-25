@@ -1,0 +1,714 @@
+
+-- 2021-08-16 23:47:38.1470
+BLOCK 002654116:000000048 (10583 bytes)
+
+002654116:000000048 [409035406] START (session 17975019)
+002654116:000000065 [409035406] SAVE
+002654116:000000074 [409035406] SAVE
+002654116:000000083 [] DESCRIBE CLIENTS (count 243, length 16296)
+	STARTSUMRUB: type 12, subtype 0, length 8, scale 0, offset 32
+	STARTSUM: type 12, subtype 0, length 8, scale 0, offset 40
+	MODIFYDATE: type 16, subtype 0, length 8, scale 0, offset 48
+	OMSDATE: type 16, subtype 0, length 8, scale 0, offset 56
+	DATEEXIT: type 16, subtype 0, length 8, scale 0, offset 64
+	DATEENTER: type 16, subtype 0, length 8, scale 0, offset 72
+	NSPDATE: type 16, subtype 0, length 8, scale 0, offset 80
+	STATEDATE: type 16, subtype 0, length 8, scale 0, offset 88
+	BDATE: type 16, subtype 0, length 8, scale 0, offset 96
+	FIRSTOBSLED: type 16, subtype 0, length 8, scale 0, offset 104
+	CREATEDATE: type 16, subtype 0, length 8, scale 0, offset 112
+	EXPORTDATE: type 16, subtype 0, length 8, scale 0, offset 120
+	PASPDATE: type 16, subtype 0, length 8, scale 0, offset 128
+	LASTDATEEXIT: type 16, subtype 0, length 8, scale 0, offset 136
+	DATECANCEL: type 16, subtype 0, length 8, scale 0, offset 144
+	ADRREGDATE: type 16, subtype 0, length 8, scale 0, offset 152
+	REGDATE: type 16, subtype 0, length 8, scale 0, offset 160
+	OMSFDATE: type 16, subtype 0, length 8, scale 0, offset 168
+	NATIONALID: type 19, subtype 0, length 8, scale 0, offset 176
+	REKLPCODE: type 19, subtype 0, length 8, scale 0, offset 184
+	REKLDCODE: type 19, subtype 0, length 8, scale 0, offset 192
+	DCODE_CONSULT: type 19, subtype 0, length 8, scale 0, offset 200
+	TALKS_DCODE: type 19, subtype 0, length 8, scale 0, offset 208
+	WORKPLACEID: type 19, subtype 0, length 8, scale 0, offset 216
+	PROFID: type 19, subtype 0, length 8, scale 0, offset 224
+	PDEPNUM: type 19, subtype 0, length 8, scale 0, offset 232
+	PJID: type 19, subtype 0, length 8, scale 0, offset 240
+	CARDPLACE: type 19, subtype 0, length 8, scale 0, offset 248
+	TREATCODE: type 19, subtype 0, length 8, scale 0, offset 256
+	SCSTEPEN: type 19, subtype 0, length 8, scale 0, offset 264
+	NACIONAL: type 19, subtype 0, length 8, scale 0, offset 272
+	DISCACCUM: type 19, subtype 0, length 8, scale 0, offset 280
+	SPECSERV: type 19, subtype 0, length 8, scale 0, offset 288
+	SECTID: type 19, subtype 0, length 8, scale 0, offset 296
+	UID: type 19, subtype 0, length 8, scale 0, offset 304
+	CSTATUS: type 19, subtype 0, length 8, scale 0, offset 312
+	LSTID: type 19, subtype 0, length 8, scale 0, offset 320
+	OMSJID: type 19, subtype 0, length 8, scale 0, offset 328
+	STATEDOCTOR: type 19, subtype 0, length 8, scale 0, offset 336
+	RCODE: type 19, subtype 0, length 8, scale 0, offset 344
+	PCODE: type 19, subtype 0, length 8, scale 0, offset 352 [KEY]
+	GRTYPE: type 19, subtype 0, length 8, scale 0, offset 360
+	JID: type 19, subtype 0, length 8, scale 0, offset 368
+	HFAMILY: type 19, subtype 0, length 8, scale 0, offset 376
+	OWNERDCODE: type 19, subtype 0, length 8, scale 0, offset 384
+	EXTERNPCODE: type 19, subtype 0, length 8, scale 0, offset 392
+	TYPESTATUS: type 19, subtype 0, length 8, scale 0, offset 400
+	AGESTATUS: type 19, subtype 0, length 8, scale 0, offset 408
+	EXTDCODE: type 19, subtype 0, length 8, scale 0, offset 416
+	CLINICID: type 19, subtype 0, length 8, scale 0, offset 424
+	JPID: type 19, subtype 0, length 8, scale 0, offset 432
+	GRSTREET: type 19, subtype 0, length 8, scale 0, offset 440
+	DCODE1: type 19, subtype 0, length 8, scale 0, offset 448
+	JID0: type 19, subtype 0, length 8, scale 0, offset 456
+	REKLAGRID: type 19, subtype 0, length 8, scale 0, offset 464
+	EDUCAT: type 19, subtype 0, length 8, scale 0, offset 472
+	DMSID: type 19, subtype 0, length 8, scale 0, offset 480
+	WORKTYPEID: type 19, subtype 0, length 8, scale 0, offset 488
+	REGID: type 19, subtype 0, length 8, scale 0, offset 496
+	PASPTYPE: type 19, subtype 0, length 8, scale 0, offset 504
+	PROGSERV: type 19, subtype 0, length 8, scale 0, offset 512
+	SOCID: type 19, subtype 0, length 8, scale 0, offset 520
+	DISTRICTID: type 19, subtype 0, length 8, scale 0, offset 528
+	DISTRICTID_REG: type 19, subtype 0, length 8, scale 0, offset 536
+	WEBACCESSTYPE: type 19, subtype 0, length 8, scale 0, offset 544
+	WEBSCHEDTYPE: type 19, subtype 0, length 8, scale 0, offset 552
+	WEBHISTTYPE: type 19, subtype 0, length 8, scale 0, offset 560
+	WEBPAYTYPE: type 19, subtype 0, length 8, scale 0, offset 568
+	DEATHPROTOCOLID: type 19, subtype 0, length 8, scale 0, offset 576
+	DEATHDIRID: type 19, subtype 0, length 8, scale 0, offset 584
+	FAMILYSTATUS: type 19, subtype 0, length 8, scale 0, offset 592
+	EDUCATION: type 19, subtype 0, length 8, scale 0, offset 600
+	CLADDRID: type 19, subtype 0, length 8, scale 0, offset 608
+	CLADDRID_REG: type 19, subtype 0, length 8, scale 0, offset 616
+	TFOMS_UID: type 19, subtype 0, length 8, scale 0, offset 624
+	SNILSCHECKDATE: type 16, subtype 0, length 8, scale 0, offset 632
+	LOCKTYPE: type 9, subtype 0, length 4, scale 0, offset 640
+	JPAYSTAT: type 9, subtype 0, length 4, scale 0, offset 644
+	TRADECLIENT: type 9, subtype 0, length 4, scale 0, offset 648
+	OBPOM: type 3, subtype 52, length 252, scale 0, offset 652
+	KODTER: type 9, subtype 0, length 4, scale 0, offset 904
+	FILIAL: type 9, subtype 0, length 4, scale 0, offset 908
+	STATUS: type 9, subtype 0, length 4, scale 0, offset 912
+	GRPCODE: type 9, subtype 0, length 4, scale 0, offset 916
+	NOMILK: type 9, subtype 0, length 4, scale 0, offset 920
+	RES1: type 9, subtype 0, length 4, scale 0, offset 924
+	FUPGRADE: type 9, subtype 0, length 4, scale 0, offset 928
+	ODSUMV: type 9, subtype 0, length 4, scale 0, offset 932
+	ODPROCV: type 9, subtype 0, length 4, scale 0, offset 936
+	LEVELGROUP: type 9, subtype 0, length 4, scale 0, offset 940
+	PERSONTYPE: type 9, subtype 0, length 4, scale 0, offset 944
+	RECEIPID: type 9, subtype 0, length 4, scale 0, offset 948
+	NAZNDIS: type 9, subtype 0, length 4, scale 0, offset 952
+	LIMITSIGNORE: type 9, subtype 0, length 4, scale 0, offset 956
+	PLANSCOUNT: type 9, subtype 0, length 4, scale 0, offset 960
+	CHECKINMAINDB: type 9, subtype 0, length 4, scale 0, offset 964
+	DOCSCOUNT: type 9, subtype 0, length 4, scale 0, offset 968
+	FROMOLDBASE: type 9, subtype 0, length 4, scale 0, offset 972
+	ISPLANMEC: type 9, subtype 0, length 4, scale 0, offset 976
+	OBMENCARD: type 9, subtype 0, length 4, scale 0, offset 980
+	JPCONTACT: type 9, subtype 0, length 4, scale 0, offset 984
+	REPL$ID: type 9, subtype 0, length 4, scale 0, offset 988
+	REPL$GRPID: type 9, subtype 0, length 4, scale 0, offset 992
+	REFUSECALL: type 9, subtype 0, length 4, scale 0, offset 996
+	REFUSEADDR: type 9, subtype 0, length 4, scale 0, offset 1000
+	KODTER_F: type 9, subtype 0, length 4, scale 0, offset 1004
+	REFUSESMS: type 9, subtype 0, length 4, scale 0, offset 1008
+	KODTER_REG: type 9, subtype 0, length 4, scale 0, offset 1012
+	PROTACCESSPIN: type 9, subtype 0, length 4, scale 0, offset 1016
+	ISNOVOR: type 9, subtype 0, length 4, scale 0, offset 1020
+	ANONYMOUS: type 9, subtype 0, length 4, scale 0, offset 1024
+	CLPASSTYPE: type 9, subtype 0, length 4, scale 0, offset 1028
+	REFUSECLMAIL: type 9, subtype 0, length 4, scale 0, offset 1032
+	DEATHSTATUS: type 9, subtype 0, length 4, scale 0, offset 1036
+	DEATHDATE: type 14, subtype 0, length 4, scale 0, offset 1040
+	DEATHTIME: type 15, subtype 0, length 4, scale 0, offset 1044
+	DEATHFIXDATE: type 14, subtype 0, length 4, scale 0, offset 1048
+	SNILS_CHECK_TYPE: type 9, subtype 0, length 4, scale 0, offset 1052
+	UIASTYPE: type 9, subtype 0, length 4, scale 0, offset 1056
+	NEWBORNCODE: type 9, subtype 0, length 4, scale 0, offset 1060
+	REFUSEADDR_REG: type 9, subtype 0, length 4, scale 0, offset 1064
+	ADRFINDATE: type 14, subtype 0, length 4, scale 0, offset 1068
+	TFOMS_STATE: type 9, subtype 0, length 4, scale 0, offset 1072
+	TFOMS_DATE: type 14, subtype 0, length 4, scale 0, offset 1076
+	REFUSEPHONES: type 9, subtype 0, length 4, scale 0, offset 1080
+	PASPSER: type 3, subtype 52, length 14, scale 0, offset 1084
+	DESCNAME: type 3, subtype 52, length 26, scale 0, offset 1098
+	PR_CLIENTTYPE: type 8, subtype 0, length 2, scale 0, offset 1124
+	STAJ: type 8, subtype 0, length 2, scale 0, offset 1126
+	STREETTYPE: type 3, subtype 52, length 14, scale 0, offset 1128
+	NASELPUN: type 3, subtype 52, length 66, scale 0, offset 1142
+	REGION: type 3, subtype 52, length 130, scale 0, offset 1208
+	BPLACE: type 3, subtype 52, length 102, scale 0, offset 1338
+	INN: type 3, subtype 52, length 26, scale 0, offset 1440
+	FLANG: type 3, subtype 52, length 82, scale 0, offset 1466
+	ISEMPLOYEER: type 8, subtype 0, length 2, scale 0, offset 1548
+	CLMAIL: type 3, subtype 52, length 66, scale 0, offset 1550
+	PHONE3: type 3, subtype 52, length 26, scale 0, offset 1616
+	DISCCARD: type 3, subtype 52, length 26, scale 0, offset 1642
+	WORKPLACE: type 3, subtype 52, length 130, scale 0, offset 1668
+	PASPPLACE: type 3, subtype 52, length 130, scale 0, offset 1798
+	PASPNUM: type 3, subtype 52, length 14, scale 0, offset 1928
+	RES2: type 3, subtype 52, length 66, scale 0, offset 1942
+	ISWORKED: type 8, subtype 0, length 2, scale 0, offset 2008
+	OMSSER: type 3, subtype 52, length 14, scale 0, offset 2010
+	OMSNUM: type 3, subtype 52, length 50, scale 0, offset 2024
+	LASTSTATE: type 8, subtype 0, length 2, scale 0, offset 2074
+	HISTNUM: type 3, subtype 52, length 50, scale 0, offset 2076
+	NSP: type 3, subtype 52, length 66, scale 0, offset 2126
+	LASTNAME: type 3, subtype 52, length 34, scale 0, offset 2192
+	FIRSTNAME: type 3, subtype 52, length 34, scale 0, offset 2226
+	MIDNAME: type 3, subtype 52, length 34, scale 0, offset 2260
+	PHONE1: type 3, subtype 52, length 26, scale 0, offset 2294
+	PHONE2: type 3, subtype 52, length 26, scale 0, offset 2320
+	PAGER: type 3, subtype 52, length 34, scale 0, offset 2346
+	ADDR: type 3, subtype 52, length 82, scale 0, offset 2380
+	POL: type 8, subtype 0, length 2, scale 0, offset 2462
+	DOCTORS: type 3, subtype 52, length 130, scale 0, offset 2464
+	FULLNAME: type 3, subtype 52, length 130, scale 0, offset 2594
+	COMMENT: type 3, subtype 52, length 258, scale 0, offset 2724
+	CLIENTDIS: type 8, subtype 0, length 2, scale 0, offset 2982
+	SPECNUM: type 3, subtype 52, length 26, scale 0, offset 2984
+	BYEAR: type 8, subtype 0, length 2, scale 0, offset 3010
+	ADRINDEX: type 3, subtype 52, length 10, scale 0, offset 3012
+	CITY: type 3, subtype 52, length 130, scale 0, offset 3022
+	ALLERGY: type 8, subtype 0, length 2, scale 0, offset 3152
+	PENSNUM: type 3, subtype 52, length 50, scale 0, offset 3154
+	ODUSESUM: type 8, subtype 0, length 2, scale 0, offset 3204
+	ODUSEPROC: type 8, subtype 0, length 2, scale 0, offset 3206
+	ODCURRENC: type 8, subtype 0, length 2, scale 0, offset 3208
+	CARS: type 3, subtype 52, length 50, scale 0, offset 3210
+	HIDECOMMENT: type 3, subtype 52, length 2050, scale 0, offset 3260
+	CORP: type 3, subtype 52, length 26, scale 0, offset 5310
+	FLAT: type 3, subtype 52, length 26, scale 0, offset 5336
+	ADDRFULL: type 3, subtype 52, length 258, scale 0, offset 5362
+	SNILS: type 3, subtype 52, length 26, scale 0, offset 5620
+	FULLNAME2: type 3, subtype 52, length 82, scale 0, offset 5646
+	CLIENTPASS: type 3, subtype 52, length 130, scale 0, offset 5728
+	ADRINDEX_F: type 3, subtype 52, length 10, scale 0, offset 5858
+	REGION_F: type 3, subtype 52, length 130, scale 0, offset 5868
+	NASELPUN_F: type 3, subtype 52, length 66, scale 0, offset 5998
+	CITY_F: type 3, subtype 52, length 130, scale 0, offset 6064
+	ADDR_F: type 3, subtype 52, length 82, scale 0, offset 6194
+	CORP_F: type 3, subtype 52, length 26, scale 0, offset 6276
+	FLAT_F: type 3, subtype 52, length 26, scale 0, offset 6302
+	KLADR_ADDRFULL: type 3, subtype 52, length 1026, scale 0, offset 6328
+	ADRINDEX_REG: type 3, subtype 52, length 10, scale 0, offset 7354
+	CITY_REG: type 3, subtype 52, length 130, scale 0, offset 7364
+	ADDR_REG: type 3, subtype 52, length 82, scale 0, offset 7494
+	CORP_REG: type 3, subtype 52, length 26, scale 0, offset 7576
+	FLAT_REG: type 3, subtype 52, length 26, scale 0, offset 7602
+	KLADR_ADDRFULL_REG: type 3, subtype 52, length 1026, scale 0, offset 7628
+	PASPDEPCODE: type 3, subtype 52, length 26, scale 0, offset 8654
+	BUILD: type 3, subtype 52, length 26, scale 0, offset 8680
+	BUILD_REG: type 3, subtype 52, length 26, scale 0, offset 8706
+	CLPASSWORD: type 3, subtype 52, length 66, scale 0, offset 8732
+	CLLOGIN: type 3, subtype 52, length 66, scale 0, offset 8798
+	SENDPROTBYMAIL: type 8, subtype 0, length 2, scale 0, offset 8864
+	PHONEACCESSWORD: type 3, subtype 52, length 34, scale 0, offset 8866
+	INSCOMPACCESS: type 8, subtype 0, length 2, scale 0, offset 8900
+	PROF_VRED: type 3, subtype 52, length 1026, scale 0, offset 8902
+	CLWEBCODE: type 3, subtype 52, length 66, scale 0, offset 9928
+	OCATD: type 3, subtype 52, length 14, scale 0, offset 9994
+	OCATD_REG: type 3, subtype 52, length 14, scale 0, offset 10008
+	PREPLASTNAME: type 3, subtype 52, length 34, scale 0, offset 10022
+	PREPFIRSTNAME: type 3, subtype 52, length 34, scale 0, offset 10056
+	PREPMIDNAME: type 3, subtype 52, length 34, scale 0, offset 10090
+	PREPFULLNAME: type 3, subtype 52, length 130, scale 0, offset 10124
+	ANONYMOUSNUM: type 3, subtype 52, length 66, scale 0, offset 10254
+	ADDRENTRANCE: type 3, subtype 52, length 26, scale 0, offset 10320
+	ADDRFLOOR: type 3, subtype 52, length 26, scale 0, offset 10346
+	ADDRCODE: type 3, subtype 52, length 26, scale 0, offset 10372
+	NORMLASTNAME: type 3, subtype 52, length 34, scale 0, offset 10398
+	NORMFIRSTNAME: type 3, subtype 52, length 34, scale 0, offset 10432
+	NORMMIDNAME: type 3, subtype 52, length 34, scale 0, offset 10466
+	NORMFULLNAME: type 3, subtype 52, length 130, scale 0, offset 10500
+	EXTCONTACTCODE: type 3, subtype 52, length 26, scale 0, offset 10630
+	ADDRROOM: type 3, subtype 52, length 10, scale 0, offset 10656
+	ADDRROOM_REG: type 3, subtype 52, length 10, scale 0, offset 10666
+	LPUCHECKREQ: type 3, subtype 52, length 2050, scale 0, offset 10676
+	PROF: type 3, subtype 52, length 257, scale 0, offset 12726
+	REKLCOMMENT: type 3, subtype 52, length 257, scale 0, offset 12984
+	ADDHISTNUM: type 3, subtype 52, length 257, scale 0, offset 13242
+	LINKCODE: type 3, subtype 52, length 257, scale 0, offset 13500
+	SCHEDFILIALS: type 3, subtype 52, length 257, scale 0, offset 13758
+	PARENTSFIO: type 3, subtype 52, length 257, scale 0, offset 14016
+	FAMSTATUS: type 3, subtype 52, length 3, scale 0, offset 14274
+	STREETNAME: type 3, subtype 52, length 257, scale 0, offset 14278
+	CODELIMITS: type 3, subtype 52, length 257, scale 0, offset 14536
+	PASPOTHER: type 3, subtype 52, length 257, scale 0, offset 14794
+	STREETNAME_F: type 3, subtype 52, length 257, scale 0, offset 15052
+	KLCODE: type 3, subtype 52, length 19, scale 0, offset 15310
+	STREETNAME_REG: type 3, subtype 52, length 257, scale 0, offset 15330
+	KLCODE_REG: type 3, subtype 52, length 19, scale 0, offset 15588
+	BIRTHPLACE: type 3, subtype 52, length 257, scale 0, offset 15608
+	PROFPOST: type 3, subtype 52, length 257, scale 0, offset 15866
+	STUDYCLASS: type 3, subtype 52, length 5, scale 0, offset 16124
+	PLACEOFSTUDY: type 3, subtype 52, length 130, scale 0, offset 16130
+	PLACEOFSTUDYID: type 19, subtype 0, length 8, scale 0, offset 16264
+	STUDYOUTOFREGION: type 9, subtype 0, length 4, scale 0, offset 16272
+	ISIMPAIREDMOB: type 9, subtype 0, length 4, scale 0, offset 16276
+	DATEIMPAIREDMOB: type 16, subtype 0, length 8, scale 0, offset 16280
+	AUTHRECTIME: type 16, subtype 0, length 8, scale 0, offset 16288
+002654116:000008073 [409035406] UPDATE CLIENTS (length 16296) # 1543621641 -> 696636131
+	Key: (PCODE = 150039806)
+	STARTSUMRUB = NULL
+	STARTSUM = NULL
+	MODIFYDATE = '07-JUL-2021 8:48:20.0420' -> '16-AUG-2021 21:46:56.5590'
+	OMSDATE = NULL
+	DATEEXIT = '31-DEC-2021'
+	DATEENTER = '15-JUL-2021'
+	NSPDATE = NULL
+	STATEDATE = NULL
+	BDATE = '13-APR-1996'
+	FIRSTOBSLED = NULL
+	CREATEDATE = '23-APR-2021 10:48:13.6490'
+	EXPORTDATE = NULL
+	PASPDATE = '28-APR-2016'
+	LASTDATEEXIT = '31-DEC-2021'
+	DATECANCEL = NULL
+	ADRREGDATE = NULL
+	REGDATE = NULL
+	OMSFDATE = NULL
+	NATIONALID = 990030676
+	REKLPCODE = NULL
+	REKLDCODE = NULL
+	DCODE_CONSULT = NULL
+	TALKS_DCODE = NULL
+	WORKPLACEID = 150002611
+	PROFID = NULL
+	PDEPNUM = NULL
+	PJID = NULL
+	CARDPLACE = NULL
+	TREATCODE = 156443979
+	SCSTEPEN = NULL
+	NACIONAL = NULL
+	DISCACCUM = NULL
+	SPECSERV = NULL
+	SECTID = 4365
+	UID = 150000366
+	CSTATUS = NULL
+	LSTID = 991517211
+	OMSJID = NULL
+	STATEDOCTOR = NULL
+	RCODE = 122525
+	PCODE = 150039806
+	GRTYPE = NULL
+	JID = 991511048
+	HFAMILY = NULL
+	OWNERDCODE = NULL
+	EXTERNPCODE = NULL
+	TYPESTATUS = NULL
+	AGESTATUS = NULL
+	EXTDCODE = NULL
+	CLINICID = NULL
+	JPID = NULL
+	GRSTREET = NULL
+	DCODE1 = NULL
+	JID0 = 990001888
+	REKLAGRID = NULL
+	EDUCAT = NULL
+	DMSID = 156668270
+	WORKTYPEID = NULL
+	REGID = NULL
+	PASPTYPE = 1
+	PROGSERV = NULL
+	SOCID = NULL
+	DISTRICTID = 0
+	DISTRICTID_REG = NULL
+	WEBACCESSTYPE = NULL -> 2
+	WEBSCHEDTYPE = NULL -> 1
+	WEBHISTTYPE = NULL
+	WEBPAYTYPE = NULL
+	DEATHPROTOCOLID = NULL
+	DEATHDIRID = NULL
+	FAMILYSTATUS = NULL
+	EDUCATION = NULL
+	CLADDRID = NULL
+	CLADDRID_REG = NULL
+	TFOMS_UID = NULL
+	SNILSCHECKDATE = NULL
+	LOCKTYPE = NULL
+	JPAYSTAT = NULL
+	TRADECLIENT = NULL
+	OBPOM = NULL
+	KODTER = NULL
+	FILIAL = 15
+	STATUS = NULL
+	GRPCODE = NULL
+	NOMILK = NULL
+	RES1 = NULL
+	FUPGRADE = NULL
+	ODSUMV = NULL
+	ODPROCV = NULL
+	LEVELGROUP = NULL
+	PERSONTYPE = 1
+	RECEIPID = NULL
+	NAZNDIS = NULL
+	LIMITSIGNORE = NULL
+	PLANSCOUNT = NULL
+	CHECKINMAINDB = NULL
+	DOCSCOUNT = 1
+	FROMOLDBASE = NULL
+	ISPLANMEC = NULL
+	OBMENCARD = NULL
+	JPCONTACT = NULL
+	REPL$ID = 40369
+	REPL$GRPID = 15
+	REFUSECALL = NULL
+	REFUSEADDR = NULL
+	KODTER_F = NULL
+	REFUSESMS = 0
+	KODTER_REG = NULL
+	PROTACCESSPIN = NULL
+	ISNOVOR = NULL
+	ANONYMOUS = NULL
+	CLPASSTYPE = NULL
+	REFUSECLMAIL = 1
+	DEATHSTATUS = NULL
+	DEATHDATE = NULL
+	DEATHTIME = NULL
+	DEATHFIXDATE = NULL
+	SNILS_CHECK_TYPE = NULL
+	UIASTYPE = NULL
+	NEWBORNCODE = NULL
+	REFUSEADDR_REG = NULL
+	ADRFINDATE = NULL
+	TFOMS_STATE = NULL
+	TFOMS_DATE = NULL
+	REFUSEPHONES = NULL
+	PASPSER = '65 16'
+	DESCNAME = NULL
+	PR_CLIENTTYPE = NULL
+	STAJ = NULL
+	STREETTYPE = NULL
+	NASELPUN = NULL
+	REGION = NULL
+	BPLACE = NULL
+	INN = NULL
+	FLANG = NULL
+	ISEMPLOYEER = NULL
+	CLMAIL = NULL -> 'tritonku96@mail.ru'
+	PHONE3 = '+7(900)212-81-48'
+	DISCCARD = NULL
+	WORKPLACE = NULL
+	PASPPLACE = 'отделением уфмс россии по свердловской обл .красногорскокого'
+	PASPNUM = '227195'
+	RES2 = NULL
+	ISWORKED = NULL
+	OMSSER = NULL
+	OMSNUM = NULL
+	LASTSTATE = NULL
+	HISTNUM = '150031592'
+	NSP = 'Пр5955496'
+	LASTNAME = 'Ахматов'
+	FIRSTNAME = 'Константин'
+	MIDNAME = 'Андреевич'
+	PHONE1 = ''
+	PHONE2 = ''
+	PAGER = NULL
+	ADDR = '17'
+	POL = 1
+	DOCTORS = NULL
+	FULLNAME = 'Ахматов Константин Андреевич'
+	COMMENT = '15'
+	CLIENTDIS = NULL
+	SPECNUM = NULL
+	BYEAR = 1996
+	ADRINDEX = '623416'
+	CITY = 'Каменск-Уральский'
+	ALLERGY = NULL
+	PENSNUM = NULL
+	ODUSESUM = NULL
+	ODUSEPROC = NULL
+	ODCURRENC = NULL
+	CARS = NULL
+	HIDECOMMENT = '"Будь Здоров" г. Каменск-Уральский для Группы компаний "СинТЗ" (без стоматологии)"'
+	CORP = ''
+	FLAT = ''
+	ADDRFULL = 'Каменск-Уральский, Конструкторов, д. 17'
+	SNILS = '154-170-544 44'
+	FULLNAME2 = NULL
+	CLIENTPASS = NULL
+	ADRINDEX_F = NULL
+	REGION_F = NULL
+	NASELPUN_F = NULL
+	CITY_F = NULL
+	ADDR_F = NULL
+	CORP_F = NULL
+	FLAT_F = NULL
+	KLADR_ADDRFULL = 'обл. Свердловская г. Каменск-Уральский  ул. Конструкторов '
+	ADRINDEX_REG = '623416'
+	CITY_REG = 'Каменск-Уральский'
+	ADDR_REG = '17'
+	CORP_REG = NULL
+	FLAT_REG = NULL
+	KLADR_ADDRFULL_REG = 'обл. Свердловская г. Каменск-Уральский  ул. Конструкторов '
+	PASPDEPCODE = '660-021'
+	BUILD = ''
+	BUILD_REG = NULL
+	CLPASSWORD = NULL -> '{key}3e8201084d8c6144d5e4a7e0678e445c32cd32ed'
+	CLLOGIN = NULL -> 'tritonku96@mail.ru'
+	SENDPROTBYMAIL = NULL
+	PHONEACCESSWORD = NULL
+	INSCOMPACCESS = NULL
+	PROF_VRED = NULL
+	CLWEBCODE = NULL
+	OCATD = '65436000000'
+	OCATD_REG = '65436000000'
+	PREPLASTNAME = 'ХМТВ'
+	PREPFIRSTNAME = 'КНСТНТН'
+	PREPMIDNAME = 'НДРВЧ'
+	PREPFULLNAME = 'ХМТВ КНСТНТН НДРВЧ'
+	ANONYMOUSNUM = NULL
+	ADDRENTRANCE = NULL
+	ADDRFLOOR = NULL
+	ADDRCODE = NULL
+	NORMLASTNAME = 'АХМАТОВ'
+	NORMFIRSTNAME = 'КОНСТАНТИН'
+	NORMMIDNAME = 'АНДРЕЕВИЧ'
+	NORMFULLNAME = 'АХМАТОВ КОНСТАНТИН АНДРЕЕВИЧ'
+	EXTCONTACTCODE = NULL
+	ADDRROOM = ''
+	ADDRROOM_REG = NULL
+	LPUCHECKREQ = NULL
+	PROF = NULL
+	REKLCOMMENT = NULL
+	ADDHISTNUM = NULL
+	LINKCODE = NULL
+	SCHEDFILIALS = NULL
+	PARENTSFIO = NULL
+	FAMSTATUS = NULL
+	STREETNAME = 'Конструкторов'
+	CODELIMITS = '1'
+	PASPOTHER = NULL
+	STREETNAME_F = NULL
+	KLCODE = '66000022000013200'
+	STREETNAME_REG = 'Конструкторов'
+	KLCODE_REG = '66000022000013200'
+	BIRTHPLACE = NULL
+	PROFPOST = NULL
+	STUDYCLASS = NULL
+	PLACEOFSTUDY = NULL
+	PLACEOFSTUDYID = NULL
+	STUDYOUTOFREGION = NULL
+	ISIMPAIREDMOB = NULL
+	DATEIMPAIREDMOB = NULL
+	AUTHRECTIME = NULL
+002654116:000010609 [409035406] RELEASE
+002654116:000010622 [409035406] COMMIT
+
+-- 2021-08-16 23:47:39.8800
+BLOCK 002654116:000010643 (302 bytes)
+
+002654116:000010643 [409035416] START (session 17996522)
+002654116:000010660 [409035416] SAVE
+002654116:000010669 [409035416] SAVE
+002654116:000010678 [] DESCRIBE REPL$CHANGELOGDET (count 5, length 36)
+	MODIFYDATE: type 16, subtype 0, length 8, scale 0, offset 8
+	ID: type 19, subtype 0, length 8, scale 0, offset 16 [KEY]
+	RECEIPID: type 9, subtype 0, length 4, scale 0, offset 24
+	DTYPE: type 9, subtype 0, length 4, scale 0, offset 28
+	REPLGRPID: type 9, subtype 0, length 4, scale 0, offset 32 [KEY]
+002654116:000010862 [409035416] INSERT REPL$CHANGELOGDET (length 36) # 2030367825
+	Key: (ID = 225940124, REPLGRPID = 99)
+	MODIFYDATE = '16-AUG-2021 23:47:39.0150'
+	ID = 225940124
+	RECEIPID = NULL
+	DTYPE = 1
+	REPLGRPID = 99
+002654116:000010923 [409035416] RELEASE
+002654116:000010936 [409035416] COMMIT
+
+-- 2021-08-16 23:47:43.1740
+BLOCK 002654116:000010957 (412 bytes)
+
+002654116:000010957 [409035437] START (session 17996522)
+002654116:000010974 [409035437] SAVE
+002654116:000010983 [409035437] SAVE
+002654116:000010992 [] DESCRIBE REPL$CHANGELOGDET (count 5, length 36)
+	MODIFYDATE: type 16, subtype 0, length 8, scale 0, offset 8
+	ID: type 19, subtype 0, length 8, scale 0, offset 16 [KEY]
+	RECEIPID: type 9, subtype 0, length 4, scale 0, offset 24
+	DTYPE: type 9, subtype 0, length 4, scale 0, offset 28
+	REPLGRPID: type 9, subtype 0, length 4, scale 0, offset 32 [KEY]
+002654116:000011176 [409035437] INSERT REPL$CHANGELOGDET (length 36) # 2041261392
+	Key: (ID = 225940122, REPLGRPID = 99)
+	MODIFYDATE = '16-AUG-2021 23:47:43.1400'
+	ID = 225940122
+	RECEIPID = NULL
+	DTYPE = 0
+	REPLGRPID = 99
+002654116:000011233 [409035437] INSERT REPL$CHANGELOGDET (length 36) # 2041261136
+	Key: (ID = 225940123, REPLGRPID = 99)
+	MODIFYDATE = '16-AUG-2021 23:47:43.1400'
+	ID = 225940123
+	RECEIPID = NULL
+	DTYPE = 0
+	REPLGRPID = 99
+002654116:000011290 [409035437] INSERT REPL$CHANGELOGDET (length 36) # 2041260624
+	Key: (ID = 225940125, REPLGRPID = 99)
+	MODIFYDATE = '16-AUG-2021 23:47:43.1400'
+	ID = 225940125
+	RECEIPID = NULL
+	DTYPE = 0
+	REPLGRPID = 99
+002654116:000011347 [409035437] RELEASE
+002654116:000011360 [409035437] COMMIT
+
+-- 2021-08-16 23:47:43.2600
+BLOCK 002654116:000011381 (9 bytes)
+
+002654116:000011381 [] DISCONNECT (session 17996522)
+
+-- 2021-08-16 23:47:45.580
+BLOCK 002654116:000011402 (732 bytes)
+
+002654116:000011402 [409035448] START (session 17975606)
+002654116:000011419 [409035448] SAVE
+002654116:000011428 [409035448] SAVE
+002654116:000011437 [409035448] SAVE
+002654116:000011446 [409035448] SAVE
+002654116:000011455 [409035448] SAVE
+002654116:000011464 [409035448] SAVE
+002654116:000011473 [409035448] SAVE
+002654116:000011482 [] DESCRIBE TABLELOCK (count 10, length 312)
+	MODIFYDATE: type 16, subtype 0, length 8, scale 0, offset 8
+	LOCKID: type 19, subtype 0, length 8, scale 0, offset 16 [KEY]
+	UID: type 19, subtype 0, length 8, scale 0, offset 24
+	LOCKTYPE: type 9, subtype 0, length 4, scale 0, offset 32 [KEY]
+	FILIAL: type 9, subtype 0, length 4, scale 0, offset 36
+	ATTACHMENT_ID: type 9, subtype 0, length 4, scale 0, offset 40
+	REPL$ID: type 9, subtype 0, length 4, scale 0, offset 44
+	REPL$GRPID: type 9, subtype 0, length 4, scale 0, offset 48
+	USERNAME: type 3, subtype 52, length 130, scale 0, offset 52
+	COMPNAME: type 3, subtype 52, length 130, scale 0, offset 182
+002654116:000011823 [409035448] UPDATE TABLELOCK (length 312) # 1415378903 -> 4215334679
+	Key: (LOCKID = 156802402, LOCKTYPE = 1)
+	MODIFYDATE = '16-AUG-2021 16:41:22.4880' -> '16-AUG-2021 23:47:45.0540'
+	LOCKID = 156802402
+	UID = 150000278
+	LOCKTYPE = 1
+	FILIAL = 15
+	ATTACHMENT_ID = 17975606
+	REPL$ID = 1751662
+	REPL$GRPID = 15
+	USERNAME = 'Коростелева Светлана Михайловна'
+	COMPNAME = 'YEKUK-TS2'
+002654116:000012047 [409035448] RELEASE
+002654116:000012060 [409035448] RELEASE
+002654116:000012073 [409035448] RELEASE
+002654116:000012086 [409035448] RELEASE
+002654116:000012099 [409035448] RELEASE
+002654116:000012112 [409035448] RELEASE
+002654116:000012125 [409035448] COMMIT
+
+-- 2021-08-16 23:47:53.4370
+BLOCK 002654116:000012146 (2059 bytes)
+
+002654116:000012146 [409035492] START (session 17975606)
+002654116:000012163 [409035492] SAVE
+002654116:000012172 [409035492] SAVE
+002654116:000012181 [409035492] SAVE
+002654116:000012190 [409035492] SAVE
+002654116:000012199 [409035492] SAVE
+002654116:000012208 [409035492] SAVE
+002654116:000012217 [] DESCRIBE OPERLOG (count 33, length 4727)
+	EVENTTIME: type 16, subtype 0, length 8, scale 0, offset 8
+	RSUM2: type 12, subtype 0, length 8, scale 0, offset 16
+	RSUM1: type 12, subtype 0, length 8, scale 0, offset 24
+	RDATE2: type 16, subtype 0, length 8, scale 0, offset 32
+	RDATE1: type 16, subtype 0, length 8, scale 0, offset 40
+	EVENTDATE: type 16, subtype 0, length 8, scale 0, offset 48
+	EXPORTDATE: type 16, subtype 0, length 8, scale 0, offset 56
+	RDATE3: type 16, subtype 0, length 8, scale 0, offset 64
+	LSTID: type 19, subtype 0, length 8, scale 0, offset 72
+	AGRID: type 19, subtype 0, length 8, scale 0, offset 80
+	DCODE: type 19, subtype 0, length 8, scale 0, offset 88
+	RINT2: type 19, subtype 0, length 8, scale 0, offset 96
+	RINT1: type 19, subtype 0, length 8, scale 0, offset 104
+	PCODE: type 19, subtype 0, length 8, scale 0, offset 112
+	JID: type 19, subtype 0, length 8, scale 0, offset 120
+	UID: type 19, subtype 0, length 8, scale 0, offset 128
+	LGID: type 19, subtype 0, length 8, scale 0, offset 136 [KEY]
+	RINT3: type 19, subtype 0, length 8, scale 0, offset 144
+	CASHID: type 19, subtype 0, length 8, scale 0, offset 152
+	RINT4: type 19, subtype 0, length 8, scale 0, offset 160
+	RINT5: type 19, subtype 0, length 8, scale 0, offset 168
+	FROMPID: type 19, subtype 0, length 8, scale 0, offset 176
+	FILIAL: type 9, subtype 0, length 4, scale 0, offset 184
+	RECEIPID: type 9, subtype 0, length 4, scale 0, offset 188
+	MODULEID: type 9, subtype 0, length 4, scale 0, offset 192
+	REPL$ID: type 9, subtype 0, length 4, scale 0, offset 196
+	REPL$GRPID: type 9, subtype 0, length 4, scale 0, offset 200
+	EVENTTYPE: type 9, subtype 0, length 4, scale 0, offset 204
+	RSTR2: type 3, subtype 52, length 82, scale 0, offset 208
+	UNAME: type 3, subtype 52, length 82, scale 0, offset 290
+	RMEMO: type 3, subtype 52, length 4098, scale 0, offset 372
+	RSTR1: type 3, subtype 52, length 257, scale 0, offset 4470
+002654116:000013221 [409035492] INSERT OPERLOG (length 4727) # 546449129
+	Key: (LGID = -8159999999988048531)
+	EVENTTIME = '16-AUG-2021 23:47:53.4320'
+	RSUM2 = NULL
+	RSUM1 = NULL
+	RDATE2 = NULL
+	RDATE1 = '16-AUG-2021'
+	EVENTDATE = '16-AUG-2021'
+	EXPORTDATE = NULL
+	RDATE3 = NULL
+	LSTID = NULL
+	AGRID = NULL
+	DCODE = 150000278
+	RINT2 = NULL
+	RINT1 = 990000616
+	PCODE = 150010785
+	JID = NULL
+	UID = 150000278
+	LGID = -8159999999988048531
+	RINT3 = 151907780
+	CASHID = 990000051
+	RINT4 = NULL
+	RINT5 = NULL
+	FROMPID = NULL
+	FILIAL = 15
+	RECEIPID = NULL
+	MODULEID = 1
+	REPL$ID = 24300705
+	REPL$GRPID = 15
+	EVENTTYPE = 309
+	RSTR2 = 'YEKUK-T2-2'
+	UNAME = 'Коростелева Светлана Михайловна'
+	RMEMO = 'Просмотрен протокол Приём Фельдшера К-У от 16.08.2021. Доктор Коростелева Светлана Михайловна. Пациент Лозвина Светлана Александровна. '
+	RSTR1 = 'Лозвина Светлана Александровна'
+002654116:000013633 [409035492] SAVE
+002654116:000013642 [] DESCRIBE REPL$CHANGELOG (count 9, length 118)
+	MODIFYDATE: type 16, subtype 0, length 8, scale 0, offset 8
+	ID: type 19, subtype 0, length 8, scale 0, offset 16 [KEY]
+	REPLID: type 19, subtype 0, length 8, scale 0, offset 24
+	REPLGRPID: type 9, subtype 0, length 4, scale 0, offset 32
+	OP: type 9, subtype 0, length 4, scale 0, offset 36
+	OWNGRPID: type 9, subtype 0, length 4, scale 0, offset 40
+	FROMGRPID: type 9, subtype 0, length 4, scale 0, offset 44
+	TOGRPID: type 9, subtype 0, length 4, scale 0, offset 48
+	TABLENAME: type 3, subtype 52, length 66, scale 0, offset 52
+002654116:000013947 [409035492] INSERT REPL$CHANGELOG (length 118) # 1595606890
+	Key: (ID = 225940126)
+	MODIFYDATE = '16-AUG-2021 23:47:53.4330'
+	ID = 225940126
+	REPLID = 24300705
+	REPLGRPID = 15
+	OP = 0
+	OWNGRPID = 15
+	FROMGRPID = 15
+	TOGRPID = 0
+	TABLENAME = 'OPERLOG'
+002654116:000014029 [409035492] RELEASE
+002654116:000014042 [409035492] RELEASE
+002654116:000014055 [409035492] RELEASE
+002654116:000014068 [409035492] RELEASE
+002654116:000014081 [409035492] RELEASE
+002654116:000014094 [409035492] RELEASE
+002654116:000014107 [409035492] COMMIT
+002654116:000014116 [] SET SEQUENCE OPERLOG_GEN = -8159999999988048531
+002654116:000014140 [] SET SEQUENCE REPL$OPERLOG_GEN = 24300705
+002654116:000014169 [] SET SEQUENCE REPL$REPL$CHANGELOG_GEN = 225940126
+

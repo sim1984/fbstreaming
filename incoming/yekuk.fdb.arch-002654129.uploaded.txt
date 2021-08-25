@@ -1,0 +1,340 @@
+
+-- 2021-08-16 23:57:54.8790
+BLOCK 002654129:000000048 (7527 bytes)
+
+002654129:000000048 [409037898] START (session 17996885)
+002654129:000000065 [409037898] SAVE
+002654129:000000074 [409037898] SAVE
+002654129:000000083 [409037898] BLOB 298:112551370 (length 0) # 0
+002654129:000000104 [] DESCRIBE CLREFERRALS (count 139, length 10696)
+	CHECKEDDATE: type 16, subtype 0, length 8, scale 0, offset 24
+	PRINTDATE: type 16, subtype 0, length 8, scale 0, offset 32
+	PLANDATE: type 16, subtype 0, length 8, scale 0, offset 40
+	DATEENTER: type 16, subtype 0, length 8, scale 0, offset 48
+	SCHEDDATE: type 16, subtype 0, length 8, scale 0, offset 56
+	TREATDATE: type 16, subtype 0, length 8, scale 0, offset 64
+	RTREATDATE: type 16, subtype 0, length 8, scale 0, offset 72
+	MODIFYDATE: type 16, subtype 0, length 8, scale 0, offset 80
+	EXPORTDATE: type 16, subtype 0, length 8, scale 0, offset 88
+	SENDTIME: type 16, subtype 0, length 8, scale 0, offset 96
+	EXTREFDATE: type 16, subtype 0, length 8, scale 0, offset 104
+	CREATEDATE: type 16, subtype 0, length 8, scale 0, offset 112
+	PLANID: type 19, subtype 0, length 8, scale 0, offset 120
+	CHECKEDUID: type 19, subtype 0, length 8, scale 0, offset 128
+	PRINTUID: type 19, subtype 0, length 8, scale 0, offset 136
+	GARANTLETTER: type 19, subtype 0, length 8, scale 0, offset 144
+	TOJID: type 19, subtype 0, length 8, scale 0, offset 152
+	MID: type 19, subtype 0, length 8, scale 0, offset 160
+	SCHEDID: type 19, subtype 0, length 8, scale 0, offset 168
+	REFTYPE: type 19, subtype 0, length 8, scale 0, offset 176
+	REFID: type 19, subtype 0, length 8, scale 0, offset 184 [KEY]
+	SCHEDDCODE: type 19, subtype 0, length 8, scale 0, offset 192
+	PCODE: type 19, subtype 0, length 8, scale 0, offset 200
+	DCODE: type 19, subtype 0, length 8, scale 0, offset 208
+	TREATCODE: type 19, subtype 0, length 8, scale 0, offset 216
+	DGCODE: type 19, subtype 0, length 8, scale 0, offset 224
+	TODCODE: type 19, subtype 0, length 8, scale 0, offset 232
+	TODEPART: type 19, subtype 0, length 8, scale 0, offset 240
+	RDCODE: type 19, subtype 0, length 8, scale 0, offset 248
+	RTREATCODE: type 19, subtype 0, length 8, scale 0, offset 256
+	GOAL: type 19, subtype 0, length 8, scale 0, offset 264
+	FROMDEPART: type 19, subtype 0, length 8, scale 0, offset 272
+	PROFID: type 19, subtype 0, length 8, scale 0, offset 280
+	DIRID: type 19, subtype 0, length 8, scale 0, offset 288
+	REFGROUPID: type 19, subtype 0, length 8, scale 0, offset 296
+	ACDID: type 19, subtype 0, length 8, scale 0, offset 304
+	GROUPPLANID: type 19, subtype 0, length 8, scale 0, offset 312
+	FROMJID: type 19, subtype 0, length 8, scale 0, offset 320
+	FROMPCODE: type 19, subtype 0, length 8, scale 0, offset 328
+	REFIDLINK: type 19, subtype 0, length 8, scale 0, offset 336
+	CRTID: type 19, subtype 0, length 8, scale 0, offset 344
+	UID: type 19, subtype 0, length 8, scale 0, offset 352
+	GRAPHREFID: type 19, subtype 0, length 8, scale 0, offset 360
+	PROTOCOLID: type 19, subtype 0, length 8, scale 0, offset 368
+	EXTDEPNUM: type 19, subtype 0, length 8, scale 0, offset 376
+	EXTSERVPOINTID: type 19, subtype 0, length 8, scale 0, offset 384
+	SOURCEREFID: type 19, subtype 0, length 8, scale 0, offset 392
+	AMOUNTRUB: type 19, subtype 2, length 8, scale -2, offset 400
+	AMOUNTRUBJ: type 19, subtype 2, length 8, scale -2, offset 408
+	AMOUNTRUB_DISC: type 19, subtype 2, length 8, scale -2, offset 416
+	AMOUNTRUBJ_DISC: type 19, subtype 2, length 8, scale -2, offset 424
+	CALC_REPORT: type 17, subtype 1, length 8, scale 52, offset 432
+	AGRID: type 19, subtype 0, length 8, scale 0, offset 440
+	LSTID: type 19, subtype 0, length 8, scale 0, offset 448
+	KATEG: type 19, subtype 0, length 8, scale 0, offset 456
+	FROMSDEPID: type 19, subtype 0, length 8, scale 0, offset 464
+	TOSDEPID: type 19, subtype 0, length 8, scale 0, offset 472
+	PLANDATE_FINISH: type 16, subtype 0, length 8, scale 0, offset 480
+	SQID: type 19, subtype 0, length 8, scale 0, offset 488
+	READYUID: type 19, subtype 0, length 8, scale 0, offset 496
+	SQ_NUMBER: type 19, subtype 0, length 8, scale 0, offset 504
+	RDIRID: type 19, subtype 0, length 8, scale 0, offset 512
+	EMRGID: type 19, subtype 0, length 8, scale 0, offset 520
+	AMBID: type 19, subtype 0, length 8, scale 0, offset 528
+	READYDATE: type 16, subtype 0, length 8, scale 0, offset 536
+	VACTYPE: type 19, subtype 0, length 8, scale 0, offset 544
+	VACID: type 19, subtype 0, length 8, scale 0, offset 552
+	HISTID: type 19, subtype 0, length 8, scale 0, offset 560
+	SPECSERV: type 19, subtype 0, length 8, scale 0, offset 568
+	SPECSERVPRICE: type 19, subtype 0, length 8, scale 0, offset 576
+	SPECPROC: type 12, subtype 0, length 8, scale 0, offset 584
+	SPECPRICEPROC: type 12, subtype 0, length 8, scale 0, offset 592
+	DISCACCUM: type 19, subtype 0, length 8, scale 0, offset 600
+	REFCANCELDATE: type 16, subtype 0, length 8, scale 0, offset 608
+	REFCANCELUID: type 19, subtype 0, length 8, scale 0, offset 616
+	REFCANCELTYPE: type 19, subtype 0, length 8, scale 0, offset 624
+	EMID: type 19, subtype 0, length 8, scale 0, offset 632
+	BONUSSYST: type 19, subtype 0, length 8, scale 0, offset 640
+	CONTRACTORID: type 19, subtype 0, length 8, scale 0, offset 648
+	PLANWDTIME: type 16, subtype 0, length 8, scale 0, offset 656
+	SPECSERVCITO: type 19, subtype 0, length 8, scale 0, offset 664
+	PLANTYPE: type 19, subtype 0, length 8, scale 0, offset 672
+	DIAGDESCTYPE: type 19, subtype 0, length 8, scale 0, offset 680
+	CREATEPLANID: type 19, subtype 0, length 8, scale 0, offset 688
+	BEDPROFILEID: type 19, subtype 0, length 8, scale 0, offset 696
+	FROMCASHID: type 19, subtype 0, length 8, scale 0, offset 704
+	TOCASHID: type 19, subtype 0, length 8, scale 0, offset 712
+	STATINFORMTYPE: type 19, subtype 0, length 8, scale 0, offset 720
+	PLANDATECASHID: type 19, subtype 0, length 8, scale 0, offset 728
+	REFCANCELCASHID: type 19, subtype 0, length 8, scale 0, offset 736
+	REFSTATUSID: type 19, subtype 0, length 8, scale 0, offset 744
+	PROGSERVID: type 19, subtype 0, length 8, scale 0, offset 752
+	PLACE_TREATCODE: type 19, subtype 0, length 8, scale 0, offset 760
+	MEDCONDITION: type 19, subtype 0, length 8, scale 0, offset 768
+	TREAT_TREATDATE: type 16, subtype 0, length 8, scale 0, offset 776
+	TREAT_DCODE: type 19, subtype 0, length 8, scale 0, offset 784
+	CITO: type 9, subtype 0, length 4, scale 0, offset 792
+	DAYCOUNT: type 9, subtype 0, length 4, scale 0, offset 796
+	NALKATEG: type 9, subtype 0, length 4, scale 0, offset 800
+	REPL$GRPID: type 9, subtype 0, length 4, scale 0, offset 804
+	REPL$ID: type 9, subtype 0, length 4, scale 0, offset 808
+	RUNTIME: type 9, subtype 0, length 4, scale 0, offset 812
+	RECEIPID: type 9, subtype 0, length 4, scale 0, offset 816
+	FILIAL: type 9, subtype 0, length 4, scale 0, offset 820
+	FROMFILIAL: type 9, subtype 0, length 4, scale 0, offset 824
+	TOFILIAL: type 9, subtype 0, length 4, scale 0, offset 828
+	READY: type 9, subtype 0, length 4, scale 0, offset 832
+	DISTRIBTYPE: type 9, subtype 0, length 4, scale 0, offset 836
+	FINSOURCE: type 9, subtype 0, length 4, scale 0, offset 840
+	EXTMEDICAL: type 9, subtype 0, length 4, scale 0, offset 844
+	DEPENDENT: type 9, subtype 0, length 4, scale 0, offset 848
+	PLANFILIAL: type 9, subtype 0, length 4, scale 0, offset 852
+	EXPORTSTATE: type 9, subtype 0, length 4, scale 0, offset 856
+	BYEXTERN: type 9, subtype 0, length 4, scale 0, offset 860
+	NEEDSURGERY: type 9, subtype 0, length 4, scale 0, offset 864
+	REPRESHISTTYPE: type 9, subtype 0, length 4, scale 0, offset 868
+	EXTREFID2TYPE: type 9, subtype 0, length 4, scale 0, offset 872
+	FROMDISP: type 9, subtype 0, length 4, scale 0, offset 876
+	EXTREFID: type 3, subtype 52, length 66, scale 0, offset 880
+	FSTATIC: type 8, subtype 0, length 2, scale 0, offset 946
+	SOURCETYPE: type 8, subtype 0, length 2, scale 0, offset 948
+	NAZRATE: type 8, subtype 0, length 2, scale 0, offset 950
+	COMMENT: type 3, subtype 52, length 4098, scale 0, offset 952
+	REFCANCEL: type 8, subtype 0, length 2, scale 0, offset 5050
+	DNAME: type 3, subtype 52, length 130, scale 0, offset 5052
+	CREATEDBYSTAT: type 8, subtype 0, length 2, scale 0, offset 5182
+	DIAGTEXT: type 3, subtype 52, length 4098, scale 0, offset 5184
+	REFCANCELCOMMENT: type 3, subtype 52, length 1026, scale 0, offset 9282
+	EXTREFID2: type 3, subtype 52, length 66, scale 0, offset 10308
+	REFDEPARTS: type 3, subtype 52, length 257, scale 0, offset 10374
+	BSA: type 19, subtype 2, length 8, scale -4, offset 10632
+	DILUTIONSTATE: type 9, subtype 0, length 4, scale 0, offset 10640
+	ASSUMEONKO: type 9, subtype 0, length 4, scale 0, offset 10644
+	RIDFROM: type 19, subtype 0, length 8, scale 0, offset 10648
+	REFRECALC: type 8, subtype 0, length 2, scale 0, offset 10656
+	TREAT_DEPNUM: type 19, subtype 0, length 8, scale 0, offset 10664
+	VRED_GRID: type 19, subtype 0, length 8, scale 0, offset 10672
+	SCHED_DATETIME: type 16, subtype 0, length 8, scale 0, offset 10680
+	PLANEPERIOD_STARTDATE: type 16, subtype 0, length 8, scale 0, offset 10688
+002654129:000004733 [409037898] UPDATE CLREFERRALS (length 10696) # 1256154376 -> 1912522443
+	Key: (REFID = 125237319)
+	CHECKEDDATE = NULL
+	PRINTDATE = NULL
+	PLANDATE = NULL
+	DATEENTER = NULL
+	SCHEDDATE = NULL
+	TREATDATE = '14-AUG-2021'
+	RTREATDATE = NULL
+	MODIFYDATE = '14-AUG-2021 16:09:00.0820' -> '16-AUG-2021 21:55:08.2460'
+	EXPORTDATE = NULL
+	SENDTIME = NULL
+	EXTREFDATE = NULL
+	CREATEDATE = '14-AUG-2021 16:05:18.0860'
+	PLANID = NULL
+	CHECKEDUID = NULL
+	PRINTUID = NULL
+	GARANTLETTER = NULL
+	TOJID = 0
+	MID = NULL
+	SCHEDID = NULL
+	REFTYPE = 2
+	REFID = 125237319
+	SCHEDDCODE = NULL
+	PCODE = 970103901
+	DCODE = 990004689
+	TREATCODE = 2156134699
+	DGCODE = NULL
+	TODCODE = 0
+	TODEPART = 772
+	RDCODE = NULL
+	RTREATCODE = NULL
+	GOAL = 990106635 -> 990106640
+	FROMDEPART = 751
+	PROFID = NULL
+	DIRID = 0
+	REFGROUPID = 990000089
+	ACDID = NULL
+	GROUPPLANID = NULL
+	FROMJID = NULL
+	FROMPCODE = NULL
+	REFIDLINK = NULL
+	CRTID = NULL
+	UID = 990004689
+	GRAPHREFID = NULL
+	PROTOCOLID = NULL
+	EXTDEPNUM = NULL
+	EXTSERVPOINTID = NULL
+	SOURCEREFID = 125237319
+	AMOUNTRUB = NULL
+	AMOUNTRUBJ = NULL
+	AMOUNTRUB_DISC = NULL
+	AMOUNTRUBJ_DISC = NULL
+	CALC_REPORT = BLOB (298:162339552) -> BLOB (298:112551370)
+	AGRID = NULL
+	LSTID = NULL
+	KATEG = NULL
+	FROMSDEPID = NULL
+	TOSDEPID = NULL
+	PLANDATE_FINISH = NULL
+	SQID = NULL
+	READYUID = NULL
+	SQ_NUMBER = NULL
+	RDIRID = NULL
+	EMRGID = 0
+	AMBID = NULL
+	READYDATE = NULL
+	VACTYPE = NULL
+	VACID = NULL
+	HISTID = NULL
+	SPECSERV = NULL
+	SPECSERVPRICE = NULL
+	SPECPROC = NULL
+	SPECPRICEPROC = NULL
+	DISCACCUM = NULL
+	REFCANCELDATE = NULL
+	REFCANCELUID = NULL
+	REFCANCELTYPE = NULL
+	EMID = NULL
+	BONUSSYST = NULL
+	CONTRACTORID = 990000475
+	PLANWDTIME = NULL
+	SPECSERVCITO = NULL
+	PLANTYPE = NULL
+	DIAGDESCTYPE = NULL
+	CREATEPLANID = NULL
+	BEDPROFILEID = NULL
+	FROMCASHID = NULL
+	TOCASHID = NULL
+	STATINFORMTYPE = NULL
+	PLANDATECASHID = NULL
+	REFCANCELCASHID = NULL
+	REFSTATUSID = NULL
+	PROGSERVID = NULL
+	PLACE_TREATCODE = NULL
+	MEDCONDITION = NULL
+	TREAT_TREATDATE = NULL
+	TREAT_DCODE = NULL
+	CITO = NULL
+	DAYCOUNT = NULL
+	NALKATEG = 0
+	REPL$GRPID = 12
+	REPL$ID = 5124013
+	RUNTIME = NULL
+	RECEIPID = NULL
+	FILIAL = 12
+	FROMFILIAL = 12
+	TOFILIAL = 12
+	READY = NULL
+	DISTRIBTYPE = 0
+	FINSOURCE = NULL
+	EXTMEDICAL = NULL
+	DEPENDENT = NULL
+	PLANFILIAL = NULL
+	EXPORTSTATE = NULL
+	BYEXTERN = NULL
+	NEEDSURGERY = NULL
+	REPRESHISTTYPE = NULL
+	EXTREFID2TYPE = NULL
+	FROMDISP = NULL
+	EXTREFID = '125237319'
+	FSTATIC = NULL
+	SOURCETYPE = NULL
+	NAZRATE = NULL
+	COMMENT = NULL -> 'Дата и время исходного направления:  14.08.2021 16:05:18      
+   Клиника:  Клиника Будь Здоров на Сущевском валу      
+   Дата обработки:  16.08.2021      
+   Услуга на согласование:  324075 Определение уровня специфических антител IgE к панели аллергенов HP1:H1/домашняя пыль (greer), D1/dermatophagoides pteronyssinus, D2/dermatophagoides farinae, I6/таракан-прусак/Dust Panel 1 (h1, d1, d2, i6)
+324089 Определение уровня специфических антител IgE к панели аллергенов деревьев TP9: T2/ольха, T3/береза, T4/лещина обыкновенная, T7/дуб, T12/ива/Tree Panel 9 (t2,t3,t4,t7,t12)
+324074 Определение уровня специфических антител IgE к панели аллергенов травы GP1:G3/ежа сборная, G4/овсяница луговая, G5/рожь многолетняя, G6/тимофеевка, G8/мятлик луговой/Grass Panel 1 (g3,g4,g5,g6,g8)
+324091 Определение уровня специфических антител IgE к панели аллергенов сорных растений и цветов WP1: W1/амброзия обыкновенная, W6/полынь обыкновенная, W9/подорожник, W10/мари белая, W11/зольник/cолянка/Weed Panel 1 (w1,w6,w9,w10,w11)
+324086 Определение уровня специфических антител IgE к панели аллергенов микроскопических грибов МP1: M1/penicillium notatum, M2/cladosporium herbarum, M3/aspergillus fumigatus, M5/candida albicans, M6/alternaria tenuis/Mold Panel 1 (m1,m2,m3,m5,m6)
+324085 Определение уровня специфических антител IgE к аллергену Aspergillus niger/Aspergillus niger      
+                        
+   Результат согласования:  Письменный запрос направлен в страховую компанию (срок ответа 3-5 рабочих дней)      
+   ФИО специалиста СК:  Согласие Эксперты  
+'
+	REFCANCEL = NULL
+	DNAME = NULL
+	CREATEDBYSTAT = NULL
+	DIAGTEXT = NULL
+	REFCANCELCOMMENT = NULL
+	EXTREFID2 = NULL
+	REFDEPARTS = NULL
+	BSA = NULL
+	DILUTIONSTATE = NULL
+	ASSUMEONKO = NULL
+	RIDFROM = NULL
+	REFRECALC = NULL
+	TREAT_DEPNUM = NULL
+	VRED_GRID = NULL
+	SCHED_DATETIME = NULL
+	PLANEPERIOD_STARTDATE = NULL
+002654129:000006938 [409037898] RELEASE
+002654129:000006951 [409037898] SAVE
+002654129:000006960 [] DESCRIBE CLDOCUMENTS (count 13, length 664)
+	DOCDATE: type 16, subtype 0, length 8, scale 0, offset 8
+	CHILDNUM: type 19, subtype 0, length 8, scale 0, offset 16
+	PARENTDOC: type 19, subtype 0, length 8, scale 0, offset 24
+	DOCID: type 19, subtype 0, length 8, scale 0, offset 32 [KEY]
+	PCODE: type 19, subtype 0, length 8, scale 0, offset 40
+	UID: type 19, subtype 0, length 8, scale 0, offset 48
+	DOCTYPE: type 19, subtype 0, length 8, scale 0, offset 56
+	REPL$ID: type 9, subtype 0, length 4, scale 0, offset 64
+	REPL$GRPID: type 9, subtype 0, length 4, scale 0, offset 68
+	DOCNUM: type 3, subtype 52, length 66, scale 0, offset 72
+	DOCNAME: type 3, subtype 52, length 257, scale 0, offset 138
+	DOCFILE: type 3, subtype 52, length 257, scale 0, offset 396
+	REPRESPCODE: type 19, subtype 0, length 8, scale 0, offset 656
+002654129:000007388 [409037898] DELETE CLDOCUMENTS (length 664) # 2818353058
+	Key: (DOCID = 120611909)
+	DOCDATE = '16-AUG-2021'
+	CHILDNUM = NULL
+	PARENTDOC = NULL
+	DOCID = 120611909
+	PCODE = 970175539
+	UID = 120000221
+	DOCTYPE = 990000753
+	REPL$ID = 513972
+	REPL$GRPID = 12
+	DOCNUM = '970379263/3'
+	DOCNAME = 'ДС ЛК Алешина'
+	DOCFILE = 'ds_lk_Aleshina970175539_16.08.202121_50_57.rtf'
+	REPRESPCODE = -1
+002654129:000007553 [409037898] RELEASE
+002654129:000007566 [409037898] COMMIT
+
+-- 2021-08-16 23:57:54.9120
+BLOCK 002654129:000007587 (9 bytes)
+
+002654129:000007587 [] DISCONNECT (session 17996885)
+

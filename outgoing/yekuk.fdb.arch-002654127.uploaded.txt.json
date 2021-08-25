@@ -1,0 +1,206 @@
+[
+  {
+    "TABLE_STATEMENTS": [
+      "INSERT",
+      "UPDATE",
+      "DELETE"
+    ],
+    "transactionNumber": 409037175,
+    "statements": [
+      {
+        "tableName": "CLDOCUMENTS",
+        "statementType": "DELETE",
+        "keyValues": {
+          "DOCID": 120611891
+        },
+        "newFieldValues": {},
+        "oldFieldValues": {
+          "DOCDATE": "16-AUG-2021",
+          "REPL$GRPID": 12,
+          "DOCNAME": "ДС ЛК Антипова",
+          "DOCNUM": "970379263/1",
+          "DOCID": 120611891,
+          "UID": 120000221,
+          "DOCFILE": "\\\\budzdorov.ru\\infoclinica\\mssu\\Results\\ds_lk_Antipova970175539_16.08.202118_36_32.rtf",
+          "REPL$ID": 513954,
+          "PCODE": 970175539,
+          "DOCTYPE": 120000033,
+          "REPRESPCODE": -1
+        }
+      },
+      {
+        "tableName": "CLDOCUMENTS",
+        "statementType": "INSERT",
+        "keyValues": {
+          "DOCID": 120611907
+        },
+        "newFieldValues": {
+          "DOCDATE": "16-AUG-2021",
+          "REPL$GRPID": 12,
+          "DOCNAME": "Договор с пациентом Алешина 010620",
+          "DOCNUM": "970379263/1",
+          "DOCID": 120611907,
+          "UID": 120000221,
+          "DOCFILE": "mssu_dog_vzr_010620_Aleshina970175539_16.08.202121_50_29.rtf",
+          "REPL$ID": 513970,
+          "PCODE": 970175539,
+          "DOCTYPE": 990000615,
+          "REPRESPCODE": -1
+        },
+        "oldFieldValues": {}
+      },
+      {
+        "tableName": "CLDOCUMENTS",
+        "statementType": "INSERT",
+        "keyValues": {
+          "DOCID": 120611908
+        },
+        "newFieldValues": {
+          "DOCDATE": "16-AUG-2021",
+          "REPL$GRPID": 12,
+          "DOCNAME": "ИДС+Согласие",
+          "DOCNUM": "970379263/2",
+          "DOCID": 120611908,
+          "UID": 120000221,
+          "DOCFILE": "ids_sogl970175539_16.08.202121_50_44.rtf",
+          "REPL$ID": 513971,
+          "PCODE": 970175539,
+          "DOCTYPE": 990000199,
+          "REPRESPCODE": -1
+        },
+        "oldFieldValues": {}
+      },
+      {
+        "tableName": "CLDOCUMENTS",
+        "statementType": "INSERT",
+        "keyValues": {
+          "DOCID": 120611909
+        },
+        "newFieldValues": {
+          "DOCDATE": "16-AUG-2021",
+          "REPL$GRPID": 12,
+          "DOCNAME": "ДС ЛК Алешина",
+          "DOCNUM": "970379263/3",
+          "DOCID": 120611909,
+          "UID": 120000221,
+          "DOCFILE": "ds_lk_Aleshina970175539_16.08.202121_50_57.rtf",
+          "REPL$ID": 513972,
+          "PCODE": 970175539,
+          "DOCTYPE": 990000753,
+          "REPRESPCODE": -1
+        },
+        "oldFieldValues": {}
+      },
+      {
+        "tableName": "CLREFDET",
+        "statementType": "UPDATE",
+        "keyValues": {
+          "CTDID": 1203197812
+        },
+        "newFieldValues": {},
+        "oldFieldValues": {
+          "REPL$GRPID": 12,
+          "SCOUNT": 1.0,
+          "FILIAL": 12,
+          "REFID": 125239947,
+          "REPL$ID": 6478304,
+          "RUNTIME": 0,
+          "NALKATEG": 1,
+          "CTDID": 1203197812,
+          "SCHID": 990046448,
+          "PCODE": 970175539,
+          "ORGANID": 0,
+          "ROWCODE": 1203197812,
+          "TREATDATE": "16-AUG-2021",
+          "DCODE": 120000221
+        }
+      },
+      {
+        "tableName": "CLREFERRALS",
+        "statementType": "UPDATE",
+        "keyValues": {
+          "REFID": 125239947
+        },
+        "newFieldValues": {
+          "CALC_REPORT": ""
+        },
+        "oldFieldValues": {
+          "REPL$GRPID": 12,
+          "CREATEDATE": "16-AUG-2021 18:35:06.6520",
+          "FILIAL": 12,
+          "UID": 120000221,
+          "REFGROUPID": 0,
+          "TOJID": 0,
+          "REFTYPE": 990073977,
+          "SCHED_DATETIME": "16-AUG-2021 22:15:00.0000",
+          "TOFILIAL": 12,
+          "REFID": 125239947,
+          "REPL$ID": 5126574,
+          "NALKATEG": 1,
+          "FROMFILIAL": 12,
+          "EMRGID": 0,
+          "PRINTUID": 120000221,
+          "FROMDEPART": 990386480,
+          "DIRID": 0,
+          "TREATCODE": -1,
+          "TODCODE": 120002250,
+          "PCODE": 970175539,
+          "EXTREFID": "125239947",
+          "SCHEDDATE": "16-AUG-2021",
+          "TODEPART": 992116844,
+          "SOURCEREFID": 125239947,
+          "DGCODE": 8204,
+          "DISTRIBTYPE": 0,
+          "TREATDATE": "16-AUG-2021",
+          "DCODE": 120000221,
+          "SCHEDDCODE": 120002250,
+          "REFDEPARTS": "992116844"
+        }
+      },
+      {
+        "tableName": "CLREFERRALS",
+        "statementType": "UPDATE",
+        "keyValues": {
+          "REFID": 125239947
+        },
+        "newFieldValues": {
+          "CALC_REPORT": ""
+        },
+        "oldFieldValues": {
+          "REPL$GRPID": 12,
+          "CREATEDATE": "16-AUG-2021 18:35:06.6520",
+          "FILIAL": 12,
+          "UID": 120000221,
+          "REFGROUPID": 0,
+          "MODIFYDATE": "16-AUG-2021 21:53:30.5260",
+          "TOJID": 0,
+          "REFTYPE": 990073977,
+          "SCHED_DATETIME": "16-AUG-2021 22:15:00.0000",
+          "TOFILIAL": 12,
+          "REFID": 125239947,
+          "REPL$ID": 5126574,
+          "NALKATEG": 1,
+          "FROMFILIAL": 12,
+          "EMRGID": 0,
+          "PRINTUID": 120000221,
+          "FROMDEPART": 990386480,
+          "DIRID": 0,
+          "TREATCODE": -1,
+          "TODCODE": 120002250,
+          "PRINTDATE": "16-AUG-2021 21:50:06.0000",
+          "PCODE": 970175539,
+          "EXTREFID": "125239947",
+          "SCHEDDATE": "16-AUG-2021",
+          "TODEPART": 992116844,
+          "SOURCEREFID": 125239947,
+          "DGCODE": 8204,
+          "DISTRIBTYPE": 0,
+          "TREATDATE": "16-AUG-2021",
+          "DCODE": 120000221,
+          "SCHEDDCODE": 120002250,
+          "REFDEPARTS": "992116844"
+        }
+      }
+    ]
+  }
+]

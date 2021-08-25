@@ -1,0 +1,44 @@
+
+-- 2021-08-17 00:01:09.4600
+BLOCK 002654131:000000048 (586 bytes)
+
+002654131:000000048 [409038595] START (session 17996949)
+002654131:000000065 [409038595] SAVE
+002654131:000000074 [409038595] SAVE
+002654131:000000083 [] DESCRIBE PACSWORKLIST (count 13, length 92)
+	WORKDATE: type 16, subtype 0, length 8, scale 0, offset 8
+	MODIFYDATE: type 16, subtype 0, length 8, scale 0, offset 16
+	PACSWORKID: type 19, subtype 0, length 8, scale 0, offset 24 [KEY]
+	PCODE: type 19, subtype 0, length 8, scale 0, offset 32
+	SCHEDID: type 19, subtype 0, length 8, scale 0, offset 40
+	PACSPID: type 19, subtype 0, length 8, scale 0, offset 48
+	TREATCODE: type 19, subtype 0, length 8, scale 0, offset 56
+	STREATID: type 19, subtype 0, length 8, scale 0, offset 64
+	REPL$ID: type 9, subtype 0, length 4, scale 0, offset 72
+	REPL$GRPID: type 9, subtype 0, length 4, scale 0, offset 76
+	WORKSTATE: type 9, subtype 0, length 4, scale 0, offset 80
+	GRPID: type 9, subtype 0, length 4, scale 0, offset 84
+	FILIAL: type 9, subtype 0, length 4, scale 0, offset 88
+002654131:000000521 [409038595] INSERT PACSWORKLIST (length 92) # 1264258589
+	Key: (PACSWORKID = 120425515)
+	WORKDATE = '16-AUG-2021'
+	MODIFYDATE = '16-AUG-2021 21:57:46.1220'
+	PACSWORKID = 120425515
+	PCODE = 970175539
+	SCHEDID = 128743503
+	PACSPID = 991578151
+	TREATCODE = NULL
+	STREATID = NULL
+	REPL$ID = 839115
+	REPL$GRPID = 12
+	WORKSTATE = 0
+	GRPID = 777012
+	FILIAL = 12
+002654131:000000612 [409038595] RELEASE
+002654131:000000625 [409038595] COMMIT
+
+-- 2021-08-17 00:01:09.4940
+BLOCK 002654131:000000646 (9 bytes)
+
+002654131:000000646 [] DISCONNECT (session 17996949)
+

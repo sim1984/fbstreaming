@@ -1,0 +1,1216 @@
+[
+  {
+    "TABLE_STATEMENTS": [
+      "INSERT",
+      "UPDATE",
+      "DELETE"
+    ],
+    "transactionNumber": 409039961,
+    "statements": [
+      {
+        "tableName": "REPL$CHANGELOGDET",
+        "statementType": "INSERT",
+        "keyValues": {
+          "ID": 225940517,
+          "REPLGRPID": 99
+        },
+        "newFieldValues": {
+          "ID": 225940517,
+          "DTYPE": 1,
+          "MODIFYDATE": "17-AUG-2021 0:08:05.9380",
+          "REPLGRPID": 99
+        },
+        "oldFieldValues": {}
+      }
+    ]
+  },
+  {
+    "TABLE_STATEMENTS": [
+      "INSERT",
+      "UPDATE",
+      "DELETE"
+    ],
+    "transactionNumber": 409039969,
+    "statements": [
+      {
+        "tableName": "REPL$CHANGELOGDET",
+        "statementType": "INSERT",
+        "keyValues": {
+          "ID": 225940519,
+          "REPLGRPID": 99
+        },
+        "newFieldValues": {
+          "ID": 225940519,
+          "DTYPE": 0,
+          "MODIFYDATE": "17-AUG-2021 0:08:07.1800",
+          "REPLGRPID": 99
+        },
+        "oldFieldValues": {}
+      }
+    ]
+  },
+  {
+    "TABLE_STATEMENTS": [
+      "INSERT",
+      "UPDATE",
+      "DELETE"
+    ],
+    "transactionNumber": 409039999,
+    "statements": [
+      {
+        "tableName": "REPL$CHANGELOGDET",
+        "statementType": "INSERT",
+        "keyValues": {
+          "ID": 225940530,
+          "REPLGRPID": 99
+        },
+        "newFieldValues": {
+          "ID": 225940530,
+          "DTYPE": 0,
+          "MODIFYDATE": "17-AUG-2021 0:08:14.5260",
+          "REPLGRPID": 99
+        },
+        "oldFieldValues": {}
+      }
+    ]
+  },
+  {
+    "TABLE_STATEMENTS": [
+      "INSERT",
+      "UPDATE",
+      "DELETE"
+    ],
+    "transactionNumber": 409039988,
+    "statements": [
+      {
+        "tableName": "CLDOCUMENTS",
+        "statementType": "UPDATE",
+        "keyValues": {
+          "DOCID": 30410064
+        },
+        "newFieldValues": {},
+        "oldFieldValues": {
+          "DOCDATE": "16-AUG-2021",
+          "DOCID": 30410064,
+          "UID": 30001776,
+          "REPL$GRPID": 3,
+          "REPL$ID": 196179,
+          "DOCNAME": "Дог ФЛ на программы ВЗР",
+          "PCODE": 30102116,
+          "DOCTYPE": 990000389,
+          "DOCNUM": "30060847/4",
+          "REPRESPCODE": -1
+        }
+      },
+      {
+        "tableName": "CLDOCUMENTS",
+        "statementType": "UPDATE",
+        "keyValues": {
+          "DOCID": 30276664
+        },
+        "newFieldValues": {},
+        "oldFieldValues": {
+          "DOCDATE": "03-SEP-2017",
+          "REPL$GRPID": 3,
+          "DOCNAME": "ИДС+Согласие (СПБ)",
+          "DOCNUM": "30157695/1",
+          "DOCID": 30276664,
+          "UID": 30000964,
+          "DOCFILE": "\\\\splp-mis\\Infodent\\Results\\ids_sogl_spb30309516_03.09.201714_12_38.rtf",
+          "REPL$ID": 62775,
+          "PCODE": 30309516,
+          "DOCTYPE": 990000270
+        }
+      },
+      {
+        "tableName": "CLDOCUMENTS",
+        "statementType": "UPDATE",
+        "keyValues": {
+          "DOCID": 30342272
+        },
+        "newFieldValues": {},
+        "oldFieldValues": {
+          "DOCDATE": "12-MAR-2020",
+          "REPL$GRPID": 3,
+          "DOCNAME": "Договор с пациентом",
+          "DOCNUM": "30157695/2",
+          "DOCID": 30342272,
+          "UID": 30001486,
+          "DOCFILE": "\\\\splp-mis\\Infodent\\Results\\Dogovor_new_vzr_10121530309516_12.03.202010_06_44.rtf",
+          "REPL$ID": 128385,
+          "PCODE": 30309516,
+          "DOCTYPE": 990000185
+        }
+      },
+      {
+        "tableName": "CLDOCUMENTS",
+        "statementType": "UPDATE",
+        "keyValues": {
+          "DOCID": 30343997
+        },
+        "newFieldValues": {},
+        "oldFieldValues": {
+          "DOCDATE": "20-MAR-2020",
+          "REPL$GRPID": 3,
+          "DOCNAME": "Заявление на получение результатов анализов на email",
+          "DOCNUM": "30157695/3",
+          "DOCID": 30343997,
+          "UID": 30001486,
+          "DOCFILE": "\\\\splp-mis\\Infodent\\Results\\z_analiz30309516_20.03.202013_56_05.rtf",
+          "REPL$ID": 130110,
+          "PCODE": 30309516,
+          "DOCTYPE": 990000180
+        }
+      },
+      {
+        "tableName": "CLDOCUMENTS",
+        "statementType": "UPDATE",
+        "keyValues": {
+          "DOCID": 30343998
+        },
+        "newFieldValues": {},
+        "oldFieldValues": {
+          "DOCDATE": "20-MAR-2020",
+          "REPL$GRPID": 3,
+          "DOCNAME": "Соглашение на использование личного кабинета",
+          "DOCNUM": "30157695/4",
+          "DOCID": 30343998,
+          "UID": 30001486,
+          "DOCFILE": "\\\\splp-mis\\Infodent\\Results\\ds_lk30309516_20.03.202013_56_16.rtf",
+          "REPL$ID": 130111,
+          "PCODE": 30309516,
+          "DOCTYPE": 990000244
+        }
+      },
+      {
+        "tableName": "CLDOCUMENTS",
+        "statementType": "UPDATE",
+        "keyValues": {
+          "DOCID": 30408344
+        },
+        "newFieldValues": {},
+        "oldFieldValues": {
+          "DOCDATE": "04-AUG-2021",
+          "REPL$GRPID": 3,
+          "DOCNAME": "ИДС+Согласие",
+          "DOCNUM": "30292411/5",
+          "DOCID": 30408344,
+          "UID": 30001442,
+          "DOCFILE": "ids_sogl30309516_04.08.202113_29_24.rtf",
+          "REPL$ID": 194459,
+          "PCODE": 30309516,
+          "DOCTYPE": 990000199,
+          "REPRESPCODE": -1
+        }
+      },
+      {
+        "tableName": "CLREFDET",
+        "statementType": "UPDATE",
+        "keyValues": {
+          "CTDID": 41171271
+        },
+        "newFieldValues": {},
+        "oldFieldValues": {
+          "REPL$GRPID": 3,
+          "SCOUNT": 1.0,
+          "FILIAL": 3,
+          "TSCHID": 32825276,
+          "MODIFYDATE": "10-NOV-2017 8:03:34.5380",
+          "NOTUSE": 0,
+          "FACTCOUNT": 1.0,
+          "REFID": 31462857,
+          "REPL$ID": 1356342,
+          "RUNTIME": 1,
+          "CTDID": 41171271,
+          "SCHID": 990021103,
+          "TREATCODE": 301643511,
+          "PCODE": 30309516,
+          "CONTRACTORID": 990000475,
+          "ORGANID": 110049,
+          "ROWCODE": 41171271,
+          "TREATDATE": "08-NOV-2017",
+          "DCODE": 30001392
+        }
+      },
+      {
+        "tableName": "CLREFDET",
+        "statementType": "UPDATE",
+        "keyValues": {
+          "CTDID": 41171273
+        },
+        "newFieldValues": {},
+        "oldFieldValues": {
+          "REPL$GRPID": 3,
+          "SCOUNT": 1.0,
+          "FILIAL": 3,
+          "REFID": 31462859,
+          "CORRESPWRK": 1,
+          "REPL$ID": 1356344,
+          "RUNTIME": 0,
+          "NALKATEG": 0,
+          "CTDID": 41171273,
+          "SCHID": 990001115,
+          "TREATCODE": 301643511,
+          "PCODE": 30309516,
+          "ORGANID": 0,
+          "ROWCODE": 41171273,
+          "TREATDATE": "08-NOV-2017",
+          "DCODE": 30001392
+        }
+      },
+      {
+        "tableName": "CLREFDET",
+        "statementType": "UPDATE",
+        "keyValues": {
+          "CTDID": 41175170
+        },
+        "newFieldValues": {},
+        "oldFieldValues": {
+          "REPL$GRPID": 3,
+          "SCOUNT": 1.0,
+          "FILIAL": 3,
+          "TSCHID": 32847614,
+          "MODIFYDATE": "27-NOV-2017 8:07:50.8160",
+          "NOTUSE": 0,
+          "FACTCOUNT": 1.0,
+          "REFID": 31466035,
+          "REPL$ID": 1360241,
+          "RUNTIME": 1,
+          "CTDID": 41175170,
+          "SCHID": 990021103,
+          "TREATCODE": 301670925,
+          "PCODE": 30309516,
+          "CONTRACTORID": 990000475,
+          "ORGANID": 110049,
+          "ROWCODE": 41175170,
+          "TREATDATE": "14-NOV-2017",
+          "DCODE": 30001392
+        }
+      },
+      {
+        "tableName": "CLREFDET",
+        "statementType": "UPDATE",
+        "keyValues": {
+          "CTDID": 41796207
+        },
+        "newFieldValues": {},
+        "oldFieldValues": {
+          "REPL$GRPID": 3,
+          "SCOUNT": 1.0,
+          "FILIAL": 3,
+          "TSCHID": 33927245,
+          "MODIFYDATE": "18-MAR-2020 8:05:10.4180",
+          "NOTUSE": 0,
+          "FACTCOUNT": 1.0,
+          "REFID": 31972897,
+          "CORRESPWRK": 0,
+          "REPL$ID": 1981278,
+          "RUNTIME": 1,
+          "NALKATEG": 1,
+          "CTDID": 41796207,
+          "SCHID": 990046534,
+          "TREATCODE": 305900286,
+          "PCODE": 30309516,
+          "CONTRACTORID": 990000475,
+          "ORGANID": 110037,
+          "ROWCODE": 41796207,
+          "TREATDATE": "04-MAR-2020",
+          "DCODE": 30001712
+        }
+      },
+      {
+        "tableName": "CLREFDET",
+        "statementType": "UPDATE",
+        "keyValues": {
+          "CTDID": 41796208
+        },
+        "newFieldValues": {},
+        "oldFieldValues": {
+          "REPL$GRPID": 3,
+          "SCOUNT": 1.0,
+          "FILIAL": 3,
+          "TSCHID": 33926058,
+          "MODIFYDATE": "17-MAR-2020 8:17:11.8530",
+          "NOTUSE": 0,
+          "FACTCOUNT": 1.0,
+          "REFID": 31972898,
+          "CORRESPWRK": 1,
+          "REPL$ID": 1981279,
+          "RUNTIME": 1,
+          "CTDID": 41796208,
+          "SCHID": 990046552,
+          "TREATCODE": 305900286,
+          "PCODE": 30309516,
+          "CONTRACTORID": 990000475,
+          "ORGANID": 110033,
+          "ROWCODE": 41796208,
+          "TREATDATE": "04-MAR-2020",
+          "DCODE": 30001712
+        }
+      },
+      {
+        "tableName": "CLREFDET",
+        "statementType": "UPDATE",
+        "keyValues": {
+          "CTDID": 41796210
+        },
+        "newFieldValues": {},
+        "oldFieldValues": {
+          "REPL$GRPID": 3,
+          "SCOUNT": 1.0,
+          "FILIAL": 3,
+          "TSCHID": 33919739,
+          "MODIFYDATE": "12-MAR-2020 10:11:52.3660",
+          "NOTUSE": 0,
+          "FACTCOUNT": 1.0,
+          "REFID": 31972899,
+          "REPL$ID": 1981281,
+          "RUNTIME": 0,
+          "CTDID": 41796210,
+          "SCHID": 990047240,
+          "TREATCODE": 305900286,
+          "PCODE": 30309516,
+          "ORGANID": 0,
+          "ROWCODE": 41796210,
+          "TREATDATE": "04-MAR-2020",
+          "DCODE": 30001712
+        }
+      },
+      {
+        "tableName": "CLREFDET",
+        "statementType": "UPDATE",
+        "keyValues": {
+          "CTDID": 41796211
+        },
+        "newFieldValues": {},
+        "oldFieldValues": {
+          "REPL$GRPID": 3,
+          "SCOUNT": 1.0,
+          "FILIAL": 3,
+          "TSCHID": 33919740,
+          "MODIFYDATE": "12-MAR-2020 10:11:52.3940",
+          "NOTUSE": 0,
+          "FACTCOUNT": 1.0,
+          "REFID": 31972899,
+          "REPL$ID": 1981282,
+          "RUNTIME": 0,
+          "CTDID": 41796211,
+          "SCHID": 990047250,
+          "TREATCODE": 305900286,
+          "PCODE": 30309516,
+          "ORGANID": 0,
+          "ROWCODE": 41796211,
+          "TREATDATE": "04-MAR-2020",
+          "DCODE": 30001712
+        }
+      },
+      {
+        "tableName": "CLREFDET",
+        "statementType": "UPDATE",
+        "keyValues": {
+          "CTDID": 41796219
+        },
+        "newFieldValues": {},
+        "oldFieldValues": {
+          "REPL$GRPID": 3,
+          "SCOUNT": 1.0,
+          "FILIAL": 3,
+          "TSCHID": 33927249,
+          "MODIFYDATE": "18-MAR-2020 8:07:06.6760",
+          "NOTUSE": 0,
+          "FACTCOUNT": 1.0,
+          "REFID": 31972907,
+          "REPL$ID": 1981290,
+          "RUNTIME": 0,
+          "CTDID": 41796219,
+          "SCHID": 990046233,
+          "TREATCODE": 305900286,
+          "PCODE": 30309516,
+          "ORGANID": 0,
+          "ROWCODE": 41796219,
+          "TREATDATE": "04-MAR-2020",
+          "DCODE": 30001712
+        }
+      },
+      {
+        "tableName": "CLREFDET",
+        "statementType": "UPDATE",
+        "keyValues": {
+          "CTDID": 41796220
+        },
+        "newFieldValues": {},
+        "oldFieldValues": {
+          "REPL$GRPID": 3,
+          "SCOUNT": 1.0,
+          "FILIAL": 3,
+          "TSCHID": 33930304,
+          "MODIFYDATE": "20-MAR-2020 13:22:56.0130",
+          "NOTUSE": 0,
+          "FACTCOUNT": 1.0,
+          "REFID": 31972908,
+          "REPL$ID": 1981291,
+          "RUNTIME": 0,
+          "CTDID": 41796220,
+          "SCHID": 990045278,
+          "TREATCODE": 305900286,
+          "PCODE": 30309516,
+          "ORGANID": 0,
+          "ROWCODE": 41796220,
+          "TREATDATE": "04-MAR-2020",
+          "DCODE": 30001712
+        }
+      },
+      {
+        "tableName": "CLREFDET",
+        "statementType": "UPDATE",
+        "keyValues": {
+          "CTDID": 41805656
+        },
+        "newFieldValues": {},
+        "oldFieldValues": {
+          "REPL$GRPID": 3,
+          "SCOUNT": 1.0,
+          "FILIAL": 3,
+          "TSCHID": 33926060,
+          "MODIFYDATE": "17-MAR-2020 8:17:55.0300",
+          "NOTUSE": 0,
+          "FACTCOUNT": 1.0,
+          "REFID": 31981010,
+          "REPL$ID": 1990727,
+          "RUNTIME": 1,
+          "NALKATEG": 1,
+          "CTDID": 41805656,
+          "SCHID": 990046553,
+          "PCODE": 30309516,
+          "CONTRACTORID": 990000475,
+          "ORGANID": 110033,
+          "ROWCODE": 41805656,
+          "TREATDATE": "17-MAR-2020",
+          "DCODE": 30001486
+        }
+      },
+      {
+        "tableName": "CLREFDET",
+        "statementType": "UPDATE",
+        "keyValues": {
+          "CTDID": 42065273
+        },
+        "newFieldValues": {},
+        "oldFieldValues": {
+          "RTREATCODE": 307768935,
+          "REPL$GRPID": 3,
+          "SCOUNT": 1.0,
+          "FACTSCHID": 990046268,
+          "FILIAL": 3,
+          "TSCHID": 34397730,
+          "RTREATDATE": "14-AUG-2021",
+          "MODIFYDATE": "14-AUG-2021 14:26:54.0290",
+          "NOTUSE": 0,
+          "FACTCOUNT": 1.0,
+          "REFID": 32201372,
+          "CHECKDATE": "14-AUG-2021",
+          "REPL$ID": 2250344,
+          "RUNTIME": 0,
+          "CTDID": 42065273,
+          "SCHID": 990046268,
+          "TREATCODE": 307734391,
+          "PCODE": 30309516,
+          "ORGANID": 0,
+          "ROWCODE": 42065273,
+          "TREATDATE": "04-AUG-2021",
+          "DCODE": 30001113
+        }
+      },
+      {
+        "tableName": "CLREFDET",
+        "statementType": "UPDATE",
+        "keyValues": {
+          "CTDID": 42065274
+        },
+        "newFieldValues": {},
+        "oldFieldValues": {
+          "REPL$GRPID": 3,
+          "SCOUNT": 1.0,
+          "FILIAL": 3,
+          "MODIFYDATE": "04-AUG-2021 13:37:08.0670",
+          "REFID": 32201374,
+          "REPL$ID": 2250345,
+          "RUNTIME": 0,
+          "CTDID": 42065274,
+          "SCHID": 990045422,
+          "TREATCODE": 307734391,
+          "PCODE": 30309516,
+          "ORGANID": 0,
+          "ROWCODE": 42065274,
+          "TREATDATE": "04-AUG-2021",
+          "DCODE": 30001113
+        }
+      },
+      {
+        "tableName": "CLREFERRALS",
+        "statementType": "UPDATE",
+        "keyValues": {
+          "REFID": 31462857
+        },
+        "newFieldValues": {
+          "CALC_REPORT": ""
+        },
+        "oldFieldValues": {
+          "RTREATCODE": 301649351,
+          "REPL$GRPID": 3,
+          "SPECPROC": 0.0,
+          "CREATEDATE": "08-NOV-2017 18:53:31.9420",
+          "FILIAL": 3,
+          "UID": 30001392,
+          "REFGROUPID": 990008892,
+          "RTREATDATE": "10-NOV-2017",
+          "MODIFYDATE": "10-NOV-2017 8:03:34.8030",
+          "TOJID": 0,
+          "REFTYPE": 2,
+          "DISCACCUM": 0,
+          "TOFILIAL": 3,
+          "REFID": 31462857,
+          "REPL$ID": 1048037,
+          "NALKATEG": 0,
+          "FROMFILIAL": 3,
+          "EMRGID": 0,
+          "FROMDEPART": 739,
+          "DIRID": 0,
+          "TREATCODE": 301643511,
+          "TODCODE": 0,
+          "SPECSERVCITO": 0,
+          "AGRID": 990424275,
+          "SPECSERVPRICE": 0,
+          "HISTID": 30608002,
+          "PCODE": 30309516,
+          "EXTREFID": "31462857",
+          "REPRESHISTTYPE": 0,
+          "TODEPART": 772,
+          "CONTRACTORID": 990000475,
+          "BONUSSYST": 0,
+          "RDCODE": 990000514,
+          "SPECSERV": 0,
+          "LSTID": 990424279,
+          "SOURCEREFID": 31462857,
+          "KATEG": 0,
+          "SCHEDID": 0,
+          "DISTRIBTYPE": 0,
+          "TREATDATE": "08-NOV-2017",
+          "SPECPRICEPROC": 0.0,
+          "DCODE": 30001392,
+          "GARANTLETTER": 0,
+          "FINSOURCE": 0
+        }
+      },
+      {
+        "tableName": "CLREFERRALS",
+        "statementType": "UPDATE",
+        "keyValues": {
+          "REFID": 31462859
+        },
+        "newFieldValues": {
+          "CALC_REPORT": ""
+        },
+        "oldFieldValues": {
+          "REPL$GRPID": 3,
+          "SPECPROC": 0.0,
+          "CREATEDATE": "08-NOV-2017 18:53:48.7910",
+          "FILIAL": 3,
+          "UID": 30001392,
+          "REFGROUPID": 0,
+          "MODIFYDATE": "08-NOV-2017 18:53:48.7910",
+          "TOJID": 0,
+          "ACDID": 30455734,
+          "REFTYPE": 990073977,
+          "DISCACCUM": 0,
+          "TOFILIAL": 3,
+          "REFID": 31462859,
+          "REPL$ID": 1048039,
+          "NALKATEG": 0,
+          "FROMFILIAL": 3,
+          "EMRGID": 0,
+          "FROMDEPART": 739,
+          "DIRID": 0,
+          "TREATCODE": 301643511,
+          "TODCODE": 0,
+          "SPECSERVCITO": 0,
+          "AGRID": 990424275,
+          "SPECSERVPRICE": 0,
+          "HISTID": 30608002,
+          "PCODE": 30309516,
+          "EXTREFID": "31462859",
+          "REPRESHISTTYPE": 0,
+          "TODEPART": 770,
+          "BONUSSYST": 0,
+          "SPECSERV": 0,
+          "LSTID": 990424279,
+          "SOURCEREFID": 31462859,
+          "KATEG": 0,
+          "DGCODE": 18982,
+          "DISTRIBTYPE": 0,
+          "TREATDATE": "08-NOV-2017",
+          "SPECPRICEPROC": 0.0,
+          "DCODE": 30001392,
+          "GARANTLETTER": 0,
+          "FINSOURCE": 0,
+          "REFDEPARTS": "770"
+        }
+      },
+      {
+        "tableName": "CLREFERRALS",
+        "statementType": "UPDATE",
+        "keyValues": {
+          "REFID": 31466035
+        },
+        "newFieldValues": {
+          "CALC_REPORT": ""
+        },
+        "oldFieldValues": {
+          "RTREATCODE": 301739527,
+          "REPL$GRPID": 3,
+          "SPECPROC": 0.0,
+          "CREATEDATE": "14-NOV-2017 9:47:59.4280",
+          "FILIAL": 3,
+          "UID": 30001392,
+          "REFGROUPID": 990008892,
+          "RTREATDATE": "27-NOV-2017",
+          "MODIFYDATE": "27-NOV-2017 8:07:51.0690",
+          "TOJID": 0,
+          "REFTYPE": 2,
+          "DISCACCUM": 0,
+          "TOFILIAL": 3,
+          "REFID": 31466035,
+          "REPL$ID": 1051153,
+          "NALKATEG": 0,
+          "FROMFILIAL": 3,
+          "EMRGID": 0,
+          "FROMDEPART": 739,
+          "DIRID": 0,
+          "TREATCODE": 301670925,
+          "TODCODE": 0,
+          "SPECSERVCITO": 0,
+          "AGRID": 990424275,
+          "SPECSERVPRICE": 0,
+          "HISTID": 30608002,
+          "PCODE": 30309516,
+          "EXTREFID": "31466035",
+          "REPRESHISTTYPE": 0,
+          "TODEPART": 772,
+          "CONTRACTORID": 990000475,
+          "BONUSSYST": 0,
+          "RDCODE": 990000514,
+          "SPECSERV": 0,
+          "LSTID": 990424279,
+          "SOURCEREFID": 31466035,
+          "KATEG": 0,
+          "SCHEDID": 0,
+          "DISTRIBTYPE": 0,
+          "TREATDATE": "14-NOV-2017",
+          "SPECPRICEPROC": 0.0,
+          "DCODE": 30001392,
+          "GARANTLETTER": 0,
+          "FINSOURCE": 0
+        }
+      },
+      {
+        "tableName": "CLREFERRALS",
+        "statementType": "UPDATE",
+        "keyValues": {
+          "REFID": 31972897
+        },
+        "newFieldValues": {
+          "CALC_REPORT": ""
+        },
+        "oldFieldValues": {
+          "RTREATCODE": 305965422,
+          "REPL$GRPID": 3,
+          "CREATEDATE": "04-MAR-2020 18:07:30.7710",
+          "FILIAL": 3,
+          "UID": 30001712,
+          "GOAL": 990107196,
+          "REFGROUPID": 990008891,
+          "PROTOCOLID": 33289362,
+          "RTREATDATE": "18-MAR-2020",
+          "MODIFYDATE": "18-MAR-2020 8:05:10.3640",
+          "TOJID": 0,
+          "COMMENT": " Дата обработки :  05.03.202",
+          "REFTYPE": 2,
+          "TOFILIAL": 3,
+          "REFID": 31972897,
+          "REPL$ID": 1548332,
+          "NALKATEG": 0,
+          "FROMFILIAL": 3,
+          "EMRGID": 0,
+          "FROMDEPART": 990319830,
+          "DIRID": 0,
+          "TREATCODE": 305900286,
+          "TODCODE": 0,
+          "PCODE": 30309516,
+          "EXTREFID": "31972897",
+          "TODEPART": 772,
+          "CONTRACTORID": 990000475,
+          "RDCODE": 990000514,
+          "SOURCEREFID": 31972897,
+          "SCHEDID": 0,
+          "DISTRIBTYPE": 0,
+          "TREATDATE": "04-MAR-2020",
+          "DCODE": 30001712
+        }
+      },
+      {
+        "tableName": "CLREFERRALS",
+        "statementType": "UPDATE",
+        "keyValues": {
+          "REFID": 31972898
+        },
+        "newFieldValues": {
+          "CALC_REPORT": ""
+        },
+        "oldFieldValues": {
+          "RTREATCODE": 305960918,
+          "REPL$GRPID": 3,
+          "CREATEDATE": "04-MAR-2020 18:07:37.9900",
+          "FILIAL": 3,
+          "UID": 30001712,
+          "GOAL": 990106639,
+          "REFGROUPID": 990022838,
+          "PROTOCOLID": 33289362,
+          "RTREATDATE": "17-MAR-2020",
+          "MODIFYDATE": "17-MAR-2020 8:17:11.8230",
+          "TOJID": 0,
+          "COMMENT": " Дата обработки :  05.03.202",
+          "REFTYPE": 2,
+          "TOFILIAL": 3,
+          "REFID": 31972898,
+          "REPL$ID": 1548333,
+          "NALKATEG": 0,
+          "FROMFILIAL": 3,
+          "EMRGID": 0,
+          "FROMDEPART": 990319830,
+          "DIRID": 0,
+          "TREATCODE": 305900286,
+          "TODCODE": 0,
+          "PCODE": 30309516,
+          "EXTREFID": "31972897",
+          "TODEPART": 772,
+          "CONTRACTORID": 990000475,
+          "RDCODE": 990000514,
+          "SOURCEREFID": 31972897,
+          "SCHEDID": 0,
+          "DISTRIBTYPE": 0,
+          "TREATDATE": "04-MAR-2020",
+          "DCODE": 30001712
+        }
+      },
+      {
+        "tableName": "CLREFERRALS",
+        "statementType": "UPDATE",
+        "keyValues": {
+          "REFID": 31972899
+        },
+        "newFieldValues": {
+          "CALC_REPORT": ""
+        },
+        "oldFieldValues": {
+          "RTREATCODE": 305937494,
+          "REPL$GRPID": 3,
+          "CREATEDATE": "04-MAR-2020 18:07:43.3940",
+          "FILIAL": 3,
+          "UID": 30001712,
+          "GOAL": 990107196,
+          "REFGROUPID": 0,
+          "PROTOCOLID": 33289362,
+          "RTREATDATE": "12-MAR-2020",
+          "MODIFYDATE": "12-MAR-2020 10:11:52.3020",
+          "TOJID": 0,
+          "ACDID": 30694411,
+          "COMMENT": " Дата обработки :  05.03.202",
+          "REFTYPE": 990073977,
+          "TOFILIAL": 3,
+          "REFID": 31972899,
+          "REPL$ID": 1548334,
+          "NALKATEG": 0,
+          "FROMFILIAL": 3,
+          "EMRGID": 0,
+          "FROMDEPART": 990319830,
+          "DIRID": 0,
+          "TREATCODE": 305900286,
+          "TODCODE": 0,
+          "PCODE": 30309516,
+          "EXTREFID": "31972899",
+          "SCHEDDATE": "12-MAR-2020",
+          "TODEPART": 734,
+          "RDCODE": 30000750,
+          "SOURCEREFID": 31972899,
+          "DGCODE": 3796,
+          "SCHEDID": 32903654,
+          "DISTRIBTYPE": 0,
+          "TREATDATE": "04-MAR-2020",
+          "DCODE": 30001712,
+          "SCHEDDCODE": 30000750,
+          "REFDEPARTS": "734"
+        }
+      },
+      {
+        "tableName": "CLREFERRALS",
+        "statementType": "UPDATE",
+        "keyValues": {
+          "REFID": 31972907
+        },
+        "newFieldValues": {
+          "CALC_REPORT": ""
+        },
+        "oldFieldValues": {
+          "RTREATCODE": 305965438,
+          "REPL$GRPID": 3,
+          "CREATEDATE": "04-MAR-2020 18:08:38.7740",
+          "FILIAL": 3,
+          "UID": 30001712,
+          "GOAL": 990107196,
+          "REFGROUPID": 0,
+          "PROTOCOLID": 33289362,
+          "RTREATDATE": "18-MAR-2020",
+          "MODIFYDATE": "18-MAR-2020 8:07:06.5960",
+          "TOJID": 0,
+          "COMMENT": " Дата обработки :  05.03.202",
+          "REFTYPE": 990073977,
+          "TOFILIAL": 3,
+          "REFID": 31972907,
+          "REPL$ID": 1548342,
+          "NALKATEG": 0,
+          "FROMFILIAL": 3,
+          "EMRGID": 0,
+          "FROMDEPART": 990319830,
+          "DIRID": 0,
+          "TREATCODE": 305900286,
+          "TODCODE": 0,
+          "PCODE": 30309516,
+          "EXTREFID": "31972907",
+          "SCHEDDATE": "18-MAR-2020",
+          "TODEPART": 770,
+          "RDCODE": 30001795,
+          "SOURCEREFID": 31972907,
+          "DGCODE": 3998,
+          "SCHEDID": 32903653,
+          "DISTRIBTYPE": 0,
+          "TREATDATE": "04-MAR-2020",
+          "DCODE": 30001712,
+          "SCHEDDCODE": 30001795,
+          "REFDEPARTS": "770"
+        }
+      },
+      {
+        "tableName": "CLREFERRALS",
+        "statementType": "UPDATE",
+        "keyValues": {
+          "REFID": 31972908
+        },
+        "newFieldValues": {
+          "CALC_REPORT": ""
+        },
+        "oldFieldValues": {
+          "RTREATCODE": 305976656,
+          "REPL$GRPID": 3,
+          "CREATEDATE": "04-MAR-2020 18:09:06.0390",
+          "FILIAL": 3,
+          "UID": 30001712,
+          "GOAL": 990107196,
+          "REFGROUPID": 0,
+          "PROTOCOLID": 33289362,
+          "RTREATDATE": "20-MAR-2020",
+          "MODIFYDATE": "20-MAR-2020 13:22:55.9700",
+          "TOJID": 0,
+          "ACDID": 30694411,
+          "COMMENT": " Дата обработки :  05.03.202",
+          "REFTYPE": 1,
+          "TOFILIAL": 3,
+          "REFID": 31972908,
+          "REPL$ID": 1548343,
+          "NALKATEG": 0,
+          "FROMFILIAL": 3,
+          "EMRGID": 0,
+          "FROMDEPART": 990319830,
+          "DIRID": 0,
+          "TREATCODE": 305900286,
+          "TODCODE": 0,
+          "PCODE": 30309516,
+          "EXTREFID": "31972908",
+          "SCHEDDATE": "20-MAR-2020",
+          "TODEPART": 990319830,
+          "RDCODE": 30001712,
+          "SOURCEREFID": 31972908,
+          "DGCODE": 3796,
+          "SCHEDID": 32908116,
+          "DISTRIBTYPE": 0,
+          "TREATDATE": "04-MAR-2020",
+          "DCODE": 30001712,
+          "SCHEDDCODE": 30001712,
+          "REFDEPARTS": "990319830"
+        }
+      },
+      {
+        "tableName": "CLREFERRALS",
+        "statementType": "UPDATE",
+        "keyValues": {
+          "REFID": 31981010
+        },
+        "newFieldValues": {
+          "CALC_REPORT": ""
+        },
+        "oldFieldValues": {
+          "RTREATCODE": 305960922,
+          "REPL$GRPID": 3,
+          "CREATEDATE": "17-MAR-2020 8:17:36.2780",
+          "FILIAL": 3,
+          "UID": 30001486,
+          "REFGROUPID": 990022838,
+          "RTREATDATE": "17-MAR-2020",
+          "MODIFYDATE": "17-MAR-2020 8:17:54.9970",
+          "TOJID": 0,
+          "REFTYPE": 2,
+          "TOFILIAL": 3,
+          "REFID": 31981010,
+          "REPL$ID": 1556275,
+          "NALKATEG": 1,
+          "FROMFILIAL": 3,
+          "EMRGID": 0,
+          "FROMDEPART": 990386480,
+          "DIRID": 0,
+          "TREATCODE": -1,
+          "TODCODE": 0,
+          "PCODE": 30309516,
+          "EXTREFID": "31981010",
+          "TODEPART": 772,
+          "CONTRACTORID": 990000475,
+          "RDCODE": 990000514,
+          "SOURCEREFID": 31981010,
+          "SCHEDID": 0,
+          "DISTRIBTYPE": 0,
+          "TREATDATE": "17-MAR-2020",
+          "DCODE": 30001486
+        }
+      },
+      {
+        "tableName": "CLREFERRALS",
+        "statementType": "UPDATE",
+        "keyValues": {
+          "REFID": 32201372
+        },
+        "newFieldValues": {
+          "CALC_REPORT": ""
+        },
+        "oldFieldValues": {
+          "RTREATCODE": 307768935,
+          "REPL$GRPID": 3,
+          "SPECPROC": 0.0,
+          "CREATEDATE": "04-AUG-2021 13:36:22.3190",
+          "FILIAL": 3,
+          "UID": 30001113,
+          "GOAL": 990107196,
+          "REFGROUPID": 0,
+          "RTREATDATE": "14-AUG-2021",
+          "MODIFYDATE": "14-AUG-2021 14:26:53.9720",
+          "TOJID": 0,
+          "ACDID": 30814941,
+          "COMMENT": "телефон пациентки для связ",
+          "REFTYPE": 990073977,
+          "DISCACCUM": 0,
+          "SCHED_DATETIME": "14-AUG-2021 14:30:00.0000",
+          "TOFILIAL": 3,
+          "REFID": 32201372,
+          "REPL$ID": 1771826,
+          "NALKATEG": 0,
+          "FROMFILIAL": 3,
+          "EMRGID": 0,
+          "FROMDEPART": 738,
+          "DIRID": 0,
+          "TREATCODE": 307734391,
+          "TODCODE": 0,
+          "SPECSERVCITO": 0,
+          "AGRID": 991517376,
+          "SPECSERVPRICE": 0,
+          "HISTID": 0,
+          "PCODE": 30309516,
+          "EXTREFID": "32201372",
+          "SCHEDDATE": "14-AUG-2021",
+          "REPRESHISTTYPE": 0,
+          "TODEPART": 770,
+          "BONUSSYST": 0,
+          "RDCODE": 30001312,
+          "SPECSERV": 0,
+          "LSTID": 991517387,
+          "SOURCEREFID": 32201372,
+          "KATEG": 0,
+          "DGCODE": 3389,
+          "SCHEDID": 33281443,
+          "DISTRIBTYPE": 0,
+          "TREATDATE": "04-AUG-2021",
+          "SPECPRICEPROC": 0.0,
+          "DCODE": 30001113,
+          "GARANTLETTER": 990242822,
+          "SCHEDDCODE": 30001312,
+          "REFDEPARTS": "770"
+        }
+      },
+      {
+        "tableName": "CLREFERRALS",
+        "statementType": "UPDATE",
+        "keyValues": {
+          "REFID": 32201374
+        },
+        "newFieldValues": {
+          "CALC_REPORT": ""
+        },
+        "oldFieldValues": {
+          "REPL$GRPID": 3,
+          "SPECPROC": 0.0,
+          "CREATEDATE": "04-AUG-2021 13:37:02.2870",
+          "FILIAL": 3,
+          "UID": 30001113,
+          "GOAL": 990107196,
+          "REFGROUPID": 0,
+          "MODIFYDATE": "05-AUG-2021 10:59:15.8340",
+          "TOJID": 0,
+          "ACDID": 30814941,
+          "COMMENT": " Дата обработки:  05.08.202",
+          "REFTYPE": 1,
+          "DISCACCUM": 0,
+          "TOFILIAL": 3,
+          "REFID": 32201374,
+          "REPL$ID": 1771827,
+          "NALKATEG": 0,
+          "FROMFILIAL": 3,
+          "EMRGID": 0,
+          "FROMDEPART": 738,
+          "DIRID": 0,
+          "TREATCODE": 307734391,
+          "TODCODE": 0,
+          "SPECSERVCITO": 0,
+          "AGRID": 991517376,
+          "SPECSERVPRICE": 0,
+          "HISTID": 0,
+          "PCODE": 30309516,
+          "EXTREFID": "32201374",
+          "REPRESHISTTYPE": 0,
+          "TODEPART": 738,
+          "BONUSSYST": 0,
+          "SPECSERV": 0,
+          "LSTID": 991517387,
+          "SOURCEREFID": 32201374,
+          "KATEG": 0,
+          "DGCODE": 3389,
+          "DISTRIBTYPE": 0,
+          "TREATDATE": "04-AUG-2021",
+          "SPECPRICEPROC": 0.0,
+          "DCODE": 30001113,
+          "GARANTLETTER": 990242822,
+          "REFDEPARTS": "738"
+        }
+      },
+      {
+        "tableName": "LABEXCHANGE",
+        "statementType": "INSERT",
+        "keyValues": {
+          "LEID": 990166210
+        },
+        "newFieldValues": {
+          "LSID": 990010000000001,
+          "JID": 990010000000019,
+          "LOADTIME": "16-AUG-2021 22:06:22.0000",
+          "REPL$GRPID": 99,
+          "REQNUMBER": "6031026810",
+          "LEINSERTDATE": "16-AUG-2021 22:06:22.0000",
+          "LESTATE": 1,
+          "TREATCODE": 156799241,
+          "LEERRORMSG": "",
+          "FILIAL": 99,
+          "LEID": 990166210,
+          "REPL$ID": 166205,
+          "LETYPE": 2,
+          "EXTJID": 0,
+          "LEFILENAME": "C:\\Infoclinica\\Analis\\Results\\IN\\ARCHIVE\\Result_990010000000019_990010015133224_2021_08_16_22_06_22_488.xml",
+          "LESTATEDATE": "16-AUG-2021 22:07:47.7610"
+        },
+        "oldFieldValues": {}
+      },
+      {
+        "tableName": "LABEXCHANGE",
+        "statementType": "UPDATE",
+        "keyValues": {
+          "LEID": 990166210
+        },
+        "newFieldValues": {},
+        "oldFieldValues": {
+          "LSID": 990010000000001,
+          "JID": 990010000000019,
+          "LOADTIME": "16-AUG-2021 22:06:22.0000",
+          "REPL$GRPID": 99,
+          "REQNUMBER": "6031026810",
+          "LEINSERTDATE": "16-AUG-2021 22:06:22.0000",
+          "LESTATE": 1,
+          "TREATCODE": 156799241,
+          "LEERRORMSG": "",
+          "FILIAL": 99,
+          "LEID": 990166210,
+          "REPL$ID": 166205,
+          "LETYPE": 2,
+          "EXTJID": 0,
+          "LEFILENAME": "C:\\Infoclinica\\Analis\\Results\\IN\\ARCHIVE\\Result_990010000000019_990010015133224_2021_08_16_22_06_22_488.xml",
+          "LESTATEDATE": "16-AUG-2021 22:07:47.7610"
+        }
+      },
+      {
+        "tableName": "LABEXCHANGE",
+        "statementType": "UPDATE",
+        "keyValues": {
+          "LEID": 990166210
+        },
+        "newFieldValues": {},
+        "oldFieldValues": {
+          "LSID": 990010000000001,
+          "JID": 990010000000019,
+          "LOADTIME": "16-AUG-2021 22:06:22.0000",
+          "REPL$GRPID": 99,
+          "REQNUMBER": "6031026810",
+          "LEINSERTDATE": "16-AUG-2021 22:06:22.0000",
+          "LESTATE": 1,
+          "TREATCODE": 156799241,
+          "LEERRORMSG": "",
+          "FILIAL": 99,
+          "LEID": 990166210,
+          "REPL$ID": 166205,
+          "LETYPE": 2,
+          "EXTJID": 0,
+          "LEFILENAME": "C:\\Infoclinica\\Analis\\Results\\IN\\ARCHIVE\\Result_990010000000019_990010015133224_2021_08_16_22_06_22_488.xml",
+          "LESTATEDATE": "16-AUG-2021 22:07:47.7610"
+        }
+      },
+      {
+        "tableName": "LABEXCHANGE",
+        "statementType": "UPDATE",
+        "keyValues": {
+          "LEID": 990166210
+        },
+        "newFieldValues": {},
+        "oldFieldValues": {
+          "LSID": 990010000000001,
+          "JID": 990010000000019,
+          "LOADTIME": "16-AUG-2021 22:06:22.0000",
+          "REPL$GRPID": 99,
+          "REQNUMBER": "6031026810",
+          "LEINSERTDATE": "16-AUG-2021 22:06:22.0000",
+          "LESTATE": 1,
+          "TREATCODE": 156799241,
+          "LEERRORMSG": "",
+          "FILIAL": 99,
+          "LEID": 990166210,
+          "REPL$ID": 166205,
+          "LETYPE": 2,
+          "EXTJID": 0,
+          "LEFILENAME": "C:\\Infoclinica\\Analis\\Results\\IN\\ARCHIVE\\Result_990010000000019_990010015133224_2021_08_16_22_06_22_488.xml",
+          "LESTATEDATE": "16-AUG-2021 22:07:47.7610"
+        }
+      }
+    ]
+  }
+]

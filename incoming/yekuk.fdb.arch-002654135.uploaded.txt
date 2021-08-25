@@ -1,0 +1,2100 @@
+
+-- 2021-08-17 00:10:40.5300
+BLOCK 002654135:000000048 (1936 bytes)
+
+002654135:000000048 [409040476] START (session 17975606)
+002654135:000000065 [409040476] SAVE
+002654135:000000074 [409040476] SAVE
+002654135:000000083 [409040476] SAVE
+002654135:000000092 [409040476] SAVE
+002654135:000000101 [409040476] SAVE
+002654135:000000110 [409040476] SAVE
+002654135:000000119 [409040476] SAVE
+002654135:000000128 [409040476] SAVE
+002654135:000000137 [] DESCRIBE OPERLOG (count 33, length 4727)
+	EVENTTIME: type 16, subtype 0, length 8, scale 0, offset 8
+	RSUM2: type 12, subtype 0, length 8, scale 0, offset 16
+	RSUM1: type 12, subtype 0, length 8, scale 0, offset 24
+	RDATE2: type 16, subtype 0, length 8, scale 0, offset 32
+	RDATE1: type 16, subtype 0, length 8, scale 0, offset 40
+	EVENTDATE: type 16, subtype 0, length 8, scale 0, offset 48
+	EXPORTDATE: type 16, subtype 0, length 8, scale 0, offset 56
+	RDATE3: type 16, subtype 0, length 8, scale 0, offset 64
+	LSTID: type 19, subtype 0, length 8, scale 0, offset 72
+	AGRID: type 19, subtype 0, length 8, scale 0, offset 80
+	DCODE: type 19, subtype 0, length 8, scale 0, offset 88
+	RINT2: type 19, subtype 0, length 8, scale 0, offset 96
+	RINT1: type 19, subtype 0, length 8, scale 0, offset 104
+	PCODE: type 19, subtype 0, length 8, scale 0, offset 112
+	JID: type 19, subtype 0, length 8, scale 0, offset 120
+	UID: type 19, subtype 0, length 8, scale 0, offset 128
+	LGID: type 19, subtype 0, length 8, scale 0, offset 136 [KEY]
+	RINT3: type 19, subtype 0, length 8, scale 0, offset 144
+	CASHID: type 19, subtype 0, length 8, scale 0, offset 152
+	RINT4: type 19, subtype 0, length 8, scale 0, offset 160
+	RINT5: type 19, subtype 0, length 8, scale 0, offset 168
+	FROMPID: type 19, subtype 0, length 8, scale 0, offset 176
+	FILIAL: type 9, subtype 0, length 4, scale 0, offset 184
+	RECEIPID: type 9, subtype 0, length 4, scale 0, offset 188
+	MODULEID: type 9, subtype 0, length 4, scale 0, offset 192
+	REPL$ID: type 9, subtype 0, length 4, scale 0, offset 196
+	REPL$GRPID: type 9, subtype 0, length 4, scale 0, offset 200
+	EVENTTYPE: type 9, subtype 0, length 4, scale 0, offset 204
+	RSTR2: type 3, subtype 52, length 82, scale 0, offset 208
+	UNAME: type 3, subtype 52, length 82, scale 0, offset 290
+	RMEMO: type 3, subtype 52, length 4098, scale 0, offset 372
+	RSTR1: type 3, subtype 52, length 257, scale 0, offset 4470
+002654135:000001141 [409040476] INSERT OPERLOG (length 4727) # 3451975827
+	Key: (LGID = -8159999999988048493)
+	EVENTTIME = '17-AUG-2021 0:10:38.8960'
+	RSUM2 = NULL
+	RSUM1 = NULL
+	RDATE2 = NULL
+	RDATE1 = NULL
+	EVENTDATE = '17-AUG-2021'
+	EXPORTDATE = NULL
+	RDATE3 = NULL
+	LSTID = NULL
+	AGRID = NULL
+	DCODE = NULL
+	RINT2 = NULL
+	RINT1 = NULL
+	PCODE = 150001346
+	JID = NULL
+	UID = 150000278
+	LGID = -8159999999988048493
+	RINT3 = NULL
+	CASHID = 990000051
+	RINT4 = NULL
+	RINT5 = NULL
+	FROMPID = NULL
+	FILIAL = 15
+	RECEIPID = NULL
+	MODULEID = 1
+	REPL$ID = 24300743
+	REPL$GRPID = 15
+	EVENTTYPE = 387
+	RSTR2 = 'YEKUK-T2-2'
+	UNAME = 'Коростелева Светлана Михайловна'
+	RMEMO = ''
+	RSTR1 = 'Ахмадеев Радик Сабирович'
+002654135:000001386 [409040476] SAVE
+002654135:000001395 [] DESCRIBE REPL$CHANGELOG (count 9, length 118)
+	MODIFYDATE: type 16, subtype 0, length 8, scale 0, offset 8
+	ID: type 19, subtype 0, length 8, scale 0, offset 16 [KEY]
+	REPLID: type 19, subtype 0, length 8, scale 0, offset 24
+	REPLGRPID: type 9, subtype 0, length 4, scale 0, offset 32
+	OP: type 9, subtype 0, length 4, scale 0, offset 36
+	OWNGRPID: type 9, subtype 0, length 4, scale 0, offset 40
+	FROMGRPID: type 9, subtype 0, length 4, scale 0, offset 44
+	TOGRPID: type 9, subtype 0, length 4, scale 0, offset 48
+	TABLENAME: type 3, subtype 52, length 66, scale 0, offset 52
+002654135:000001700 [409040476] INSERT REPL$CHANGELOG (length 118) # 1484870171
+	Key: (ID = 225940531)
+	MODIFYDATE = '17-AUG-2021 0:10:40.4940'
+	ID = 225940531
+	REPLID = 24300743
+	REPLGRPID = 15
+	OP = 0
+	OWNGRPID = 15
+	FROMGRPID = 15
+	TOGRPID = 0
+	TABLENAME = 'OPERLOG'
+002654135:000001782 [409040476] RELEASE
+002654135:000001795 [409040476] RELEASE
+002654135:000001808 [409040476] RELEASE
+002654135:000001821 [409040476] RELEASE
+002654135:000001834 [409040476] RELEASE
+002654135:000001847 [409040476] RELEASE
+002654135:000001860 [409040476] RELEASE
+002654135:000001873 [409040476] RELEASE
+002654135:000001886 [409040476] COMMIT
+002654135:000001895 [] SET SEQUENCE OPERLOG_GEN = -8159999999988048493
+002654135:000001919 [] SET SEQUENCE REPL$OPERLOG_GEN = 24300743
+002654135:000001948 [] SET SEQUENCE REPL$REPL$CHANGELOG_GEN = 225940531
+
+-- 2021-08-17 00:10:41.8190
+BLOCK 002654135:000001996 (9556 bytes)
+
+002654135:000001996 [409040482] START (session 17975606)
+002654135:000002013 [409040482] SAVE
+002654135:000002022 [409040482] SAVE
+002654135:000002031 [409040482] SAVE
+002654135:000002040 [409040482] SAVE
+002654135:000002049 [409040482] SAVE
+002654135:000002058 [409040482] SAVE
+002654135:000002067 [409040482] SAVE
+002654135:000002076 [] DESCRIBE SCHEDULE (count 107, length 4186)
+	CREATEDATE: type 16, subtype 0, length 8, scale 0, offset 16
+	FINISHTREAT: type 16, subtype 0, length 8, scale 0, offset 24
+	FIXDATE: type 16, subtype 0, length 8, scale 0, offset 32
+	WORKDATE: type 16, subtype 0, length 8, scale 0, offset 40
+	VISITTIME: type 16, subtype 0, length 8, scale 0, offset 48
+	MODIFYDATE: type 16, subtype 0, length 8, scale 0, offset 56
+	SCHAMOUNT: type 12, subtype 0, length 8, scale 0, offset 64
+	CALLTIME: type 16, subtype 0, length 8, scale 0, offset 72
+	EXPORTDATE: type 16, subtype 0, length 8, scale 0, offset 80
+	STARTTREAT: type 16, subtype 0, length 8, scale 0, offset 88
+	SPECPROC: type 12, subtype 0, length 8, scale 0, offset 96
+	SPECPRICEPROC: type 12, subtype 0, length 8, scale 0, offset 104
+	VISIT_UID: type 19, subtype 0, length 8, scale 0, offset 112
+	SCHUSLID: type 19, subtype 0, length 8, scale 0, offset 120
+	KATEG: type 19, subtype 0, length 8, scale 0, offset 128
+	LSTID: type 19, subtype 0, length 8, scale 0, offset 136
+	AGRID: type 19, subtype 0, length 8, scale 0, offset 144
+	GARANTLETTER: type 19, subtype 0, length 8, scale 0, offset 152
+	PLANID: type 19, subtype 0, length 8, scale 0, offset 160
+	REFID: type 19, subtype 0, length 8, scale 0, offset 168
+	STATUS: type 19, subtype 0, length 8, scale 0, offset 176
+	DCODE: type 19, subtype 0, length 8, scale 0, offset 184
+	PCODE: type 19, subtype 0, length 8, scale 0, offset 192
+	TREATCODE: type 19, subtype 0, length 8, scale 0, offset 200
+	TMSTATUS: type 19, subtype 0, length 8, scale 0, offset 208
+	UID: type 19, subtype 0, length 8, scale 0, offset 216
+	REASID: type 19, subtype 0, length 8, scale 0, offset 224
+	CHID: type 19, subtype 0, length 8, scale 0, offset 232
+	SQID: type 19, subtype 0, length 8, scale 0, offset 240
+	CASHID: type 19, subtype 0, length 8, scale 0, offset 248
+	CLCALL: type 19, subtype 0, length 8, scale 0, offset 256
+	TALONNUM: type 19, subtype 0, length 8, scale 0, offset 264
+	REMFROMQ: type 19, subtype 0, length 8, scale 0, offset 272
+	DCODE1: type 19, subtype 0, length 8, scale 0, offset 280
+	TEAMID: type 19, subtype 0, length 8, scale 0, offset 288
+	EMID: type 19, subtype 0, length 8, scale 0, offset 296
+	CREATEUID: type 19, subtype 0, length 8, scale 0, offset 304
+	CREATORID: type 19, subtype 0, length 8, scale 0, offset 312
+	SCHEDID: type 19, subtype 0, length 8, scale 0, offset 320 [KEY]
+	ANAESTYPE: type 19, subtype 0, length 8, scale 0, offset 328
+	HISTID: type 19, subtype 0, length 8, scale 0, offset 336
+	SECTID: type 19, subtype 0, length 8, scale 0, offset 344
+	SECTID2: type 19, subtype 0, length 8, scale 0, offset 352
+	SPECSERV: type 19, subtype 0, length 8, scale 0, offset 360
+	SPECSERVPRICE: type 19, subtype 0, length 8, scale 0, offset 368
+	DISCACCUM: type 19, subtype 0, length 8, scale 0, offset 376
+	SMTDETID: type 19, subtype 0, length 8, scale 0, offset 384
+	DIRID: type 19, subtype 0, length 8, scale 0, offset 392
+	SCHEDIDENT: type 19, subtype 0, length 8, scale 0, offset 400
+	RESERVESCHEDID: type 19, subtype 0, length 8, scale 0, offset 408
+	REPRESPCODE: type 19, subtype 0, length 8, scale 0, offset 416
+	FROMPID: type 19, subtype 0, length 8, scale 0, offset 424
+	QUID: type 19, subtype 0, length 8, scale 0, offset 432
+	PROTOCOLID: type 19, subtype 0, length 8, scale 0, offset 440
+	BONUSSYST: type 19, subtype 0, length 8, scale 0, offset 448
+	TRANSFTIME: type 16, subtype 0, length 8, scale 0, offset 456
+	PARENTSCHEDID: type 19, subtype 0, length 8, scale 0, offset 464
+	VISITCALLTIME: type 16, subtype 0, length 8, scale 0, offset 472
+	PLANTYPE: type 19, subtype 0, length 8, scale 0, offset 480
+	PLACE_TREATCODE: type 19, subtype 0, length 8, scale 0, offset 488
+	FROMFILIAL: type 9, subtype 0, length 4, scale 0, offset 496
+	FIXHOUR: type 9, subtype 0, length 4, scale 0, offset 500
+	CALCSTATUS: type 9, subtype 0, length 4, scale 0, offset 504
+	CHECKSTATUS: type 9, subtype 0, length 4, scale 0, offset 508
+	FILIAL: type 9, subtype 0, length 4, scale 0, offset 512
+	ABSENCECOUNT: type 9, subtype 0, length 4, scale 0, offset 516
+	RECEIPID: type 9, subtype 0, length 4, scale 0, offset 520
+	SCHEDTYPE: type 9, subtype 0, length 4, scale 0, offset 524
+	MODIFYFILIAL: type 9, subtype 0, length 4, scale 0, offset 528
+	GROUPCOUNT: type 9, subtype 0, length 4, scale 0, offset 532
+	REPL$ID: type 9, subtype 0, length 4, scale 0, offset 536
+	REPL$GRPID: type 9, subtype 0, length 4, scale 0, offset 540
+	CALLTYPE: type 9, subtype 0, length 4, scale 0, offset 544
+	SMS_SENT: type 9, subtype 0, length 4, scale 0, offset 548
+	WAITNEARTIME: type 9, subtype 0, length 4, scale 0, offset 552
+	TREATCOMPLETE: type 9, subtype 0, length 4, scale 0, offset 556
+	QUEUENUM: type 9, subtype 0, length 4, scale 0, offset 560
+	BOOKTYPE: type 9, subtype 0, length 4, scale 0, offset 564
+	REPRESHISTTYPE: type 9, subtype 0, length 4, scale 0, offset 568
+	ONLINETYPE: type 9, subtype 0, length 4, scale 0, offset 572
+	DAILYPLANFILIAL: type 9, subtype 0, length 4, scale 0, offset 576
+	PLAN_CREATEMODE: type 9, subtype 0, length 4, scale 0, offset 580
+	TREATFILIAL: type 9, subtype 0, length 4, scale 0, offset 584
+	GARANTNUM: type 3, subtype 52, length 66, scale 0, offset 588
+	EMRGCOMMENT: type 3, subtype 52, length 1026, scale 0, offset 654
+	SCHLIST: type 3, subtype 52, length 1026, scale 0, offset 1680
+	BHOUR: type 8, subtype 0, length 2, scale 0, offset 2706
+	BMIN: type 8, subtype 0, length 2, scale 0, offset 2708
+	FHOUR: type 8, subtype 0, length 2, scale 0, offset 2710
+	FMIN: type 8, subtype 0, length 2, scale 0, offset 2712
+	CLVISIT: type 8, subtype 0, length 2, scale 0, offset 2714
+	SCHEDLEVEL: type 8, subtype 0, length 2, scale 0, offset 2716
+	SUFFICIENTTIME: type 8, subtype 0, length 2, scale 0, offset 2718
+	LIVEQUEUE: type 8, subtype 0, length 2, scale 0, offset 2720
+	DISCCARD: type 3, subtype 52, length 66, scale 0, offset 2722
+	DISCCARDNUM: type 3, subtype 52, length 66, scale 0, offset 2788
+	SCREENVISIT: type 8, subtype 0, length 2, scale 0, offset 2854
+	COMMENT: type 3, subtype 52, length 257, scale 0, offset 2856
+	REFERCOMMENT: type 3, subtype 52, length 257, scale 0, offset 3114
+	RINGUPTIME: type 3, subtype 52, length 257, scale 0, offset 3372
+	TMSTATUSCOMMENT: type 3, subtype 52, length 257, scale 0, offset 3630
+	CALLERID: type 3, subtype 52, length 257, scale 0, offset 3888
+	CLNOTVISIT: type 8, subtype 0, length 2, scale 0, offset 4146
+	NOTVISITTIME: type 16, subtype 0, length 8, scale 0, offset 4152
+	NOTVISIT_UID: type 19, subtype 0, length 8, scale 0, offset 4160
+	DEPNUM: type 19, subtype 0, length 8, scale 0, offset 4168
+	AUTHKEY: type 3, subtype 52, length 10, scale 0, offset 4176
+002654135:000005595 [409040482] INSERT SCHEDULE (length 4186) # 1179918231
+	Key: (SCHEDID = 151337582)
+	CREATEDATE = '17-AUG-2021 0:10:40.9730'
+	FINISHTREAT = NULL
+	FIXDATE = '17-AUG-2021 0:10:40.9730'
+	WORKDATE = '17-AUG-2021'
+	VISITTIME = NULL
+	MODIFYDATE = '17-AUG-2021 0:10:40.9730'
+	SCHAMOUNT = 0.0000000000000000
+	CALLTIME = NULL
+	EXPORTDATE = NULL
+	STARTTREAT = NULL
+	SPECPROC = NULL
+	SPECPRICEPROC = NULL
+	VISIT_UID = NULL
+	SCHUSLID = NULL
+	KATEG = NULL
+	LSTID = NULL
+	AGRID = NULL
+	GARANTLETTER = NULL
+	PLANID = NULL
+	REFID = 0
+	STATUS = 0
+	DCODE = 150000278
+	PCODE = 150001346
+	TREATCODE = NULL
+	TMSTATUS = NULL
+	UID = 150000278
+	REASID = NULL
+	CHID = 992108299
+	SQID = NULL
+	CASHID = 990000051
+	CLCALL = NULL
+	TALONNUM = NULL
+	REMFROMQ = NULL
+	DCODE1 = NULL
+	TEAMID = 150717574
+	EMID = NULL
+	CREATEUID = NULL
+	CREATORID = 150000278
+	SCHEDID = 151337582
+	ANAESTYPE = NULL
+	HISTID = NULL
+	SECTID = NULL
+	SECTID2 = NULL
+	SPECSERV = NULL
+	SPECSERVPRICE = NULL
+	DISCACCUM = NULL
+	SMTDETID = NULL
+	DIRID = NULL
+	SCHEDIDENT = 150099344
+	RESERVESCHEDID = 0
+	REPRESPCODE = 0
+	FROMPID = NULL
+	QUID = NULL
+	PROTOCOLID = NULL
+	BONUSSYST = NULL
+	TRANSFTIME = NULL
+	PARENTSCHEDID = NULL
+	VISITCALLTIME = NULL
+	PLANTYPE = NULL
+	PLACE_TREATCODE = NULL
+	FROMFILIAL = 15
+	FIXHOUR = 0
+	CALCSTATUS = NULL
+	CHECKSTATUS = NULL
+	FILIAL = 15
+	ABSENCECOUNT = 3
+	RECEIPID = NULL
+	SCHEDTYPE = 1
+	MODIFYFILIAL = NULL
+	GROUPCOUNT = NULL
+	REPL$ID = 1337605
+	REPL$GRPID = 15
+	CALLTYPE = NULL
+	SMS_SENT = NULL
+	WAITNEARTIME = NULL
+	TREATCOMPLETE = NULL
+	QUEUENUM = NULL
+	BOOKTYPE = NULL
+	REPRESHISTTYPE = NULL
+	ONLINETYPE = NULL
+	DAILYPLANFILIAL = NULL
+	PLAN_CREATEMODE = NULL
+	TREATFILIAL = NULL
+	GARANTNUM = NULL
+	EMRGCOMMENT = NULL
+	SCHLIST = ''
+	BHOUR = 2
+	BMIN = 0
+	FHOUR = 2
+	FMIN = 30
+	CLVISIT = NULL
+	SCHEDLEVEL = 0
+	SUFFICIENTTIME = NULL
+	LIVEQUEUE = NULL
+	DISCCARD = NULL
+	DISCCARDNUM = NULL
+	SCREENVISIT = NULL
+	COMMENT = NULL
+	REFERCOMMENT = NULL
+	RINGUPTIME = NULL
+	TMSTATUSCOMMENT = NULL
+	CALLERID = NULL
+	CLNOTVISIT = NULL
+	NOTVISITTIME = NULL
+	NOTVISIT_UID = NULL
+	DEPNUM = NULL
+	AUTHKEY = '322cf479'
+002654135:000005831 [409040482] SAVE
+002654135:000005840 [] DESCRIBE REPL$CHANGELOG (count 9, length 118)
+	MODIFYDATE: type 16, subtype 0, length 8, scale 0, offset 8
+	ID: type 19, subtype 0, length 8, scale 0, offset 16 [KEY]
+	REPLID: type 19, subtype 0, length 8, scale 0, offset 24
+	REPLGRPID: type 9, subtype 0, length 4, scale 0, offset 32
+	OP: type 9, subtype 0, length 4, scale 0, offset 36
+	OWNGRPID: type 9, subtype 0, length 4, scale 0, offset 40
+	FROMGRPID: type 9, subtype 0, length 4, scale 0, offset 44
+	TOGRPID: type 9, subtype 0, length 4, scale 0, offset 48
+	TABLENAME: type 3, subtype 52, length 66, scale 0, offset 52
+002654135:000006145 [409040482] INSERT REPL$CHANGELOG (length 118) # 1602083601
+	Key: (ID = 225940532)
+	MODIFYDATE = '17-AUG-2021 0:10:40.9740'
+	ID = 225940532
+	REPLID = 1337605
+	REPLGRPID = 15
+	OP = 0
+	OWNGRPID = 15
+	FROMGRPID = 15
+	TOGRPID = 0
+	TABLENAME = 'SCHEDULE'
+002654135:000006227 [409040482] RELEASE
+002654135:000006240 [409040482] SAVE
+002654135:000006249 [409040482] UPDATE SCHEDULE (length 4186) # 1179918231 -> 3192056923
+	Key: (SCHEDID = 151337582)
+	CREATEDATE = '17-AUG-2021 0:10:40.9730'
+	FINISHTREAT = NULL
+	FIXDATE = '17-AUG-2021 0:10:40.9730'
+	WORKDATE = '17-AUG-2021'
+	VISITTIME = NULL
+	MODIFYDATE = '17-AUG-2021 0:10:40.9730' -> '17-AUG-2021 0:10:40.6720'
+	SCHAMOUNT = 0.0000000000000000
+	CALLTIME = NULL -> '17-AUG-2021 0:10:40.6720'
+	EXPORTDATE = NULL
+	STARTTREAT = NULL
+	SPECPROC = NULL
+	SPECPRICEPROC = NULL
+	VISIT_UID = NULL
+	SCHUSLID = NULL
+	KATEG = NULL
+	LSTID = NULL
+	AGRID = NULL
+	GARANTLETTER = NULL
+	PLANID = NULL
+	REFID = 0
+	STATUS = 0
+	DCODE = 150000278
+	PCODE = 150001346
+	TREATCODE = NULL
+	TMSTATUS = NULL
+	UID = 150000278
+	REASID = NULL
+	CHID = 992108299
+	SQID = NULL
+	CASHID = 990000051
+	CLCALL = NULL -> 150000278
+	TALONNUM = NULL
+	REMFROMQ = NULL
+	DCODE1 = NULL
+	TEAMID = 150717574
+	EMID = NULL
+	CREATEUID = NULL
+	CREATORID = 150000278
+	SCHEDID = 151337582
+	ANAESTYPE = NULL
+	HISTID = NULL
+	SECTID = NULL
+	SECTID2 = NULL
+	SPECSERV = NULL
+	SPECSERVPRICE = NULL
+	DISCACCUM = NULL
+	SMTDETID = NULL
+	DIRID = NULL
+	SCHEDIDENT = 150099344
+	RESERVESCHEDID = 0
+	REPRESPCODE = 0
+	FROMPID = NULL
+	QUID = NULL
+	PROTOCOLID = NULL
+	BONUSSYST = NULL
+	TRANSFTIME = NULL
+	PARENTSCHEDID = NULL
+	VISITCALLTIME = NULL
+	PLANTYPE = NULL
+	PLACE_TREATCODE = NULL
+	FROMFILIAL = 15
+	FIXHOUR = 0
+	CALCSTATUS = NULL
+	CHECKSTATUS = NULL
+	FILIAL = 15
+	ABSENCECOUNT = 3
+	RECEIPID = NULL
+	SCHEDTYPE = 1
+	MODIFYFILIAL = NULL
+	GROUPCOUNT = NULL
+	REPL$ID = 1337605
+	REPL$GRPID = 15
+	CALLTYPE = NULL -> 2
+	SMS_SENT = NULL
+	WAITNEARTIME = NULL
+	TREATCOMPLETE = NULL
+	QUEUENUM = NULL
+	BOOKTYPE = NULL
+	REPRESHISTTYPE = NULL
+	ONLINETYPE = NULL
+	DAILYPLANFILIAL = NULL
+	PLAN_CREATEMODE = NULL
+	TREATFILIAL = NULL
+	GARANTNUM = NULL
+	EMRGCOMMENT = NULL
+	SCHLIST = ''
+	BHOUR = 2
+	BMIN = 0
+	FHOUR = 2
+	FMIN = 30
+	CLVISIT = NULL
+	SCHEDLEVEL = 0
+	SUFFICIENTTIME = NULL
+	LIVEQUEUE = NULL
+	DISCCARD = NULL
+	DISCCARDNUM = NULL
+	SCREENVISIT = NULL
+	COMMENT = NULL
+	REFERCOMMENT = NULL
+	RINGUPTIME = NULL
+	TMSTATUSCOMMENT = NULL
+	CALLERID = NULL
+	CLNOTVISIT = NULL
+	NOTVISITTIME = NULL
+	NOTVISIT_UID = NULL
+	DEPNUM = NULL
+	AUTHKEY = '322cf479'
+002654135:000006721 [409040482] SAVE
+002654135:000006730 [409040482] INSERT REPL$CHANGELOG (length 118) # 1583864808
+	Key: (ID = 225940533)
+	MODIFYDATE = '17-AUG-2021 0:10:40.9750'
+	ID = 225940533
+	REPLID = 1337605
+	REPLGRPID = 15
+	OP = 1
+	OWNGRPID = 15
+	FROMGRPID = 15
+	TOGRPID = 0
+	TABLENAME = 'SCHEDULE'
+002654135:000006816 [409040482] RELEASE
+002654135:000006829 [409040482] RELEASE
+002654135:000006842 [409040482] RELEASE
+002654135:000006855 [409040482] RELEASE
+002654135:000006868 [409040482] SAVE
+002654135:000006877 [409040482] SAVE
+002654135:000006886 [409040482] SAVE
+002654135:000006895 [409040482] SAVE
+002654135:000006904 [409040482] SAVE
+002654135:000006913 [409040482] SAVE
+002654135:000006922 [409040482] SAVE
+002654135:000006931 [] DESCRIBE OPERLOG (count 33, length 4727)
+	EVENTTIME: type 16, subtype 0, length 8, scale 0, offset 8
+	RSUM2: type 12, subtype 0, length 8, scale 0, offset 16
+	RSUM1: type 12, subtype 0, length 8, scale 0, offset 24
+	RDATE2: type 16, subtype 0, length 8, scale 0, offset 32
+	RDATE1: type 16, subtype 0, length 8, scale 0, offset 40
+	EVENTDATE: type 16, subtype 0, length 8, scale 0, offset 48
+	EXPORTDATE: type 16, subtype 0, length 8, scale 0, offset 56
+	RDATE3: type 16, subtype 0, length 8, scale 0, offset 64
+	LSTID: type 19, subtype 0, length 8, scale 0, offset 72
+	AGRID: type 19, subtype 0, length 8, scale 0, offset 80
+	DCODE: type 19, subtype 0, length 8, scale 0, offset 88
+	RINT2: type 19, subtype 0, length 8, scale 0, offset 96
+	RINT1: type 19, subtype 0, length 8, scale 0, offset 104
+	PCODE: type 19, subtype 0, length 8, scale 0, offset 112
+	JID: type 19, subtype 0, length 8, scale 0, offset 120
+	UID: type 19, subtype 0, length 8, scale 0, offset 128
+	LGID: type 19, subtype 0, length 8, scale 0, offset 136 [KEY]
+	RINT3: type 19, subtype 0, length 8, scale 0, offset 144
+	CASHID: type 19, subtype 0, length 8, scale 0, offset 152
+	RINT4: type 19, subtype 0, length 8, scale 0, offset 160
+	RINT5: type 19, subtype 0, length 8, scale 0, offset 168
+	FROMPID: type 19, subtype 0, length 8, scale 0, offset 176
+	FILIAL: type 9, subtype 0, length 4, scale 0, offset 184
+	RECEIPID: type 9, subtype 0, length 4, scale 0, offset 188
+	MODULEID: type 9, subtype 0, length 4, scale 0, offset 192
+	REPL$ID: type 9, subtype 0, length 4, scale 0, offset 196
+	REPL$GRPID: type 9, subtype 0, length 4, scale 0, offset 200
+	EVENTTYPE: type 9, subtype 0, length 4, scale 0, offset 204
+	RSTR2: type 3, subtype 52, length 82, scale 0, offset 208
+	UNAME: type 3, subtype 52, length 82, scale 0, offset 290
+	RMEMO: type 3, subtype 52, length 4098, scale 0, offset 372
+	RSTR1: type 3, subtype 52, length 257, scale 0, offset 4470
+002654135:000007935 [409040482] INSERT OPERLOG (length 4727) # 288783138
+	Key: (LGID = -8159999999988048492)
+	EVENTTIME = '17-AUG-2021 0:10:40.6720'
+	RSUM2 = NULL
+	RSUM1 = NULL
+	RDATE2 = NULL
+	RDATE1 = '17-AUG-2021 2:00:00.0000'
+	EVENTDATE = '17-AUG-2021'
+	EXPORTDATE = NULL
+	RDATE3 = NULL
+	LSTID = NULL
+	AGRID = NULL
+	DCODE = 150000278
+	RINT2 = 30
+	RINT1 = NULL
+	PCODE = 150001346
+	JID = NULL
+	UID = 150000278
+	LGID = -8159999999988048492
+	RINT3 = NULL
+	CASHID = 990000051
+	RINT4 = NULL
+	RINT5 = 151337582
+	FROMPID = NULL
+	FILIAL = 15
+	RECEIPID = NULL
+	MODULEID = 1
+	REPL$ID = 24300744
+	REPL$GRPID = 15
+	EVENTTYPE = 29
+	RSTR2 = 'YEKUK-T2-2'
+	UNAME = 'Коростелева Светлана Михайловна'
+	RMEMO = NULL
+	RSTR1 = 'Ахмадеев Радик Сабирович'
+002654135:000008206 [409040482] SAVE
+002654135:000008215 [409040482] INSERT REPL$CHANGELOG (length 118) # 769809691
+	Key: (ID = 225940534)
+	MODIFYDATE = '17-AUG-2021 0:10:40.9770'
+	ID = 225940534
+	REPLID = 24300744
+	REPLGRPID = 15
+	OP = 0
+	OWNGRPID = 15
+	FROMGRPID = 15
+	TOGRPID = 0
+	TABLENAME = 'OPERLOG'
+002654135:000008297 [409040482] RELEASE
+002654135:000008310 [409040482] RELEASE
+002654135:000008323 [409040482] SAVE
+002654135:000008332 [409040482] SAVE
+002654135:000008341 [409040482] SAVE
+002654135:000008350 [409040482] SAVE
+002654135:000008359 [409040482] SAVE
+002654135:000008368 [409040482] SAVE
+002654135:000008377 [409040482] SAVE
+002654135:000008386 [] DESCRIBE CRM_ACTIVITIES (count 22, length 4272)
+	ACTIVITYID: type 19, subtype 0, length 8, scale 0, offset 8 [KEY]
+	LEADID: type 19, subtype 0, length 8, scale 0, offset 16
+	PIPEID: type 19, subtype 0, length 8, scale 0, offset 24
+	PCODE: type 19, subtype 0, length 8, scale 0, offset 32
+	RECTYPE: type 9, subtype 0, length 4, scale 0, offset 40
+	RECID: type 19, subtype 0, length 8, scale 0, offset 48
+	ACTIVITY_DATE: type 16, subtype 0, length 8, scale 0, offset 56
+	COMMENT: type 3, subtype 52, length 4098, scale 0, offset 64
+	ISDELETED: type 9, subtype 0, length 4, scale 0, offset 4164
+	FILIAL: type 9, subtype 0, length 4, scale 0, offset 4168
+	UID: type 19, subtype 0, length 8, scale 0, offset 4176
+	CASHID: type 19, subtype 0, length 8, scale 0, offset 4184
+	STGID: type 9, subtype 0, length 4, scale 0, offset 4192
+	REPL$ID: type 19, subtype 0, length 8, scale 0, offset 4200
+	REPL$GRPID: type 9, subtype 0, length 4, scale 0, offset 4208
+	MODIFYDATE: type 16, subtype 0, length 8, scale 0, offset 4216
+	ACTIVITYDATE: type 16, subtype 0, length 8, scale 0, offset 4224
+	MAIN_RECTYPE: type 9, subtype 0, length 4, scale 0, offset 4232
+	MAIN_RECID: type 19, subtype 0, length 8, scale 0, offset 4240
+	OWNERID: type 19, subtype 0, length 8, scale 0, offset 4248
+	STAGEID: type 19, subtype 0, length 8, scale 0, offset 4256
+	STAGELINKID: type 19, subtype 0, length 8, scale 0, offset 4264
+002654135:000009115 [409040482] INSERT CRM_ACTIVITIES (length 4272) # 1837286013
+	Key: (ACTIVITYID = -8159999999988048492)
+	ACTIVITYID = -8159999999988048492
+	LEADID = 150000971
+	PIPEID = 0
+	PCODE = 150001346
+	RECTYPE = 91
+	RECID = 151337582
+	ACTIVITY_DATE = '17-AUG-2021 0:10:40.9780'
+	COMMENT = ''
+	ISDELETED = 0
+	FILIAL = NULL
+	UID = NULL
+	CASHID = NULL
+	STGID = NULL
+	REPL$ID = 543085
+	REPL$GRPID = 15
+	MODIFYDATE = '17-AUG-2021 0:10:40.9780'
+	ACTIVITYDATE = '17-AUG-2021 2:00:00.0000'
+	MAIN_RECTYPE = NULL
+	MAIN_RECID = NULL
+	OWNERID = NULL
+	STAGEID = 500
+	STAGELINKID = 500
+002654135:000009298 [409040482] RELEASE
+002654135:000009311 [409040482] SAVE
+002654135:000009320 [] DESCRIBE CRM_LEADS (count 24, length 392)
+	LEADID: type 19, subtype 0, length 8, scale 0, offset 8 [KEY]
+	PCODE: type 19, subtype 0, length 8, scale 0, offset 16
+	CREATE_DATE: type 16, subtype 0, length 8, scale 0, offset 24
+	STGID: type 19, subtype 0, length 8, scale 0, offset 32
+	PIPEID: type 9, subtype 0, length 4, scale 0, offset 40
+	ISDELETED: type 9, subtype 0, length 4, scale 0, offset 44
+	CONTACT_NAME: type 3, subtype 52, length 130, scale 0, offset 48
+	CONTACT_PHPREFIX: type 3, subtype 52, length 26, scale 0, offset 178
+	CONTACT_PHONE: type 3, subtype 52, length 66, scale 0, offset 204
+	MODIFY_DATE: type 16, subtype 0, length 8, scale 0, offset 272
+	UID: type 19, subtype 0, length 8, scale 0, offset 280
+	FILIAL: type 9, subtype 0, length 4, scale 0, offset 288
+	REPL$ID: type 19, subtype 0, length 8, scale 0, offset 296
+	REPL$GRPID: type 9, subtype 0, length 4, scale 0, offset 304
+	STARTDATE: type 16, subtype 0, length 8, scale 0, offset 312
+	CLOSEDATE: type 16, subtype 0, length 8, scale 0, offset 320
+	CREATEDATE: type 16, subtype 0, length 8, scale 0, offset 328
+	MODIFYDATE: type 16, subtype 0, length 8, scale 0, offset 336
+	OWNERID: type 19, subtype 0, length 8, scale 0, offset 344
+	PIPELOCK: type 8, subtype 0, length 2, scale 0, offset 352
+	STAGEID: type 19, subtype 0, length 8, scale 0, offset 360
+	STAGELINKID: type 19, subtype 0, length 8, scale 0, offset 368
+	CLOSETYPE: type 9, subtype 0, length 4, scale 0, offset 376
+	PLANCLOSEDATE: type 16, subtype 0, length 8, scale 0, offset 384
+002654135:000010131 [409040482] UPDATE CRM_LEADS (length 392) # 3791523178 -> 2663768485
+	Key: (LEADID = 150000971)
+	LEADID = 150000971
+	PCODE = 150001346
+	CREATE_DATE = '06-NOV-2020 17:06:16.3760'
+	STGID = NULL
+	PIPEID = 0
+	ISDELETED = 0
+	CONTACT_NAME = 'Ахмадеев Радик Сабирович'
+	CONTACT_PHPREFIX = NULL
+	CONTACT_PHONE = NULL
+	MODIFY_DATE = '06-NOV-2020 17:06:16.3760'
+	UID = NULL
+	FILIAL = NULL
+	REPL$ID = 971
+	REPL$GRPID = 15
+	STARTDATE = '06-NOV-2020 16:15:00.0000'
+	CLOSEDATE = NULL
+	CREATEDATE = NULL
+	MODIFYDATE = '14-AUG-2021 7:18:43.4290' -> '17-AUG-2021 0:10:40.9780'
+	OWNERID = NULL
+	PIPELOCK = NULL
+	STAGEID = 500
+	STAGELINKID = 500
+	CLOSETYPE = NULL
+	PLANCLOSEDATE = NULL
+002654135:000010388 [409040482] RELEASE
+002654135:000010401 [409040482] RELEASE
+002654135:000010414 [409040482] RELEASE
+002654135:000010427 [409040482] RELEASE
+002654135:000010440 [409040482] RELEASE
+002654135:000010453 [409040482] RELEASE
+002654135:000010466 [409040482] RELEASE
+002654135:000010479 [409040482] RELEASE
+002654135:000010492 [409040482] RELEASE
+002654135:000010505 [409040482] RELEASE
+002654135:000010518 [409040482] RELEASE
+002654135:000010531 [409040482] RELEASE
+002654135:000010544 [409040482] RELEASE
+002654135:000010557 [409040482] RELEASE
+002654135:000010570 [409040482] RELEASE
+002654135:000010583 [409040482] RELEASE
+002654135:000010596 [409040482] RELEASE
+002654135:000010609 [409040482] SAVE
+002654135:000010618 [409040482] SAVE
+002654135:000010627 [409040482] SAVE
+002654135:000010636 [409040482] SAVE
+002654135:000010645 [409040482] SAVE
+002654135:000010654 [409040482] SAVE
+002654135:000010663 [409040482] UPDATE SCHEDULE (length 4186) # 3192056923 -> 3192056987
+	Key: (SCHEDID = 151337582)
+	CREATEDATE = '17-AUG-2021 0:10:40.9730'
+	FINISHTREAT = NULL
+	FIXDATE = '17-AUG-2021 0:10:40.9730'
+	WORKDATE = '17-AUG-2021'
+	VISITTIME = NULL
+	MODIFYDATE = '17-AUG-2021 0:10:40.6720'
+	SCHAMOUNT = 0.0000000000000000
+	CALLTIME = '17-AUG-2021 0:10:40.6720'
+	EXPORTDATE = NULL
+	STARTTREAT = NULL
+	SPECPROC = NULL
+	SPECPRICEPROC = NULL
+	VISIT_UID = NULL
+	SCHUSLID = NULL
+	KATEG = NULL
+	LSTID = NULL
+	AGRID = NULL
+	GARANTLETTER = NULL
+	PLANID = NULL
+	REFID = 0
+	STATUS = 0
+	DCODE = 150000278
+	PCODE = 150001346
+	TREATCODE = NULL
+	TMSTATUS = NULL
+	UID = 150000278
+	REASID = NULL
+	CHID = 992108299
+	SQID = NULL
+	CASHID = 990000051
+	CLCALL = 150000278
+	TALONNUM = NULL
+	REMFROMQ = NULL
+	DCODE1 = NULL
+	TEAMID = 150717574
+	EMID = NULL
+	CREATEUID = NULL
+	CREATORID = 150000278
+	SCHEDID = 151337582
+	ANAESTYPE = NULL
+	HISTID = NULL
+	SECTID = NULL
+	SECTID2 = NULL
+	SPECSERV = NULL
+	SPECSERVPRICE = NULL
+	DISCACCUM = NULL
+	SMTDETID = NULL
+	DIRID = NULL
+	SCHEDIDENT = 150099344
+	RESERVESCHEDID = 0
+	REPRESPCODE = 0
+	FROMPID = NULL
+	QUID = NULL
+	PROTOCOLID = NULL
+	BONUSSYST = NULL
+	TRANSFTIME = NULL
+	PARENTSCHEDID = NULL
+	VISITCALLTIME = NULL
+	PLANTYPE = NULL
+	PLACE_TREATCODE = NULL
+	FROMFILIAL = 15
+	FIXHOUR = 0
+	CALCSTATUS = NULL -> 0
+	CHECKSTATUS = NULL -> 0
+	FILIAL = 15
+	ABSENCECOUNT = 3
+	RECEIPID = NULL
+	SCHEDTYPE = 1
+	MODIFYFILIAL = NULL
+	GROUPCOUNT = NULL
+	REPL$ID = 1337605
+	REPL$GRPID = 15
+	CALLTYPE = 2
+	SMS_SENT = NULL
+	WAITNEARTIME = NULL
+	TREATCOMPLETE = NULL
+	QUEUENUM = NULL
+	BOOKTYPE = NULL
+	REPRESHISTTYPE = NULL
+	ONLINETYPE = NULL
+	DAILYPLANFILIAL = NULL
+	PLAN_CREATEMODE = NULL
+	TREATFILIAL = NULL
+	GARANTNUM = NULL
+	EMRGCOMMENT = NULL
+	SCHLIST = ''
+	BHOUR = 2
+	BMIN = 0
+	FHOUR = 2
+	FMIN = 30
+	CLVISIT = NULL
+	SCHEDLEVEL = 0
+	SUFFICIENTTIME = NULL
+	LIVEQUEUE = NULL
+	DISCCARD = NULL
+	DISCCARDNUM = NULL
+	SCREENVISIT = NULL
+	COMMENT = NULL
+	REFERCOMMENT = NULL
+	RINGUPTIME = NULL
+	TMSTATUSCOMMENT = NULL
+	CALLERID = NULL
+	CLNOTVISIT = NULL
+	NOTVISITTIME = NULL
+	NOTVISIT_UID = NULL
+	DEPNUM = NULL
+	AUTHKEY = '322cf479'
+002654135:000011156 [409040482] SAVE
+002654135:000011165 [409040482] INSERT REPL$CHANGELOG (length 118) # 2022824936
+	Key: (ID = 225940535)
+	MODIFYDATE = '17-AUG-2021 0:10:41.6610'
+	ID = 225940535
+	REPLID = 1337605
+	REPLGRPID = 15
+	OP = 1
+	OWNGRPID = 15
+	FROMGRPID = 15
+	TOGRPID = 0
+	TABLENAME = 'SCHEDULE'
+002654135:000011251 [409040482] RELEASE
+002654135:000011264 [409040482] RELEASE
+002654135:000011277 [409040482] RELEASE
+002654135:000011290 [409040482] RELEASE
+002654135:000011303 [409040482] RELEASE
+002654135:000011316 [409040482] RELEASE
+002654135:000011329 [409040482] RELEASE
+002654135:000011342 [409040482] COMMIT
+002654135:000011351 [] SET SEQUENCE SCHEDULE_GEN = 151337582
+002654135:000011376 [] SET SEQUENCE TEAM_GEN = 150717574
+002654135:000011397 [] SET SEQUENCE REPL$SCHEDULE_GEN = 1337605
+002654135:000011427 [] SET SEQUENCE REPL$REPL$CHANGELOG_GEN = 225940535
+002654135:000011463 [] SET SEQUENCE OPERLOG_GEN = -8159999999988048492
+002654135:000011487 [] SET SEQUENCE REPL$OPERLOG_GEN = 24300744
+002654135:000011516 [] SET SEQUENCE REPL$CRM_ACTIVITIES_GEN = 543085
+
+-- 2021-08-17 00:10:45.520
+BLOCK 002654135:000011564 (6288 bytes)
+
+002654135:000011564 [409040502] START (session 17975606)
+002654135:000011581 [409040502] SAVE
+002654135:000011590 [409040502] SAVE
+002654135:000011599 [409040502] SAVE
+002654135:000011608 [409040502] SAVE
+002654135:000011617 [409040502] SAVE
+002654135:000011626 [409040502] SAVE
+002654135:000011635 [409040502] SAVE
+002654135:000011644 [409040502] SAVE
+002654135:000011653 [409040502] SAVE
+002654135:000011662 [409040502] SAVE
+002654135:000011671 [409040502] SAVE
+002654135:000011680 [] DESCRIBE SCHEDULE (count 107, length 4186)
+	CREATEDATE: type 16, subtype 0, length 8, scale 0, offset 16
+	FINISHTREAT: type 16, subtype 0, length 8, scale 0, offset 24
+	FIXDATE: type 16, subtype 0, length 8, scale 0, offset 32
+	WORKDATE: type 16, subtype 0, length 8, scale 0, offset 40
+	VISITTIME: type 16, subtype 0, length 8, scale 0, offset 48
+	MODIFYDATE: type 16, subtype 0, length 8, scale 0, offset 56
+	SCHAMOUNT: type 12, subtype 0, length 8, scale 0, offset 64
+	CALLTIME: type 16, subtype 0, length 8, scale 0, offset 72
+	EXPORTDATE: type 16, subtype 0, length 8, scale 0, offset 80
+	STARTTREAT: type 16, subtype 0, length 8, scale 0, offset 88
+	SPECPROC: type 12, subtype 0, length 8, scale 0, offset 96
+	SPECPRICEPROC: type 12, subtype 0, length 8, scale 0, offset 104
+	VISIT_UID: type 19, subtype 0, length 8, scale 0, offset 112
+	SCHUSLID: type 19, subtype 0, length 8, scale 0, offset 120
+	KATEG: type 19, subtype 0, length 8, scale 0, offset 128
+	LSTID: type 19, subtype 0, length 8, scale 0, offset 136
+	AGRID: type 19, subtype 0, length 8, scale 0, offset 144
+	GARANTLETTER: type 19, subtype 0, length 8, scale 0, offset 152
+	PLANID: type 19, subtype 0, length 8, scale 0, offset 160
+	REFID: type 19, subtype 0, length 8, scale 0, offset 168
+	STATUS: type 19, subtype 0, length 8, scale 0, offset 176
+	DCODE: type 19, subtype 0, length 8, scale 0, offset 184
+	PCODE: type 19, subtype 0, length 8, scale 0, offset 192
+	TREATCODE: type 19, subtype 0, length 8, scale 0, offset 200
+	TMSTATUS: type 19, subtype 0, length 8, scale 0, offset 208
+	UID: type 19, subtype 0, length 8, scale 0, offset 216
+	REASID: type 19, subtype 0, length 8, scale 0, offset 224
+	CHID: type 19, subtype 0, length 8, scale 0, offset 232
+	SQID: type 19, subtype 0, length 8, scale 0, offset 240
+	CASHID: type 19, subtype 0, length 8, scale 0, offset 248
+	CLCALL: type 19, subtype 0, length 8, scale 0, offset 256
+	TALONNUM: type 19, subtype 0, length 8, scale 0, offset 264
+	REMFROMQ: type 19, subtype 0, length 8, scale 0, offset 272
+	DCODE1: type 19, subtype 0, length 8, scale 0, offset 280
+	TEAMID: type 19, subtype 0, length 8, scale 0, offset 288
+	EMID: type 19, subtype 0, length 8, scale 0, offset 296
+	CREATEUID: type 19, subtype 0, length 8, scale 0, offset 304
+	CREATORID: type 19, subtype 0, length 8, scale 0, offset 312
+	SCHEDID: type 19, subtype 0, length 8, scale 0, offset 320 [KEY]
+	ANAESTYPE: type 19, subtype 0, length 8, scale 0, offset 328
+	HISTID: type 19, subtype 0, length 8, scale 0, offset 336
+	SECTID: type 19, subtype 0, length 8, scale 0, offset 344
+	SECTID2: type 19, subtype 0, length 8, scale 0, offset 352
+	SPECSERV: type 19, subtype 0, length 8, scale 0, offset 360
+	SPECSERVPRICE: type 19, subtype 0, length 8, scale 0, offset 368
+	DISCACCUM: type 19, subtype 0, length 8, scale 0, offset 376
+	SMTDETID: type 19, subtype 0, length 8, scale 0, offset 384
+	DIRID: type 19, subtype 0, length 8, scale 0, offset 392
+	SCHEDIDENT: type 19, subtype 0, length 8, scale 0, offset 400
+	RESERVESCHEDID: type 19, subtype 0, length 8, scale 0, offset 408
+	REPRESPCODE: type 19, subtype 0, length 8, scale 0, offset 416
+	FROMPID: type 19, subtype 0, length 8, scale 0, offset 424
+	QUID: type 19, subtype 0, length 8, scale 0, offset 432
+	PROTOCOLID: type 19, subtype 0, length 8, scale 0, offset 440
+	BONUSSYST: type 19, subtype 0, length 8, scale 0, offset 448
+	TRANSFTIME: type 16, subtype 0, length 8, scale 0, offset 456
+	PARENTSCHEDID: type 19, subtype 0, length 8, scale 0, offset 464
+	VISITCALLTIME: type 16, subtype 0, length 8, scale 0, offset 472
+	PLANTYPE: type 19, subtype 0, length 8, scale 0, offset 480
+	PLACE_TREATCODE: type 19, subtype 0, length 8, scale 0, offset 488
+	FROMFILIAL: type 9, subtype 0, length 4, scale 0, offset 496
+	FIXHOUR: type 9, subtype 0, length 4, scale 0, offset 500
+	CALCSTATUS: type 9, subtype 0, length 4, scale 0, offset 504
+	CHECKSTATUS: type 9, subtype 0, length 4, scale 0, offset 508
+	FILIAL: type 9, subtype 0, length 4, scale 0, offset 512
+	ABSENCECOUNT: type 9, subtype 0, length 4, scale 0, offset 516
+	RECEIPID: type 9, subtype 0, length 4, scale 0, offset 520
+	SCHEDTYPE: type 9, subtype 0, length 4, scale 0, offset 524
+	MODIFYFILIAL: type 9, subtype 0, length 4, scale 0, offset 528
+	GROUPCOUNT: type 9, subtype 0, length 4, scale 0, offset 532
+	REPL$ID: type 9, subtype 0, length 4, scale 0, offset 536
+	REPL$GRPID: type 9, subtype 0, length 4, scale 0, offset 540
+	CALLTYPE: type 9, subtype 0, length 4, scale 0, offset 544
+	SMS_SENT: type 9, subtype 0, length 4, scale 0, offset 548
+	WAITNEARTIME: type 9, subtype 0, length 4, scale 0, offset 552
+	TREATCOMPLETE: type 9, subtype 0, length 4, scale 0, offset 556
+	QUEUENUM: type 9, subtype 0, length 4, scale 0, offset 560
+	BOOKTYPE: type 9, subtype 0, length 4, scale 0, offset 564
+	REPRESHISTTYPE: type 9, subtype 0, length 4, scale 0, offset 568
+	ONLINETYPE: type 9, subtype 0, length 4, scale 0, offset 572
+	DAILYPLANFILIAL: type 9, subtype 0, length 4, scale 0, offset 576
+	PLAN_CREATEMODE: type 9, subtype 0, length 4, scale 0, offset 580
+	TREATFILIAL: type 9, subtype 0, length 4, scale 0, offset 584
+	GARANTNUM: type 3, subtype 52, length 66, scale 0, offset 588
+	EMRGCOMMENT: type 3, subtype 52, length 1026, scale 0, offset 654
+	SCHLIST: type 3, subtype 52, length 1026, scale 0, offset 1680
+	BHOUR: type 8, subtype 0, length 2, scale 0, offset 2706
+	BMIN: type 8, subtype 0, length 2, scale 0, offset 2708
+	FHOUR: type 8, subtype 0, length 2, scale 0, offset 2710
+	FMIN: type 8, subtype 0, length 2, scale 0, offset 2712
+	CLVISIT: type 8, subtype 0, length 2, scale 0, offset 2714
+	SCHEDLEVEL: type 8, subtype 0, length 2, scale 0, offset 2716
+	SUFFICIENTTIME: type 8, subtype 0, length 2, scale 0, offset 2718
+	LIVEQUEUE: type 8, subtype 0, length 2, scale 0, offset 2720
+	DISCCARD: type 3, subtype 52, length 66, scale 0, offset 2722
+	DISCCARDNUM: type 3, subtype 52, length 66, scale 0, offset 2788
+	SCREENVISIT: type 8, subtype 0, length 2, scale 0, offset 2854
+	COMMENT: type 3, subtype 52, length 257, scale 0, offset 2856
+	REFERCOMMENT: type 3, subtype 52, length 257, scale 0, offset 3114
+	RINGUPTIME: type 3, subtype 52, length 257, scale 0, offset 3372
+	TMSTATUSCOMMENT: type 3, subtype 52, length 257, scale 0, offset 3630
+	CALLERID: type 3, subtype 52, length 257, scale 0, offset 3888
+	CLNOTVISIT: type 8, subtype 0, length 2, scale 0, offset 4146
+	NOTVISITTIME: type 16, subtype 0, length 8, scale 0, offset 4152
+	NOTVISIT_UID: type 19, subtype 0, length 8, scale 0, offset 4160
+	DEPNUM: type 19, subtype 0, length 8, scale 0, offset 4168
+	AUTHKEY: type 3, subtype 52, length 10, scale 0, offset 4176
+002654135:000015199 [409040502] UPDATE SCHEDULE (length 4186) # 3192056987 -> 1159142816
+	Key: (SCHEDID = 151337582)
+	CREATEDATE = '17-AUG-2021 0:10:40.9730'
+	FINISHTREAT = NULL
+	FIXDATE = '17-AUG-2021 0:10:40.9730'
+	WORKDATE = '17-AUG-2021'
+	VISITTIME = NULL -> '17-AUG-2021 2:00:00.0000'
+	MODIFYDATE = '17-AUG-2021 0:10:40.6720' -> '17-AUG-2021 0:10:45.0440'
+	SCHAMOUNT = 0.0000000000000000
+	CALLTIME = '17-AUG-2021 0:10:40.6720'
+	EXPORTDATE = NULL
+	STARTTREAT = NULL
+	SPECPROC = NULL
+	SPECPRICEPROC = NULL
+	VISIT_UID = NULL -> 150000278
+	SCHUSLID = NULL
+	KATEG = NULL
+	LSTID = NULL
+	AGRID = NULL
+	GARANTLETTER = NULL
+	PLANID = NULL
+	REFID = 0
+	STATUS = 0
+	DCODE = 150000278
+	PCODE = 150001346
+	TREATCODE = NULL
+	TMSTATUS = NULL
+	UID = 150000278
+	REASID = NULL
+	CHID = 992108299
+	SQID = NULL
+	CASHID = 990000051
+	CLCALL = 150000278
+	TALONNUM = NULL
+	REMFROMQ = NULL
+	DCODE1 = NULL
+	TEAMID = 150717574
+	EMID = NULL
+	CREATEUID = NULL
+	CREATORID = 150000278
+	SCHEDID = 151337582
+	ANAESTYPE = NULL
+	HISTID = NULL
+	SECTID = NULL
+	SECTID2 = NULL
+	SPECSERV = NULL
+	SPECSERVPRICE = NULL
+	DISCACCUM = NULL
+	SMTDETID = NULL
+	DIRID = NULL
+	SCHEDIDENT = 150099344
+	RESERVESCHEDID = 0
+	REPRESPCODE = 0
+	FROMPID = NULL
+	QUID = NULL
+	PROTOCOLID = NULL
+	BONUSSYST = NULL
+	TRANSFTIME = NULL
+	PARENTSCHEDID = NULL
+	VISITCALLTIME = NULL
+	PLANTYPE = NULL
+	PLACE_TREATCODE = NULL
+	FROMFILIAL = 15
+	FIXHOUR = 0
+	CALCSTATUS = 0
+	CHECKSTATUS = 0
+	FILIAL = 15
+	ABSENCECOUNT = 3
+	RECEIPID = NULL
+	SCHEDTYPE = 1
+	MODIFYFILIAL = NULL
+	GROUPCOUNT = NULL
+	REPL$ID = 1337605
+	REPL$GRPID = 15
+	CALLTYPE = 2
+	SMS_SENT = NULL
+	WAITNEARTIME = NULL
+	TREATCOMPLETE = NULL
+	QUEUENUM = NULL
+	BOOKTYPE = NULL
+	REPRESHISTTYPE = NULL
+	ONLINETYPE = NULL
+	DAILYPLANFILIAL = NULL
+	PLAN_CREATEMODE = NULL
+	TREATFILIAL = NULL
+	GARANTNUM = NULL
+	EMRGCOMMENT = NULL
+	SCHLIST = ''
+	BHOUR = 2
+	BMIN = 0
+	FHOUR = 2
+	FMIN = 30
+	CLVISIT = NULL -> 1
+	SCHEDLEVEL = 0
+	SUFFICIENTTIME = NULL
+	LIVEQUEUE = NULL
+	DISCCARD = NULL
+	DISCCARDNUM = NULL
+	SCREENVISIT = NULL
+	COMMENT = NULL
+	REFERCOMMENT = NULL
+	RINGUPTIME = NULL
+	TMSTATUSCOMMENT = NULL
+	CALLERID = NULL
+	CLNOTVISIT = NULL
+	NOTVISITTIME = NULL
+	NOTVISIT_UID = NULL
+	DEPNUM = NULL
+	AUTHKEY = '322cf479'
+002654135:000015709 [409040502] SAVE
+002654135:000015718 [] DESCRIBE REPL$CHANGELOG (count 9, length 118)
+	MODIFYDATE: type 16, subtype 0, length 8, scale 0, offset 8
+	ID: type 19, subtype 0, length 8, scale 0, offset 16 [KEY]
+	REPLID: type 19, subtype 0, length 8, scale 0, offset 24
+	REPLGRPID: type 9, subtype 0, length 4, scale 0, offset 32
+	OP: type 9, subtype 0, length 4, scale 0, offset 36
+	OWNGRPID: type 9, subtype 0, length 4, scale 0, offset 40
+	FROMGRPID: type 9, subtype 0, length 4, scale 0, offset 44
+	TOGRPID: type 9, subtype 0, length 4, scale 0, offset 48
+	TABLENAME: type 3, subtype 52, length 66, scale 0, offset 52
+002654135:000016023 [409040502] INSERT REPL$CHANGELOG (length 118) # 4250983403
+	Key: (ID = 225940536)
+	MODIFYDATE = '17-AUG-2021 0:10:45.0460'
+	ID = 225940536
+	REPLID = 1337605
+	REPLGRPID = 15
+	OP = 1
+	OWNGRPID = 15
+	FROMGRPID = 15
+	TOGRPID = 0
+	TABLENAME = 'SCHEDULE'
+002654135:000016109 [409040502] RELEASE
+002654135:000016122 [409040502] RELEASE
+002654135:000016135 [409040502] SAVE
+002654135:000016144 [409040502] SAVE
+002654135:000016153 [409040502] SAVE
+002654135:000016162 [409040502] SAVE
+002654135:000016171 [] DESCRIBE OPERLOG (count 33, length 4727)
+	EVENTTIME: type 16, subtype 0, length 8, scale 0, offset 8
+	RSUM2: type 12, subtype 0, length 8, scale 0, offset 16
+	RSUM1: type 12, subtype 0, length 8, scale 0, offset 24
+	RDATE2: type 16, subtype 0, length 8, scale 0, offset 32
+	RDATE1: type 16, subtype 0, length 8, scale 0, offset 40
+	EVENTDATE: type 16, subtype 0, length 8, scale 0, offset 48
+	EXPORTDATE: type 16, subtype 0, length 8, scale 0, offset 56
+	RDATE3: type 16, subtype 0, length 8, scale 0, offset 64
+	LSTID: type 19, subtype 0, length 8, scale 0, offset 72
+	AGRID: type 19, subtype 0, length 8, scale 0, offset 80
+	DCODE: type 19, subtype 0, length 8, scale 0, offset 88
+	RINT2: type 19, subtype 0, length 8, scale 0, offset 96
+	RINT1: type 19, subtype 0, length 8, scale 0, offset 104
+	PCODE: type 19, subtype 0, length 8, scale 0, offset 112
+	JID: type 19, subtype 0, length 8, scale 0, offset 120
+	UID: type 19, subtype 0, length 8, scale 0, offset 128
+	LGID: type 19, subtype 0, length 8, scale 0, offset 136 [KEY]
+	RINT3: type 19, subtype 0, length 8, scale 0, offset 144
+	CASHID: type 19, subtype 0, length 8, scale 0, offset 152
+	RINT4: type 19, subtype 0, length 8, scale 0, offset 160
+	RINT5: type 19, subtype 0, length 8, scale 0, offset 168
+	FROMPID: type 19, subtype 0, length 8, scale 0, offset 176
+	FILIAL: type 9, subtype 0, length 4, scale 0, offset 184
+	RECEIPID: type 9, subtype 0, length 4, scale 0, offset 188
+	MODULEID: type 9, subtype 0, length 4, scale 0, offset 192
+	REPL$ID: type 9, subtype 0, length 4, scale 0, offset 196
+	REPL$GRPID: type 9, subtype 0, length 4, scale 0, offset 200
+	EVENTTYPE: type 9, subtype 0, length 4, scale 0, offset 204
+	RSTR2: type 3, subtype 52, length 82, scale 0, offset 208
+	UNAME: type 3, subtype 52, length 82, scale 0, offset 290
+	RMEMO: type 3, subtype 52, length 4098, scale 0, offset 372
+	RSTR1: type 3, subtype 52, length 257, scale 0, offset 4470
+002654135:000017175 [409040502] INSERT OPERLOG (length 4727) # 2251250545
+	Key: (LGID = -8159999999988048491)
+	EVENTTIME = '17-AUG-2021 0:10:45.0440'
+	RSUM2 = NULL
+	RSUM1 = NULL
+	RDATE2 = NULL
+	RDATE1 = '17-AUG-2021'
+	EVENTDATE = '17-AUG-2021'
+	EXPORTDATE = NULL
+	RDATE3 = NULL
+	LSTID = NULL
+	AGRID = NULL
+	DCODE = 150000278
+	RINT2 = NULL
+	RINT1 = 150000278
+	PCODE = 150001346
+	JID = NULL
+	UID = 150000278
+	LGID = -8159999999988048491
+	RINT3 = NULL
+	CASHID = 990000051
+	RINT4 = NULL
+	RINT5 = NULL
+	FROMPID = NULL
+	FILIAL = 15
+	RECEIPID = NULL
+	MODULEID = 1
+	REPL$ID = 24300745
+	REPL$GRPID = 15
+	EVENTTYPE = 333
+	RSTR2 = 'YEKUK-T2-2'
+	UNAME = 'Коростелева Светлана Михайловна'
+	RMEMO = 'Дата - 17.08.2021 . Время - 02:00-02:30'
+	RSTR1 = 'Ахмадеев Радик Сабирович'
+002654135:000017481 [409040502] SAVE
+002654135:000017490 [409040502] INSERT REPL$CHANGELOG (length 118) # 2398575640
+	Key: (ID = 225940537)
+	MODIFYDATE = '17-AUG-2021 0:10:45.0480'
+	ID = 225940537
+	REPLID = 24300745
+	REPLGRPID = 15
+	OP = 0
+	OWNGRPID = 15
+	FROMGRPID = 15
+	TOGRPID = 0
+	TABLENAME = 'OPERLOG'
+002654135:000017572 [409040502] RELEASE
+002654135:000017585 [409040502] RELEASE
+002654135:000017598 [409040502] RELEASE
+002654135:000017611 [409040502] RELEASE
+002654135:000017624 [409040502] RELEASE
+002654135:000017637 [409040502] RELEASE
+002654135:000017650 [409040502] RELEASE
+002654135:000017663 [409040502] RELEASE
+002654135:000017676 [409040502] RELEASE
+002654135:000017689 [409040502] RELEASE
+002654135:000017702 [409040502] RELEASE
+002654135:000017715 [409040502] RELEASE
+002654135:000017728 [409040502] RELEASE
+002654135:000017741 [409040502] RELEASE
+002654135:000017754 [409040502] COMMIT
+002654135:000017763 [] SET SEQUENCE REPL$REPL$CHANGELOG_GEN = 225940537
+002654135:000017799 [] SET SEQUENCE OPERLOG_GEN = -8159999999988048491
+002654135:000017823 [] SET SEQUENCE REPL$OPERLOG_GEN = 24300745
+
+-- 2021-08-17 00:10:46.8530
+BLOCK 002654135:000017864 (1936 bytes)
+
+002654135:000017864 [409040504] START (session 17975606)
+002654135:000017881 [409040504] SAVE
+002654135:000017890 [409040504] SAVE
+002654135:000017899 [409040504] SAVE
+002654135:000017908 [409040504] SAVE
+002654135:000017917 [409040504] SAVE
+002654135:000017926 [409040504] SAVE
+002654135:000017935 [409040504] SAVE
+002654135:000017944 [409040504] SAVE
+002654135:000017953 [] DESCRIBE OPERLOG (count 33, length 4727)
+	EVENTTIME: type 16, subtype 0, length 8, scale 0, offset 8
+	RSUM2: type 12, subtype 0, length 8, scale 0, offset 16
+	RSUM1: type 12, subtype 0, length 8, scale 0, offset 24
+	RDATE2: type 16, subtype 0, length 8, scale 0, offset 32
+	RDATE1: type 16, subtype 0, length 8, scale 0, offset 40
+	EVENTDATE: type 16, subtype 0, length 8, scale 0, offset 48
+	EXPORTDATE: type 16, subtype 0, length 8, scale 0, offset 56
+	RDATE3: type 16, subtype 0, length 8, scale 0, offset 64
+	LSTID: type 19, subtype 0, length 8, scale 0, offset 72
+	AGRID: type 19, subtype 0, length 8, scale 0, offset 80
+	DCODE: type 19, subtype 0, length 8, scale 0, offset 88
+	RINT2: type 19, subtype 0, length 8, scale 0, offset 96
+	RINT1: type 19, subtype 0, length 8, scale 0, offset 104
+	PCODE: type 19, subtype 0, length 8, scale 0, offset 112
+	JID: type 19, subtype 0, length 8, scale 0, offset 120
+	UID: type 19, subtype 0, length 8, scale 0, offset 128
+	LGID: type 19, subtype 0, length 8, scale 0, offset 136 [KEY]
+	RINT3: type 19, subtype 0, length 8, scale 0, offset 144
+	CASHID: type 19, subtype 0, length 8, scale 0, offset 152
+	RINT4: type 19, subtype 0, length 8, scale 0, offset 160
+	RINT5: type 19, subtype 0, length 8, scale 0, offset 168
+	FROMPID: type 19, subtype 0, length 8, scale 0, offset 176
+	FILIAL: type 9, subtype 0, length 4, scale 0, offset 184
+	RECEIPID: type 9, subtype 0, length 4, scale 0, offset 188
+	MODULEID: type 9, subtype 0, length 4, scale 0, offset 192
+	REPL$ID: type 9, subtype 0, length 4, scale 0, offset 196
+	REPL$GRPID: type 9, subtype 0, length 4, scale 0, offset 200
+	EVENTTYPE: type 9, subtype 0, length 4, scale 0, offset 204
+	RSTR2: type 3, subtype 52, length 82, scale 0, offset 208
+	UNAME: type 3, subtype 52, length 82, scale 0, offset 290
+	RMEMO: type 3, subtype 52, length 4098, scale 0, offset 372
+	RSTR1: type 3, subtype 52, length 257, scale 0, offset 4470
+002654135:000018957 [409040504] INSERT OPERLOG (length 4727) # 3469707422
+	Key: (LGID = -8159999999988048490)
+	EVENTTIME = '17-AUG-2021 0:10:45.2880'
+	RSUM2 = NULL
+	RSUM1 = NULL
+	RDATE2 = NULL
+	RDATE1 = NULL
+	EVENTDATE = '17-AUG-2021'
+	EXPORTDATE = NULL
+	RDATE3 = NULL
+	LSTID = NULL
+	AGRID = NULL
+	DCODE = NULL
+	RINT2 = NULL
+	RINT1 = NULL
+	PCODE = 150001346
+	JID = NULL
+	UID = 150000278
+	LGID = -8159999999988048490
+	RINT3 = NULL
+	CASHID = 990000051
+	RINT4 = NULL
+	RINT5 = NULL
+	FROMPID = NULL
+	FILIAL = 15
+	RECEIPID = NULL
+	MODULEID = 1
+	REPL$ID = 24300746
+	REPL$GRPID = 15
+	EVENTTYPE = 387
+	RSTR2 = 'YEKUK-T2-2'
+	UNAME = 'Коростелева Светлана Михайловна'
+	RMEMO = ''
+	RSTR1 = 'Ахмадеев Радик Сабирович'
+002654135:000019202 [409040504] SAVE
+002654135:000019211 [] DESCRIBE REPL$CHANGELOG (count 9, length 118)
+	MODIFYDATE: type 16, subtype 0, length 8, scale 0, offset 8
+	ID: type 19, subtype 0, length 8, scale 0, offset 16 [KEY]
+	REPLID: type 19, subtype 0, length 8, scale 0, offset 24
+	REPLGRPID: type 9, subtype 0, length 4, scale 0, offset 32
+	OP: type 9, subtype 0, length 4, scale 0, offset 36
+	OWNGRPID: type 9, subtype 0, length 4, scale 0, offset 40
+	FROMGRPID: type 9, subtype 0, length 4, scale 0, offset 44
+	TOGRPID: type 9, subtype 0, length 4, scale 0, offset 48
+	TABLENAME: type 3, subtype 52, length 66, scale 0, offset 52
+002654135:000019516 [409040504] INSERT REPL$CHANGELOG (length 118) # 1368284952
+	Key: (ID = 225940538)
+	MODIFYDATE = '17-AUG-2021 0:10:46.8170'
+	ID = 225940538
+	REPLID = 24300746
+	REPLGRPID = 15
+	OP = 0
+	OWNGRPID = 15
+	FROMGRPID = 15
+	TOGRPID = 0
+	TABLENAME = 'OPERLOG'
+002654135:000019598 [409040504] RELEASE
+002654135:000019611 [409040504] RELEASE
+002654135:000019624 [409040504] RELEASE
+002654135:000019637 [409040504] RELEASE
+002654135:000019650 [409040504] RELEASE
+002654135:000019663 [409040504] RELEASE
+002654135:000019676 [409040504] RELEASE
+002654135:000019689 [409040504] RELEASE
+002654135:000019702 [409040504] COMMIT
+002654135:000019711 [] SET SEQUENCE OPERLOG_GEN = -8159999999988048490
+002654135:000019735 [] SET SEQUENCE REPL$OPERLOG_GEN = 24300746
+002654135:000019764 [] SET SEQUENCE REPL$REPL$CHANGELOG_GEN = 225940538
+
+-- 2021-08-17 00:10:50.7780
+BLOCK 002654135:000019812 (12369 bytes)
+
+002654135:000019812 [409040520] START (session 17975606)
+002654135:000019829 [409040520] SAVE
+002654135:000019838 [409040520] SAVE
+002654135:000019847 [] DESCRIBE TREAT (count 196, length 8224)
+	CRITCOMPLETEDATE: type 16, subtype 0, length 8, scale 0, offset 32
+	CREATEDATE: type 16, subtype 0, length 8, scale 0, offset 40
+	SPECPRICEPROC: type 12, subtype 0, length 8, scale 0, offset 48
+	SPECPROC: type 12, subtype 0, length 8, scale 0, offset 56
+	NEXTSTAGEDATE: type 16, subtype 0, length 8, scale 0, offset 64
+	TALONCOUNT: type 12, subtype 0, length 8, scale 0, offset 72
+	EXPORTDATE: type 16, subtype 0, length 8, scale 0, offset 80
+	MODIFYDATE: type 16, subtype 0, length 8, scale 0, offset 88
+	TREATDATE: type 16, subtype 0, length 8, scale 0, offset 96
+	AMOUNTCL: type 12, subtype 0, length 8, scale 0, offset 104
+	AMOUNTCL_DISC: type 12, subtype 0, length 8, scale 0, offset 112
+	AMOUNTJP: type 12, subtype 0, length 8, scale 0, offset 120
+	AMOUNTJP_DISC: type 12, subtype 0, length 8, scale 0, offset 128
+	CURSCURR: type 12, subtype 0, length 8, scale 0, offset 136
+	UEMK: type 12, subtype 0, length 8, scale 0, offset 144
+	AMOUNTCLUE: type 12, subtype 0, length 8, scale 0, offset 152
+	AMOUNTCLUE_DISC: type 12, subtype 0, length 8, scale 0, offset 160
+	AMOUNTJPUE: type 12, subtype 0, length 8, scale 0, offset 168
+	AMOUNTJPUE_DISC: type 12, subtype 0, length 8, scale 0, offset 176
+	NARADCLOSE: type 16, subtype 0, length 8, scale 0, offset 184
+	CLNSPKOEF: type 12, subtype 0, length 8, scale -4, offset 192
+	JNSPKOEF: type 12, subtype 0, length 8, scale -4, offset 200
+	MANUALKOEF: type 12, subtype 0, length 8, scale -4, offset 208
+	TECHAMOUNT: type 12, subtype 0, length 8, scale 0, offset 216
+	TECHAMOUNTF: type 12, subtype 0, length 8, scale 0, offset 224
+	UDERGDATE: type 16, subtype 0, length 8, scale 0, offset 232
+	CLNDSSUM: type 12, subtype 0, length 8, scale 0, offset 240
+	JPNDSSUM: type 12, subtype 0, length 8, scale 0, offset 248
+	PLANSUMDISC: type 12, subtype 0, length 8, scale 0, offset 256
+	PLANSUMDISC_JP: type 12, subtype 0, length 8, scale 0, offset 264
+	LAB_DATE: type 16, subtype 0, length 8, scale 0, offset 272
+	CHECKDATE: type 16, subtype 0, length 8, scale 0, offset 280
+	DIRECT_DCODE: type 19, subtype 0, length 8, scale 0, offset 288
+	HISTID: type 19, subtype 0, length 8, scale 0, offset 296
+	MANAGER: type 19, subtype 0, length 8, scale 0, offset 304
+	GARANTLETTER: type 19, subtype 0, length 8, scale 0, offset 312
+	PLANID: type 19, subtype 0, length 8, scale 0, offset 320
+	CASHTM: type 19, subtype 0, length 8, scale 0, offset 328
+	SECTID2: type 19, subtype 0, length 8, scale 0, offset 336
+	SPECSERVPRICE: type 19, subtype 0, length 8, scale 0, offset 344
+	TRAVMID: type 19, subtype 0, length 8, scale 0, offset 352
+	REASON: type 19, subtype 0, length 8, scale 0, offset 360
+	SECTID: type 19, subtype 0, length 8, scale 0, offset 368
+	DISCACCUM: type 19, subtype 0, length 8, scale 0, offset 376
+	SPECSERV: type 19, subtype 0, length 8, scale 0, offset 384
+	ASSISTCODE: type 19, subtype 0, length 8, scale 0, offset 392
+	LSTID: type 19, subtype 0, length 8, scale 0, offset 400
+	ORTNARAD: type 19, subtype 0, length 8, scale 0, offset 408
+	JID: type 19, subtype 0, length 8, scale 0, offset 416
+	KATEG: type 19, subtype 0, length 8, scale 0, offset 424
+	PCODE: type 19, subtype 0, length 8, scale 0, offset 432
+	TREATCODE: type 19, subtype 0, length 8, scale 0, offset 440 [KEY]
+	DCODE: type 19, subtype 0, length 8, scale 0, offset 448
+	ORDERNO: type 19, subtype 0, length 8, scale 0, offset 456
+	DGCODE: type 19, subtype 0, length 8, scale 0, offset 464
+	MECHANIC: type 19, subtype 0, length 8, scale 0, offset 472
+	RID: type 19, subtype 0, length 8, scale 0, offset 480
+	DEPNUM: type 19, subtype 0, length 8, scale 0, offset 488
+	AGRJKATEG: type 19, subtype 0, length 8, scale 0, offset 496
+	CLINICID: type 19, subtype 0, length 8, scale 0, offset 504
+	CHAIR: type 19, subtype 0, length 8, scale 0, offset 512
+	TRANSACTID: type 19, subtype 0, length 8, scale 0, offset 520
+	AGESTATUS: type 19, subtype 0, length 8, scale 0, offset 528
+	TYPESTATUS: type 19, subtype 0, length 8, scale 0, offset 536
+	REPDCODE: type 19, subtype 0, length 8, scale 0, offset 544
+	NARDCODE: type 19, subtype 0, length 8, scale 0, offset 552
+	CASHID: type 19, subtype 0, length 8, scale 0, offset 560
+	PAYPLAN: type 19, subtype 0, length 8, scale 0, offset 568
+	UID: type 19, subtype 0, length 8, scale 0, offset 576
+	PROGSERV: type 19, subtype 0, length 8, scale 0, offset 584
+	REFUSEID: type 19, subtype 0, length 8, scale 0, offset 592
+	CONTRACTORID: type 19, subtype 0, length 8, scale 0, offset 600
+	TEAMID: type 19, subtype 0, length 8, scale 0, offset 608
+	TREATPLACE: type 19, subtype 0, length 8, scale 0, offset 616
+	PLACEID: type 19, subtype 0, length 8, scale 0, offset 624
+	CLIENTKATEG: type 19, subtype 0, length 8, scale 0, offset 632
+	CHKSTATUS: type 19, subtype 0, length 8, scale 0, offset 640
+	REKLREASON: type 19, subtype 0, length 8, scale 0, offset 648
+	REKLDAYS: type 19, subtype 0, length 8, scale 0, offset 656
+	GROUPPLANID: type 19, subtype 0, length 8, scale 0, offset 664
+	PROFID: type 19, subtype 0, length 8, scale 0, offset 672
+	DIRID: type 19, subtype 0, length 8, scale 0, offset 680
+	FROMTREATCODE: type 19, subtype 0, length 8, scale 0, offset 688
+	LABGROUPID: type 19, subtype 0, length 8, scale 0, offset 696
+	UXOD_DIRID: type 19, subtype 0, length 8, scale 0, offset 704
+	PROGSERVID: type 19, subtype 0, length 8, scale 0, offset 712
+	VISITGOAL: type 19, subtype 0, length 8, scale 0, offset 720
+	CHECKUID: type 19, subtype 0, length 8, scale 0, offset 728
+	BONUSSYST: type 19, subtype 0, length 8, scale 0, offset 736
+	REPRESPCODE: type 19, subtype 0, length 8, scale 0, offset 744
+	IDMSP: type 19, subtype 0, length 8, scale 0, offset 752
+	SOCID: type 19, subtype 0, length 8, scale 0, offset 760
+	IDPR: type 19, subtype 0, length 8, scale 0, offset 768
+	MEDCARETYPE: type 19, subtype 0, length 8, scale 0, offset 776
+	ACDIDDET: type 19, subtype 0, length 8, scale 0, offset 784
+	PAYPLANPROC: type 12, subtype 0, length 8, scale 0, offset 792
+	HID: type 19, subtype 0, length 8, scale 0, offset 800
+	TRDEPID: type 19, subtype 0, length 8, scale 0, offset 808
+	RIDFROM: type 19, subtype 0, length 8, scale 0, offset 816
+	SPECSERVCITO: type 19, subtype 0, length 8, scale 0, offset 824
+	WRGID: type 19, subtype 0, length 8, scale 0, offset 832
+	EXTJID: type 19, subtype 0, length 8, scale 0, offset 840
+	PLANWDTIME: type 16, subtype 0, length 8, scale 0, offset 848
+	LDID: type 19, subtype 0, length 8, scale 0, offset 856
+	ECLID: type 19, subtype 0, length 8, scale 0, offset 864
+	SERVICEPLACE: type 19, subtype 0, length 8, scale 0, offset 872
+	TREATFORMTYPE: type 19, subtype 0, length 8, scale 0, offset 880
+	PLANTYPE: type 19, subtype 0, length 8, scale 0, offset 888
+	MANUALAMOUNT: type 12, subtype 0, length 8, scale 0, offset 896
+	DIAGNOST: type 9, subtype 0, length 4, scale 0, offset 904
+	NOT_REFER: type 9, subtype 0, length 4, scale 0, offset 908
+	AFTERCONSULT: type 9, subtype 0, length 4, scale 0, offset 912
+	CORRESPWRK: type 9, subtype 0, length 4, scale 0, offset 916
+	NARGOLD: type 9, subtype 0, length 4, scale 0, offset 920
+	TCHECK: type 9, subtype 0, length 4, scale 0, offset 924
+	BULLOPERTYPE: type 9, subtype 0, length 4, scale 0, offset 928
+	SPECCODE: type 9, subtype 0, length 4, scale 0, offset 932
+	FILIAL: type 9, subtype 0, length 4, scale 0, offset 936
+	DGCODE2: type 9, subtype 0, length 4, scale 0, offset 940
+	DGCODE3: type 9, subtype 0, length 4, scale 0, offset 944
+	TRANSACTPAYM: type 9, subtype 0, length 4, scale 0, offset 948
+	SANIR: type 9, subtype 0, length 4, scale 0, offset 952
+	PROFOSM: type 9, subtype 0, length 4, scale 0, offset 956
+	PRIORITY: type 9, subtype 0, length 4, scale 0, offset 960
+	CHECKSTATUS: type 9, subtype 0, length 4, scale 0, offset 964
+	CONSULT: type 9, subtype 0, length 4, scale 0, offset 968
+	TREATMENT: type 9, subtype 0, length 4, scale 0, offset 972
+	NARADSTATUS: type 9, subtype 0, length 4, scale 0, offset 976
+	RECEIPID: type 9, subtype 0, length 4, scale 0, offset 980
+	SCHEDTYPE: type 9, subtype 0, length 4, scale 0, offset 984
+	ISOPERATION: type 9, subtype 0, length 4, scale 0, offset 988
+	REPL$ID: type 9, subtype 0, length 4, scale 0, offset 992
+	REPL$GRPID: type 9, subtype 0, length 4, scale 0, offset 996
+	CHECKTREAT: type 9, subtype 0, length 4, scale 0, offset 1000
+	STATPLACE: type 9, subtype 0, length 4, scale 0, offset 1004
+	NARID: type 9, subtype 0, length 4, scale 0, offset 1008
+	DEPENDENTTREAT: type 9, subtype 0, length 4, scale 0, offset 1012
+	REPRESHISTTYPE: type 9, subtype 0, length 4, scale 0, offset 1016
+	CITO: type 9, subtype 0, length 4, scale 0, offset 1020
+	ONLINETYPE: type 9, subtype 0, length 4, scale 0, offset 1024
+	DAILYPLANFILIAL: type 9, subtype 0, length 4, scale 0, offset 1028
+	PLAN_CREATEMODE: type 9, subtype 0, length 4, scale 0, offset 1032
+	SCHEDFILIAL: type 9, subtype 0, length 4, scale 0, offset 1036
+	NSP: type 3, subtype 52, length 66, scale 0, offset 1040
+	GARANTNUM: type 3, subtype 52, length 66, scale 0, offset 1106
+	NOTR_VIS: type 8, subtype 0, length 2, scale 0, offset 1172
+	TR_VIS: type 8, subtype 0, length 2, scale 0, offset 1174
+	REFTREAT: type 8, subtype 0, length 2, scale 0, offset 1176
+	CONTTREAT: type 8, subtype 0, length 2, scale 0, offset 1178
+	DOCPRIMTREAT: type 8, subtype 0, length 2, scale 0, offset 1180
+	DIAG: type 3, subtype 52, length 1026, scale 0, offset 1182
+	COMPLAINT: type 3, subtype 52, length 1026, scale 0, offset 2208
+	SCHNUM: type 3, subtype 52, length 18, scale 0, offset 3234
+	COMMENT: type 3, subtype 52, length 1026, scale 0, offset 3252
+	ACCESSLEVEL: type 8, subtype 0, length 2, scale 0, offset 4278
+	PRIMTREAT: type 8, subtype 0, length 2, scale 0, offset 4280
+	WTIME: type 8, subtype 0, length 2, scale 0, offset 4282
+	MONTHNUM: type 8, subtype 0, length 2, scale 0, offset 4284
+	YEARNUM: type 8, subtype 0, length 2, scale 0, offset 4286
+	MUCOUS: type 3, subtype 52, length 514, scale 0, offset 4288
+	MEDICAL: type 3, subtype 52, length 514, scale 0, offset 4802
+	STILLNESS: type 3, subtype 52, length 514, scale 0, offset 5316
+	XRAYS: type 3, subtype 52, length 514, scale 0, offset 5830
+	LOCKED: type 8, subtype 0, length 2, scale 0, offset 6344
+	PULSE: type 8, subtype 0, length 2, scale 0, offset 6346
+	HPRESSURE: type 8, subtype 0, length 2, scale 0, offset 6348
+	LPRESSURE: type 8, subtype 0, length 2, scale 0, offset 6350
+	REPEAT: type 8, subtype 0, length 2, scale 0, offset 6352
+	DOCTYPE: type 8, subtype 0, length 2, scale 0, offset 6354
+	PRIMCONSULT: type 8, subtype 0, length 2, scale 0, offset 6356
+	MEDICINE: type 3, subtype 52, length 1026, scale 0, offset 6358
+	DISCCARD: type 3, subtype 52, length 66, scale 0, offset 7384
+	FIRST_INYEAR: type 8, subtype 0, length 2, scale 0, offset 7450
+	DISCCARDNUM: type 3, subtype 52, length 66, scale 0, offset 7452
+	CHECKNUM: type 3, subtype 52, length 50, scale 0, offset 7518
+	PREACCOUNT: type 3, subtype 52, length 18, scale 0, offset 7568
+	STAT_ACCOUNT: type 8, subtype 0, length 2, scale 0, offset 7586
+	BONUSCARDNUM: type 3, subtype 52, length 26, scale 0, offset 7588
+	EXTNARADCODE: type 3, subtype 52, length 26, scale 0, offset 7614
+	SPECSERVTYPE: type 8, subtype 0, length 2, scale 0, offset 7640
+	NOVOR: type 3, subtype 52, length 10, scale 0, offset 7642
+	LPUCODE: type 3, subtype 52, length 50, scale 0, offset 7652
+	PRIMTREATTYPE: type 8, subtype 0, length 2, scale 0, offset 7702
+	EXTLABCODE: type 3, subtype 52, length 26, scale 0, offset 7704
+	EXTCLINICID: type 3, subtype 52, length 66, scale 0, offset 7730
+	EXTDISCCARDNUM: type 3, subtype 52, length 257, scale 0, offset 7796
+	ASSUMEONKO: type 9, subtype 0, length 4, scale 0, offset 8056
+	EXTREFID: type 3, subtype 52, length 66, scale 0, offset 8060
+	FROMPCODE: type 19, subtype 0, length 8, scale 0, offset 8128
+	EXTDEPNUM: type 19, subtype 0, length 8, scale 0, offset 8136
+	EXTSERVPOINTID: type 19, subtype 0, length 8, scale 0, offset 8144
+	EXTCLIENTID: type 3, subtype 52, length 42, scale 0, offset 8152
+	EXTREFDATE: type 16, subtype 0, length 8, scale 0, offset 8200
+	PROGBREAKINGTYPE: type 8, subtype 0, length 2, scale 0, offset 8208
+	PROGBREAKINGREASON: type 19, subtype 0, length 8, scale 0, offset 8216
+002654135:000026289 [409040520] INSERT TREAT (length 8224) # 2014343268
+	Key: (TREATCODE = 156803516)
+	CRITCOMPLETEDATE = NULL
+	CREATEDATE = '17-AUG-2021 0:10:50.7320'
+	SPECPRICEPROC = 0.0000000000000000
+	SPECPROC = 0.0000000000000000
+	NEXTSTAGEDATE = NULL
+	TALONCOUNT = NULL
+	EXPORTDATE = NULL
+	MODIFYDATE = '17-AUG-2021 0:10:50.7320'
+	TREATDATE = '17-AUG-2021'
+	AMOUNTCL = NULL
+	AMOUNTCL_DISC = NULL
+	AMOUNTJP = NULL
+	AMOUNTJP_DISC = NULL
+	CURSCURR = 28.00000000000000
+	UEMK = NULL
+	AMOUNTCLUE = NULL
+	AMOUNTCLUE_DISC = NULL
+	AMOUNTJPUE = NULL
+	AMOUNTJPUE_DISC = NULL
+	NARADCLOSE = NULL
+	CLNSPKOEF = 1.0000
+	JNSPKOEF = 1.0000
+	MANUALKOEF = NULL
+	TECHAMOUNT = NULL
+	TECHAMOUNTF = NULL
+	UDERGDATE = NULL
+	CLNDSSUM = NULL
+	JPNDSSUM = NULL
+	PLANSUMDISC = NULL
+	PLANSUMDISC_JP = NULL
+	LAB_DATE = NULL
+	CHECKDATE = NULL
+	DIRECT_DCODE = NULL
+	HISTID = 150099438
+	MANAGER = NULL
+	GARANTLETTER = 0
+	PLANID = 0
+	CASHTM = NULL
+	SECTID2 = NULL
+	SPECSERVPRICE = 0
+	TRAVMID = NULL
+	REASON = 0
+	SECTID = 4364
+	DISCACCUM = 0
+	SPECSERV = 0
+	ASSISTCODE = 0
+	LSTID = 991520921
+	ORTNARAD = NULL
+	JID = 991520919
+	KATEG = 0
+	PCODE = 150001346
+	TREATCODE = 156803516
+	DCODE = 150000278
+	ORDERNO = 151597379
+	DGCODE = NULL
+	MECHANIC = NULL
+	RID = 992097571
+	DEPNUM = 992097568
+	AGRJKATEG = 14
+	CLINICID = 38
+	CHAIR = NULL
+	TRANSACTID = NULL
+	AGESTATUS = NULL
+	TYPESTATUS = NULL
+	REPDCODE = NULL
+	NARDCODE = NULL
+	CASHID = 990000051
+	PAYPLAN = NULL
+	UID = 150000278
+	PROGSERV = 991786880
+	REFUSEID = NULL
+	CONTRACTORID = NULL
+	TEAMID = 150717574
+	TREATPLACE = 0
+	PLACEID = NULL
+	CLIENTKATEG = NULL
+	CHKSTATUS = NULL
+	REKLREASON = NULL
+	REKLDAYS = NULL
+	GROUPPLANID = 0
+	PROFID = 0
+	DIRID = 0
+	FROMTREATCODE = 0
+	LABGROUPID = NULL
+	UXOD_DIRID = NULL
+	PROGSERVID = 150000447
+	VISITGOAL = 0
+	CHECKUID = NULL
+	BONUSSYST = 0
+	REPRESPCODE = NULL
+	IDMSP = NULL
+	SOCID = 0
+	IDPR = 0
+	MEDCARETYPE = 1
+	ACDIDDET = NULL
+	PAYPLANPROC = NULL
+	HID = NULL
+	TRDEPID = NULL
+	RIDFROM = NULL
+	SPECSERVCITO = 0
+	WRGID = NULL
+	EXTJID = 0
+	PLANWDTIME = NULL
+	LDID = NULL
+	ECLID = NULL
+	SERVICEPLACE = NULL
+	TREATFORMTYPE = 2
+	PLANTYPE = NULL
+	MANUALAMOUNT = NULL
+	DIAGNOST = NULL
+	NOT_REFER = NULL
+	AFTERCONSULT = NULL
+	CORRESPWRK = NULL
+	NARGOLD = NULL
+	TCHECK = NULL
+	BULLOPERTYPE = NULL
+	SPECCODE = NULL
+	FILIAL = 15
+	DGCODE2 = NULL
+	DGCODE3 = NULL
+	TRANSACTPAYM = NULL
+	SANIR = 0
+	PROFOSM = 0
+	PRIORITY = NULL
+	CHECKSTATUS = 0
+	CONSULT = NULL
+	TREATMENT = NULL
+	NARADSTATUS = NULL
+	RECEIPID = NULL
+	SCHEDTYPE = NULL
+	ISOPERATION = NULL
+	REPL$ID = 1549456
+	REPL$GRPID = 15
+	CHECKTREAT = NULL
+	STATPLACE = NULL
+	NARID = NULL
+	DEPENDENTTREAT = 0
+	REPRESHISTTYPE = 0
+	CITO = NULL
+	ONLINETYPE = 0
+	DAILYPLANFILIAL = NULL
+	PLAN_CREATEMODE = NULL
+	SCHEDFILIAL = 15
+	NSP = NULL
+	GARANTNUM = NULL
+	NOTR_VIS = NULL
+	TR_VIS = NULL
+	REFTREAT = 0
+	CONTTREAT = 0
+	DOCPRIMTREAT = 0
+	DIAG = NULL
+	COMPLAINT = NULL
+	SCHNUM = NULL
+	COMMENT = NULL
+	ACCESSLEVEL = 1
+	PRIMTREAT = 0
+	WTIME = NULL
+	MONTHNUM = 8
+	YEARNUM = 2021
+	MUCOUS = NULL
+	MEDICAL = NULL
+	STILLNESS = NULL
+	XRAYS = NULL
+	LOCKED = NULL
+	PULSE = NULL
+	HPRESSURE = NULL
+	LPRESSURE = NULL
+	REPEAT = 0
+	DOCTYPE = 1
+	PRIMCONSULT = 0
+	MEDICINE = NULL
+	DISCCARD = ''
+	FIRST_INYEAR = NULL
+	DISCCARDNUM = ''
+	CHECKNUM = NULL
+	PREACCOUNT = NULL
+	STAT_ACCOUNT = NULL
+	BONUSCARDNUM = NULL
+	EXTNARADCODE = NULL
+	SPECSERVTYPE = 0
+	NOVOR = '0'
+	LPUCODE = NULL
+	PRIMTREATTYPE = 0
+	EXTLABCODE = NULL
+	EXTCLINICID = NULL
+	EXTDISCCARDNUM = ''
+	ASSUMEONKO = NULL
+	EXTREFID = NULL
+	FROMPCODE = NULL
+	EXTDEPNUM = NULL
+	EXTSERVPOINTID = NULL
+	EXTCLIENTID = NULL
+	EXTREFDATE = NULL
+	PROGBREAKINGTYPE = NULL
+	PROGBREAKINGREASON = NULL
+002654135:000026643 [409040520] SAVE
+002654135:000026652 [] DESCRIBE REPL$CHANGELOG (count 9, length 118)
+	MODIFYDATE: type 16, subtype 0, length 8, scale 0, offset 8
+	ID: type 19, subtype 0, length 8, scale 0, offset 16 [KEY]
+	REPLID: type 19, subtype 0, length 8, scale 0, offset 24
+	REPLGRPID: type 9, subtype 0, length 4, scale 0, offset 32
+	OP: type 9, subtype 0, length 4, scale 0, offset 36
+	OWNGRPID: type 9, subtype 0, length 4, scale 0, offset 40
+	FROMGRPID: type 9, subtype 0, length 4, scale 0, offset 44
+	TOGRPID: type 9, subtype 0, length 4, scale 0, offset 48
+	TABLENAME: type 3, subtype 52, length 66, scale 0, offset 52
+002654135:000026957 [409040520] INSERT REPL$CHANGELOG (length 118) # 2507379026
+	Key: (ID = 225940539)
+	MODIFYDATE = '17-AUG-2021 0:10:50.7340'
+	ID = 225940539
+	REPLID = 1549456
+	REPLGRPID = 15
+	OP = 0
+	OWNGRPID = 15
+	FROMGRPID = 15
+	TOGRPID = 0
+	TABLENAME = 'TREAT'
+002654135:000027036 [409040520] RELEASE
+002654135:000027049 [409040520] RELEASE
+002654135:000027062 [409040520] SAVE
+002654135:000027071 [409040520] BLOB 1130:19598860 (length 266) # 1956531778
+	CFF0EEF2EEEAEEEB20EFE5F0E2E8F7EDEEE3EE20EEEFF0E5E4E5EBE5EDE8FF20EAE0F2E5E3EEF0E8E820EFF0E820F1EEE7E4
+	E0EDE8E820EFF0E8E5ECE00D5472656174436F6465202D2031353638303335313620C4E0F2E020E820E2F0E5ECFF202D2031
+	372E30382E3230323120303A30393A33320DCAE0F2E5E3EEF0E8FF20E8E720EAE0F0F2EEF7EAE820F0E5E3E8F1F2F0E0F6E8
+	E8204772436F64203D20302E20486973746964203D203135303039393433380D0ACEF2E1EEF020EFF0E8EAF0E5EFEBE5EDE8
+	E920EFEE20FEF0E8E4E8F7E5F1EAEEECF320EBE8F6F320EFF0E820E4EEE1E0E2EBE5EDE8E820EFF0E8E5ECE00D0A68697374
+	6964203D203135303039393433380D0A
+002654135:000027358 [] DESCRIBE EVENTREPORTLOG (count 10, length 76)
+	ERLID: type 19, subtype 0, length 8, scale 0, offset 8 [KEY]
+	RECID: type 19, subtype 0, length 8, scale 0, offset 16
+	EVENTTYPE: type 19, subtype 0, length 8, scale 0, offset 24
+	REPORTDATE: type 17, subtype 1, length 8, scale 52, offset 32
+	UID: type 19, subtype 0, length 8, scale 0, offset 40
+	MODIFYDATE: type 16, subtype 0, length 8, scale 0, offset 48
+	REPL$ID: type 19, subtype 0, length 8, scale 0, offset 56
+	RECTYPE: type 9, subtype 0, length 4, scale 0, offset 64
+	FILIAL: type 9, subtype 0, length 4, scale 0, offset 68
+	REPL$GRPID: type 9, subtype 0, length 4, scale 0, offset 72
+002654135:000027697 [409040520] INSERT EVENTREPORTLOG (length 76) # 580733880
+	Key: (ERLID = 150910954)
+	ERLID = 150910954
+	RECID = 156803516
+	EVENTTYPE = 1
+	REPORTDATE = BLOB (1130:19598860)
+	UID = 150000278
+	MODIFYDATE = '17-AUG-2021 0:10:50.7370'
+	REPL$ID = 910954
+	RECTYPE = 72
+	FILIAL = 15
+	REPL$GRPID = 15
+002654135:000027792 [409040520] RELEASE
+002654135:000027805 [409040520] SAVE
+002654135:000027814 [] DESCRIBE SCHEDULE (count 107, length 4186)
+	CREATEDATE: type 16, subtype 0, length 8, scale 0, offset 16
+	FINISHTREAT: type 16, subtype 0, length 8, scale 0, offset 24
+	FIXDATE: type 16, subtype 0, length 8, scale 0, offset 32
+	WORKDATE: type 16, subtype 0, length 8, scale 0, offset 40
+	VISITTIME: type 16, subtype 0, length 8, scale 0, offset 48
+	MODIFYDATE: type 16, subtype 0, length 8, scale 0, offset 56
+	SCHAMOUNT: type 12, subtype 0, length 8, scale 0, offset 64
+	CALLTIME: type 16, subtype 0, length 8, scale 0, offset 72
+	EXPORTDATE: type 16, subtype 0, length 8, scale 0, offset 80
+	STARTTREAT: type 16, subtype 0, length 8, scale 0, offset 88
+	SPECPROC: type 12, subtype 0, length 8, scale 0, offset 96
+	SPECPRICEPROC: type 12, subtype 0, length 8, scale 0, offset 104
+	VISIT_UID: type 19, subtype 0, length 8, scale 0, offset 112
+	SCHUSLID: type 19, subtype 0, length 8, scale 0, offset 120
+	KATEG: type 19, subtype 0, length 8, scale 0, offset 128
+	LSTID: type 19, subtype 0, length 8, scale 0, offset 136
+	AGRID: type 19, subtype 0, length 8, scale 0, offset 144
+	GARANTLETTER: type 19, subtype 0, length 8, scale 0, offset 152
+	PLANID: type 19, subtype 0, length 8, scale 0, offset 160
+	REFID: type 19, subtype 0, length 8, scale 0, offset 168
+	STATUS: type 19, subtype 0, length 8, scale 0, offset 176
+	DCODE: type 19, subtype 0, length 8, scale 0, offset 184
+	PCODE: type 19, subtype 0, length 8, scale 0, offset 192
+	TREATCODE: type 19, subtype 0, length 8, scale 0, offset 200
+	TMSTATUS: type 19, subtype 0, length 8, scale 0, offset 208
+	UID: type 19, subtype 0, length 8, scale 0, offset 216
+	REASID: type 19, subtype 0, length 8, scale 0, offset 224
+	CHID: type 19, subtype 0, length 8, scale 0, offset 232
+	SQID: type 19, subtype 0, length 8, scale 0, offset 240
+	CASHID: type 19, subtype 0, length 8, scale 0, offset 248
+	CLCALL: type 19, subtype 0, length 8, scale 0, offset 256
+	TALONNUM: type 19, subtype 0, length 8, scale 0, offset 264
+	REMFROMQ: type 19, subtype 0, length 8, scale 0, offset 272
+	DCODE1: type 19, subtype 0, length 8, scale 0, offset 280
+	TEAMID: type 19, subtype 0, length 8, scale 0, offset 288
+	EMID: type 19, subtype 0, length 8, scale 0, offset 296
+	CREATEUID: type 19, subtype 0, length 8, scale 0, offset 304
+	CREATORID: type 19, subtype 0, length 8, scale 0, offset 312
+	SCHEDID: type 19, subtype 0, length 8, scale 0, offset 320 [KEY]
+	ANAESTYPE: type 19, subtype 0, length 8, scale 0, offset 328
+	HISTID: type 19, subtype 0, length 8, scale 0, offset 336
+	SECTID: type 19, subtype 0, length 8, scale 0, offset 344
+	SECTID2: type 19, subtype 0, length 8, scale 0, offset 352
+	SPECSERV: type 19, subtype 0, length 8, scale 0, offset 360
+	SPECSERVPRICE: type 19, subtype 0, length 8, scale 0, offset 368
+	DISCACCUM: type 19, subtype 0, length 8, scale 0, offset 376
+	SMTDETID: type 19, subtype 0, length 8, scale 0, offset 384
+	DIRID: type 19, subtype 0, length 8, scale 0, offset 392
+	SCHEDIDENT: type 19, subtype 0, length 8, scale 0, offset 400
+	RESERVESCHEDID: type 19, subtype 0, length 8, scale 0, offset 408
+	REPRESPCODE: type 19, subtype 0, length 8, scale 0, offset 416
+	FROMPID: type 19, subtype 0, length 8, scale 0, offset 424
+	QUID: type 19, subtype 0, length 8, scale 0, offset 432
+	PROTOCOLID: type 19, subtype 0, length 8, scale 0, offset 440
+	BONUSSYST: type 19, subtype 0, length 8, scale 0, offset 448
+	TRANSFTIME: type 16, subtype 0, length 8, scale 0, offset 456
+	PARENTSCHEDID: type 19, subtype 0, length 8, scale 0, offset 464
+	VISITCALLTIME: type 16, subtype 0, length 8, scale 0, offset 472
+	PLANTYPE: type 19, subtype 0, length 8, scale 0, offset 480
+	PLACE_TREATCODE: type 19, subtype 0, length 8, scale 0, offset 488
+	FROMFILIAL: type 9, subtype 0, length 4, scale 0, offset 496
+	FIXHOUR: type 9, subtype 0, length 4, scale 0, offset 500
+	CALCSTATUS: type 9, subtype 0, length 4, scale 0, offset 504
+	CHECKSTATUS: type 9, subtype 0, length 4, scale 0, offset 508
+	FILIAL: type 9, subtype 0, length 4, scale 0, offset 512
+	ABSENCECOUNT: type 9, subtype 0, length 4, scale 0, offset 516
+	RECEIPID: type 9, subtype 0, length 4, scale 0, offset 520
+	SCHEDTYPE: type 9, subtype 0, length 4, scale 0, offset 524
+	MODIFYFILIAL: type 9, subtype 0, length 4, scale 0, offset 528
+	GROUPCOUNT: type 9, subtype 0, length 4, scale 0, offset 532
+	REPL$ID: type 9, subtype 0, length 4, scale 0, offset 536
+	REPL$GRPID: type 9, subtype 0, length 4, scale 0, offset 540
+	CALLTYPE: type 9, subtype 0, length 4, scale 0, offset 544
+	SMS_SENT: type 9, subtype 0, length 4, scale 0, offset 548
+	WAITNEARTIME: type 9, subtype 0, length 4, scale 0, offset 552
+	TREATCOMPLETE: type 9, subtype 0, length 4, scale 0, offset 556
+	QUEUENUM: type 9, subtype 0, length 4, scale 0, offset 560
+	BOOKTYPE: type 9, subtype 0, length 4, scale 0, offset 564
+	REPRESHISTTYPE: type 9, subtype 0, length 4, scale 0, offset 568
+	ONLINETYPE: type 9, subtype 0, length 4, scale 0, offset 572
+	DAILYPLANFILIAL: type 9, subtype 0, length 4, scale 0, offset 576
+	PLAN_CREATEMODE: type 9, subtype 0, length 4, scale 0, offset 580
+	TREATFILIAL: type 9, subtype 0, length 4, scale 0, offset 584
+	GARANTNUM: type 3, subtype 52, length 66, scale 0, offset 588
+	EMRGCOMMENT: type 3, subtype 52, length 1026, scale 0, offset 654
+	SCHLIST: type 3, subtype 52, length 1026, scale 0, offset 1680
+	BHOUR: type 8, subtype 0, length 2, scale 0, offset 2706
+	BMIN: type 8, subtype 0, length 2, scale 0, offset 2708
+	FHOUR: type 8, subtype 0, length 2, scale 0, offset 2710
+	FMIN: type 8, subtype 0, length 2, scale 0, offset 2712
+	CLVISIT: type 8, subtype 0, length 2, scale 0, offset 2714
+	SCHEDLEVEL: type 8, subtype 0, length 2, scale 0, offset 2716
+	SUFFICIENTTIME: type 8, subtype 0, length 2, scale 0, offset 2718
+	LIVEQUEUE: type 8, subtype 0, length 2, scale 0, offset 2720
+	DISCCARD: type 3, subtype 52, length 66, scale 0, offset 2722
+	DISCCARDNUM: type 3, subtype 52, length 66, scale 0, offset 2788
+	SCREENVISIT: type 8, subtype 0, length 2, scale 0, offset 2854
+	COMMENT: type 3, subtype 52, length 257, scale 0, offset 2856
+	REFERCOMMENT: type 3, subtype 52, length 257, scale 0, offset 3114
+	RINGUPTIME: type 3, subtype 52, length 257, scale 0, offset 3372
+	TMSTATUSCOMMENT: type 3, subtype 52, length 257, scale 0, offset 3630
+	CALLERID: type 3, subtype 52, length 257, scale 0, offset 3888
+	CLNOTVISIT: type 8, subtype 0, length 2, scale 0, offset 4146
+	NOTVISITTIME: type 16, subtype 0, length 8, scale 0, offset 4152
+	NOTVISIT_UID: type 19, subtype 0, length 8, scale 0, offset 4160
+	DEPNUM: type 19, subtype 0, length 8, scale 0, offset 4168
+	AUTHKEY: type 3, subtype 52, length 10, scale 0, offset 4176
+002654135:000031333 [409040520] UPDATE SCHEDULE (length 4186) # 1159142816 -> 1070658194
+	Key: (SCHEDID = 151337582)
+	CREATEDATE = '17-AUG-2021 0:10:40.9730'
+	FINISHTREAT = NULL
+	FIXDATE = '17-AUG-2021 0:10:40.9730'
+	WORKDATE = '17-AUG-2021'
+	VISITTIME = '17-AUG-2021 2:00:00.0000'
+	MODIFYDATE = '17-AUG-2021 0:10:45.0440' -> '17-AUG-2021 0:10:50.7620'
+	SCHAMOUNT = 0.0000000000000000
+	CALLTIME = '17-AUG-2021 0:10:40.6720'
+	EXPORTDATE = NULL
+	STARTTREAT = NULL
+	SPECPROC = NULL
+	SPECPRICEPROC = NULL
+	VISIT_UID = 150000278
+	SCHUSLID = NULL
+	KATEG = NULL
+	LSTID = NULL
+	AGRID = NULL
+	GARANTLETTER = NULL
+	PLANID = NULL
+	REFID = 0
+	STATUS = 0
+	DCODE = 150000278
+	PCODE = 150001346
+	TREATCODE = NULL -> 156803516
+	TMSTATUS = NULL
+	UID = 150000278
+	REASID = NULL
+	CHID = 992108299
+	SQID = NULL
+	CASHID = 990000051
+	CLCALL = 150000278
+	TALONNUM = NULL
+	REMFROMQ = NULL
+	DCODE1 = NULL
+	TEAMID = 150717574
+	EMID = NULL
+	CREATEUID = NULL
+	CREATORID = 150000278
+	SCHEDID = 151337582
+	ANAESTYPE = NULL
+	HISTID = NULL
+	SECTID = NULL
+	SECTID2 = NULL
+	SPECSERV = NULL
+	SPECSERVPRICE = NULL
+	DISCACCUM = NULL
+	SMTDETID = NULL
+	DIRID = NULL
+	SCHEDIDENT = 150099344
+	RESERVESCHEDID = 0
+	REPRESPCODE = 0
+	FROMPID = NULL
+	QUID = NULL
+	PROTOCOLID = NULL
+	BONUSSYST = NULL
+	TRANSFTIME = NULL
+	PARENTSCHEDID = NULL
+	VISITCALLTIME = NULL
+	PLANTYPE = NULL
+	PLACE_TREATCODE = NULL
+	FROMFILIAL = 15
+	FIXHOUR = 0
+	CALCSTATUS = 0
+	CHECKSTATUS = 0
+	FILIAL = 15
+	ABSENCECOUNT = 3
+	RECEIPID = NULL
+	SCHEDTYPE = 1
+	MODIFYFILIAL = NULL
+	GROUPCOUNT = NULL
+	REPL$ID = 1337605
+	REPL$GRPID = 15
+	CALLTYPE = 2
+	SMS_SENT = NULL
+	WAITNEARTIME = NULL
+	TREATCOMPLETE = NULL
+	QUEUENUM = NULL
+	BOOKTYPE = NULL
+	REPRESHISTTYPE = NULL
+	ONLINETYPE = NULL
+	DAILYPLANFILIAL = NULL
+	PLAN_CREATEMODE = NULL
+	TREATFILIAL = NULL
+	GARANTNUM = NULL
+	EMRGCOMMENT = NULL
+	SCHLIST = ''
+	BHOUR = 2
+	BMIN = 0
+	FHOUR = 2
+	FMIN = 30
+	CLVISIT = 1
+	SCHEDLEVEL = 0
+	SUFFICIENTTIME = NULL
+	LIVEQUEUE = NULL
+	DISCCARD = NULL
+	DISCCARDNUM = NULL
+	SCREENVISIT = NULL
+	COMMENT = NULL
+	REFERCOMMENT = NULL
+	RINGUPTIME = NULL
+	TMSTATUSCOMMENT = NULL
+	CALLERID = NULL
+	CLNOTVISIT = NULL
+	NOTVISITTIME = NULL
+	NOTVISIT_UID = NULL
+	DEPNUM = NULL
+	AUTHKEY = '322cf479'
+002654135:000031867 [409040520] SAVE
+002654135:000031876 [409040520] INSERT REPL$CHANGELOG (length 118) # 3692485610
+	Key: (ID = 225940540)
+	MODIFYDATE = '17-AUG-2021 0:10:50.7630'
+	ID = 225940540
+	REPLID = 1337605
+	REPLGRPID = 15
+	OP = 1
+	OWNGRPID = 15
+	FROMGRPID = 15
+	TOGRPID = 0
+	TABLENAME = 'SCHEDULE'
+002654135:000031962 [409040520] RELEASE
+002654135:000031975 [409040520] RELEASE
+002654135:000031988 [409040520] RELEASE
+002654135:000032001 [409040520] COMMIT
+002654135:000032010 [] SET SEQUENCE CODE_GEN = 156803516
+002654135:000032031 [] SET SEQUENCE ORD_GEN = 151597379
+002654135:000032051 [] SET SEQUENCE REPL$TREAT_GEN = 1549456
+002654135:000032078 [] SET SEQUENCE REPL$REPL$CHANGELOG_GEN = 225940540
+002654135:000032114 [] SET SEQUENCE EVENTREPORTLOG_GEN = 150910954
+002654135:000032145 [] SET SEQUENCE REPL$EVENTREPORTLOG_GEN = 910954
+
+-- 2021-08-17 00:10:50.9960
+BLOCK 002654135:000032193 (613 bytes)
+
+002654135:000032193 [409040530] START (session 17975606)
+002654135:000032210 [409040530] SAVE
+002654135:000032219 [409040530] SAVE
+002654135:000032228 [409040530] SAVE
+002654135:000032237 [409040530] SAVE
+002654135:000032246 [409040530] SAVE
+002654135:000032255 [409040530] SAVE
+002654135:000032264 [409040530] SAVE
+002654135:000032273 [] DESCRIBE TABLELOCK (count 10, length 312)
+	MODIFYDATE: type 16, subtype 0, length 8, scale 0, offset 8
+	LOCKID: type 19, subtype 0, length 8, scale 0, offset 16 [KEY]
+	UID: type 19, subtype 0, length 8, scale 0, offset 24
+	LOCKTYPE: type 9, subtype 0, length 4, scale 0, offset 32 [KEY]
+	FILIAL: type 9, subtype 0, length 4, scale 0, offset 36
+	ATTACHMENT_ID: type 9, subtype 0, length 4, scale 0, offset 40
+	REPL$ID: type 9, subtype 0, length 4, scale 0, offset 44
+	REPL$GRPID: type 9, subtype 0, length 4, scale 0, offset 48
+	USERNAME: type 3, subtype 52, length 130, scale 0, offset 52
+	COMPNAME: type 3, subtype 52, length 130, scale 0, offset 182
+002654135:000032614 [409040530] INSERT TABLELOCK (length 312) # 4007950768
+	Key: (LOCKID = 156803516, LOCKTYPE = 1)
+	MODIFYDATE = '17-AUG-2021 0:10:50.9850'
+	LOCKID = 156803516
+	UID = 15
+	LOCKTYPE = 1
+	FILIAL = 15
+	ATTACHMENT_ID = 17975606
+	REPL$ID = 1751876
+	REPL$GRPID = 15
+	USERNAME = NULL
+	COMPNAME = NULL
+002654135:000032688 [409040530] RELEASE
+002654135:000032701 [409040530] RELEASE
+002654135:000032714 [409040530] RELEASE
+002654135:000032727 [409040530] RELEASE
+002654135:000032740 [409040530] RELEASE
+002654135:000032753 [409040530] RELEASE
+002654135:000032766 [409040530] COMMIT
+002654135:000032775 [] SET SEQUENCE REPL$TABLELOCK_GEN = 1751876
+
+-- 2021-08-17 00:10:51.70
+BLOCK 002654135:000032818 (683 bytes)
+
+002654135:000032818 [409040531] START (session 17975606)
+002654135:000032835 [409040531] SAVE
+002654135:000032844 [409040531] SAVE
+002654135:000032853 [409040531] SAVE
+002654135:000032862 [409040531] SAVE
+002654135:000032871 [409040531] SAVE
+002654135:000032880 [409040531] SAVE
+002654135:000032889 [409040531] SAVE
+002654135:000032898 [] DESCRIBE TABLELOCK (count 10, length 312)
+	MODIFYDATE: type 16, subtype 0, length 8, scale 0, offset 8
+	LOCKID: type 19, subtype 0, length 8, scale 0, offset 16 [KEY]
+	UID: type 19, subtype 0, length 8, scale 0, offset 24
+	LOCKTYPE: type 9, subtype 0, length 4, scale 0, offset 32 [KEY]
+	FILIAL: type 9, subtype 0, length 4, scale 0, offset 36
+	ATTACHMENT_ID: type 9, subtype 0, length 4, scale 0, offset 40
+	REPL$ID: type 9, subtype 0, length 4, scale 0, offset 44
+	REPL$GRPID: type 9, subtype 0, length 4, scale 0, offset 48
+	USERNAME: type 3, subtype 52, length 130, scale 0, offset 52
+	COMPNAME: type 3, subtype 52, length 130, scale 0, offset 182
+002654135:000033239 [409040531] UPDATE TABLELOCK (length 312) # 4007950768 -> 3781940561
+	Key: (LOCKID = 156803516, LOCKTYPE = 1)
+	MODIFYDATE = '17-AUG-2021 0:10:50.9850' -> '17-AUG-2021 0:10:51.0040'
+	LOCKID = 156803516
+	UID = 15 -> 150000278
+	LOCKTYPE = 1
+	FILIAL = 15
+	ATTACHMENT_ID = 17975606
+	REPL$ID = 1751876
+	REPL$GRPID = 15
+	USERNAME = NULL -> 'Коростелева Светлана Михайловна'
+	COMPNAME = NULL -> 'YEKUK-TS2'
+002654135:000033414 [409040531] RELEASE
+002654135:000033427 [409040531] RELEASE
+002654135:000033440 [409040531] RELEASE
+002654135:000033453 [409040531] RELEASE
+002654135:000033466 [409040531] RELEASE
+002654135:000033479 [409040531] RELEASE
+002654135:000033492 [409040531] COMMIT
+

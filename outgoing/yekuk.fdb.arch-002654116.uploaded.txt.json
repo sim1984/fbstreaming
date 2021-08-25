@@ -1,0 +1,238 @@
+[
+  {
+    "TABLE_STATEMENTS": [
+      "INSERT",
+      "UPDATE",
+      "DELETE"
+    ],
+    "transactionNumber": 409035406,
+    "statements": [
+      {
+        "tableName": "CLIENTS",
+        "statementType": "UPDATE",
+        "keyValues": {
+          "PCODE": 150039806
+        },
+        "newFieldValues": {
+          "CLLOGIN": "tritonku96@mail.ru",
+          "WEBACCESSTYPE": 2,
+          "CLMAIL": "tritonku96@mail.ru",
+          "WEBSCHEDTYPE": 1,
+          "CLPASSWORD": "{key}3e8201084d8c6144d5e4a7e0678e445c32cd32ed"
+        },
+        "oldFieldValues": {
+          "ADDRFULL": "Каменск-Уральский, Конструкторов, д. 17",
+          "CREATEDATE": "23-APR-2021 10:48:13.6490",
+          "POL": 1,
+          "HIDECOMMENT": "\"Будь Здоров\" г. Каменск-Уральский для Группы компаний \"СинТЗ\" (без стоматологии)\"",
+          "FILIAL": 15,
+          "UID": 150000366,
+          "PHONE3": "+7(900)212-81-48",
+          "PHONE2": "",
+          "PHONE1": "",
+          "PASPDATE": "28-APR-2016",
+          "DATEEXIT": "31-DEC-2021",
+          "CODELIMITS": "1",
+          "ADDRROOM": "",
+          "DATEENTER": "15-JUL-2021",
+          "CITY_REG": "Каменск-Уральский",
+          "PREPMIDNAME": "НДРВЧ",
+          "OCATD": "65436000000",
+          "DMSID": 156668270,
+          "REPL$ID": 40369,
+          "KLCODE": "66000022000013200",
+          "WORKPLACEID": 150002611,
+          "PASPDEPCODE": "660-021",
+          "REFUSECLMAIL": 1,
+          "TREATCODE": 156443979,
+          "BYEAR": 1996,
+          "PCODE": 150039806,
+          "NATIONALID": 990030676,
+          "PASPPLACE": "отделением уфмс россии по свердловской обл .красногорскокого",
+          "STREETNAME_REG": "Конструкторов",
+          "JID": 991511048,
+          "PASPSER": "65 16",
+          "ADRINDEX": "623416",
+          "PREPLASTNAME": "ХМТВ",
+          "REFUSESMS": 0,
+          "LASTDATEEXIT": "31-DEC-2021",
+          "REPL$GRPID": 15,
+          "MIDNAME": "Андреевич",
+          "FIRSTNAME": "Константин",
+          "PASPNUM": "227195",
+          "PREPFIRSTNAME": "КНСТНТН",
+          "HISTNUM": "150031592",
+          "SECTID": 4365,
+          "NSP": "Пр5955496",
+          "ADDR_REG": "17",
+          "BDATE": "13-APR-1996",
+          "KLADR_ADDRFULL": "обл. Свердловская г. Каменск-Уральский  ул. Конструкторов ",
+          "PREPFULLNAME": "ХМТВ КНСТНТН НДРВЧ",
+          "PASPTYPE": 1,
+          "COMMENT": "15",
+          "KLCODE_REG": "66000022000013200",
+          "FLAT": "",
+          "NORMLASTNAME": "АХМАТОВ",
+          "PERSONTYPE": 1,
+          "CITY": "Каменск-Уральский",
+          "NORMFULLNAME": "АХМАТОВ КОНСТАНТИН АНДРЕЕВИЧ",
+          "BUILD": "",
+          "DISTRICTID": 0,
+          "OCATD_REG": "65436000000",
+          "LASTNAME": "Ахматов",
+          "RCODE": 122525,
+          "FULLNAME": "Ахматов Константин Андреевич",
+          "CORP": "",
+          "KLADR_ADDRFULL_REG": "обл. Свердловская г. Каменск-Уральский  ул. Конструкторов ",
+          "NORMMIDNAME": "АНДРЕЕВИЧ",
+          "JID0": 990001888,
+          "ADRINDEX_REG": "623416",
+          "LSTID": 991517211,
+          "SNILS": "154-170-544 44",
+          "ADDR": "17",
+          "DOCSCOUNT": 1,
+          "NORMFIRSTNAME": "КОНСТАНТИН",
+          "STREETNAME": "Конструкторов"
+        }
+      }
+    ]
+  },
+  {
+    "TABLE_STATEMENTS": [
+      "INSERT",
+      "UPDATE",
+      "DELETE"
+    ],
+    "transactionNumber": 409035416,
+    "statements": [
+      {
+        "tableName": "REPL$CHANGELOGDET",
+        "statementType": "INSERT",
+        "keyValues": {
+          "ID": 225940124,
+          "REPLGRPID": 99
+        },
+        "newFieldValues": {
+          "ID": 225940124,
+          "DTYPE": 1,
+          "MODIFYDATE": "16-AUG-2021 23:47:39.0150",
+          "REPLGRPID": 99
+        },
+        "oldFieldValues": {}
+      }
+    ]
+  },
+  {
+    "TABLE_STATEMENTS": [
+      "INSERT",
+      "UPDATE",
+      "DELETE"
+    ],
+    "transactionNumber": 409035437,
+    "statements": [
+      {
+        "tableName": "REPL$CHANGELOGDET",
+        "statementType": "INSERT",
+        "keyValues": {
+          "ID": 225940125,
+          "REPLGRPID": 99
+        },
+        "newFieldValues": {
+          "ID": 225940125,
+          "DTYPE": 0,
+          "MODIFYDATE": "16-AUG-2021 23:47:43.1400",
+          "REPLGRPID": 99
+        },
+        "oldFieldValues": {}
+      }
+    ]
+  },
+  {
+    "TABLE_STATEMENTS": [
+      "INSERT",
+      "UPDATE",
+      "DELETE"
+    ],
+    "transactionNumber": 409035448,
+    "statements": [
+      {
+        "tableName": "TABLELOCK",
+        "statementType": "UPDATE",
+        "keyValues": {
+          "LOCKTYPE": 1,
+          "LOCKID": 156802402
+        },
+        "newFieldValues": {},
+        "oldFieldValues": {
+          "FILIAL": 15,
+          "UID": 150000278,
+          "COMPNAME": "YEKUK-TS2",
+          "REPL$GRPID": 15,
+          "LOCKTYPE": 1,
+          "REPL$ID": 1751662,
+          "USERNAME": "Коростелева Светлана Михайловна",
+          "ATTACHMENT_ID": 17975606,
+          "LOCKID": 156802402
+        }
+      }
+    ]
+  },
+  {
+    "TABLE_STATEMENTS": [
+      "INSERT",
+      "UPDATE",
+      "DELETE"
+    ],
+    "transactionNumber": 409035492,
+    "statements": [
+      {
+        "tableName": "OPERLOG",
+        "statementType": "INSERT",
+        "keyValues": {
+          "LGID": -8159999999988048531
+        },
+        "newFieldValues": {
+          "CASHID": 990000051,
+          "EVENTTIME": "16-AUG-2021 23:47:53.4320",
+          "REPL$GRPID": 15,
+          "EVENTDATE": "16-AUG-2021",
+          "MODULEID": 1,
+          "RMEMO": "Просмотрен протокол Приём Фельдшера К-У от 16.08.2021. Доктор Коростелева Светлана Михайловна. Пациент Лозвина Светлана Александровна. ",
+          "DCODE": 150000278,
+          "FILIAL": 15,
+          "RINT1": 990000616,
+          "UID": 150000278,
+          "EVENTTYPE": 309,
+          "UNAME": "Коростелева Светлана Михайловна",
+          "RINT3": 151907780,
+          "LGID": -8159999999988048531,
+          "REPL$ID": 24300705,
+          "RSTR1": "Лозвина Светлана Александровна",
+          "RSTR2": "YEKUK-T2-2",
+          "RDATE1": "16-AUG-2021",
+          "PCODE": 150010785
+        },
+        "oldFieldValues": {}
+      },
+      {
+        "tableName": "REPL$CHANGELOG",
+        "statementType": "INSERT",
+        "keyValues": {
+          "ID": 225940126
+        },
+        "newFieldValues": {
+          "OP": 0,
+          "FROMGRPID": 15,
+          "TABLENAME": "OPERLOG",
+          "REPLID": 24300705,
+          "OWNGRPID": 15,
+          "ID": 225940126,
+          "TOGRPID": 0,
+          "MODIFYDATE": "16-AUG-2021 23:47:53.4330",
+          "REPLGRPID": 15
+        },
+        "oldFieldValues": {}
+      }
+    ]
+  }
+]

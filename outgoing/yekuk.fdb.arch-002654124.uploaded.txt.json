@@ -1,0 +1,137 @@
+[
+  {
+    "TABLE_STATEMENTS": [
+      "INSERT",
+      "UPDATE",
+      "DELETE"
+    ],
+    "transactionNumber": 409036292,
+    "statements": [
+      {
+        "tableName": "REPL$CHANGELOGDET",
+        "statementType": "INSERT",
+        "keyValues": {
+          "ID": 225940379,
+          "REPLGRPID": 99
+        },
+        "newFieldValues": {
+          "ID": 225940379,
+          "DTYPE": 0,
+          "MODIFYDATE": "16-AUG-2021 23:50:52.9700",
+          "REPLGRPID": 99
+        },
+        "oldFieldValues": {}
+      }
+    ]
+  },
+  {
+    "TABLE_STATEMENTS": [
+      "INSERT",
+      "UPDATE",
+      "DELETE"
+    ],
+    "transactionNumber": 409036303,
+    "statements": [
+      {
+        "tableName": "OPERLOG",
+        "statementType": "INSERT",
+        "keyValues": {
+          "LGID": -8159999999988048514
+        },
+        "newFieldValues": {
+          "CASHID": 990000051,
+          "EVENTTIME": "16-AUG-2021 23:50:54.1020",
+          "REPL$GRPID": 15,
+          "EVENTDATE": "16-AUG-2021",
+          "MODULEID": 1,
+          "RMEMO": "Просмотрен протокол Приём Фельдшера К-У от 16.08.2021. Доктор Коростелева Светлана Михайловна. Пациент Бутко Александр Анатольевич. ",
+          "DCODE": 150000278,
+          "FILIAL": 15,
+          "RINT1": 990000616,
+          "UID": 150000278,
+          "EVENTTYPE": 309,
+          "UNAME": "Коростелева Светлана Михайловна",
+          "RINT3": 151907920,
+          "LGID": -8159999999988048514,
+          "REPL$ID": 24300722,
+          "RSTR1": "Бутко Александр Анатольевич",
+          "RSTR2": "YEKUK-T2-2",
+          "RDATE1": "16-AUG-2021",
+          "PCODE": 150017235
+        },
+        "oldFieldValues": {}
+      },
+      {
+        "tableName": "REPL$CHANGELOG",
+        "statementType": "INSERT",
+        "keyValues": {
+          "ID": 225940386
+        },
+        "newFieldValues": {
+          "OP": 0,
+          "FROMGRPID": 15,
+          "TABLENAME": "OPERLOG",
+          "REPLID": 24300722,
+          "OWNGRPID": 15,
+          "ID": 225940386,
+          "TOGRPID": 0,
+          "MODIFYDATE": "16-AUG-2021 23:50:54.1030",
+          "REPLGRPID": 15
+        },
+        "oldFieldValues": {}
+      }
+    ]
+  },
+  {
+    "TABLE_STATEMENTS": [
+      "INSERT",
+      "UPDATE",
+      "DELETE"
+    ],
+    "transactionNumber": 409036357,
+    "statements": [
+      {
+        "tableName": "CLREFERRALS",
+        "statementType": "UPDATE",
+        "keyValues": {
+          "REFID": 125239947
+        },
+        "newFieldValues": {
+          "CALC_REPORT": ""
+        },
+        "oldFieldValues": {
+          "REPL$GRPID": 12,
+          "CREATEDATE": "16-AUG-2021 18:35:06.6520",
+          "FILIAL": 12,
+          "UID": 120000221,
+          "REFGROUPID": 0,
+          "TOJID": 0,
+          "REFTYPE": 990073977,
+          "SCHED_DATETIME": "16-AUG-2021 22:15:00.0000",
+          "TOFILIAL": 12,
+          "REFID": 125239947,
+          "REPL$ID": 5126574,
+          "NALKATEG": 1,
+          "FROMFILIAL": 12,
+          "EMRGID": 0,
+          "PRINTUID": 120000221,
+          "FROMDEPART": 990386480,
+          "DIRID": 0,
+          "TREATCODE": -1,
+          "TODCODE": 120002250,
+          "PCODE": 970175539,
+          "EXTREFID": "125239947",
+          "SCHEDDATE": "16-AUG-2021",
+          "TODEPART": 992116844,
+          "SOURCEREFID": 125239947,
+          "DGCODE": 8204,
+          "DISTRIBTYPE": 0,
+          "TREATDATE": "16-AUG-2021",
+          "DCODE": 120000221,
+          "SCHEDDCODE": 120002250,
+          "REFDEPARTS": "992116844"
+        }
+      }
+    ]
+  }
+]

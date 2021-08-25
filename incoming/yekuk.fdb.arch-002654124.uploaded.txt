@@ -1,0 +1,721 @@
+
+-- 2021-08-16 23:50:53.490
+BLOCK 002654124:000000048 (2635 bytes)
+
+002654124:000000048 [409036292] START (session 17996617)
+002654124:000000065 [409036292] SAVE
+002654124:000000074 [409036292] SAVE
+002654124:000000083 [] DESCRIBE REPL$CHANGELOGDET (count 5, length 36)
+	MODIFYDATE: type 16, subtype 0, length 8, scale 0, offset 8
+	ID: type 19, subtype 0, length 8, scale 0, offset 16 [KEY]
+	RECEIPID: type 9, subtype 0, length 4, scale 0, offset 24
+	DTYPE: type 9, subtype 0, length 4, scale 0, offset 28
+	REPLGRPID: type 9, subtype 0, length 4, scale 0, offset 32 [KEY]
+002654124:000000267 [409036292] INSERT REPL$CHANGELOGDET (length 36) # 1520243280
+	Key: (ID = 225940329, REPLGRPID = 99)
+	MODIFYDATE = '16-AUG-2021 23:50:52.9700'
+	ID = 225940329
+	RECEIPID = NULL
+	DTYPE = 0
+	REPLGRPID = 99
+002654124:000000324 [409036292] INSERT REPL$CHANGELOGDET (length 36) # 1520243024
+	Key: (ID = 225940330, REPLGRPID = 99)
+	MODIFYDATE = '16-AUG-2021 23:50:52.9700'
+	ID = 225940330
+	RECEIPID = NULL
+	DTYPE = 0
+	REPLGRPID = 99
+002654124:000000381 [409036292] INSERT REPL$CHANGELOGDET (length 36) # 1520242768
+	Key: (ID = 225940331, REPLGRPID = 99)
+	MODIFYDATE = '16-AUG-2021 23:50:52.9700'
+	ID = 225940331
+	RECEIPID = NULL
+	DTYPE = 0
+	REPLGRPID = 99
+002654124:000000438 [409036292] INSERT REPL$CHANGELOGDET (length 36) # 1520244560
+	Key: (ID = 225940332, REPLGRPID = 99)
+	MODIFYDATE = '16-AUG-2021 23:50:52.9700'
+	ID = 225940332
+	RECEIPID = NULL
+	DTYPE = 0
+	REPLGRPID = 99
+002654124:000000495 [409036292] INSERT REPL$CHANGELOGDET (length 36) # 1520244304
+	Key: (ID = 225940333, REPLGRPID = 99)
+	MODIFYDATE = '16-AUG-2021 23:50:52.9700'
+	ID = 225940333
+	RECEIPID = NULL
+	DTYPE = 0
+	REPLGRPID = 99
+002654124:000000552 [409036292] INSERT REPL$CHANGELOGDET (length 36) # 1520244048
+	Key: (ID = 225940334, REPLGRPID = 99)
+	MODIFYDATE = '16-AUG-2021 23:50:52.9700'
+	ID = 225940334
+	RECEIPID = NULL
+	DTYPE = 0
+	REPLGRPID = 99
+002654124:000000609 [409036292] INSERT REPL$CHANGELOGDET (length 36) # 1520243792
+	Key: (ID = 225940335, REPLGRPID = 99)
+	MODIFYDATE = '16-AUG-2021 23:50:52.9700'
+	ID = 225940335
+	RECEIPID = NULL
+	DTYPE = 0
+	REPLGRPID = 99
+002654124:000000666 [409036292] INSERT REPL$CHANGELOGDET (length 36) # 1520241488
+	Key: (ID = 225940336, REPLGRPID = 99)
+	MODIFYDATE = '16-AUG-2021 23:50:52.9700'
+	ID = 225940336
+	RECEIPID = NULL
+	DTYPE = 0
+	REPLGRPID = 99
+002654124:000000723 [409036292] INSERT REPL$CHANGELOGDET (length 36) # 1520241232
+	Key: (ID = 225940337, REPLGRPID = 99)
+	MODIFYDATE = '16-AUG-2021 23:50:52.9700'
+	ID = 225940337
+	RECEIPID = NULL
+	DTYPE = 0
+	REPLGRPID = 99
+002654124:000000780 [409036292] INSERT REPL$CHANGELOGDET (length 36) # 1520240976
+	Key: (ID = 225940338, REPLGRPID = 99)
+	MODIFYDATE = '16-AUG-2021 23:50:52.9700'
+	ID = 225940338
+	RECEIPID = NULL
+	DTYPE = 0
+	REPLGRPID = 99
+002654124:000000837 [409036292] INSERT REPL$CHANGELOGDET (length 36) # 1520240720
+	Key: (ID = 225940339, REPLGRPID = 99)
+	MODIFYDATE = '16-AUG-2021 23:50:52.9700'
+	ID = 225940339
+	RECEIPID = NULL
+	DTYPE = 0
+	REPLGRPID = 99
+002654124:000000894 [409036292] INSERT REPL$CHANGELOGDET (length 36) # 1520242512
+	Key: (ID = 225940340, REPLGRPID = 99)
+	MODIFYDATE = '16-AUG-2021 23:50:52.9700'
+	ID = 225940340
+	RECEIPID = NULL
+	DTYPE = 0
+	REPLGRPID = 99
+002654124:000000951 [409036292] INSERT REPL$CHANGELOGDET (length 36) # 1520242256
+	Key: (ID = 225940341, REPLGRPID = 99)
+	MODIFYDATE = '16-AUG-2021 23:50:52.9700'
+	ID = 225940341
+	RECEIPID = NULL
+	DTYPE = 0
+	REPLGRPID = 99
+002654124:000001008 [409036292] INSERT REPL$CHANGELOGDET (length 36) # 1520242000
+	Key: (ID = 225940342, REPLGRPID = 99)
+	MODIFYDATE = '16-AUG-2021 23:50:52.9700'
+	ID = 225940342
+	RECEIPID = NULL
+	DTYPE = 0
+	REPLGRPID = 99
+002654124:000001065 [409036292] INSERT REPL$CHANGELOGDET (length 36) # 1520241744
+	Key: (ID = 225940343, REPLGRPID = 99)
+	MODIFYDATE = '16-AUG-2021 23:50:52.9700'
+	ID = 225940343
+	RECEIPID = NULL
+	DTYPE = 0
+	REPLGRPID = 99
+002654124:000001122 [409036292] INSERT REPL$CHANGELOGDET (length 36) # 1520239440
+	Key: (ID = 225940344, REPLGRPID = 99)
+	MODIFYDATE = '16-AUG-2021 23:50:52.9700'
+	ID = 225940344
+	RECEIPID = NULL
+	DTYPE = 0
+	REPLGRPID = 99
+002654124:000001179 [409036292] INSERT REPL$CHANGELOGDET (length 36) # 1520239184
+	Key: (ID = 225940345, REPLGRPID = 99)
+	MODIFYDATE = '16-AUG-2021 23:50:52.9700'
+	ID = 225940345
+	RECEIPID = NULL
+	DTYPE = 0
+	REPLGRPID = 99
+002654124:000001236 [409036292] INSERT REPL$CHANGELOGDET (length 36) # 1520238928
+	Key: (ID = 225940346, REPLGRPID = 99)
+	MODIFYDATE = '16-AUG-2021 23:50:52.9700'
+	ID = 225940346
+	RECEIPID = NULL
+	DTYPE = 0
+	REPLGRPID = 99
+002654124:000001293 [409036292] INSERT REPL$CHANGELOGDET (length 36) # 1520240464
+	Key: (ID = 225940348, REPLGRPID = 99)
+	MODIFYDATE = '16-AUG-2021 23:50:52.9700'
+	ID = 225940348
+	RECEIPID = NULL
+	DTYPE = 0
+	REPLGRPID = 99
+002654124:000001350 [409036292] INSERT REPL$CHANGELOGDET (length 36) # 1520239952
+	Key: (ID = 225940350, REPLGRPID = 99)
+	MODIFYDATE = '16-AUG-2021 23:50:52.9700'
+	ID = 225940350
+	RECEIPID = NULL
+	DTYPE = 0
+	REPLGRPID = 99
+002654124:000001407 [409036292] INSERT REPL$CHANGELOGDET (length 36) # 1520239696
+	Key: (ID = 225940351, REPLGRPID = 99)
+	MODIFYDATE = '16-AUG-2021 23:50:52.9700'
+	ID = 225940351
+	RECEIPID = NULL
+	DTYPE = 0
+	REPLGRPID = 99
+002654124:000001464 [409036292] INSERT REPL$CHANGELOGDET (length 36) # 1520302672
+	Key: (ID = 225940353, REPLGRPID = 99)
+	MODIFYDATE = '16-AUG-2021 23:50:52.9700'
+	ID = 225940353
+	RECEIPID = NULL
+	DTYPE = 0
+	REPLGRPID = 99
+002654124:000001521 [409036292] INSERT REPL$CHANGELOGDET (length 36) # 1520302416
+	Key: (ID = 225940354, REPLGRPID = 99)
+	MODIFYDATE = '16-AUG-2021 23:50:52.9700'
+	ID = 225940354
+	RECEIPID = NULL
+	DTYPE = 0
+	REPLGRPID = 99
+002654124:000001578 [409036292] INSERT REPL$CHANGELOGDET (length 36) # 1520302160
+	Key: (ID = 225940355, REPLGRPID = 99)
+	MODIFYDATE = '16-AUG-2021 23:50:52.9700'
+	ID = 225940355
+	RECEIPID = NULL
+	DTYPE = 0
+	REPLGRPID = 99
+002654124:000001635 [409036292] INSERT REPL$CHANGELOGDET (length 36) # 1520300368
+	Key: (ID = 225940362, REPLGRPID = 99)
+	MODIFYDATE = '16-AUG-2021 23:50:52.9700'
+	ID = 225940362
+	RECEIPID = NULL
+	DTYPE = 0
+	REPLGRPID = 99
+002654124:000001692 [409036292] INSERT REPL$CHANGELOGDET (length 36) # 1520300112
+	Key: (ID = 225940363, REPLGRPID = 99)
+	MODIFYDATE = '16-AUG-2021 23:50:52.9700'
+	ID = 225940363
+	RECEIPID = NULL
+	DTYPE = 0
+	REPLGRPID = 99
+002654124:000001749 [409036292] INSERT REPL$CHANGELOGDET (length 36) # 1520301904
+	Key: (ID = 225940364, REPLGRPID = 99)
+	MODIFYDATE = '16-AUG-2021 23:50:52.9700'
+	ID = 225940364
+	RECEIPID = NULL
+	DTYPE = 0
+	REPLGRPID = 99
+002654124:000001806 [409036292] INSERT REPL$CHANGELOGDET (length 36) # 1520301648
+	Key: (ID = 225940365, REPLGRPID = 99)
+	MODIFYDATE = '16-AUG-2021 23:50:52.9700'
+	ID = 225940365
+	RECEIPID = NULL
+	DTYPE = 0
+	REPLGRPID = 99
+002654124:000001863 [409036292] INSERT REPL$CHANGELOGDET (length 36) # 1520301392
+	Key: (ID = 225940366, REPLGRPID = 99)
+	MODIFYDATE = '16-AUG-2021 23:50:52.9700'
+	ID = 225940366
+	RECEIPID = NULL
+	DTYPE = 0
+	REPLGRPID = 99
+002654124:000001920 [409036292] INSERT REPL$CHANGELOGDET (length 36) # 1520301136
+	Key: (ID = 225940367, REPLGRPID = 99)
+	MODIFYDATE = '16-AUG-2021 23:50:52.9700'
+	ID = 225940367
+	RECEIPID = NULL
+	DTYPE = 0
+	REPLGRPID = 99
+002654124:000001977 [409036292] INSERT REPL$CHANGELOGDET (length 36) # 1520298832
+	Key: (ID = 225940368, REPLGRPID = 99)
+	MODIFYDATE = '16-AUG-2021 23:50:52.9700'
+	ID = 225940368
+	RECEIPID = NULL
+	DTYPE = 0
+	REPLGRPID = 99
+002654124:000002034 [409036292] INSERT REPL$CHANGELOGDET (length 36) # 1520298576
+	Key: (ID = 225940369, REPLGRPID = 99)
+	MODIFYDATE = '16-AUG-2021 23:50:52.9700'
+	ID = 225940369
+	RECEIPID = NULL
+	DTYPE = 0
+	REPLGRPID = 99
+002654124:000002091 [409036292] INSERT REPL$CHANGELOGDET (length 36) # 1520298320
+	Key: (ID = 225940370, REPLGRPID = 99)
+	MODIFYDATE = '16-AUG-2021 23:50:52.9700'
+	ID = 225940370
+	RECEIPID = NULL
+	DTYPE = 0
+	REPLGRPID = 99
+002654124:000002148 [409036292] INSERT REPL$CHANGELOGDET (length 36) # 1520298064
+	Key: (ID = 225940371, REPLGRPID = 99)
+	MODIFYDATE = '16-AUG-2021 23:50:52.9700'
+	ID = 225940371
+	RECEIPID = NULL
+	DTYPE = 0
+	REPLGRPID = 99
+002654124:000002205 [409036292] INSERT REPL$CHANGELOGDET (length 36) # 1520299856
+	Key: (ID = 225940372, REPLGRPID = 99)
+	MODIFYDATE = '16-AUG-2021 23:50:52.9700'
+	ID = 225940372
+	RECEIPID = NULL
+	DTYPE = 0
+	REPLGRPID = 99
+002654124:000002262 [409036292] INSERT REPL$CHANGELOGDET (length 36) # 1520299600
+	Key: (ID = 225940373, REPLGRPID = 99)
+	MODIFYDATE = '16-AUG-2021 23:50:52.9700'
+	ID = 225940373
+	RECEIPID = NULL
+	DTYPE = 0
+	REPLGRPID = 99
+002654124:000002319 [409036292] INSERT REPL$CHANGELOGDET (length 36) # 1520299344
+	Key: (ID = 225940374, REPLGRPID = 99)
+	MODIFYDATE = '16-AUG-2021 23:50:52.9700'
+	ID = 225940374
+	RECEIPID = NULL
+	DTYPE = 0
+	REPLGRPID = 99
+002654124:000002376 [409036292] INSERT REPL$CHANGELOGDET (length 36) # 1520299088
+	Key: (ID = 225940375, REPLGRPID = 99)
+	MODIFYDATE = '16-AUG-2021 23:50:52.9700'
+	ID = 225940375
+	RECEIPID = NULL
+	DTYPE = 0
+	REPLGRPID = 99
+002654124:000002433 [409036292] INSERT REPL$CHANGELOGDET (length 36) # 1520296784
+	Key: (ID = 225940376, REPLGRPID = 99)
+	MODIFYDATE = '16-AUG-2021 23:50:52.9700'
+	ID = 225940376
+	RECEIPID = NULL
+	DTYPE = 0
+	REPLGRPID = 99
+002654124:000002490 [409036292] INSERT REPL$CHANGELOGDET (length 36) # 1520296528
+	Key: (ID = 225940377, REPLGRPID = 99)
+	MODIFYDATE = '16-AUG-2021 23:50:52.9700'
+	ID = 225940377
+	RECEIPID = NULL
+	DTYPE = 0
+	REPLGRPID = 99
+002654124:000002547 [409036292] INSERT REPL$CHANGELOGDET (length 36) # 1520296272
+	Key: (ID = 225940378, REPLGRPID = 99)
+	MODIFYDATE = '16-AUG-2021 23:50:52.9700'
+	ID = 225940378
+	RECEIPID = NULL
+	DTYPE = 0
+	REPLGRPID = 99
+002654124:000002604 [409036292] INSERT REPL$CHANGELOGDET (length 36) # 1520296016
+	Key: (ID = 225940379, REPLGRPID = 99)
+	MODIFYDATE = '16-AUG-2021 23:50:52.9700'
+	ID = 225940379
+	RECEIPID = NULL
+	DTYPE = 0
+	REPLGRPID = 99
+002654124:000002661 [409036292] RELEASE
+002654124:000002674 [409036292] COMMIT
+
+-- 2021-08-16 23:50:53.1670
+BLOCK 002654124:000002695 (9 bytes)
+
+002654124:000002695 [] DISCONNECT (session 17996617)
+
+-- 2021-08-16 23:50:54.1070
+BLOCK 002654124:000002716 (2053 bytes)
+
+002654124:000002716 [409036303] START (session 17975606)
+002654124:000002733 [409036303] SAVE
+002654124:000002742 [409036303] SAVE
+002654124:000002751 [409036303] SAVE
+002654124:000002760 [409036303] SAVE
+002654124:000002769 [409036303] SAVE
+002654124:000002778 [409036303] SAVE
+002654124:000002787 [] DESCRIBE OPERLOG (count 33, length 4727)
+	EVENTTIME: type 16, subtype 0, length 8, scale 0, offset 8
+	RSUM2: type 12, subtype 0, length 8, scale 0, offset 16
+	RSUM1: type 12, subtype 0, length 8, scale 0, offset 24
+	RDATE2: type 16, subtype 0, length 8, scale 0, offset 32
+	RDATE1: type 16, subtype 0, length 8, scale 0, offset 40
+	EVENTDATE: type 16, subtype 0, length 8, scale 0, offset 48
+	EXPORTDATE: type 16, subtype 0, length 8, scale 0, offset 56
+	RDATE3: type 16, subtype 0, length 8, scale 0, offset 64
+	LSTID: type 19, subtype 0, length 8, scale 0, offset 72
+	AGRID: type 19, subtype 0, length 8, scale 0, offset 80
+	DCODE: type 19, subtype 0, length 8, scale 0, offset 88
+	RINT2: type 19, subtype 0, length 8, scale 0, offset 96
+	RINT1: type 19, subtype 0, length 8, scale 0, offset 104
+	PCODE: type 19, subtype 0, length 8, scale 0, offset 112
+	JID: type 19, subtype 0, length 8, scale 0, offset 120
+	UID: type 19, subtype 0, length 8, scale 0, offset 128
+	LGID: type 19, subtype 0, length 8, scale 0, offset 136 [KEY]
+	RINT3: type 19, subtype 0, length 8, scale 0, offset 144
+	CASHID: type 19, subtype 0, length 8, scale 0, offset 152
+	RINT4: type 19, subtype 0, length 8, scale 0, offset 160
+	RINT5: type 19, subtype 0, length 8, scale 0, offset 168
+	FROMPID: type 19, subtype 0, length 8, scale 0, offset 176
+	FILIAL: type 9, subtype 0, length 4, scale 0, offset 184
+	RECEIPID: type 9, subtype 0, length 4, scale 0, offset 188
+	MODULEID: type 9, subtype 0, length 4, scale 0, offset 192
+	REPL$ID: type 9, subtype 0, length 4, scale 0, offset 196
+	REPL$GRPID: type 9, subtype 0, length 4, scale 0, offset 200
+	EVENTTYPE: type 9, subtype 0, length 4, scale 0, offset 204
+	RSTR2: type 3, subtype 52, length 82, scale 0, offset 208
+	UNAME: type 3, subtype 52, length 82, scale 0, offset 290
+	RMEMO: type 3, subtype 52, length 4098, scale 0, offset 372
+	RSTR1: type 3, subtype 52, length 257, scale 0, offset 4470
+002654124:000003791 [409036303] INSERT OPERLOG (length 4727) # 1513143280
+	Key: (LGID = -8159999999988048514)
+	EVENTTIME = '16-AUG-2021 23:50:54.1020'
+	RSUM2 = NULL
+	RSUM1 = NULL
+	RDATE2 = NULL
+	RDATE1 = '16-AUG-2021'
+	EVENTDATE = '16-AUG-2021'
+	EXPORTDATE = NULL
+	RDATE3 = NULL
+	LSTID = NULL
+	AGRID = NULL
+	DCODE = 150000278
+	RINT2 = NULL
+	RINT1 = 990000616
+	PCODE = 150017235
+	JID = NULL
+	UID = 150000278
+	LGID = -8159999999988048514
+	RINT3 = 151907920
+	CASHID = 990000051
+	RINT4 = NULL
+	RINT5 = NULL
+	FROMPID = NULL
+	FILIAL = 15
+	RECEIPID = NULL
+	MODULEID = 1
+	REPL$ID = 24300722
+	REPL$GRPID = 15
+	EVENTTYPE = 309
+	RSTR2 = 'YEKUK-T2-2'
+	UNAME = 'Коростелева Светлана Михайловна'
+	RMEMO = 'Просмотрен протокол Приём Фельдшера К-У от 16.08.2021. Доктор Коростелева Светлана Михайловна. Пациент Бутко Александр Анатольевич. '
+	RSTR1 = 'Бутко Александр Анатольевич'
+002654124:000004197 [409036303] SAVE
+002654124:000004206 [] DESCRIBE REPL$CHANGELOG (count 9, length 118)
+	MODIFYDATE: type 16, subtype 0, length 8, scale 0, offset 8
+	ID: type 19, subtype 0, length 8, scale 0, offset 16 [KEY]
+	REPLID: type 19, subtype 0, length 8, scale 0, offset 24
+	REPLGRPID: type 9, subtype 0, length 4, scale 0, offset 32
+	OP: type 9, subtype 0, length 4, scale 0, offset 36
+	OWNGRPID: type 9, subtype 0, length 4, scale 0, offset 40
+	FROMGRPID: type 9, subtype 0, length 4, scale 0, offset 44
+	TOGRPID: type 9, subtype 0, length 4, scale 0, offset 48
+	TABLENAME: type 3, subtype 52, length 66, scale 0, offset 52
+002654124:000004511 [409036303] INSERT REPL$CHANGELOG (length 118) # 2948273238
+	Key: (ID = 225940386)
+	MODIFYDATE = '16-AUG-2021 23:50:54.1030'
+	ID = 225940386
+	REPLID = 24300722
+	REPLGRPID = 15
+	OP = 0
+	OWNGRPID = 15
+	FROMGRPID = 15
+	TOGRPID = 0
+	TABLENAME = 'OPERLOG'
+002654124:000004593 [409036303] RELEASE
+002654124:000004606 [409036303] RELEASE
+002654124:000004619 [409036303] RELEASE
+002654124:000004632 [409036303] RELEASE
+002654124:000004645 [409036303] RELEASE
+002654124:000004658 [409036303] RELEASE
+002654124:000004671 [409036303] COMMIT
+002654124:000004680 [] SET SEQUENCE OPERLOG_GEN = -8159999999988048514
+002654124:000004704 [] SET SEQUENCE REPL$OPERLOG_GEN = 24300722
+002654124:000004733 [] SET SEQUENCE REPL$REPL$CHANGELOG_GEN = 225940386
+
+-- 2021-08-16 23:51:11.5530
+BLOCK 002654124:000004781 (5497 bytes)
+
+002654124:000004781 [409036357] START (session 17996642)
+002654124:000004798 [409036357] SAVE
+002654124:000004807 [409036357] SAVE
+002654124:000004816 [409036357] BLOB 298:112551368 (length 0) # 0
+002654124:000004837 [] DESCRIBE CLREFERRALS (count 139, length 10696)
+	CHECKEDDATE: type 16, subtype 0, length 8, scale 0, offset 24
+	PRINTDATE: type 16, subtype 0, length 8, scale 0, offset 32
+	PLANDATE: type 16, subtype 0, length 8, scale 0, offset 40
+	DATEENTER: type 16, subtype 0, length 8, scale 0, offset 48
+	SCHEDDATE: type 16, subtype 0, length 8, scale 0, offset 56
+	TREATDATE: type 16, subtype 0, length 8, scale 0, offset 64
+	RTREATDATE: type 16, subtype 0, length 8, scale 0, offset 72
+	MODIFYDATE: type 16, subtype 0, length 8, scale 0, offset 80
+	EXPORTDATE: type 16, subtype 0, length 8, scale 0, offset 88
+	SENDTIME: type 16, subtype 0, length 8, scale 0, offset 96
+	EXTREFDATE: type 16, subtype 0, length 8, scale 0, offset 104
+	CREATEDATE: type 16, subtype 0, length 8, scale 0, offset 112
+	PLANID: type 19, subtype 0, length 8, scale 0, offset 120
+	CHECKEDUID: type 19, subtype 0, length 8, scale 0, offset 128
+	PRINTUID: type 19, subtype 0, length 8, scale 0, offset 136
+	GARANTLETTER: type 19, subtype 0, length 8, scale 0, offset 144
+	TOJID: type 19, subtype 0, length 8, scale 0, offset 152
+	MID: type 19, subtype 0, length 8, scale 0, offset 160
+	SCHEDID: type 19, subtype 0, length 8, scale 0, offset 168
+	REFTYPE: type 19, subtype 0, length 8, scale 0, offset 176
+	REFID: type 19, subtype 0, length 8, scale 0, offset 184 [KEY]
+	SCHEDDCODE: type 19, subtype 0, length 8, scale 0, offset 192
+	PCODE: type 19, subtype 0, length 8, scale 0, offset 200
+	DCODE: type 19, subtype 0, length 8, scale 0, offset 208
+	TREATCODE: type 19, subtype 0, length 8, scale 0, offset 216
+	DGCODE: type 19, subtype 0, length 8, scale 0, offset 224
+	TODCODE: type 19, subtype 0, length 8, scale 0, offset 232
+	TODEPART: type 19, subtype 0, length 8, scale 0, offset 240
+	RDCODE: type 19, subtype 0, length 8, scale 0, offset 248
+	RTREATCODE: type 19, subtype 0, length 8, scale 0, offset 256
+	GOAL: type 19, subtype 0, length 8, scale 0, offset 264
+	FROMDEPART: type 19, subtype 0, length 8, scale 0, offset 272
+	PROFID: type 19, subtype 0, length 8, scale 0, offset 280
+	DIRID: type 19, subtype 0, length 8, scale 0, offset 288
+	REFGROUPID: type 19, subtype 0, length 8, scale 0, offset 296
+	ACDID: type 19, subtype 0, length 8, scale 0, offset 304
+	GROUPPLANID: type 19, subtype 0, length 8, scale 0, offset 312
+	FROMJID: type 19, subtype 0, length 8, scale 0, offset 320
+	FROMPCODE: type 19, subtype 0, length 8, scale 0, offset 328
+	REFIDLINK: type 19, subtype 0, length 8, scale 0, offset 336
+	CRTID: type 19, subtype 0, length 8, scale 0, offset 344
+	UID: type 19, subtype 0, length 8, scale 0, offset 352
+	GRAPHREFID: type 19, subtype 0, length 8, scale 0, offset 360
+	PROTOCOLID: type 19, subtype 0, length 8, scale 0, offset 368
+	EXTDEPNUM: type 19, subtype 0, length 8, scale 0, offset 376
+	EXTSERVPOINTID: type 19, subtype 0, length 8, scale 0, offset 384
+	SOURCEREFID: type 19, subtype 0, length 8, scale 0, offset 392
+	AMOUNTRUB: type 19, subtype 2, length 8, scale -2, offset 400
+	AMOUNTRUBJ: type 19, subtype 2, length 8, scale -2, offset 408
+	AMOUNTRUB_DISC: type 19, subtype 2, length 8, scale -2, offset 416
+	AMOUNTRUBJ_DISC: type 19, subtype 2, length 8, scale -2, offset 424
+	CALC_REPORT: type 17, subtype 1, length 8, scale 52, offset 432
+	AGRID: type 19, subtype 0, length 8, scale 0, offset 440
+	LSTID: type 19, subtype 0, length 8, scale 0, offset 448
+	KATEG: type 19, subtype 0, length 8, scale 0, offset 456
+	FROMSDEPID: type 19, subtype 0, length 8, scale 0, offset 464
+	TOSDEPID: type 19, subtype 0, length 8, scale 0, offset 472
+	PLANDATE_FINISH: type 16, subtype 0, length 8, scale 0, offset 480
+	SQID: type 19, subtype 0, length 8, scale 0, offset 488
+	READYUID: type 19, subtype 0, length 8, scale 0, offset 496
+	SQ_NUMBER: type 19, subtype 0, length 8, scale 0, offset 504
+	RDIRID: type 19, subtype 0, length 8, scale 0, offset 512
+	EMRGID: type 19, subtype 0, length 8, scale 0, offset 520
+	AMBID: type 19, subtype 0, length 8, scale 0, offset 528
+	READYDATE: type 16, subtype 0, length 8, scale 0, offset 536
+	VACTYPE: type 19, subtype 0, length 8, scale 0, offset 544
+	VACID: type 19, subtype 0, length 8, scale 0, offset 552
+	HISTID: type 19, subtype 0, length 8, scale 0, offset 560
+	SPECSERV: type 19, subtype 0, length 8, scale 0, offset 568
+	SPECSERVPRICE: type 19, subtype 0, length 8, scale 0, offset 576
+	SPECPROC: type 12, subtype 0, length 8, scale 0, offset 584
+	SPECPRICEPROC: type 12, subtype 0, length 8, scale 0, offset 592
+	DISCACCUM: type 19, subtype 0, length 8, scale 0, offset 600
+	REFCANCELDATE: type 16, subtype 0, length 8, scale 0, offset 608
+	REFCANCELUID: type 19, subtype 0, length 8, scale 0, offset 616
+	REFCANCELTYPE: type 19, subtype 0, length 8, scale 0, offset 624
+	EMID: type 19, subtype 0, length 8, scale 0, offset 632
+	BONUSSYST: type 19, subtype 0, length 8, scale 0, offset 640
+	CONTRACTORID: type 19, subtype 0, length 8, scale 0, offset 648
+	PLANWDTIME: type 16, subtype 0, length 8, scale 0, offset 656
+	SPECSERVCITO: type 19, subtype 0, length 8, scale 0, offset 664
+	PLANTYPE: type 19, subtype 0, length 8, scale 0, offset 672
+	DIAGDESCTYPE: type 19, subtype 0, length 8, scale 0, offset 680
+	CREATEPLANID: type 19, subtype 0, length 8, scale 0, offset 688
+	BEDPROFILEID: type 19, subtype 0, length 8, scale 0, offset 696
+	FROMCASHID: type 19, subtype 0, length 8, scale 0, offset 704
+	TOCASHID: type 19, subtype 0, length 8, scale 0, offset 712
+	STATINFORMTYPE: type 19, subtype 0, length 8, scale 0, offset 720
+	PLANDATECASHID: type 19, subtype 0, length 8, scale 0, offset 728
+	REFCANCELCASHID: type 19, subtype 0, length 8, scale 0, offset 736
+	REFSTATUSID: type 19, subtype 0, length 8, scale 0, offset 744
+	PROGSERVID: type 19, subtype 0, length 8, scale 0, offset 752
+	PLACE_TREATCODE: type 19, subtype 0, length 8, scale 0, offset 760
+	MEDCONDITION: type 19, subtype 0, length 8, scale 0, offset 768
+	TREAT_TREATDATE: type 16, subtype 0, length 8, scale 0, offset 776
+	TREAT_DCODE: type 19, subtype 0, length 8, scale 0, offset 784
+	CITO: type 9, subtype 0, length 4, scale 0, offset 792
+	DAYCOUNT: type 9, subtype 0, length 4, scale 0, offset 796
+	NALKATEG: type 9, subtype 0, length 4, scale 0, offset 800
+	REPL$GRPID: type 9, subtype 0, length 4, scale 0, offset 804
+	REPL$ID: type 9, subtype 0, length 4, scale 0, offset 808
+	RUNTIME: type 9, subtype 0, length 4, scale 0, offset 812
+	RECEIPID: type 9, subtype 0, length 4, scale 0, offset 816
+	FILIAL: type 9, subtype 0, length 4, scale 0, offset 820
+	FROMFILIAL: type 9, subtype 0, length 4, scale 0, offset 824
+	TOFILIAL: type 9, subtype 0, length 4, scale 0, offset 828
+	READY: type 9, subtype 0, length 4, scale 0, offset 832
+	DISTRIBTYPE: type 9, subtype 0, length 4, scale 0, offset 836
+	FINSOURCE: type 9, subtype 0, length 4, scale 0, offset 840
+	EXTMEDICAL: type 9, subtype 0, length 4, scale 0, offset 844
+	DEPENDENT: type 9, subtype 0, length 4, scale 0, offset 848
+	PLANFILIAL: type 9, subtype 0, length 4, scale 0, offset 852
+	EXPORTSTATE: type 9, subtype 0, length 4, scale 0, offset 856
+	BYEXTERN: type 9, subtype 0, length 4, scale 0, offset 860
+	NEEDSURGERY: type 9, subtype 0, length 4, scale 0, offset 864
+	REPRESHISTTYPE: type 9, subtype 0, length 4, scale 0, offset 868
+	EXTREFID2TYPE: type 9, subtype 0, length 4, scale 0, offset 872
+	FROMDISP: type 9, subtype 0, length 4, scale 0, offset 876
+	EXTREFID: type 3, subtype 52, length 66, scale 0, offset 880
+	FSTATIC: type 8, subtype 0, length 2, scale 0, offset 946
+	SOURCETYPE: type 8, subtype 0, length 2, scale 0, offset 948
+	NAZRATE: type 8, subtype 0, length 2, scale 0, offset 950
+	COMMENT: type 3, subtype 52, length 4098, scale 0, offset 952
+	REFCANCEL: type 8, subtype 0, length 2, scale 0, offset 5050
+	DNAME: type 3, subtype 52, length 130, scale 0, offset 5052
+	CREATEDBYSTAT: type 8, subtype 0, length 2, scale 0, offset 5182
+	DIAGTEXT: type 3, subtype 52, length 4098, scale 0, offset 5184
+	REFCANCELCOMMENT: type 3, subtype 52, length 1026, scale 0, offset 9282
+	EXTREFID2: type 3, subtype 52, length 66, scale 0, offset 10308
+	REFDEPARTS: type 3, subtype 52, length 257, scale 0, offset 10374
+	BSA: type 19, subtype 2, length 8, scale -4, offset 10632
+	DILUTIONSTATE: type 9, subtype 0, length 4, scale 0, offset 10640
+	ASSUMEONKO: type 9, subtype 0, length 4, scale 0, offset 10644
+	RIDFROM: type 19, subtype 0, length 8, scale 0, offset 10648
+	REFRECALC: type 8, subtype 0, length 2, scale 0, offset 10656
+	TREAT_DEPNUM: type 19, subtype 0, length 8, scale 0, offset 10664
+	VRED_GRID: type 19, subtype 0, length 8, scale 0, offset 10672
+	SCHED_DATETIME: type 16, subtype 0, length 8, scale 0, offset 10680
+	PLANEPERIOD_STARTDATE: type 16, subtype 0, length 8, scale 0, offset 10688
+002654124:000009466 [409036357] UPDATE CLREFERRALS (length 10696) # 2816217044 -> 30126581
+	Key: (REFID = 125239947)
+	CHECKEDDATE = NULL
+	PRINTDATE = '16-AUG-2021 18:36:42.4860' -> '16-AUG-2021 21:50:06.1080'
+	PLANDATE = NULL
+	DATEENTER = NULL
+	SCHEDDATE = '16-AUG-2021'
+	TREATDATE = '16-AUG-2021'
+	RTREATDATE = NULL
+	MODIFYDATE = '16-AUG-2021 18:36:42.4860' -> '16-AUG-2021 21:50:06.1080'
+	EXPORTDATE = NULL
+	SENDTIME = NULL
+	EXTREFDATE = NULL
+	CREATEDATE = '16-AUG-2021 18:35:06.6520'
+	PLANID = NULL
+	CHECKEDUID = NULL
+	PRINTUID = 120000221
+	GARANTLETTER = NULL
+	TOJID = 0
+	MID = NULL
+	SCHEDID = NULL
+	REFTYPE = 990073977
+	REFID = 125239947
+	SCHEDDCODE = 120002250
+	PCODE = 970175539
+	DCODE = 120000221
+	TREATCODE = -1
+	DGCODE = 8204
+	TODCODE = 120002250
+	TODEPART = 992116844
+	RDCODE = NULL
+	RTREATCODE = NULL
+	GOAL = NULL
+	FROMDEPART = 990386480
+	PROFID = NULL
+	DIRID = 0
+	REFGROUPID = 0
+	ACDID = NULL
+	GROUPPLANID = NULL
+	FROMJID = NULL
+	FROMPCODE = NULL
+	REFIDLINK = NULL
+	CRTID = NULL
+	UID = 120000221
+	GRAPHREFID = NULL
+	PROTOCOLID = NULL
+	EXTDEPNUM = NULL
+	EXTSERVPOINTID = NULL
+	SOURCEREFID = 125239947
+	AMOUNTRUB = NULL
+	AMOUNTRUBJ = NULL
+	AMOUNTRUB_DISC = NULL
+	AMOUNTRUBJ_DISC = NULL
+	CALC_REPORT = BLOB (298:112547541) -> BLOB (298:112551368)
+	AGRID = NULL
+	LSTID = NULL
+	KATEG = NULL
+	FROMSDEPID = NULL
+	TOSDEPID = NULL
+	PLANDATE_FINISH = NULL
+	SQID = NULL
+	READYUID = NULL
+	SQ_NUMBER = NULL
+	RDIRID = NULL
+	EMRGID = 0
+	AMBID = NULL
+	READYDATE = NULL
+	VACTYPE = NULL
+	VACID = NULL
+	HISTID = NULL
+	SPECSERV = NULL
+	SPECSERVPRICE = NULL
+	SPECPROC = NULL
+	SPECPRICEPROC = NULL
+	DISCACCUM = NULL
+	REFCANCELDATE = NULL
+	REFCANCELUID = NULL
+	REFCANCELTYPE = NULL
+	EMID = NULL
+	BONUSSYST = NULL
+	CONTRACTORID = NULL
+	PLANWDTIME = NULL
+	SPECSERVCITO = NULL
+	PLANTYPE = NULL
+	DIAGDESCTYPE = NULL
+	CREATEPLANID = NULL
+	BEDPROFILEID = NULL
+	FROMCASHID = NULL
+	TOCASHID = NULL
+	STATINFORMTYPE = NULL
+	PLANDATECASHID = NULL
+	REFCANCELCASHID = NULL
+	REFSTATUSID = NULL
+	PROGSERVID = NULL
+	PLACE_TREATCODE = NULL
+	MEDCONDITION = NULL
+	TREAT_TREATDATE = NULL
+	TREAT_DCODE = NULL
+	CITO = NULL
+	DAYCOUNT = NULL
+	NALKATEG = 1
+	REPL$GRPID = 12
+	REPL$ID = 5126574
+	RUNTIME = NULL
+	RECEIPID = NULL
+	FILIAL = 12
+	FROMFILIAL = 12
+	TOFILIAL = 12
+	READY = NULL
+	DISTRIBTYPE = 0
+	FINSOURCE = NULL
+	EXTMEDICAL = NULL
+	DEPENDENT = NULL
+	PLANFILIAL = NULL
+	EXPORTSTATE = NULL
+	BYEXTERN = NULL
+	NEEDSURGERY = NULL
+	REPRESHISTTYPE = NULL
+	EXTREFID2TYPE = NULL
+	FROMDISP = NULL
+	EXTREFID = '125239947'
+	FSTATIC = NULL
+	SOURCETYPE = NULL
+	NAZRATE = NULL
+	COMMENT = NULL
+	REFCANCEL = NULL
+	DNAME = NULL
+	CREATEDBYSTAT = NULL
+	DIAGTEXT = NULL
+	REFCANCELCOMMENT = NULL
+	EXTREFID2 = NULL
+	REFDEPARTS = '992116844'
+	BSA = NULL
+	DILUTIONSTATE = NULL
+	ASSUMEONKO = NULL
+	RIDFROM = NULL
+	REFRECALC = NULL
+	TREAT_DEPNUM = NULL
+	VRED_GRID = NULL
+	SCHED_DATETIME = '16-AUG-2021 22:15:00.0000'
+	PLANEPERIOD_STARTDATE = NULL
+002654124:000010256 [409036357] RELEASE
+002654124:000010269 [409036357] COMMIT
+
+-- 2021-08-16 23:51:11.5890
+BLOCK 002654124:000010290 (9 bytes)
+
+002654124:000010290 [] DISCONNECT (session 17996642)
+

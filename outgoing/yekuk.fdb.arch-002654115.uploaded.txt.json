@@ -1,0 +1,1558 @@
+[
+  {
+    "TABLE_STATEMENTS": [
+      "INSERT",
+      "UPDATE",
+      "DELETE"
+    ],
+    "transactionNumber": 409034953,
+    "statements": [
+      {
+        "tableName": "TREAT",
+        "statementType": "UPDATE",
+        "keyValues": {
+          "TREATCODE": 156802582
+        },
+        "newFieldValues": {},
+        "oldFieldValues": {
+          "UEMK": 0.0,
+          "TREATMENT": 1,
+          "MANUALKOEF": 1.0,
+          "CLNDSSUM": 0.0,
+          "SCHEDFILIAL": 15,
+          "SPECPROC": 0.0,
+          "CURSCURR": 28.0,
+          "PLANSUMDISC_JP": 0.0,
+          "CREATEDATE": "16-AUG-2021 16:50:48.0000",
+          "FILIAL": 15,
+          "UID": 150000278,
+          "AFTERCONSULT": 0,
+          "PRIMTREAT": 0,
+          "REPEAT": 0,
+          "AMOUNTJP_DISC": 273.0,
+          "CONSULT": 0,
+          "JNSPKOEF": 1.0,
+          "DISCACCUM": 0,
+          "SANIR": 0,
+          "TALONCOUNT": 3.0,
+          "TREATFORMTYPE": 2,
+          "CHECKSTATUS": 0,
+          "MEDCARETYPE": 1,
+          "SOCID": 1,
+          "REPL$ID": 1549298,
+          "JPNDSSUM": 0.0,
+          "IDPR": 0,
+          "PRIORITY": 2,
+          "PROGSERV": 0,
+          "AMOUNTJP": 273.0,
+          "VISITGOAL": 0,
+          "CONTTREAT": 0,
+          "MONTHNUM": 8,
+          "AMOUNTJPUE": 9.75,
+          "TREATCODE": 156802582,
+          "PROFOSM": 0,
+          "DOCPRIMTREAT": 0,
+          "SPECSERVPRICE": 0,
+          "HISTID": 150078399,
+          "PCODE": 150000074,
+          "AMOUNTJPUE_DISC": 9.75,
+          "SCHEDTYPE": 1,
+          "PLANID": 0,
+          "PRIMCONSULT": 0,
+          "AMOUNTCL_DISC": 0.0,
+          "DGCODE": 3435,
+          "JID": 991511056,
+          "TREATDATE": "16-AUG-2021",
+          "SPECPRICEPROC": 0.0,
+          "AMOUNTCLUE_DISC": 0.0,
+          "RID": 992097571,
+          "DEPNUM": 992097568,
+          "REFTREAT": 0,
+          "REPL$GRPID": 15,
+          "ASSISTCODE": 0,
+          "SECTID": 4364,
+          "AMOUNTCLUE": 0.0,
+          "PLACEID": 990000162,
+          "PROFID": 0,
+          "ONLINETYPE": 0,
+          "TREATPLACE": 0,
+          "NOVOR": "0",
+          "NSP": "6653520894000466",
+          "CLNSPKOEF": 1.0,
+          "PRIMTREATTYPE": 0,
+          "PROGSERVID": 0,
+          "CLINICID": 38,
+          "ISOPERATION": 0,
+          "CLIENTKATEG": 1990046203,
+          "SECTID2": 0,
+          "TEAMID": 150717481,
+          "CASHID": 990000051,
+          "YEARNUM": 2021,
+          "REASON": 754,
+          "DOCTYPE": 1,
+          "DEPENDENTTREAT": 0,
+          "DIAGNOST": 0,
+          "DIRID": 0,
+          "SPECSERVTYPE": 0,
+          "SPECSERVCITO": 0,
+          "ORDERNO": 151597219,
+          "PLANSUMDISC": 0.0,
+          "GROUPPLANID": 0,
+          "BONUSSYST": 0,
+          "AMOUNTCL": 0.0,
+          "FROMTREATCODE": 0,
+          "SPECSERV": 0,
+          "AGRJKATEG": 1990046203,
+          "LSTID": 991511063,
+          "DCODE": 150000278,
+          "GARANTLETTER": 0,
+          "EXTJID": 0,
+          "ACCESSLEVEL": 1
+        }
+      },
+      {
+        "tableName": "REPL$CHANGELOG",
+        "statementType": "INSERT",
+        "keyValues": {
+          "ID": 225940105
+        },
+        "newFieldValues": {
+          "OP": 1,
+          "FROMGRPID": 15,
+          "TABLENAME": "TREAT",
+          "REPLID": 1549298,
+          "OWNGRPID": 15,
+          "ID": 225940105,
+          "TOGRPID": 0,
+          "MODIFYDATE": "16-AUG-2021 23:46:13.5450",
+          "REPLGRPID": 15
+        },
+        "oldFieldValues": {}
+      }
+    ]
+  },
+  {
+    "TABLE_STATEMENTS": [
+      "INSERT",
+      "UPDATE",
+      "DELETE"
+    ],
+    "transactionNumber": 409035089,
+    "statements": [
+      {
+        "tableName": "ORDERS",
+        "statementType": "UPDATE",
+        "keyValues": {
+          "ORDERCOD": 151597219
+        },
+        "newFieldValues": {
+          "CALC_REPORT": "Дата и время расчета квитанции : 16.08.2021 17:12:"
+        },
+        "oldFieldValues": {
+          "ORDLOCKED": 0,
+          "REPL$GRPID": 15,
+          "DISCPROC_CROSS": 0,
+          "ORDERDATE": "16-AUG-2021",
+          "SCHPRICE": 273.0,
+          "DISCOUNTRUB": 0.0,
+          "CREATEDATE": "16-AUG-2021 17:13:31.0000",
+          "CDBDISCONNECT": 0,
+          "NSP": 0,
+          "DISCOUNT": 0.0,
+          "FILIAL": 15,
+          "UID": 150000278,
+          "PCODE": 150000074,
+          "TOTALROUNDTYPE": 0,
+          "DAKOEF": 1.0,
+          "TOTALRUB": 0.0,
+          "AMOUNTCHECK": 0.0,
+          "EXTDISCSYSTEMID": 0,
+          "DISC_STARTSUM": 0.0,
+          "ORDERCOD": 151597219,
+          "LSTID": 991511063,
+          "KATEG": 0,
+          "TOTAL": 0.0,
+          "NSPKOEF": 1.0,
+          "JID": 991511056,
+          "MATNARADERROR": 0,
+          "DCODE": 150000278,
+          "GARANTLETTER": 0,
+          "REPL$ID": 1489428,
+          "ACCESSLEVEL": 1,
+          "DISC_STARTSUMUE": 0.0
+        }
+      },
+      {
+        "tableName": "REPL$CHANGELOG",
+        "statementType": "INSERT",
+        "keyValues": {
+          "ID": 225940106
+        },
+        "newFieldValues": {
+          "OP": 1,
+          "FROMGRPID": 15,
+          "TABLENAME": "ORDERS",
+          "REPLID": 1489428,
+          "OWNGRPID": 15,
+          "ID": 225940106,
+          "TOGRPID": 0,
+          "MODIFYDATE": "16-AUG-2021 23:46:14.0290",
+          "REPLGRPID": 15
+        },
+        "oldFieldValues": {}
+      },
+      {
+        "tableName": "RECYCLE",
+        "statementType": "INSERT",
+        "keyValues": {
+          "IDENT": 172179485
+        },
+        "newFieldValues": {
+          "REPL$GRPID": 15,
+          "DELETEDATE": "16-AUG-2021 23:46:14.3640",
+          "IDVALUE4": "152720553",
+          "IDVALUE2": "151597219",
+          "IDVALUE3": "2720553",
+          "IDVALUE1": "15",
+          "FILIAL": 15,
+          "IDENT": 172179485,
+          "TABLEID": "ORDERDET",
+          "REPL$ID": 22179462,
+          "IDVALUE": "150000278"
+        },
+        "oldFieldValues": {}
+      },
+      {
+        "tableName": "REPL$CHANGELOG",
+        "statementType": "INSERT",
+        "keyValues": {
+          "ID": 225940107
+        },
+        "newFieldValues": {
+          "OP": 0,
+          "FROMGRPID": 15,
+          "TABLENAME": "RECYCLE",
+          "REPLID": 22179462,
+          "OWNGRPID": 15,
+          "ID": 225940107,
+          "TOGRPID": 0,
+          "MODIFYDATE": "16-AUG-2021 23:46:14.3650",
+          "REPLGRPID": 15
+        },
+        "oldFieldValues": {}
+      },
+      {
+        "tableName": "ORDERDET",
+        "statementType": "DELETE",
+        "keyValues": {
+          "ORDTID": 152720553
+        },
+        "newFieldValues": {},
+        "oldFieldValues": {
+          "ISMILK": -1,
+          "SCHCOUNT": 1.0,
+          "PRICE_CALCTYPE": 4,
+          "REALCOUNT": 1.0,
+          "REPL$GRPID": 15,
+          "MANUALKOEF": 1.0,
+          "TOTALKOEF": 1.0,
+          "CURSCURR": 28.0,
+          "SCHNUM": 1969243,
+          "SCHPRICE": 273.0,
+          "DOCTYPE": 11,
+          "SCHPRICE_A": 273.0,
+          "CREATEDATE": "16-AUG-2021 17:13:31.0000",
+          "SCHPRICEMISS": 0,
+          "FILIAL": 15,
+          "ORDERNO": 151597219,
+          "SCHAMOUNT_A": 273.0,
+          "PCODE": 150000074,
+          "DAKOEF": 1.0,
+          "MODIFYDATE": "16-AUG-2021 17:13:31.4330",
+          "DISCOUNTRATE": 0.0,
+          "ROWCODE": 2720553,
+          "PLANID": 0,
+          "NSPKOEF": 1.0,
+          "DCODE": 150000278,
+          "CORRESPWRK": 0,
+          "SCHCODE": 990052468,
+          "REPL$ID": 2857071,
+          "PRICEUEDISC": 9.75,
+          "ACCESSLEVEL": 1,
+          "SCHAMOUNT": 273.0,
+          "ORDTID": 152720553,
+          "PRICEUE": 9.75,
+          "TOOTHCODE": 0
+        }
+      },
+      {
+        "tableName": "REPL$CHANGELOG",
+        "statementType": "INSERT",
+        "keyValues": {
+          "ID": 225940108
+        },
+        "newFieldValues": {
+          "OP": 2,
+          "FROMGRPID": 15,
+          "TABLENAME": "ORDERDET",
+          "REPLID": 2857071,
+          "OWNGRPID": 15,
+          "ID": 225940108,
+          "TOGRPID": 0,
+          "MODIFYDATE": "16-AUG-2021 23:46:14.3650",
+          "REPLGRPID": 15
+        },
+        "oldFieldValues": {}
+      },
+      {
+        "tableName": "RECYCLE",
+        "statementType": "INSERT",
+        "keyValues": {
+          "IDENT": 172179486
+        },
+        "newFieldValues": {
+          "REPL$GRPID": 15,
+          "DELETEDATE": "16-AUG-2021 23:46:14.3680",
+          "IDVALUE4": "0",
+          "IDVALUE2": "0",
+          "IDVALUE3": "0",
+          "IDVALUE1": "156802688",
+          "FILIAL": 15,
+          "IDENT": 172179486,
+          "TABLEID": "JPPAYMENTS",
+          "REPL$ID": 22179463,
+          "IDVALUE": "15"
+        },
+        "oldFieldValues": {}
+      },
+      {
+        "tableName": "REPL$CHANGELOG",
+        "statementType": "INSERT",
+        "keyValues": {
+          "ID": 225940109
+        },
+        "newFieldValues": {
+          "OP": 0,
+          "FROMGRPID": 15,
+          "TABLENAME": "RECYCLE",
+          "REPLID": 22179463,
+          "OWNGRPID": 15,
+          "ID": 225940109,
+          "TOGRPID": 0,
+          "MODIFYDATE": "16-AUG-2021 23:46:14.3690",
+          "REPLGRPID": 15
+        },
+        "oldFieldValues": {}
+      },
+      {
+        "tableName": "JPPAYMENTS",
+        "statementType": "DELETE",
+        "keyValues": {
+          "PID": 156802688
+        },
+        "newFieldValues": {},
+        "oldFieldValues": {
+          "CASHID": 990000051,
+          "REPL$GRPID": 15,
+          "TREAT_DOCTYPE": 1,
+          "HISTNUM": "150003675",
+          "ROUNDRUB": 273.0,
+          "AMOUNT": 9.75,
+          "AMOUNT_A": 9.75,
+          "ROUNDUE": 9.75,
+          "AMOUNTRUB": 273.0,
+          "DIRID": 0,
+          "TREATCODE": 156802582,
+          "NSP": "6653520894000466",
+          "FILIAL": 15,
+          "AGRID": 991511056,
+          "HISTID": 150078399,
+          "AMOUNTRUB_A": 273.0,
+          "PCODE": 150000074,
+          "REPRESHISTTYPE": 0,
+          "PMDATE": "16-AUG-2021",
+          "MODIFYDATE": "16-AUG-2021 17:13:31.2900",
+          "ORTNARAD": 0,
+          "OPERTYPE": "1",
+          "PLANID": 0,
+          "PAYPLAN": 0,
+          "LSTID": 991511063,
+          "DGCODE": 3435,
+          "JID": 990001889,
+          "PID": 156802688,
+          "DEPNUM": 992097568,
+          "DCODE": 150000278,
+          "GARANTLETTER": 0,
+          "REPL$ID": 2204718,
+          "ACCESSLEVEL": 1
+        }
+      },
+      {
+        "tableName": "REPL$CHANGELOG",
+        "statementType": "INSERT",
+        "keyValues": {
+          "ID": 225940110
+        },
+        "newFieldValues": {
+          "OP": 2,
+          "FROMGRPID": 15,
+          "TABLENAME": "JPPAYMENTS",
+          "REPLID": 2204718,
+          "OWNGRPID": 15,
+          "ID": 225940110,
+          "TOGRPID": 0,
+          "MODIFYDATE": "16-AUG-2021 23:46:14.3690",
+          "REPLGRPID": 15
+        },
+        "oldFieldValues": {}
+      },
+      {
+        "tableName": "RECYCLE",
+        "statementType": "INSERT",
+        "keyValues": {
+          "IDENT": 172179487
+        },
+        "newFieldValues": {
+          "REPL$GRPID": 15,
+          "DELETEDATE": "16-AUG-2021 23:46:14.3720",
+          "IDVALUE4": "0",
+          "IDVALUE2": "0",
+          "IDVALUE3": "0",
+          "IDVALUE1": "156802687",
+          "FILIAL": 15,
+          "IDENT": 172179487,
+          "TABLEID": "JPAYMDET",
+          "REPL$ID": 22179464,
+          "IDVALUE": "15"
+        },
+        "oldFieldValues": {}
+      },
+      {
+        "tableName": "REPL$CHANGELOG",
+        "statementType": "INSERT",
+        "keyValues": {
+          "ID": 225940111
+        },
+        "newFieldValues": {
+          "OP": 0,
+          "FROMGRPID": 15,
+          "TABLENAME": "RECYCLE",
+          "REPLID": 22179464,
+          "OWNGRPID": 15,
+          "ID": 225940111,
+          "TOGRPID": 0,
+          "MODIFYDATE": "16-AUG-2021 23:46:14.3720",
+          "REPLGRPID": 15
+        },
+        "oldFieldValues": {}
+      },
+      {
+        "tableName": "JPAYMDET",
+        "statementType": "DELETE",
+        "keyValues": {
+          "PDID": 156802687
+        },
+        "newFieldValues": {},
+        "oldFieldValues": {
+          "CASHID": 990000051,
+          "REALCOUNT": 1.0,
+          "REPL$GRPID": 15,
+          "SCOUNT": 1.0,
+          "MODIFYDATE": "16-AUG-2021 17:13:31.2530",
+          "ROUNDRUB": 273.0,
+          "AMOUNT": 9.75,
+          "AMOUNT_A": 9.75,
+          "SCHNUM": 1969243,
+          "ROUNDUE": 9.75,
+          "DGCODE": 3435,
+          "AMOUNTRUB": 273.0,
+          "SCHID": 990052468,
+          "JID": 991511056,
+          "CREATEDATE": "16-AUG-2021 17:13:31.2530",
+          "PDID": 156802687,
+          "TREATCODE": 156802582,
+          "FILIAL": 15,
+          "CORRESPWRK": 0,
+          "REPL$ID": 2682367,
+          "AMOUNTRUB_A": 273.0,
+          "PCODE": 150000074,
+          "ACCESSLEVEL": 1,
+          "TOOTHCODE": 0
+        }
+      },
+      {
+        "tableName": "REPL$CHANGELOG",
+        "statementType": "INSERT",
+        "keyValues": {
+          "ID": 225940112
+        },
+        "newFieldValues": {
+          "OP": 2,
+          "FROMGRPID": 15,
+          "TABLENAME": "JPAYMDET",
+          "REPLID": 2682367,
+          "OWNGRPID": 15,
+          "ID": 225940112,
+          "TOGRPID": 0,
+          "MODIFYDATE": "16-AUG-2021 23:46:14.3720",
+          "REPLGRPID": 15
+        },
+        "oldFieldValues": {}
+      },
+      {
+        "tableName": "ORDERS",
+        "statementType": "UPDATE",
+        "keyValues": {
+          "ORDERCOD": 151597219
+        },
+        "newFieldValues": {
+          "CALC_REPORT": "Дата и время расчета квитанции : 16.08.2021 17:12:"
+        },
+        "oldFieldValues": {
+          "ORDLOCKED": 0,
+          "REPL$GRPID": 15,
+          "DISCPROC_CROSS": 0,
+          "ORDERDATE": "16-AUG-2021",
+          "SCHPRICE": 273.0,
+          "DISCOUNTRUB": 0.0,
+          "CREATEDATE": "16-AUG-2021 17:13:31.0000",
+          "CDBDISCONNECT": 0,
+          "NSP": 0,
+          "DISCOUNT": 0.0,
+          "FILIAL": 15,
+          "UID": 150000278,
+          "PCODE": 150000074,
+          "TOTALROUNDTYPE": 0,
+          "DAKOEF": 1.0,
+          "TOTALRUB": 0.0,
+          "AMOUNTCHECK": 0.0,
+          "EXTDISCSYSTEMID": 0,
+          "DISC_STARTSUM": 0.0,
+          "ORDERCOD": 151597219,
+          "LSTID": 991511063,
+          "KATEG": 0,
+          "TOTAL": 0.0,
+          "NSPKOEF": 1.0,
+          "JID": 991511056,
+          "MATNARADERROR": 0,
+          "DCODE": 150000278,
+          "GARANTLETTER": 0,
+          "REPL$ID": 1489428,
+          "ACCESSLEVEL": 1,
+          "DISC_STARTSUMUE": 0.0
+        }
+      },
+      {
+        "tableName": "REPL$CHANGELOG",
+        "statementType": "INSERT",
+        "keyValues": {
+          "ID": 225940113
+        },
+        "newFieldValues": {
+          "OP": 1,
+          "FROMGRPID": 15,
+          "TABLENAME": "ORDERS",
+          "REPLID": 1489428,
+          "OWNGRPID": 15,
+          "ID": 225940113,
+          "TOGRPID": 0,
+          "MODIFYDATE": "16-AUG-2021 23:46:14.4530",
+          "REPLGRPID": 15
+        },
+        "oldFieldValues": {}
+      },
+      {
+        "tableName": "JPAYMDET",
+        "statementType": "INSERT",
+        "keyValues": {
+          "PDID": 156803503
+        },
+        "newFieldValues": {
+          "CASHID": 990000051,
+          "REALCOUNT": 1.0,
+          "REPL$GRPID": 15,
+          "SCOUNT": 1.0,
+          "MODIFYDATE": "16-AUG-2021 23:46:14.5940",
+          "ROUNDRUB": 273.0,
+          "AMOUNT": 9.75,
+          "AMOUNT_A": 9.75,
+          "SCHNUM": 1969243,
+          "ROUNDUE": 9.75,
+          "DGCODE": 3435,
+          "AMOUNTRUB": 273.0,
+          "SCHID": 990052468,
+          "JID": 991511056,
+          "CREATEDATE": "16-AUG-2021 23:46:14.5940",
+          "PDID": 156803503,
+          "TREATCODE": 156802582,
+          "FILIAL": 15,
+          "CORRESPWRK": 0,
+          "REPL$ID": 2682721,
+          "AMOUNTRUB_A": 273.0,
+          "PCODE": 150000074,
+          "ACCESSLEVEL": 1,
+          "TOOTHCODE": 0
+        },
+        "oldFieldValues": {}
+      },
+      {
+        "tableName": "REPL$CHANGELOG",
+        "statementType": "INSERT",
+        "keyValues": {
+          "ID": 225940114
+        },
+        "newFieldValues": {
+          "OP": 0,
+          "FROMGRPID": 15,
+          "TABLENAME": "JPAYMDET",
+          "REPLID": 2682721,
+          "OWNGRPID": 15,
+          "ID": 225940114,
+          "TOGRPID": 0,
+          "MODIFYDATE": "16-AUG-2021 23:46:14.5940",
+          "REPLGRPID": 15
+        },
+        "oldFieldValues": {}
+      },
+      {
+        "tableName": "ORDERDET",
+        "statementType": "INSERT",
+        "keyValues": {
+          "ORDTID": 152720927
+        },
+        "newFieldValues": {
+          "ISMILK": -1,
+          "SCHCOUNT": 1.0,
+          "PRICE_CALCTYPE": 4,
+          "REALCOUNT": 1.0,
+          "REPL$GRPID": 15,
+          "MANUALKOEF": 1.0,
+          "TOTALKOEF": 1.0,
+          "CURSCURR": 28.0,
+          "SCHNUM": 1969243,
+          "SCHPRICE": 273.0,
+          "DOCTYPE": 11,
+          "SCHPRICE_A": 273.0,
+          "CREATEDATE": "16-AUG-2021 23:46:14.6030",
+          "SCHPRICEMISS": 0,
+          "FILIAL": 15,
+          "ORDERNO": 151597219,
+          "SCHAMOUNT_A": 273.0,
+          "PCODE": 150000074,
+          "DAKOEF": 1.0,
+          "MODIFYDATE": "16-AUG-2021 23:46:14.6030",
+          "ROWCODE": 2720927,
+          "PLANID": 0,
+          "NSPKOEF": 1.0,
+          "DCODE": 150000278,
+          "CORRESPWRK": 0,
+          "SCHCODE": 990052468,
+          "REPL$ID": 2857445,
+          "PRICEUEDISC": 9.75,
+          "ACCESSLEVEL": 1,
+          "SCHAMOUNT": 273.0,
+          "ORDTID": 152720927,
+          "PRICEUE": 9.75,
+          "TOOTHCODE": 0
+        },
+        "oldFieldValues": {}
+      },
+      {
+        "tableName": "REPL$CHANGELOG",
+        "statementType": "INSERT",
+        "keyValues": {
+          "ID": 225940115
+        },
+        "newFieldValues": {
+          "OP": 0,
+          "FROMGRPID": 15,
+          "TABLENAME": "ORDERDET",
+          "REPLID": 2857445,
+          "OWNGRPID": 15,
+          "ID": 225940115,
+          "TOGRPID": 0,
+          "MODIFYDATE": "16-AUG-2021 23:46:14.6030",
+          "REPLGRPID": 15
+        },
+        "oldFieldValues": {}
+      },
+      {
+        "tableName": "JPPAYMENTS",
+        "statementType": "INSERT",
+        "keyValues": {
+          "PID": 156803504
+        },
+        "newFieldValues": {
+          "CASHID": 990000051,
+          "REPL$GRPID": 15,
+          "TREAT_DOCTYPE": 1,
+          "HISTNUM": "150003675",
+          "ROUNDRUB": 273.0,
+          "AMOUNT": 9.75,
+          "AMOUNT_A": 9.75,
+          "ROUNDUE": 9.75,
+          "TREATPLACE": 0,
+          "AMOUNTRUB": 273.0,
+          "DIRID": 0,
+          "TREATCODE": 156802582,
+          "NSP": "6653520894000466",
+          "FILIAL": 15,
+          "AGRID": 991511056,
+          "HISTID": 150078399,
+          "AMOUNTRUB_A": 273.0,
+          "PCODE": 150000074,
+          "REPRESHISTTYPE": 0,
+          "PMDATE": "16-AUG-2021",
+          "MODIFYDATE": "16-AUG-2021 23:46:14.6280",
+          "ORTNARAD": 0,
+          "OPERTYPE": "1",
+          "PLANID": 0,
+          "PAYPLAN": 0,
+          "LSTID": 991511063,
+          "DGCODE": 3435,
+          "JID": 990001889,
+          "PID": 156803504,
+          "DEPNUM": 992097568,
+          "DCODE": 150000278,
+          "GARANTLETTER": 0,
+          "REPL$ID": 2205035,
+          "ACCESSLEVEL": 1
+        },
+        "oldFieldValues": {}
+      },
+      {
+        "tableName": "REPL$CHANGELOG",
+        "statementType": "INSERT",
+        "keyValues": {
+          "ID": 225940116
+        },
+        "newFieldValues": {
+          "OP": 0,
+          "FROMGRPID": 15,
+          "TABLENAME": "JPPAYMENTS",
+          "REPLID": 2205035,
+          "OWNGRPID": 15,
+          "ID": 225940116,
+          "TOGRPID": 0,
+          "MODIFYDATE": "16-AUG-2021 23:46:14.6290",
+          "REPLGRPID": 15
+        },
+        "oldFieldValues": {}
+      },
+      {
+        "tableName": "ORDERS",
+        "statementType": "UPDATE",
+        "keyValues": {
+          "ORDERCOD": 151597219
+        },
+        "newFieldValues": {
+          "CALC_REPORT": "Дата и время расчета квитанции : 16.08.2021 17:12:"
+        },
+        "oldFieldValues": {
+          "ORDLOCKED": 0,
+          "REPL$GRPID": 15,
+          "DISCPROC_CROSS": 0,
+          "ORDERDATE": "16-AUG-2021",
+          "SCHPRICE": 273.0,
+          "DISCOUNTRUB": 0.0,
+          "CREATEDATE": "16-AUG-2021 17:13:31.0000",
+          "CDBDISCONNECT": 0,
+          "NSP": 0,
+          "DISCOUNT": 0.0,
+          "FILIAL": 15,
+          "UID": 150000278,
+          "PCODE": 150000074,
+          "TOTALROUNDTYPE": 0,
+          "DAKOEF": 1.0,
+          "TOTALRUB": 0.0,
+          "AMOUNTCHECK": 0.0,
+          "EXTDISCSYSTEMID": 0,
+          "DISC_STARTSUM": 0.0,
+          "ORDERCOD": 151597219,
+          "LSTID": 991511063,
+          "KATEG": 0,
+          "TOTAL": 0.0,
+          "NSPKOEF": 1.0,
+          "JID": 991511056,
+          "MATNARADERROR": 0,
+          "DCODE": 150000278,
+          "GARANTLETTER": 0,
+          "REPL$ID": 1489428,
+          "ACCESSLEVEL": 1,
+          "DISC_STARTSUMUE": 0.0
+        }
+      },
+      {
+        "tableName": "REPL$CHANGELOG",
+        "statementType": "INSERT",
+        "keyValues": {
+          "ID": 225940117
+        },
+        "newFieldValues": {
+          "OP": 1,
+          "FROMGRPID": 15,
+          "TABLENAME": "ORDERS",
+          "REPLID": 1489428,
+          "OWNGRPID": 15,
+          "ID": 225940117,
+          "TOGRPID": 0,
+          "MODIFYDATE": "16-AUG-2021 23:46:14.6330",
+          "REPLGRPID": 15
+        },
+        "oldFieldValues": {}
+      },
+      {
+        "tableName": "TREAT",
+        "statementType": "UPDATE",
+        "keyValues": {
+          "TREATCODE": 156802582
+        },
+        "newFieldValues": {},
+        "oldFieldValues": {
+          "UEMK": 0.0,
+          "TREATMENT": 1,
+          "MANUALKOEF": 1.0,
+          "CLNDSSUM": 0.0,
+          "SCHEDFILIAL": 15,
+          "SPECPROC": 0.0,
+          "CURSCURR": 28.0,
+          "PLANSUMDISC_JP": 0.0,
+          "CREATEDATE": "16-AUG-2021 16:50:48.0000",
+          "FILIAL": 15,
+          "UID": 150000278,
+          "AFTERCONSULT": 0,
+          "PRIMTREAT": 0,
+          "REPEAT": 0,
+          "AMOUNTJP_DISC": 273.0,
+          "CONSULT": 0,
+          "JNSPKOEF": 1.0,
+          "DISCACCUM": 0,
+          "SANIR": 0,
+          "TALONCOUNT": 3.0,
+          "TREATFORMTYPE": 2,
+          "CHECKSTATUS": 0,
+          "MEDCARETYPE": 1,
+          "SOCID": 1,
+          "REPL$ID": 1549298,
+          "JPNDSSUM": 0.0,
+          "IDPR": 0,
+          "PRIORITY": 2,
+          "PROGSERV": 0,
+          "AMOUNTJP": 273.0,
+          "VISITGOAL": 0,
+          "CONTTREAT": 0,
+          "MONTHNUM": 8,
+          "AMOUNTJPUE": 9.75,
+          "TREATCODE": 156802582,
+          "PROFOSM": 0,
+          "DOCPRIMTREAT": 0,
+          "SPECSERVPRICE": 0,
+          "HISTID": 150078399,
+          "PCODE": 150000074,
+          "AMOUNTJPUE_DISC": 9.75,
+          "SCHEDTYPE": 1,
+          "PLANID": 0,
+          "PRIMCONSULT": 0,
+          "AMOUNTCL_DISC": 0.0,
+          "DGCODE": 3435,
+          "JID": 991511056,
+          "TREATDATE": "16-AUG-2021",
+          "SPECPRICEPROC": 0.0,
+          "AMOUNTCLUE_DISC": 0.0,
+          "RID": 992097571,
+          "DEPNUM": 992097568,
+          "REFTREAT": 0,
+          "REPL$GRPID": 15,
+          "ASSISTCODE": 0,
+          "SECTID": 4364,
+          "AMOUNTCLUE": 0.0,
+          "PLACEID": 990000162,
+          "PROFID": 0,
+          "ONLINETYPE": 0,
+          "TREATPLACE": 0,
+          "NOVOR": "0",
+          "NSP": "6653520894000466",
+          "CLNSPKOEF": 1.0,
+          "PRIMTREATTYPE": 0,
+          "PROGSERVID": 0,
+          "CLINICID": 38,
+          "ISOPERATION": 0,
+          "CLIENTKATEG": 1990046203,
+          "SECTID2": 0,
+          "TEAMID": 150717481,
+          "CASHID": 990000051,
+          "YEARNUM": 2021,
+          "REASON": 754,
+          "DOCTYPE": 1,
+          "DEPENDENTTREAT": 0,
+          "DIAGNOST": 0,
+          "DIRID": 0,
+          "SPECSERVTYPE": 0,
+          "SPECSERVCITO": 0,
+          "ORDERNO": 151597219,
+          "PLANSUMDISC": 0.0,
+          "GROUPPLANID": 0,
+          "BONUSSYST": 0,
+          "AMOUNTCL": 0.0,
+          "FROMTREATCODE": 0,
+          "SPECSERV": 0,
+          "AGRJKATEG": 1990046203,
+          "LSTID": 991511063,
+          "DCODE": 150000278,
+          "GARANTLETTER": 0,
+          "EXTJID": 0,
+          "ACCESSLEVEL": 1
+        }
+      },
+      {
+        "tableName": "REPL$CHANGELOG",
+        "statementType": "INSERT",
+        "keyValues": {
+          "ID": 225940118
+        },
+        "newFieldValues": {
+          "OP": 1,
+          "FROMGRPID": 15,
+          "TABLENAME": "TREAT",
+          "REPLID": 1549298,
+          "OWNGRPID": 15,
+          "ID": 225940118,
+          "TOGRPID": 0,
+          "MODIFYDATE": "16-AUG-2021 23:46:14.7540",
+          "REPLGRPID": 15
+        },
+        "oldFieldValues": {}
+      },
+      {
+        "tableName": "ORDERDET",
+        "statementType": "UPDATE",
+        "keyValues": {
+          "ORDTID": 152720927
+        },
+        "newFieldValues": {
+          "DISCOUNTRATE": 0.0
+        },
+        "oldFieldValues": {
+          "ISMILK": -1,
+          "SCHCOUNT": 1.0,
+          "PRICE_CALCTYPE": 4,
+          "REALCOUNT": 1.0,
+          "REPL$GRPID": 15,
+          "MANUALKOEF": 1.0,
+          "TOTALKOEF": 1.0,
+          "CURSCURR": 28.0,
+          "SCHNUM": 1969243,
+          "SCHPRICE": 273.0,
+          "DOCTYPE": 11,
+          "SCHPRICE_A": 273.0,
+          "SCHPRICEMISS": 0,
+          "FILIAL": 15,
+          "ORDERNO": 151597219,
+          "SCHAMOUNT_A": 273.0,
+          "PCODE": 150000074,
+          "DAKOEF": 1.0,
+          "ROWCODE": 2720927,
+          "PLANID": 0,
+          "NSPKOEF": 1.0,
+          "DCODE": 150000278,
+          "CORRESPWRK": 0,
+          "SCHCODE": 990052468,
+          "REPL$ID": 2857445,
+          "PRICEUEDISC": 9.75,
+          "ACCESSLEVEL": 1,
+          "SCHAMOUNT": 273.0,
+          "ORDTID": 152720927,
+          "PRICEUE": 9.75,
+          "TOOTHCODE": 0
+        }
+      },
+      {
+        "tableName": "REPL$CHANGELOG",
+        "statementType": "INSERT",
+        "keyValues": {
+          "ID": 225940119
+        },
+        "newFieldValues": {
+          "OP": 1,
+          "FROMGRPID": 15,
+          "TABLENAME": "ORDERDET",
+          "REPLID": 2857445,
+          "OWNGRPID": 15,
+          "ID": 225940119,
+          "TOGRPID": 0,
+          "MODIFYDATE": "16-AUG-2021 23:46:14.7690",
+          "REPLGRPID": 15
+        },
+        "oldFieldValues": {}
+      },
+      {
+        "tableName": "ORDERS",
+        "statementType": "UPDATE",
+        "keyValues": {
+          "ORDERCOD": 151597219
+        },
+        "newFieldValues": {},
+        "oldFieldValues": {
+          "ORDLOCKED": 0,
+          "REPL$GRPID": 15,
+          "DISCPROC_CROSS": 0,
+          "ORDERDATE": "16-AUG-2021",
+          "SCHPRICE": 273.0,
+          "DISCOUNTRUB": 0.0,
+          "CREATEDATE": "16-AUG-2021 17:13:31.0000",
+          "CDBDISCONNECT": 0,
+          "NSP": 0,
+          "DISCOUNT": 0.0,
+          "FILIAL": 15,
+          "UID": 150000278,
+          "PCODE": 150000074,
+          "TOTALROUNDTYPE": 0,
+          "DAKOEF": 1.0,
+          "TOTALRUB": 0.0,
+          "AMOUNTCHECK": 0.0,
+          "MODIFYDATE": "16-AUG-2021 23:46:14.6330",
+          "EXTDISCSYSTEMID": 0,
+          "DISC_STARTSUM": 0.0,
+          "ORDERCOD": 151597219,
+          "LSTID": 991511063,
+          "KATEG": 0,
+          "TOTAL": 0.0,
+          "NSPKOEF": 1.0,
+          "JID": 991511056,
+          "MATNARADERROR": 0,
+          "DCODE": 150000278,
+          "GARANTLETTER": 0,
+          "REPL$ID": 1489428,
+          "ACCESSLEVEL": 1,
+          "DISC_STARTSUMUE": 0.0
+        }
+      },
+      {
+        "tableName": "REPL$CHANGELOG",
+        "statementType": "INSERT",
+        "keyValues": {
+          "ID": 225940120
+        },
+        "newFieldValues": {
+          "OP": 1,
+          "FROMGRPID": 15,
+          "TABLENAME": "ORDERS",
+          "REPLID": 1489428,
+          "OWNGRPID": 15,
+          "ID": 225940120,
+          "TOGRPID": 0,
+          "MODIFYDATE": "16-AUG-2021 23:46:14.7720",
+          "REPLGRPID": 15
+        },
+        "oldFieldValues": {}
+      }
+    ]
+  },
+  {
+    "TABLE_STATEMENTS": [
+      "INSERT",
+      "UPDATE",
+      "DELETE"
+    ],
+    "transactionNumber": 409035103,
+    "statements": [
+      {
+        "tableName": "ORDERS",
+        "statementType": "UPDATE",
+        "keyValues": {
+          "ORDERCOD": 151597219
+        },
+        "newFieldValues": {
+          "CALC_REPORT": "Дата и время расчета квитанции : 16.08.2021 23:44:"
+        },
+        "oldFieldValues": {
+          "ORDLOCKED": 0,
+          "REPL$GRPID": 15,
+          "DISCPROC_CROSS": 0,
+          "ORDERDATE": "16-AUG-2021",
+          "SCHPRICE": 273.0,
+          "DISCOUNTRUB": 0.0,
+          "CREATEDATE": "16-AUG-2021 17:13:31.0000",
+          "CDBDISCONNECT": 0,
+          "NSP": 0,
+          "DISCOUNT": 0.0,
+          "FILIAL": 15,
+          "UID": 150000278,
+          "PCODE": 150000074,
+          "TOTALROUNDTYPE": 0,
+          "DAKOEF": 1.0,
+          "TOTALRUB": 0.0,
+          "AMOUNTCHECK": 0.0,
+          "MODIFYDATE": "16-AUG-2021 23:46:14.6330",
+          "EXTDISCSYSTEMID": 0,
+          "DISC_STARTSUM": 0.0,
+          "ORDERCOD": 151597219,
+          "LSTID": 991511063,
+          "KATEG": 0,
+          "TOTAL": 0.0,
+          "NSPKOEF": 1.0,
+          "JID": 991511056,
+          "MATNARADERROR": 0,
+          "DCODE": 150000278,
+          "GARANTLETTER": 0,
+          "REPL$ID": 1489428,
+          "ACCESSLEVEL": 1,
+          "DISC_STARTSUMUE": 0.0
+        }
+      },
+      {
+        "tableName": "REPL$CHANGELOG",
+        "statementType": "INSERT",
+        "keyValues": {
+          "ID": 225940121
+        },
+        "newFieldValues": {
+          "OP": 1,
+          "FROMGRPID": 15,
+          "TABLENAME": "ORDERS",
+          "REPLID": 1489428,
+          "OWNGRPID": 15,
+          "ID": 225940121,
+          "TOGRPID": 0,
+          "MODIFYDATE": "16-AUG-2021 23:46:14.8210",
+          "REPLGRPID": 15
+        },
+        "oldFieldValues": {}
+      }
+    ]
+  },
+  {
+    "TABLE_STATEMENTS": [
+      "INSERT",
+      "UPDATE",
+      "DELETE"
+    ],
+    "transactionNumber": 409035115,
+    "statements": [
+      {
+        "tableName": "REPL$CHANGELOGDET",
+        "statementType": "INSERT",
+        "keyValues": {
+          "ID": 225940121,
+          "REPLGRPID": 99
+        },
+        "newFieldValues": {
+          "ID": 225940121,
+          "DTYPE": 0,
+          "MODIFYDATE": "16-AUG-2021 23:46:18.4180",
+          "REPLGRPID": 99
+        },
+        "oldFieldValues": {}
+      }
+    ]
+  },
+  {
+    "TABLE_STATEMENTS": [
+      "INSERT",
+      "UPDATE",
+      "DELETE"
+    ],
+    "transactionNumber": 409035087,
+    "statements": [
+      {
+        "tableName": "TREAT",
+        "statementType": "UPDATE",
+        "keyValues": {
+          "TREATCODE": 156802582
+        },
+        "newFieldValues": {},
+        "oldFieldValues": {
+          "UEMK": 0.0,
+          "TREATMENT": 1,
+          "MANUALKOEF": 1.0,
+          "CLNDSSUM": 0.0,
+          "SCHEDFILIAL": 15,
+          "SPECPROC": 0.0,
+          "CURSCURR": 28.0,
+          "PLANSUMDISC_JP": 0.0,
+          "CREATEDATE": "16-AUG-2021 16:50:48.0000",
+          "FILIAL": 15,
+          "UID": 150000278,
+          "AFTERCONSULT": 0,
+          "PRIMTREAT": 0,
+          "REPEAT": 0,
+          "AMOUNTJP_DISC": 273.0,
+          "CONSULT": 0,
+          "JNSPKOEF": 1.0,
+          "DISCACCUM": 0,
+          "SANIR": 0,
+          "TALONCOUNT": 3.0,
+          "TREATFORMTYPE": 2,
+          "CHECKSTATUS": 0,
+          "MEDCARETYPE": 1,
+          "SOCID": 1,
+          "REPL$ID": 1549298,
+          "JPNDSSUM": 0.0,
+          "IDPR": 0,
+          "PRIORITY": 2,
+          "PROGSERV": 0,
+          "AMOUNTJP": 273.0,
+          "VISITGOAL": 0,
+          "CONTTREAT": 0,
+          "MONTHNUM": 8,
+          "AMOUNTJPUE": 9.75,
+          "TREATCODE": 156802582,
+          "PROFOSM": 0,
+          "DOCPRIMTREAT": 0,
+          "SPECSERVPRICE": 0,
+          "HISTID": 150078399,
+          "PCODE": 150000074,
+          "AMOUNTJPUE_DISC": 9.75,
+          "SCHEDTYPE": 1,
+          "PLANID": 0,
+          "PRIMCONSULT": 0,
+          "AMOUNTCL_DISC": 0.0,
+          "DGCODE": 3435,
+          "JID": 991511056,
+          "TREATDATE": "16-AUG-2021",
+          "SPECPRICEPROC": 0.0,
+          "AMOUNTCLUE_DISC": 0.0,
+          "RID": 992097571,
+          "DEPNUM": 992097568,
+          "REFTREAT": 0,
+          "REPL$GRPID": 15,
+          "ASSISTCODE": 0,
+          "SECTID": 4364,
+          "AMOUNTCLUE": 0.0,
+          "PLACEID": 990000162,
+          "PROFID": 0,
+          "ONLINETYPE": 0,
+          "TREATPLACE": 0,
+          "NOVOR": "0",
+          "NSP": "6653520894000466",
+          "CLNSPKOEF": 1.0,
+          "PRIMTREATTYPE": 0,
+          "PROGSERVID": 0,
+          "CLINICID": 38,
+          "ISOPERATION": 0,
+          "CLIENTKATEG": 1990046203,
+          "SECTID2": 0,
+          "TEAMID": 150717481,
+          "CASHID": 990000051,
+          "YEARNUM": 2021,
+          "REASON": 754,
+          "DOCTYPE": 1,
+          "DEPENDENTTREAT": 0,
+          "DIAGNOST": 0,
+          "DIRID": 0,
+          "SPECSERVTYPE": 0,
+          "SPECSERVCITO": 0,
+          "ORDERNO": 151597219,
+          "PLANSUMDISC": 0.0,
+          "GROUPPLANID": 0,
+          "BONUSSYST": 0,
+          "AMOUNTCL": 0.0,
+          "FROMTREATCODE": 0,
+          "SPECSERV": 0,
+          "AGRJKATEG": 1990046203,
+          "LSTID": 991511063,
+          "DCODE": 150000278,
+          "GARANTLETTER": 0,
+          "EXTJID": 0,
+          "ACCESSLEVEL": 1
+        }
+      },
+      {
+        "tableName": "REPL$CHANGELOG",
+        "statementType": "INSERT",
+        "keyValues": {
+          "ID": 225940122
+        },
+        "newFieldValues": {
+          "OP": 1,
+          "FROMGRPID": 15,
+          "TABLENAME": "TREAT",
+          "REPLID": 1549298,
+          "OWNGRPID": 15,
+          "ID": 225940122,
+          "TOGRPID": 0,
+          "MODIFYDATE": "16-AUG-2021 23:46:20.4910",
+          "REPLGRPID": 15
+        },
+        "oldFieldValues": {}
+      }
+    ]
+  },
+  {
+    "TABLE_STATEMENTS": [
+      "INSERT",
+      "UPDATE",
+      "DELETE"
+    ],
+    "transactionNumber": 409035126,
+    "statements": [
+      {
+        "tableName": "JPPAYMENTS",
+        "statementType": "UPDATE",
+        "keyValues": {
+          "PID": 156803504
+        },
+        "newFieldValues": {},
+        "oldFieldValues": {
+          "CASHID": 990000051,
+          "REPL$GRPID": 15,
+          "TREAT_DOCTYPE": 1,
+          "HISTNUM": "150003675",
+          "ROUNDRUB": 273.0,
+          "AMOUNT": 9.75,
+          "AMOUNT_A": 9.75,
+          "ROUNDUE": 9.75,
+          "TREATPLACE": 0,
+          "AMOUNTRUB": 273.0,
+          "DIRID": 0,
+          "TREATCODE": 156802582,
+          "NSP": "6653520894000466",
+          "FILIAL": 15,
+          "AGRID": 991511056,
+          "HISTID": 150078399,
+          "AMOUNTRUB_A": 273.0,
+          "PCODE": 150000074,
+          "REPRESHISTTYPE": 0,
+          "PMDATE": "16-AUG-2021",
+          "MODIFYDATE": "16-AUG-2021 23:46:14.6280",
+          "ORTNARAD": 0,
+          "OPERTYPE": "1",
+          "PLANID": 0,
+          "PAYPLAN": 0,
+          "LSTID": 991511063,
+          "DGCODE": 3435,
+          "JID": 990001889,
+          "PID": 156803504,
+          "DEPNUM": 992097568,
+          "DCODE": 150000278,
+          "GARANTLETTER": 0,
+          "REPL$ID": 2205035,
+          "ACCESSLEVEL": 1
+        }
+      },
+      {
+        "tableName": "REPL$CHANGELOG",
+        "statementType": "INSERT",
+        "keyValues": {
+          "ID": 225940123
+        },
+        "newFieldValues": {
+          "OP": 1,
+          "FROMGRPID": 15,
+          "TABLENAME": "JPPAYMENTS",
+          "REPLID": 2205035,
+          "OWNGRPID": 15,
+          "ID": 225940123,
+          "TOGRPID": 0,
+          "MODIFYDATE": "16-AUG-2021 23:46:20.5670",
+          "REPLGRPID": 15
+        },
+        "oldFieldValues": {}
+      },
+      {
+        "tableName": "TREAT",
+        "statementType": "UPDATE",
+        "keyValues": {
+          "TREATCODE": 156802582
+        },
+        "newFieldValues": {},
+        "oldFieldValues": {
+          "UEMK": 0.0,
+          "TREATMENT": 1,
+          "MANUALKOEF": 1.0,
+          "CLNDSSUM": 0.0,
+          "SCHEDFILIAL": 15,
+          "SPECPROC": 0.0,
+          "CURSCURR": 28.0,
+          "PLANSUMDISC_JP": 0.0,
+          "CREATEDATE": "16-AUG-2021 16:50:48.0000",
+          "FILIAL": 15,
+          "UID": 150000278,
+          "AFTERCONSULT": 0,
+          "PRIMTREAT": 0,
+          "REPEAT": 0,
+          "AMOUNTJP_DISC": 273.0,
+          "MODIFYDATE": "16-AUG-2021 23:46:20.4900",
+          "CONSULT": 0,
+          "JNSPKOEF": 1.0,
+          "DISCACCUM": 0,
+          "SANIR": 0,
+          "TALONCOUNT": 3.0,
+          "TREATFORMTYPE": 2,
+          "CHECKSTATUS": 0,
+          "MEDCARETYPE": 1,
+          "SOCID": 1,
+          "REPL$ID": 1549298,
+          "JPNDSSUM": 0.0,
+          "IDPR": 0,
+          "PRIORITY": 2,
+          "PROGSERV": 0,
+          "AMOUNTJP": 273.0,
+          "VISITGOAL": 0,
+          "CONTTREAT": 0,
+          "MONTHNUM": 8,
+          "AMOUNTJPUE": 9.75,
+          "TREATCODE": 156802582,
+          "PROFOSM": 0,
+          "DOCPRIMTREAT": 0,
+          "SPECSERVPRICE": 0,
+          "HISTID": 150078399,
+          "PCODE": 150000074,
+          "AMOUNTJPUE_DISC": 9.75,
+          "SCHEDTYPE": 1,
+          "PLANID": 0,
+          "PRIMCONSULT": 0,
+          "AMOUNTCL_DISC": 0.0,
+          "DGCODE": 3435,
+          "JID": 991511056,
+          "TREATDATE": "16-AUG-2021",
+          "SPECPRICEPROC": 0.0,
+          "AMOUNTCLUE_DISC": 0.0,
+          "RID": 992097571,
+          "DEPNUM": 992097568,
+          "REFTREAT": 0,
+          "REPL$GRPID": 15,
+          "ASSISTCODE": 0,
+          "SECTID": 4364,
+          "AMOUNTCLUE": 0.0,
+          "PLACEID": 990000162,
+          "PROFID": 0,
+          "ONLINETYPE": 0,
+          "TREATPLACE": 0,
+          "NOVOR": "0",
+          "NSP": "6653520894000466",
+          "CLNSPKOEF": 1.0,
+          "PRIMTREATTYPE": 0,
+          "PROGSERVID": 0,
+          "CLINICID": 38,
+          "ISOPERATION": 0,
+          "CLIENTKATEG": 1990046203,
+          "SECTID2": 0,
+          "TEAMID": 150717481,
+          "CASHID": 990000051,
+          "YEARNUM": 2021,
+          "REASON": 754,
+          "DOCTYPE": 1,
+          "DEPENDENTTREAT": 0,
+          "DIAGNOST": 0,
+          "DIRID": 0,
+          "SPECSERVTYPE": 0,
+          "SPECSERVCITO": 0,
+          "ORDERNO": 151597219,
+          "PLANSUMDISC": 0.0,
+          "GROUPPLANID": 0,
+          "BONUSSYST": 0,
+          "AMOUNTCL": 0.0,
+          "FROMTREATCODE": 0,
+          "SPECSERV": 0,
+          "AGRJKATEG": 1990046203,
+          "LSTID": 991511063,
+          "DCODE": 150000278,
+          "GARANTLETTER": 0,
+          "EXTJID": 0,
+          "ACCESSLEVEL": 1
+        }
+      },
+      {
+        "tableName": "REPL$CHANGELOG",
+        "statementType": "INSERT",
+        "keyValues": {
+          "ID": 225940124
+        },
+        "newFieldValues": {
+          "OP": 1,
+          "FROMGRPID": 15,
+          "TABLENAME": "TREAT",
+          "REPLID": 1549298,
+          "OWNGRPID": 15,
+          "ID": 225940124,
+          "TOGRPID": 0,
+          "MODIFYDATE": "16-AUG-2021 23:46:20.6100",
+          "REPLGRPID": 15
+        },
+        "oldFieldValues": {}
+      }
+    ]
+  },
+  {
+    "TABLE_STATEMENTS": [
+      "INSERT",
+      "UPDATE",
+      "DELETE"
+    ],
+    "transactionNumber": 409035129,
+    "statements": [
+      {
+        "tableName": "SCHEDULE",
+        "statementType": "UPDATE",
+        "keyValues": {
+          "SCHEDID": 151337489
+        },
+        "newFieldValues": {},
+        "oldFieldValues": {
+          "REPL$GRPID": 15,
+          "RESERVESCHEDID": 0,
+          "FMIN": 30,
+          "FIXHOUR": 16,
+          "CREATEDATE": "16-AUG-2021 16:50:34.7510",
+          "VISIT_UID": 150000278,
+          "FILIAL": 15,
+          "UID": 150000278,
+          "ABSENCECOUNT": 8,
+          "CALLTIME": "16-AUG-2021 16:50:34.6120",
+          "VISITTIME": "16-AUG-2021 17:00:00.0000",
+          "MODIFYDATE": "16-AUG-2021 17:15:26.7750",
+          "SCHEDLEVEL": 0,
+          "FIXDATE": "16-AUG-2021 16:50:34.7510",
+          "CHID": 992108299,
+          "REFID": 0,
+          "CHECKSTATUS": 0,
+          "REPL$ID": 1337512,
+          "TEAMID": 150717481,
+          "SCHAMOUNT": 0.0,
+          "CASHID": 990000051,
+          "SCHLIST": "",
+          "FROMFILIAL": 15,
+          "STATUS": 0,
+          "CALCSTATUS": 0,
+          "TREATCODE": 156802582,
+          "BMIN": 0,
+          "CLVISIT": 1,
+          "PCODE": 150000074,
+          "TREATCOMPLETE": 1,
+          "SCHEDIDENT": 150099339,
+          "SCHEDTYPE": 1,
+          "AUTHKEY": "e8ab759a",
+          "FHOUR": 17,
+          "CREATORID": 150000278,
+          "SCHEDID": 151337489,
+          "CLCALL": 150000278,
+          "BHOUR": 17,
+          "DCODE": 150000278,
+          "CALLTYPE": 2,
+          "REPRESPCODE": 0,
+          "WORKDATE": "16-AUG-2021"
+        }
+      },
+      {
+        "tableName": "REPL$CHANGELOG",
+        "statementType": "INSERT",
+        "keyValues": {
+          "ID": 225940125
+        },
+        "newFieldValues": {
+          "OP": 1,
+          "FROMGRPID": 15,
+          "TABLENAME": "SCHEDULE",
+          "REPLID": 1337512,
+          "OWNGRPID": 15,
+          "ID": 225940125,
+          "TOGRPID": 0,
+          "MODIFYDATE": "16-AUG-2021 23:46:20.6780",
+          "REPLGRPID": 15
+        },
+        "oldFieldValues": {}
+      }
+    ]
+  }
+]
