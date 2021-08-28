@@ -22,16 +22,18 @@ public class SegmentParser {
 
     static EnumSet<StatementType> STATEMENT_WITH_OLD_VALUES = EnumSet.of(StatementType.UPDATE, StatementType.DELETE);
 
-    static Pattern patternStartTransaction = Pattern.compile("\\d+:\\d+ \\[(\\d+)] START \\(session (\\d+)\\)");
-    static Pattern patternSave = Pattern.compile("\\d+:\\d+ \\[(\\d+)] SAVE");
-    static Pattern patternRelease = Pattern.compile("\\d+:\\d+ \\[(\\d+)] RELEASE");
-    static Pattern patternCommit = Pattern.compile("\\d+:\\d+ \\[(\\d+)] COMMIT");
-    static Pattern patternRollback = Pattern.compile("\\d+:\\d+ \\[(\\d+)] ROLLBACK");
-    static Pattern patternBlob = Pattern.compile("\\d+:\\d+ \\[(\\d+)] BLOB (\\d+:\\d+) \\(length (\\d+)\\)");
-    static Pattern patternExecSql = Pattern.compile("\\d+:\\d+ \\[(\\d+)] EXECUTE SQL");
-    static Pattern patternDescribe = Pattern.compile("\\d+:\\d+ \\[] DESCRIBE ([A-Za-z0-9_$]+) \\(count (\\d+), length (\\d+)\\)");
-    static Pattern patternTableOperator = Pattern.compile("\\d+:\\d+ \\[(\\d+)] (INSERT|UPDATE|DELETE) ([A-Za-z0-9_$]+) \\(length \\d+\\) # \\d+");
-    static Pattern patternSetSequence = Pattern.compile("\\d+:\\d+ \\[] SET SEQUENCE ([A-Za-z0-9_$]+) = (\\d+)");
+    static Pattern patternBlock = Pattern.compile("BLOCK (\\d+):(\\d+) \\(\\d+ bytes\\)");
+    static Pattern patternStartTransaction = Pattern.compile("(\\d+):(\\d+) \\[(\\d+)] START \\(session (\\d+)\\)");
+    static Pattern patternSave = Pattern.compile("(\\d+):(\\d+) \\[(\\d+)] SAVE");
+    static Pattern patternRelease = Pattern.compile("(\\d+):(\\d+) \\[(\\d+)] RELEASE");
+    static Pattern patternCommit = Pattern.compile("(\\d+):(\\d+) \\[(\\d+)] COMMIT");
+    static Pattern patternRollback = Pattern.compile("(\\d+):(\\d+) \\[(\\d+)] ROLLBACK");
+    static Pattern patternBlob = Pattern.compile("(\\d+):(\\d+) \\[(\\d+)] BLOB (\\d+:\\d+) \\(length (\\d+)\\)");
+    static Pattern patternExecSql = Pattern.compile("(\\d+):(\\d+) \\[(\\d+)] EXECUTE SQL");
+    static Pattern patternDescribe = Pattern.compile("(\\d+):(\\d+) \\[] DESCRIBE ([A-Za-z0-9_$]+) \\(count (\\d+), length (\\d+)\\)");
+    static Pattern patternTableOperator = Pattern.compile("(\\d+):(\\d+) \\[(\\d+)] (INSERT|UPDATE|DELETE) ([A-Za-z0-9_$]+) \\(length \\d+\\) # \\d+");
+    static Pattern patternSetSequence = Pattern.compile("(\\d+):(\\d+) \\[] SET SEQUENCE ([A-Za-z0-9_$]+) = (\\d+)");
+    static Pattern patternDisconnect = Pattern.compile("(\\d+):(\\d+) \\[] DISCONNECT \\(session (\\d+)\\)");
     static Pattern patternKey = Pattern.compile("^Key: \\((.*)\\)$");
     static Pattern patternFieldDesc = Pattern.compile("^([A-Za-z0-9_$]+): type (\\d+), subtype (\\d+), length (\\d+), scale (-?\\d+), offset (\\d+)");
 
@@ -42,6 +44,8 @@ public class SegmentParser {
     static Pattern updateStringValuePattern = Pattern.compile("^('*.') -> (.*)$");
     static Pattern updateBooleanValuePattern = Pattern.compile("^(TRUE|FALSE) -> (TRUE|FALSE|NULL)$");
     static Pattern updateValuePattern = Pattern.compile("^(.*) -> (.*)$");
+
+    private TableFilterInterface tableFilter = null;
 
 
     private final SegmentProcessEventSupport eventsSupport;
@@ -75,6 +79,23 @@ public class SegmentParser {
         eventsSupport.removeSegmentProcessEventListener(listener);
     }
 
+    public TableFilterInterface getTableFilter() {
+        return tableFilter;
+    }
+
+    public void setTableFilter(TableFilterInterface tableFilter) {
+        this.tableFilter = tableFilter;
+    }
+
+    private boolean checkTableName(String tableName)
+    {
+        if (tableFilter != null) {
+            return tableFilter.filter(tableName);
+        } else {
+            return true;
+        }
+    }
+
     /**
      * Разбор одного сегмента лога репликации
      *
@@ -90,12 +111,26 @@ public class SegmentParser {
         String tableName = null;
         while ((line = bufferedReader.readLine()) != null) {
             if (line.contains("[") && line.contains("]")) {
-                if (line.contains("START")) {
+                if (line.contains("BLOCK")) {
+                    Matcher match = patternBlock.matcher(line);
+                    if (match.find()) {
+                        // новый блок команд
+                        long segmentNumber = Long.parseLong(match.group(1));
+                        long commandNumber = Long.parseLong(match.group(2));
+                        this.eventsSupport.fireBlock(segmentNumber, commandNumber);
+                        command = null;
+                        tableName = null;
+                        state = ParserState.NONE;
+                    }
+                } else if (line.contains("START")) {
                     Matcher match = patternStartTransaction.matcher(line);
                     if (match.find()) {
                         // старт транзакции
-                        long traNumber = Long.parseLong(match.group(1));
-                        this.eventsSupport.fireStartTransaction(traNumber);
+                        long segmentNumber = Long.parseLong(match.group(1));
+                        long commandNumber = Long.parseLong(match.group(2));
+                        long traNumber = Long.parseLong(match.group(3));
+                        long sessionNumber = Long.parseLong(match.group(4));
+                        this.eventsSupport.fireStartTransaction(segmentNumber, commandNumber, traNumber, sessionNumber);
                         command = null;
                         tableName = null;
                         state = ParserState.NONE;
@@ -104,9 +139,11 @@ public class SegmentParser {
                     Matcher match = patternSave.matcher(line);
                     if (match.find()) {
                         // точка сохранения????
-                        long traNumber = Long.parseLong(match.group(1));
+                        long segmentNumber = Long.parseLong(match.group(1));
+                        long commandNumber = Long.parseLong(match.group(2));
+                        long traNumber = Long.parseLong(match.group(3));
                         if ((state == ParserState.RECORD) || (state == ParserState.EXECSQL)) {
-                            fireCommandEvent(command);
+                            fireCommandEvent(segmentNumber, commandNumber, command);
                         }
                         command = null;
                         tableName = null;
@@ -116,9 +153,11 @@ public class SegmentParser {
                     Matcher match = patternRelease.matcher(line);
                     if (match.find()) {
                         // освобождение точки сохранения???
-                        long traNumber = Long.parseLong(match.group(1));
+                        long segmentNumber = Long.parseLong(match.group(1));
+                        long commandNumber = Long.parseLong(match.group(2));
+                        long traNumber = Long.parseLong(match.group(3));
                         if ((state == ParserState.RECORD) || (state == ParserState.EXECSQL)) {
-                            fireCommandEvent(command);
+                            fireCommandEvent(segmentNumber, commandNumber, command);
                         }
                         command = null;
                         tableName = null;
@@ -128,9 +167,11 @@ public class SegmentParser {
                     Matcher match = patternBlob.matcher(line);
                     if (match.find()) {
                         // содержимое BLOB
-                        long traNumber = Long.parseLong(match.group(1));
-                        String blobId = match.group(2);
-                        long length = Long.parseLong(match.group(3));
+                        long segmentNumber = Long.parseLong(match.group(1));
+                        long commandNumber = Long.parseLong(match.group(2));
+                        long traNumber = Long.parseLong(match.group(3));
+                        String blobId = match.group(4);
+                        long length = Long.parseLong(match.group(5));
                         if (length > 0) {
                             line = bufferedReader.readLine();
                             String hexString = line.trim();
@@ -142,9 +183,19 @@ public class SegmentParser {
                 } else if (line.contains("DESCRIBE")) {
                     Matcher match = patternDescribe.matcher(line);
                     if (match.find()) {
-                        tableName = match.group(1);
-                        int count = Integer.parseInt(match.group(2));
-                        int length = Integer.parseInt(match.group(3));
+                        long segmentNumber = Long.parseLong(match.group(1));
+                        long commandNumber = Long.parseLong(match.group(2));
+                        tableName = match.group(3);
+                        int count = Integer.parseInt(match.group(4));
+                        int length = Integer.parseInt(match.group(5));
+                        if (!checkTableName(tableName)) {
+                            // если имя таблицы не проходит проверку, то
+                            command = null;
+                            tableName = null;
+                            state = ParserState.NONE;
+                            continue;
+                        }
+
                         if (tables.containsKey(tableName)) {
                             tables.get(tableName).clearFields();
                         } else {
@@ -158,8 +209,10 @@ public class SegmentParser {
                     Matcher match = patternCommit.matcher(line);
                     if (match.find()) {
                         // подтверждение транзакции
-                        long traNumber = Long.parseLong(match.group(1));
-                        this.eventsSupport.fireCommit(traNumber);
+                        long segmentNumber = Long.parseLong(match.group(1));
+                        long commandNumber = Long.parseLong(match.group(2));
+                        long traNumber = Long.parseLong(match.group(3));
+                        this.eventsSupport.fireCommit(segmentNumber, commandNumber, traNumber);
                         command = null;
                         tableName = null;
                         state = ParserState.NONE;
@@ -168,8 +221,10 @@ public class SegmentParser {
                     Matcher match = patternRollback.matcher(line);
                     if (match.find()) {
                         // откат транзакции
-                        long traNumber = Long.parseLong(match.group(1));
-                        this.eventsSupport.fireRollback(traNumber);
+                        long segmentNumber = Long.parseLong(match.group(1));
+                        long commandNumber = Long.parseLong(match.group(2));
+                        long traNumber = Long.parseLong(match.group(3));
+                        this.eventsSupport.fireRollback(segmentNumber, commandNumber, traNumber);
                         command = null;
                         tableName = null;
                         state = ParserState.NONE;
@@ -178,9 +233,11 @@ public class SegmentParser {
                     Matcher match = patternSetSequence.matcher(line);
                     if (match.find()) {
                         // установка значения последовательности
-                        String sequenceName = match.group(1);
-                        long sequenceValue = Long.parseLong(match.group(2));
-                        this.eventsSupport.fireSetSequenceValue(sequenceName, sequenceValue);
+                        long segmentNumber = Long.parseLong(match.group(1));
+                        long commandNumber = Long.parseLong(match.group(2));
+                        String sequenceName = match.group(3);
+                        long sequenceValue = Long.parseLong(match.group(4));
+                        this.eventsSupport.fireSetSequenceValue(segmentNumber, commandNumber, sequenceName, sequenceValue);
                         command = null;
                         tableName = null;
                         state = ParserState.NONE;
@@ -193,13 +250,26 @@ public class SegmentParser {
                             this.eventsSupport.fireDescribeTable(tableName, new HashMap<>(1));
                         }
                         // выполнен один из операторов над таблицей
-                        long traNumber = Long.parseLong(match.group(1));
-                        String operator = match.group(2);
-                        tableName = match.group(3);
+                        long segmentNumber = Long.parseLong(match.group(1));
+                        long commandNumber = Long.parseLong(match.group(2));
+                        long traNumber = Long.parseLong(match.group(3));
+                        String operator = match.group(4);
+                        tableName = match.group(5);
+
+                        if (!checkTableName(tableName)) {
+                            // если имя таблицы не проходит проверку, то
+                            command = null;
+                            tableName = null;
+                            state = ParserState.NONE;
+                            continue;
+                        }
+
                         command = new ParsedCommand();
                         command.setTraNum(traNumber);
                         command.setStatementType(StatementType.getStatementTypeByName(operator));
                         command.setTableName(tableName);
+                        command.setSegmentNumber(segmentNumber);
+                        command.setCommandNumber(commandNumber);
                         state = ParserState.RECORD;
                         continue;
                     }
@@ -207,15 +277,32 @@ public class SegmentParser {
                     Matcher match = patternExecSql.matcher(line);
                     if (match.find()) {
                         // выполнение SQL
-                        long traNumber = Long.parseLong(match.group(1));
+                        long segmentNumber = Long.parseLong(match.group(1));
+                        long commandNumber = Long.parseLong(match.group(2));
+                        long traNumber = Long.parseLong(match.group(3));
                         tableName = null;
                         command = new ParsedCommand();
                         command.setTraNum(traNumber);
                         command.setStatementType(StatementType.EXECSQL);
+                        command.setSegmentNumber(segmentNumber);
+                        command.setCommandNumber(commandNumber);
                         state = ParserState.EXECSQL;
                         continue;
                     }
+                } else if (line.contains("DISCONNECT")) {
+                    Matcher match = patternExecSql.matcher(line);
+                    if (match.find()) {
+                        // выполнение SQL
+                        long segmentNumber = Long.parseLong(match.group(1));
+                        long commandNumber = Long.parseLong(match.group(2));
+                        long sessionNumber = Long.parseLong(match.group(3));
+                        this.eventsSupport.fireDisconnect(segmentNumber, commandNumber, sessionNumber);
+                        command = null;
+                        tableName = null;
+                        state = ParserState.NONE;
+                    }
                 }
+
             }
 
             switch (state) {
@@ -236,9 +323,11 @@ public class SegmentParser {
     /**
      * Генерирует событие для разобранной команды
      *
-     * @param command команда для которой генерируется событие
+     * @param segmentNumber номер сегмента
+     * @param commandNumber номер оператора в логе
+     * @param command       команда для которой генерируется событие
      */
-    private void fireCommandEvent(ParsedCommand command) {
+    private void fireCommandEvent(long segmentNumber, long commandNumber, ParsedCommand command) {
         // парсинг значений полей закончено
         switch (command.getStatementType()) {
             case INSERT: {
@@ -248,7 +337,7 @@ public class SegmentParser {
                 Map<String, Object> keyValues = command.getNewFieldValues().entrySet().stream()
                         .filter(v -> keyFieldNames.contains(v.getKey()))
                         .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
-                this.eventsSupport.fireInsertRecord(command.getTraNum(), command.getTableName(), keyValues, command.getNewFieldValues());
+                this.eventsSupport.fireInsertRecord(segmentNumber, commandNumber, command.getTraNum(), command.getTableName(), keyValues, command.getNewFieldValues());
             }
             break;
             case UPDATE: {
@@ -258,7 +347,7 @@ public class SegmentParser {
                 Map<String, Object> keyValues = command.getOldFieldValues().entrySet().stream()
                         .filter(v -> keyFieldNames.contains(v.getKey()))
                         .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
-                this.eventsSupport.fireUpdateRecord(command.getTraNum(), command.getTableName(), keyValues, command.getOldFieldValues(), command.getNewFieldValues());
+                this.eventsSupport.fireUpdateRecord(segmentNumber, commandNumber, command.getTraNum(), command.getTableName(), keyValues, command.getOldFieldValues(), command.getNewFieldValues());
             }
             break;
             case DELETE: {
@@ -268,11 +357,11 @@ public class SegmentParser {
                 Map<String, Object> keyValues = command.getOldFieldValues().entrySet().stream()
                         .filter(v -> keyFieldNames.contains(v.getKey()))
                         .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
-                this.eventsSupport.fireDeleteRecord(command.getTraNum(), command.getTableName(), keyValues, command.getOldFieldValues());
+                this.eventsSupport.fireDeleteRecord(segmentNumber, commandNumber, command.getTraNum(), command.getTableName(), keyValues, command.getOldFieldValues());
             }
             break;
             case EXECSQL:
-                this.eventsSupport.fireExecuteSql(command.getTraNum(), command.getSql());
+                this.eventsSupport.fireExecuteSql(segmentNumber, commandNumber, command.getTraNum(), command.getSql());
                 break;
         }
     }

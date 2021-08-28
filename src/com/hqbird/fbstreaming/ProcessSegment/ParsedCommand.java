@@ -12,6 +12,8 @@ import java.util.Map;
  * или собирать SQL запрос
  */
 public class ParsedCommand {
+    private long segmentNumber;
+    private long commandNumber;
     private long traNum;
     private StatementType statementType;
     private String tableName;
@@ -22,6 +24,42 @@ public class ParsedCommand {
     public ParsedCommand() {
         this.oldFieldValues = new HashMap<>(10);
         this.newFieldValues = new HashMap<>(10);
+    }
+
+    /**
+     * Возвращает номер сегмента
+     *
+     * @return номер сегмента
+     */
+    public long getSegmentNumber() {
+        return segmentNumber;
+    }
+
+    /**
+     * Устанавливает номер сегмента
+     *
+     * @param segmentNumber номер сегмента
+     */
+    public void setSegmentNumber(long segmentNumber) {
+        this.segmentNumber = segmentNumber;
+    }
+
+    /**
+     * Возвращает номер команды
+     *
+     * @return номер команды
+     */
+    public long getCommandNumber() {
+        return commandNumber;
+    }
+
+    /**
+     * Устанавливает номер команды
+     *
+     * @param commandNumber номер команды
+     */
+    public void setCommandNumber(long commandNumber) {
+        this.commandNumber = commandNumber;
     }
 
     /**

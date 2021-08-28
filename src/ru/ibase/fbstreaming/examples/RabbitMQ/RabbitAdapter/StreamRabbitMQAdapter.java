@@ -63,6 +63,17 @@ public class StreamRabbitMQAdapter implements SegmentProcessEventListener {
         }
     }
 
+    /**
+     * Событие - новый блок
+     *
+     * @param segmentNumber номер сегмента
+     * @param commandNumber номер команды
+     */
+    @Override
+    public void block(long segmentNumber, long commandNumber) {
+
+    }
+
     @Override
     public void startTransaction(long traNumber) {
         StreamTransaction transaction = new StreamTransaction(traNumber);
@@ -70,7 +81,7 @@ public class StreamRabbitMQAdapter implements SegmentProcessEventListener {
     }
 
     @Override
-    public void commit(long traNumber) {
+    public void commit(long segmentNumber, long commandNumber, long traNumber) {
         StreamTransaction transaction = transactions.remove(traNumber);
         String jsonStr = getGson().toJson(transaction);
         try {
@@ -123,5 +134,18 @@ public class StreamRabbitMQAdapter implements SegmentProcessEventListener {
     @Override
     public void setSequenceValue(String sequenceName, long seqValue) {
         // мы не события установки последовательности
+    }
+
+    /**
+     * Событие - отключение БД
+     *
+     * @param segmentNumber номер сегмента
+     * @param commandNumber номер оператора в логе
+     * @param sessionNumber номер (идентификатор) сессии
+     */
+    @Override
+    public void disconnect(long segmentNumber, long commandNumber, long sessionNumber)
+    {
+
     }
 }

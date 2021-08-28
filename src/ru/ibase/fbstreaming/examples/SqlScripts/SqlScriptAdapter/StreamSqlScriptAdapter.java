@@ -5,12 +5,18 @@ import com.hqbird.fbstreaming.StatementType;
 import com.hqbird.fbstreaming.StreamSqlStatement;
 import com.hqbird.fbstreaming.StreamTableStatement;
 import com.hqbird.fbstreaming.StreamTransaction;
+import ru.ibase.fbstreaming.examples.JsonFiles.JsonAdapter.StreamJsonAdapter;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class StreamSqlScriptAdapter implements SegmentProcessEventListener {
-
+    static Logger logger = Logger.getLogger(StreamJsonAdapter.class.getName());
     private final String outgoingFolder;
     private final Map<Long, StreamTransaction> transactions;
     private final TableStatementBuilder tableStatementBuilder;
@@ -31,6 +37,17 @@ public class StreamSqlScriptAdapter implements SegmentProcessEventListener {
 
     }
 
+    /**
+     * Событие - новый блок
+     *
+     * @param segmentNumber номер сегмента
+     * @param commandNumber номер команды
+     */
+    @Override
+    public void block(long segmentNumber, long commandNumber) {
+
+    }
+
     @Override
     public void startTransaction(long traNumber) {
         StreamTransaction transaction = new StreamTransaction(traNumber);
@@ -38,9 +55,31 @@ public class StreamSqlScriptAdapter implements SegmentProcessEventListener {
     }
 
     @Override
-    public void commit(long traNumber) {
+    public void commit(long segmentNumber, long commandNumber, long traNumber) {
         // если транзакция подтверждена записываем её в список для текущего сегмента
         StreamTransaction transaction = transactions.remove(traNumber);
+        StringBuilder scriptBuilder = new StringBuilder();
+        for (StreamTableStatement command : transaction.getTableStatements()) {
+            String sql = tableStatementBuilder.buildTableCommandSql(command);
+            if (sql != null) {
+                scriptBuilder.append(sql).append(";\n\n");
+            }
+        }
+        String sqlFileName = outgoingFolder + "/" + String.format("%09d-%09d", segmentNumber, commandNumber) + ".sql";
+
+        try {
+            boolean isCreated = new File(sqlFileName).createNewFile();
+            if (!isCreated) {
+                throw new IOException(String.format("Can not create journal file %s", sqlFileName));
+            }
+
+            try (FileWriter journalWriter = new FileWriter(sqlFileName, true)) {
+                journalWriter.write(scriptBuilder.toString());
+            }
+        } catch (IOException e) {
+            logger.log(Level.SEVERE, "Cannot write journal file: " + e.getMessage(), e);
+            e.printStackTrace();
+        }
     }
 
     @Override
@@ -84,6 +123,18 @@ public class StreamSqlScriptAdapter implements SegmentProcessEventListener {
 
     @Override
     public void setSequenceValue(String sequenceName, long seqValue) {
+
+    }
+
+    /**
+     * Событие - отключение БД
+     *
+     * @param segmentNumber номер сегмента
+     * @param commandNumber номер оператора в логе
+     * @param sessionNumber номер (идентификатор) сессии
+     */
+    @Override
+    public void disconnect(long segmentNumber, long commandNumber, long sessionNumber) {
 
     }
 }

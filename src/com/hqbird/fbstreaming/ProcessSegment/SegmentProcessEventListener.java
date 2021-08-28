@@ -21,6 +21,14 @@ public interface SegmentProcessEventListener {
     void finishSegmentParse(String segmentName);
 
     /**
+     * Событие - новый блок
+     *
+     * @param segmentNumber номер сегмента
+     * @param commandNumber номер команды
+     */
+    void block(long segmentNumber, long commandNumber);
+
+    /**
      * Событие - старт транзакции
      *
      * @param traNumber номер транзакции
@@ -30,9 +38,11 @@ public interface SegmentProcessEventListener {
     /**
      * Событие - подтверждение транзакции
      *
+     * @param segmentNumber номер сегмента
+     * @param commandNumber номер команды
      * @param traNumber номер транзакции
      */
-    void commit(long traNumber);
+    void commit(long segmentNumber, long commandNumber, long traNumber);
 
     /**
      * Событие - откат транзакции
@@ -95,4 +105,13 @@ public interface SegmentProcessEventListener {
      * @param seqValue значение последовательности
      */
     void setSequenceValue(String sequenceName, long seqValue);
+
+    /**
+     * Событие - отключение БД
+     *
+     * @param segmentNumber номер сегмента
+     * @param commandNumber номер оператора в логе
+     * @param sessionNumber номер (идентификатор) сессии
+     */
+    void disconnect(long segmentNumber, long commandNumber, long sessionNumber);
 }
