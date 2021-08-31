@@ -79,14 +79,30 @@ public class SegmentParser {
         eventsSupport.removeSegmentProcessEventListener(listener);
     }
 
+    /**
+     * Возвращает функцию фильтрации таблиц
+     *
+     * @return функция (интерфейс) фильтрации таблиц
+     */
     public TableFilterInterface getTableFilter() {
         return tableFilter;
     }
 
+    /**
+     * Устанавливает функцию фильтрации таблиц
+     *
+     * @param tableFilter функция (интерфейс) фильтрации таблиц
+     */
     public void setTableFilter(TableFilterInterface tableFilter) {
         this.tableFilter = tableFilter;
     }
 
+    /**
+     * Проверяет включать ли таблицу в обработку
+     *
+     * @param tableName имя таблицы
+     * @return true если таблицу необходимо обработать, false в противном случае
+     */
     private boolean checkTableName(String tableName)
     {
         if (tableFilter != null) {
