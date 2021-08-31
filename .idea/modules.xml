@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/FirebirdStreaming.iml" filepath="$PROJECT_DIR$/FirebirdStreaming.iml" />
+      <module fileurl="file://$PROJECT_DIR$/examples/JsonFiles/com.hqbird.examples.json.iml" filepath="$PROJECT_DIR$/examples/JsonFiles/com.hqbird.examples.json.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib/com.hqbird.fbstreaming.iml" filepath="$PROJECT_DIR$/lib/com.hqbird.fbstreaming.iml" />
     </modules>
   </component>
 </project>
