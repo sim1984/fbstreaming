@@ -1,11 +1,10 @@
-package ru.ibase.fbstreaming.examples.SqlScripts.SqlScriptAdapter;
+package com.hqbird.fbstreaming.examples.sqlscripts.SqlScriptAdapter;
 
 import com.hqbird.fbstreaming.ProcessSegment.SegmentProcessEventListener;
 import com.hqbird.fbstreaming.StatementType;
 import com.hqbird.fbstreaming.StreamSqlStatement;
 import com.hqbird.fbstreaming.StreamTableStatement;
 import com.hqbird.fbstreaming.StreamTransaction;
-import ru.ibase.fbstreaming.examples.JsonFiles.JsonAdapter.StreamJsonAdapter;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -16,7 +15,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class StreamSqlScriptAdapter implements SegmentProcessEventListener {
-    static Logger logger = Logger.getLogger(StreamJsonAdapter.class.getName());
+    static Logger logger = Logger.getLogger(StreamSqlScriptAdapter.class.getName());
     private final String outgoingFolder;
     private final Map<Long, StreamTransaction> transactions;
     private final TableStatementBuilder tableStatementBuilder;

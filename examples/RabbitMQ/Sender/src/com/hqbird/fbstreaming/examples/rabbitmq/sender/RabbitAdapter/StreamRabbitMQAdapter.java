@@ -1,4 +1,4 @@
-package ru.ibase.fbstreaming.examples.RabbitMQ.RabbitAdapter;
+package com.hqbird.fbstreaming.examples.rabbitmq.sender.RabbitAdapter;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;

@@ -24,8 +24,8 @@
 /.idea/*
 
 # target
-/target/*
+target/*
 
-/.incoming/*
-/.outcoming/*
+incoming/*
+outcoming/*
 

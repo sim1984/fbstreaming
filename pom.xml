@@ -4,27 +4,28 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <properties>
+        <maven.test.skip>true</maven.test.skip>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.version>1.8</java.version>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
     <groupId>com.hqbird.fbstreaming</groupId>
     <artifactId>fbstreaming.pom</artifactId>
     <version>1.0</version>
     <packaging>pom</packaging>
+    <name>Firebird Streaming</name>
+    <url>http://maven.apache.org</url>
 
     <modules>
         <module>lib</module>
         <module>examples/JsonFiles</module>
-        <!--
-        <module>examples/RabbitMQ/Recv</module>
-        <module>examples/RabbitMQ/Send</module>
+        <module>examples/RabbitMQ/Receiver</module>
+        <module>examples/RabbitMQ/Sender</module>
         <module>examples/SqlScripts</module>
-        -->
     </modules>
-
-
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
-    </properties>
 
     <dependencyManagement>
         <dependencies>
@@ -51,4 +52,18 @@
         </dependencies>
     </dependencyManagement>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>

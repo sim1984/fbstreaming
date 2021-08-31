@@ -4,17 +4,13 @@
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/lib/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/examples/JsonFiles/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/examples/RabbitMQ/Recv/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/examples/RabbitMQ/Send/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/examples/SqlScripts/src" isTestSource="false" />
-      <excludeFolder url="file://$MODULE_DIR$/outgoing" />
-      <excludeFolder url="file://$MODULE_DIR$/incoming" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="com.hqbird.fbstreaming" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-nop:1.7.32" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.32" level="project" />
   </component>
 </module>

@@ -1,19 +1,18 @@
-package ru.ibase.fbstreaming.examples.RabbitMQ;
+package com.hqbird.fbstreaming.examples.rabbitmq.sender;
 
 import com.hqbird.fbstreaming.ProcessSegment.JournalLogChecker;
 import com.hqbird.fbstreaming.ProcessSegment.SegmentProcessEventListener;
 import com.hqbird.fbstreaming.ProcessSegment.SegmentProcessor;
-import com.hqbird.fbstreaming.QueueLog.FileProcessor;
 import com.hqbird.fbstreaming.QueueLog.QueueProcessor;
+import com.hqbird.fbstreaming.examples.rabbitmq.sender.RabbitAdapter.StreamRabbitMQAdapter;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
-import ru.ibase.fbstreaming.examples.RabbitMQ.RabbitAdapter.StreamRabbitMQAdapter;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class Send {
-    static final Logger logger = Logger.getLogger(Send.class.getName());
+public class Main {
+    static final Logger logger = Logger.getLogger(Main.class.getName());
     private static final String journalName = "segments.journal";
 
     private final static String QUEUE_NAME = "hello";

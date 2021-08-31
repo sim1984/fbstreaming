@@ -7,13 +7,19 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="com.hqbird.fbstreaming" />
-        <module name="com.hqbird.examples.json" />
+        <module name="com.hqbird.fbstreaming.examples.json" />
+        <module name="com.hqbird.fbstreaming.examples.rabbitmq.receiver" />
+        <module name="com.hqbird.fbstreaming.examples.sqlscripts" />
+        <module name="com.hqbird.fbstreaming.examples.rabbitmq.sender" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="com.hqbird.examples.json" target="1.8" />
       <module name="com.hqbird.fbstreaming" target="1.8" />
-      <module name="fbstreaming" target="1.8" />
+      <module name="com.hqbird.fbstreaming.examples.json" target="1.8" />
+      <module name="com.hqbird.fbstreaming.examples.rabbitmq.receiver" target="1.8" />
+      <module name="com.hqbird.fbstreaming.examples.rabbitmq.sender" target="1.8" />
+      <module name="com.hqbird.fbstreaming.examples.sqlscripts" target="1.8" />
+      <module name="fbstreaming.pom" target="1.8" />
       <module name="FirebirdStreaming" target="1.8" />
     </bytecodeTargetLevel>
   </component>

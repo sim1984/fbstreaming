@@ -1,11 +1,10 @@
-package ru.ibase.fbstreaming.examples.SqlScripts;
+package com.hqbird.fbstreaming.examples.sqlscripts;
 
 import com.hqbird.fbstreaming.ProcessSegment.JournalLogChecker;
 import com.hqbird.fbstreaming.ProcessSegment.SegmentProcessor;
 import com.hqbird.fbstreaming.QueueLog.QueueProcessor;
-import ru.ibase.fbstreaming.examples.RabbitMQ.Send;
-import ru.ibase.fbstreaming.examples.SqlScripts.SqlScriptAdapter.StreamSqlScriptAdapter;
-import ru.ibase.fbstreaming.examples.SqlScripts.SqlScriptAdapter.TableStatementBuilder;
+import com.hqbird.fbstreaming.examples.sqlscripts.SqlScriptAdapter.StreamSqlScriptAdapter;
+import com.hqbird.fbstreaming.examples.sqlscripts.SqlScriptAdapter.TableStatementBuilder;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +12,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class Main {
-    static final Logger logger = Logger.getLogger(Send.class.getName());
+    static final Logger logger = Logger.getLogger(Main.class.getName());
     private static final String journalName = "segments.journal";
 
     public static void main(String[] args) throws Exception {
