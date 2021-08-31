@@ -70,4 +70,13 @@ public class StreamTransaction {
     public void addCommand(StreamStatement statement) {
         this.statements.add(statement);
     }
+
+    /**
+     * Возвращает пуст ли список операторов в транзакции
+     *
+     * @return true если в транзакции нет операторов, false в противном случае
+     */
+    public boolean isEmpty() {
+        return statements.isEmpty();
+    }
 }

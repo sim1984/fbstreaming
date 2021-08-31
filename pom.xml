@@ -17,7 +17,6 @@
     <version>1.0</version>
     <packaging>pom</packaging>
     <name>Firebird Streaming</name>
-    <url>http://maven.apache.org</url>
 
     <modules>
         <module>lib</module>

@@ -188,7 +188,7 @@ public class SegmentParser {
                         tableName = match.group(3);
                         int count = Integer.parseInt(match.group(4));
                         int length = Integer.parseInt(match.group(5));
-                        if (checkTableName(tableName)) {
+                        if (!checkTableName(tableName)) {
                             // если имя таблицы не проходит проверку, то
                             command = null;
                             tableName = null;
@@ -256,7 +256,7 @@ public class SegmentParser {
                         String operator = match.group(4);
                         tableName = match.group(5);
 
-                        if (checkTableName(tableName)) {
+                        if (!checkTableName(tableName)) {
                             // если имя таблицы не проходит проверку, то
                             command = null;
                             tableName = null;

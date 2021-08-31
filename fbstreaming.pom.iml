@@ -4,6 +4,12 @@
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
     <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/.idea/libraries" />
+      <excludeFolder url="file://$MODULE_DIR$/outgoing" />
+      <excludeFolder url="file://$MODULE_DIR$/incoming" />
+      <excludeFolder url="file://$MODULE_DIR$/journals/incoming" />
+      <excludeFolder url="file://$MODULE_DIR$/journals/json_outgoing" />
+      <excludeFolder url="file://$MODULE_DIR$/journals" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />

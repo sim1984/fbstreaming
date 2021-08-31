@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="com.hqbird.fbstreaming" />
         <module name="com.hqbird.fbstreaming.examples.json" />
+        <module name="RabbitMQReceiver" />
         <module name="com.hqbird.fbstreaming.examples.rabbitmq.receiver" />
         <module name="com.hqbird.fbstreaming.examples.sqlscripts" />
         <module name="com.hqbird.fbstreaming.examples.rabbitmq.sender" />
@@ -21,6 +22,7 @@
       <module name="com.hqbird.fbstreaming.examples.sqlscripts" target="1.8" />
       <module name="fbstreaming.pom" target="1.8" />
       <module name="FirebirdStreaming" target="1.8" />
+      <module name="RabbitMQReceiver" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
