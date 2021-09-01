@@ -299,9 +299,9 @@ public class SegmentParser {
                         continue;
                     }
                 } else if (line.contains("DISCONNECT")) {
-                    Matcher match = patternExecSql.matcher(line);
+                    Matcher match = patternDisconnect.matcher(line);
                     if (match.find()) {
-                        // выполнение SQL
+                        // отключение БД
                         long segmentNumber = Long.parseLong(match.group(1));
                         long commandNumber = Long.parseLong(match.group(2));
                         long sessionNumber = Long.parseLong(match.group(3));

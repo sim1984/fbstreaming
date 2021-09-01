@@ -1,4 +1,4 @@
-package  com.hqbird.fbstreaming.examples.sqlscripts.SqlScriptAdapter;
+package com.hqbird.fbstreaming.plugin.sql;
 
 import com.hqbird.fbstreaming.StreamTableStatement;
 

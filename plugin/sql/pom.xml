@@ -11,26 +11,16 @@
         <relativePath>../../pom.xml</relativePath>
     </parent>
 
-    <groupId>com.hqbird.fbstreaming.examples.sqlscripts</groupId>
-    <artifactId>SqlScripts</artifactId>
+    <groupId>com.hqbird.fbstreaming.plugin.sql</groupId>
+    <artifactId>sql-stream-plugin</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
-    <name>Firebird Streaming. Sql scripts adapter</name>
-
+    <name>Firebird Streaming. Sql adapter plugin</name>
 
     <dependencies>
         <dependency>
             <groupId>com.hqbird.fbstreaming</groupId>
             <artifactId>fbstreaming</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.hqbird.fbstreaming.plugin.sql</groupId>
-            <artifactId>sql-stream-plugin</artifactId>
-            <version>1.0</version>
-        </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-nop</artifactId>
         </dependency>
     </dependencies>
 
@@ -51,7 +41,6 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>com.hqbird.fbstreaming.examples.sqlscripts.Main</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>

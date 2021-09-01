@@ -19,17 +19,13 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.hqbird.fbstreaming.plugin.json</groupId>
-            <artifactId>json-stream-plugin</artifactId>
-            <version>1.0</version>
-        </dependency>
-        <dependency>
             <groupId>com.hqbird.fbstreaming</groupId>
             <artifactId>fbstreaming</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.google.code.gson</groupId>
-            <artifactId>gson</artifactId>
+            <groupId>com.hqbird.fbstreaming.plugin.json</groupId>
+            <artifactId>json-stream-plugin</artifactId>
+            <version>1.0</version>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>

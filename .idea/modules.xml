@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/examples/SqlScripts/com.hqbird.fbstreaming.examples.sqlscripts.iml" filepath="$PROJECT_DIR$/examples/SqlScripts/com.hqbird.fbstreaming.examples.sqlscripts.iml" />
       <module fileurl="file://$PROJECT_DIR$/fbstreaming.pom.iml" filepath="$PROJECT_DIR$/fbstreaming.pom.iml" />
       <module fileurl="file://$PROJECT_DIR$/plugin/json/json-stream-plugin.iml" filepath="$PROJECT_DIR$/plugin/json/json-stream-plugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/plugin/sql/sql-stream-plugin.iml" filepath="$PROJECT_DIR$/plugin/sql/sql-stream-plugin.iml" />
     </modules>
   </component>
 </project>

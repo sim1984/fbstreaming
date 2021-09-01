@@ -10,6 +10,7 @@
         <module name="RabbitMQReceiver" />
         <module name="com.hqbird.fbstreaming.examples.rabbitmq.receiver" />
         <module name="json-stream-plugin" />
+        <module name="sql-stream-plugin" />
         <module name="com.hqbird.fbstreaming" />
         <module name="com.hqbird.fbstreaming.examples.sqlscripts" />
         <module name="com.hqbird.fbstreaming.examples.rabbitmq.sender" />
@@ -26,6 +27,7 @@
       <module name="json-stream-plugin" target="1.8" />
       <module name="JsonFiles" target="1.8" />
       <module name="RabbitMQReceiver" target="1.8" />
+      <module name="sql-stream-plugin" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
