@@ -8,14 +8,14 @@
         <groupId>com.hqbird.fbstreaming</groupId>
         <artifactId>fbstreaming.pom</artifactId>
         <version>1.0</version>
-        <relativePath>../../../pom.xml</relativePath>
+        <relativePath>../../pom.xml</relativePath>
     </parent>
 
-    <groupId>com.hqbird.fbstreaming.examples.rabbitmq.sender</groupId>
-    <artifactId>RabbitMQSender</artifactId>
+    <groupId>com.hqbird.fbstreaming.plugin.rabbitmq</groupId>
+    <artifactId>rabbitmq-stream-plugin</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
-    <name>Firebird Streaming. Rabbit MQ Sender</name>
+    <name>Firebird Streaming. RabbitMQ adapter plugin</name>
 
     <dependencies>
         <dependency>
@@ -23,9 +23,12 @@
             <artifactId>fbstreaming</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.hqbird.fbstreaming.plugin.rabbitmq</groupId>
-            <artifactId>rabbitmq-stream-plugin</artifactId>
-            <version>1.0</version>
+            <groupId>com.rabbitmq</groupId>
+            <artifactId>amqp-client</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
@@ -50,7 +53,6 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>com.hqbird.fbstreaming.examples.rabbitmq.sender.Main</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>

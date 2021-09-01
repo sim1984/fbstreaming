@@ -6,14 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="com.hqbird.fbstreaming.examples.json" />
         <module name="RabbitMQReceiver" />
+        <module name="RabbitMQSender" />
         <module name="com.hqbird.fbstreaming.examples.rabbitmq.receiver" />
         <module name="json-stream-plugin" />
         <module name="sql-stream-plugin" />
+        <module name="rabbitmq-stream-plugin" />
         <module name="com.hqbird.fbstreaming" />
-        <module name="com.hqbird.fbstreaming.examples.sqlscripts" />
-        <module name="com.hqbird.fbstreaming.examples.rabbitmq.sender" />
+        <module name="SqlScripts" />
+        <module name="JsonFiles" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -25,9 +26,13 @@
       <module name="fbstreaming.pom" target="1.8" />
       <module name="FirebirdStreaming" target="1.8" />
       <module name="json-stream-plugin" target="1.8" />
+      <module name="json-stream-plugin (1) (com.hqbird.fbstreaming.plugin.rabbitmq)" target="1.8" />
       <module name="JsonFiles" target="1.8" />
+      <module name="rabbitmq-stream-plugin" target="1.8" />
       <module name="RabbitMQReceiver" target="1.8" />
+      <module name="RabbitMQSender" target="1.8" />
       <module name="sql-stream-plugin" target="1.8" />
+      <module name="SqlScripts" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
