@@ -10,7 +10,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="sql-stream-plugin" />
     <orderEntry type="module" module-name="com.hqbird.fbstreaming" />
     <orderEntry type="module" module-name="sql-stream-plugin" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-nop:1.7.32" level="project" />
