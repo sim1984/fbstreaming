@@ -19,7 +19,8 @@
     <name>Firebird Streaming</name>
 
     <modules>
-        <module>lib</module>
+        <module>common</module>
+        <module>plugin/json</module>
         <module>examples/JsonFiles</module>
         <module>examples/RabbitMQ/Receiver</module>
         <module>examples/RabbitMQ/Sender</module>

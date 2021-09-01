@@ -10,7 +10,7 @@ import java.util.Properties;
 import java.util.regex.Pattern;
 
 public class JsonStreamPlugin implements FbStreamPlugin {
-    public int runProcess(Properties properties) throws Exception {
+    public int invoke(Properties properties) throws Exception {
         final String incomingFolder = properties.getProperty("incomingFolder");
         final String outgoingFolder = properties.getProperty("outgoingFolder");
         final String fileCharsetName = properties.getProperty("segmentFileCharset");

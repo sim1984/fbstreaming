@@ -10,7 +10,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="com.hqbird.fbstreaming" />
+    <orderEntry type="module" module-name="json-stream-plugin" />
+    <orderEntry type="library" name="Maven: com.hqbird.fbstreaming:fbstreaming:1.0" level="project" />
     <orderEntry type="library" name="Maven: com.google.code.gson:gson:2.8.8" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-nop:1.7.32" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.32" level="project" />

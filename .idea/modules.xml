@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/examples/RabbitMQ/Sender/com.hqbird.fbstreaming.examples.rabbitmq.sender.iml" filepath="$PROJECT_DIR$/examples/RabbitMQ/Sender/com.hqbird.fbstreaming.examples.rabbitmq.sender.iml" />
       <module fileurl="file://$PROJECT_DIR$/examples/SqlScripts/com.hqbird.fbstreaming.examples.sqlscripts.iml" filepath="$PROJECT_DIR$/examples/SqlScripts/com.hqbird.fbstreaming.examples.sqlscripts.iml" />
       <module fileurl="file://$PROJECT_DIR$/fbstreaming.pom.iml" filepath="$PROJECT_DIR$/fbstreaming.pom.iml" />
+      <module fileurl="file://$PROJECT_DIR$/plugin/json/json-stream-plugin.iml" filepath="$PROJECT_DIR$/plugin/json/json-stream-plugin.iml" />
     </modules>
   </component>
 </project>

@@ -11,18 +11,13 @@
         <relativePath>../../pom.xml</relativePath>
     </parent>
 
-    <groupId>com.hqbird.fbstreaming.examples.json</groupId>
-    <artifactId>JsonFiles</artifactId>
+    <groupId>com.hqbird.fbstreaming.plugin.json</groupId>
+    <artifactId>json-stream-plugin</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
-    <name>Firebird Streaming. Json adapter</name>
+    <name>Firebird Streaming. Json adapter plugin</name>
 
     <dependencies>
-        <dependency>
-            <groupId>com.hqbird.fbstreaming.plugin.json</groupId>
-            <artifactId>json-stream-plugin</artifactId>
-            <version>1.0</version>
-        </dependency>
         <dependency>
             <groupId>com.hqbird.fbstreaming</groupId>
             <artifactId>fbstreaming</artifactId>
@@ -54,7 +49,6 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>com.hqbird.fbstreaming.examples.json.Main</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
