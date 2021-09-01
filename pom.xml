@@ -37,6 +37,21 @@
                 <version>1.0</version>
             </dependency>
             <dependency>
+                <groupId>com.hqbird.fbstreaming.plugin.json</groupId>
+                <artifactId>json-stream-plugin</artifactId>
+                <version>1.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.hqbird.fbstreaming.plugin.rabbitmq</groupId>
+                <artifactId>rabbitmq-stream-plugin</artifactId>
+                <version>1.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.hqbird.fbstreaming.plugin.sql</groupId>
+                <artifactId>sql-stream-plugin</artifactId>
+                <version>1.0</version>
+            </dependency>
+            <dependency>
                 <groupId>com.rabbitmq</groupId>
                 <artifactId>amqp-client</artifactId>
                 <version>5.13.0</version>

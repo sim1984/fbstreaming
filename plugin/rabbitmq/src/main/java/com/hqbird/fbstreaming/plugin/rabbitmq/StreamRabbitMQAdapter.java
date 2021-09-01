@@ -42,7 +42,7 @@ public class StreamRabbitMQAdapter implements SegmentProcessEventListener {
 
     @Override
     public void startSegmentParse(String segmentName) {
-        logger.log(Level.INFO, String.format("Start segment parse %s", segmentName));
+        //logger.log(Level.INFO, String.format("Start segment parse %s", segmentName));
         try {
             channel = connection.createChannel();
             channel.queueDeclare(queueName, false, false, false, null);
@@ -54,7 +54,7 @@ public class StreamRabbitMQAdapter implements SegmentProcessEventListener {
 
     @Override
     public void finishSegmentParse(String segmentName) {
-        logger.log(Level.INFO, String.format("Finish segment parse %s", segmentName));
+        //logger.log(Level.INFO, String.format("Finish segment parse %s", segmentName));
         try {
             channel.close();
         } catch (TimeoutException | IOException e) {
@@ -83,11 +83,14 @@ public class StreamRabbitMQAdapter implements SegmentProcessEventListener {
     @Override
     public void commit(long segmentNumber, long commandNumber, long traNumber) {
         StreamTransaction transaction = transactions.remove(traNumber);
+        if (transaction.isEmpty()) {
+            return;
+        }
         String jsonStr = getGson().toJson(transaction);
         try {
             // Когда транзакция подтверждена просто отсылаем все запросы сделанные в ней в очередь
             channel.basicPublish("", this.queueName, null, jsonStr.getBytes(StandardCharsets.UTF_8));
-            logger.log(Level.INFO, " [x] Sent \n" + jsonStr);
+            //logger.log(Level.INFO, " [x] Sent \n" + jsonStr);
         } catch (IOException e) {
             logger.log(Level.SEVERE, "Cannot send: " + e.getMessage(), e);
             e.printStackTrace();

@@ -11,5 +11,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="com.hqbird.fbstreaming" />
+    <orderEntry type="module" module-name="fbstreaming" />
   </component>
 </module>
