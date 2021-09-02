@@ -33,6 +33,7 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
+                            <mainClass>com.hqbird.fbstreaming.StreamingApp</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>

@@ -27,7 +27,7 @@ public class RabbitMQStreamPlugin implements FbStreamPlugin {
         final String queueName = properties.getProperty("rabbit.queueName");
         String includeTables = properties.getProperty("includeTables");
 
-        if (includeTables.isEmpty()) {
+        if (includeTables == null || includeTables.isEmpty()) {
             includeTables = ".*"; // если пустой фильтр то все таблицы
         }
 

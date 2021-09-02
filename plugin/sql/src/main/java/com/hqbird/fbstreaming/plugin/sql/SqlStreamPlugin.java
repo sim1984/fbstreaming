@@ -17,7 +17,7 @@ public class SqlStreamPlugin implements FbStreamPlugin {
         final String segmentFileNameMask = properties.getProperty("segmentFileNameMask");
         String includeTables = properties.getProperty("includeTables");
 
-        if (includeTables.isEmpty()) {
+        if (includeTables == null || includeTables.isEmpty()) {
             includeTables = ".*"; // если пустой фильтр то все таблицы
         }
 
