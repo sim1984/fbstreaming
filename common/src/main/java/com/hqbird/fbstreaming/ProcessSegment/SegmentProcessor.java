@@ -1,13 +1,12 @@
 package com.hqbird.fbstreaming.ProcessSegment;
 
 import com.hqbird.fbstreaming.QueueLog.FileProcessor;
-import sun.nio.ch.ChannelInputStream;
 
-import java.io.*;
-import java.nio.channels.FileChannel;
-import java.nio.channels.FileLock;
-import java.nio.file.Files;
-import java.nio.file.StandardOpenOption;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.IOException;
+import java.io.RandomAccessFile;
+import java.nio.channels.Channels;
 
 /**
  * Обработчик сегмента репликации
@@ -70,12 +69,8 @@ public class SegmentProcessor implements FileProcessor {
             return false;
         }
         try (
-                //InputStream in = Files.newInputStream(fileToProcess.toPath(), StandardOpenOption.READ, StandardOpenOption.WRITE);
-
                 RandomAccessFile accessFile = new RandomAccessFile(fileToProcess, "rw");
-                FileLock fileLock = accessFile.getChannel().lock();
-                InputStream in = new ChannelInputStream(accessFile.getChannel());
-                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(in, this.charsetName))
+                BufferedReader bufferedReader = new BufferedReader(Channels.newReader(accessFile.getChannel(), this.charsetName))
         ) {
 
             parser.processSegment(fileToProcess.getName(), bufferedReader);

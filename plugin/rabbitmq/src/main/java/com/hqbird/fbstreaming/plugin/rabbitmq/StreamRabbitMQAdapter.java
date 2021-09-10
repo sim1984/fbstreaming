@@ -14,11 +14,11 @@ import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.TimeoutException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+//import java.util.logging.Level;
+//import java.util.logging.Logger;
 
 public class StreamRabbitMQAdapter implements SegmentProcessEventListener {
-    static Logger logger = Logger.getLogger(StreamRabbitMQAdapter.class.getName());
+    //static Logger logger = Logger.getLogger(StreamRabbitMQAdapter.class.getName());
     private static Gson singleGson;
     private final Connection connection;
     private Channel channel = null;
@@ -47,7 +47,7 @@ public class StreamRabbitMQAdapter implements SegmentProcessEventListener {
             channel = connection.createChannel();
             channel.queueDeclare(queueName, false, false, false, null);
         } catch (IOException e) {
-            logger.log(Level.SEVERE, e.getMessage(), e);
+            //logger.log(Level.SEVERE, e.getMessage(), e);
             e.printStackTrace();
         }
     }
@@ -58,7 +58,7 @@ public class StreamRabbitMQAdapter implements SegmentProcessEventListener {
         try {
             channel.close();
         } catch (TimeoutException | IOException e) {
-            logger.log(Level.SEVERE, e.getMessage(), e);
+            //logger.log(Level.SEVERE, e.getMessage(), e);
             e.printStackTrace();
         }
     }
@@ -92,7 +92,7 @@ public class StreamRabbitMQAdapter implements SegmentProcessEventListener {
             channel.basicPublish("", this.queueName, null, jsonStr.getBytes(StandardCharsets.UTF_8));
             //logger.log(Level.INFO, " [x] Sent \n" + jsonStr);
         } catch (IOException e) {
-            logger.log(Level.SEVERE, "Cannot send: " + e.getMessage(), e);
+            //logger.log(Level.SEVERE, "Cannot send: " + e.getMessage(), e);
             e.printStackTrace();
         }
     }
