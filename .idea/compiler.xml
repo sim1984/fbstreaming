@@ -9,12 +9,11 @@
         <module name="RabbitMQReceiver" />
         <module name="RabbitMQSender" />
         <module name="com.hqbird.fbstreaming.examples.rabbitmq.receiver" />
-        <module name="json-stream-plugin" />
         <module name="rabbitmq-stream-plugin" />
         <module name="sql-stream-plugin" />
-        <module name="com.hqbird.fbstreaming" />
-        <module name="SqlScripts" />
+        <module name="json-stream-plugin" />
         <module name="fbstreaming" />
+        <module name="SqlScripts" />
         <module name="JsonFiles" />
       </profile>
     </annotationProcessing>

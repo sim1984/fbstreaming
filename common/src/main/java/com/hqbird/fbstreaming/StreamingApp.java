@@ -59,11 +59,10 @@ public class StreamingApp {
         Properties properties = getProperties();
 
         FbStreamPlugin plugin = loadPlugin(properties.getProperty("pluginClassName"));
-        int howManyWasSent = plugin.invoke(properties);
-
-        logger.log(Level.INFO, "Files processed: " + howManyWasSent);
-
-        System.exit(1);
+        while (true) {
+            int howManyWasSent = plugin.invoke(properties);
+            logger.log(Level.INFO, "Files processed: " + howManyWasSent);
+        }
 
     }
 }

@@ -1,8 +1,13 @@
 package com.hqbird.fbstreaming.ProcessSegment;
 
 import com.hqbird.fbstreaming.QueueLog.FileProcessor;
+import sun.nio.ch.ChannelInputStream;
 
 import java.io.*;
+import java.nio.channels.FileChannel;
+import java.nio.channels.FileLock;
+import java.nio.file.Files;
+import java.nio.file.StandardOpenOption;
 
 /**
  * Обработчик сегмента репликации
@@ -16,7 +21,7 @@ public class SegmentProcessor implements FileProcessor {
     /**
      * Конструктор
      *
-     * @param segmentCharsetName имя набора символов в котором закодирован файл сегмента
+     * @param segmentCharsetName    имя набора символов в котором закодирован файл сегмента
      * @param segmentProcessChecker проверяльщик необходимости обработки сегмента
      */
     public SegmentProcessor(String segmentCharsetName, SegmentProcessChecker segmentProcessChecker) {
@@ -57,7 +62,7 @@ public class SegmentProcessor implements FileProcessor {
      *
      * @param fileToProcess файл для обработки
      * @return true если обработан успешно, если пропущен false
-     * @throws IOException ошибка ввода вывода при обработки файла сегмента
+     * @throws IOException ошибка ввода вывода при обработке файла сегмента
      */
     public boolean processFile(File fileToProcess) throws IOException {
         // проверка требуется ли обработка
@@ -65,9 +70,14 @@ public class SegmentProcessor implements FileProcessor {
             return false;
         }
         try (
-                InputStream in = new FileInputStream(fileToProcess);
+                //InputStream in = Files.newInputStream(fileToProcess.toPath(), StandardOpenOption.READ, StandardOpenOption.WRITE);
+
+                RandomAccessFile accessFile = new RandomAccessFile(fileToProcess, "rw");
+                FileLock fileLock = accessFile.getChannel().lock();
+                InputStream in = new ChannelInputStream(accessFile.getChannel());
                 BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(in, this.charsetName))
         ) {
+
             parser.processSegment(fileToProcess.getName(), bufferedReader);
         }
         // после обработки помечаем сегмент обработанным
