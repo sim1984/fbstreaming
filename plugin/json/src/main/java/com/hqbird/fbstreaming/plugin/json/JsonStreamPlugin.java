@@ -10,14 +10,14 @@ import java.util.Properties;
 import java.util.regex.Pattern;
 
 public class JsonStreamPlugin implements FbStreamPlugin {
-    public int runProcess(Properties properties) throws Exception {
+    public int invoke(Properties properties) throws Exception {
         final String incomingFolder = properties.getProperty("incomingFolder");
         final String outgoingFolder = properties.getProperty("outgoingFolder");
         final String fileCharsetName = properties.getProperty("segmentFileCharset");
         final String segmentFileNameMask = properties.getProperty("segmentFileNameMask");
         String includeTables = properties.getProperty("includeTables");
 
-        if (includeTables.isEmpty()) {
+        if (includeTables == null || includeTables.isEmpty()) {
             includeTables = ".*"; // если пустой фильтр то все таблицы
         }
 

@@ -24,6 +24,10 @@
             <artifactId>fbstreaming</artifactId>
         </dependency>
         <dependency>
+            <groupId>com.hqbird.fbstreaming.plugin.sql</groupId>
+            <artifactId>sql-stream-plugin</artifactId>
+        </dependency>
+        <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-nop</artifactId>
         </dependency>

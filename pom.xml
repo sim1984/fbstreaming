@@ -19,7 +19,10 @@
     <name>Firebird Streaming</name>
 
     <modules>
-        <module>lib</module>
+        <module>common</module>
+        <module>plugin/json</module>
+        <module>plugin/sql</module>
+        <module>plugin/rabbitmq</module>
         <module>examples/JsonFiles</module>
         <module>examples/RabbitMQ/Receiver</module>
         <module>examples/RabbitMQ/Sender</module>
@@ -31,6 +34,21 @@
             <dependency>
                 <groupId>com.hqbird.fbstreaming</groupId>
                 <artifactId>fbstreaming</artifactId>
+                <version>1.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.hqbird.fbstreaming.plugin.json</groupId>
+                <artifactId>json-stream-plugin</artifactId>
+                <version>1.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.hqbird.fbstreaming.plugin.rabbitmq</groupId>
+                <artifactId>rabbitmq-stream-plugin</artifactId>
+                <version>1.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.hqbird.fbstreaming.plugin.sql</groupId>
+                <artifactId>sql-stream-plugin</artifactId>
                 <version>1.0</version>
             </dependency>
             <dependency>

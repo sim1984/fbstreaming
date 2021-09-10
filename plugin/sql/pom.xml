@@ -11,24 +11,16 @@
         <relativePath>../../pom.xml</relativePath>
     </parent>
 
-    <groupId>com.hqbird.fbstreaming.plugin.json</groupId>
-    <artifactId>json-stream-plugin</artifactId>
+    <groupId>com.hqbird.fbstreaming.plugin.sql</groupId>
+    <artifactId>sql-stream-plugin</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
-    <name>Firebird Streaming. Json adapter plugin</name>
+    <name>Firebird Streaming. Sql adapter plugin</name>
 
     <dependencies>
         <dependency>
             <groupId>com.hqbird.fbstreaming</groupId>
             <artifactId>fbstreaming</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.google.code.gson</groupId>
-            <artifactId>gson</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-nop</artifactId>
         </dependency>
     </dependencies>
 

@@ -24,7 +24,9 @@
 /.idea/*
 
 # target
-target/*
+*/target/*
 
-journals/*
+*/journals/*
+
+release/*
 

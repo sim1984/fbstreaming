@@ -2,13 +2,17 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/examples/JsonFiles/JsonFiles.iml" filepath="$PROJECT_DIR$/examples/JsonFiles/JsonFiles.iml" />
       <module fileurl="file://$PROJECT_DIR$/examples/RabbitMQ/Receiver/RabbitMQReceiver.iml" filepath="$PROJECT_DIR$/examples/RabbitMQ/Receiver/RabbitMQReceiver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/examples/RabbitMQ/Sender/RabbitMQSender.iml" filepath="$PROJECT_DIR$/examples/RabbitMQ/Sender/RabbitMQSender.iml" />
+      <module fileurl="file://$PROJECT_DIR$/examples/SqlScripts/SqlScripts.iml" filepath="$PROJECT_DIR$/examples/SqlScripts/SqlScripts.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib/com.hqbird.fbstreaming.iml" filepath="$PROJECT_DIR$/lib/com.hqbird.fbstreaming.iml" />
-      <module fileurl="file://$PROJECT_DIR$/examples/JsonFiles/com.hqbird.fbstreaming.examples.json.iml" filepath="$PROJECT_DIR$/examples/JsonFiles/com.hqbird.fbstreaming.examples.json.iml" />
       <module fileurl="file://$PROJECT_DIR$/examples/RabbitMQ/Recv/com.hqbird.fbstreaming.examples.rabbitmq.receiver.iml" filepath="$PROJECT_DIR$/examples/RabbitMQ/Recv/com.hqbird.fbstreaming.examples.rabbitmq.receiver.iml" />
-      <module fileurl="file://$PROJECT_DIR$/examples/RabbitMQ/Sender/com.hqbird.fbstreaming.examples.rabbitmq.sender.iml" filepath="$PROJECT_DIR$/examples/RabbitMQ/Sender/com.hqbird.fbstreaming.examples.rabbitmq.sender.iml" />
-      <module fileurl="file://$PROJECT_DIR$/examples/SqlScripts/com.hqbird.fbstreaming.examples.sqlscripts.iml" filepath="$PROJECT_DIR$/examples/SqlScripts/com.hqbird.fbstreaming.examples.sqlscripts.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/fbstreaming.iml" filepath="$PROJECT_DIR$/common/fbstreaming.iml" />
       <module fileurl="file://$PROJECT_DIR$/fbstreaming.pom.iml" filepath="$PROJECT_DIR$/fbstreaming.pom.iml" />
+      <module fileurl="file://$PROJECT_DIR$/plugin/json/json-stream-plugin.iml" filepath="$PROJECT_DIR$/plugin/json/json-stream-plugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/plugin/rabbitmq/rabbitmq-stream-plugin.iml" filepath="$PROJECT_DIR$/plugin/rabbitmq/rabbitmq-stream-plugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/plugin/sql/sql-stream-plugin.iml" filepath="$PROJECT_DIR$/plugin/sql/sql-stream-plugin.iml" />
     </modules>
   </component>
 </project>
