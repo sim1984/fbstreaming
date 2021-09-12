@@ -31,9 +31,12 @@ public interface SegmentProcessEventListener {
     /**
      * Событие - старт транзакции
      *
+     * @param segmentNumber номер сегмента
+     * @param commandNumber номер команды
      * @param traNumber номер транзакции
+     * @param sessionNumber номер (идентификатор) сессии
      */
-    void startTransaction(long traNumber);
+    void startTransaction(long segmentNumber, long commandNumber, long traNumber, long sessionNumber);
 
     /**
      * Событие - подтверждение транзакции
@@ -47,9 +50,11 @@ public interface SegmentProcessEventListener {
     /**
      * Событие - откат транзакции
      *
+     * @param segmentNumber номер сегмента
+     * @param commandNumber номер команды
      * @param traNumber номер транзакции
      */
-    void rollback(long traNumber);
+    void rollback(long segmentNumber, long commandNumber, long traNumber);
 
     /**
      * Событие - описание таблицы
@@ -57,7 +62,7 @@ public interface SegmentProcessEventListener {
      * @param tableName имя таблицы
      * @param fields поля таблицы
      */
-    void describeTable(String tableName, Map<String, Object> fields);
+    void describeTable(String tableName, Map<String, TableField> fields);
 
     /**
      * Событие - вставка в таблицу новой записи (INSERT)

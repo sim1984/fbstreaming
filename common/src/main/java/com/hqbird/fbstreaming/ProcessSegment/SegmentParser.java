@@ -150,12 +150,14 @@ public class SegmentParser {
                     Matcher match = patternSave.matcher(line);
                     if (match.find()) {
                         // точка сохранения????
+                        if ((state == ParserState.RECORD) || (state == ParserState.EXECSQL)) {
+                            // описание предыдущей команды завершено
+                            fireCommandEvent(command);
+                        }
                         long segmentNumber = Long.parseLong(match.group(1));
                         long commandNumber = Long.parseLong(match.group(2));
                         long traNumber = Long.parseLong(match.group(3));
-                        if ((state == ParserState.RECORD) || (state == ParserState.EXECSQL)) {
-                            fireCommandEvent(segmentNumber, commandNumber, command);
-                        }
+                        this.eventsSupport.fireSave(segmentNumber, commandNumber, traNumber);
                         command = null;
                         tableName = null;
                         state = ParserState.NONE;
@@ -164,12 +166,14 @@ public class SegmentParser {
                     Matcher match = patternRelease.matcher(line);
                     if (match.find()) {
                         // освобождение точки сохранения???
+                        if ((state == ParserState.RECORD) || (state == ParserState.EXECSQL)) {
+                            // описание предыдущей команды завершено
+                            fireCommandEvent(command);
+                        }
                         long segmentNumber = Long.parseLong(match.group(1));
                         long commandNumber = Long.parseLong(match.group(2));
                         long traNumber = Long.parseLong(match.group(3));
-                        if ((state == ParserState.RECORD) || (state == ParserState.EXECSQL)) {
-                            fireCommandEvent(segmentNumber, commandNumber, command);
-                        }
+                        this.eventsSupport.fireRelease(segmentNumber, commandNumber, traNumber);
                         command = null;
                         tableName = null;
                         state = ParserState.NONE;
@@ -194,6 +198,7 @@ public class SegmentParser {
                 } else if (line.contains("DESCRIBE")) {
                     Matcher match = patternDescribe.matcher(line);
                     if (match.find()) {
+                        // описание полей таблицы
                         long segmentNumber = Long.parseLong(match.group(1));
                         long commandNumber = Long.parseLong(match.group(2));
                         tableName = match.group(3);
@@ -203,7 +208,7 @@ public class SegmentParser {
                             if (tables.containsKey(tableName)) {
                                 tables.get(tableName).clearFields();
                             } else {
-                                tables.put(tableName, new TableDescription(tableName, count));
+                                tables.put(tableName, new TableDescription(segmentNumber, commandNumber, tableName, count));
                             }
                             command = null;
                             state = ParserState.DESCRIBE;
@@ -257,7 +262,8 @@ public class SegmentParser {
                     if (match.find()) {
                         if (state == ParserState.DESCRIBE) {
                             // описание полей таблицы закончено
-                            this.eventsSupport.fireDescribeTable(tableName, new HashMap<>(1));
+                            TableDescription table = tables.get(tableName);
+                            this.eventsSupport.fireDescribeTable(table.getSegmentNumber(), table.getCommandNumber(), tableName, table.getFields());
                         }
                         // выполнен один из операторов над таблицей
                         long segmentNumber = Long.parseLong(match.group(1));
@@ -266,16 +272,18 @@ public class SegmentParser {
                         String operator = match.group(4);
                         tableName = match.group(5);
 
+                        // проверяем имя таблицы проходит ли оно фильтрацию
                         if (filterTableName(tableName)) {
                             command = new ParsedCommand();
+                            command.setSegmentNumber(segmentNumber);
+                            command.setCommandNumber(commandNumber);
                             command.setTraNum(traNumber);
                             command.setStatementType(StatementType.getStatementTypeByName(operator));
                             command.setTableName(tableName);
-                            command.setSegmentNumber(segmentNumber);
-                            command.setCommandNumber(commandNumber);
                             state = ParserState.RECORD;
                         } else {
                             // если имя таблицы не проходит проверку, то
+                            // сбрасываем состояние
                             command = null;
                             tableName = null;
                             state = ParserState.NONE;
@@ -291,10 +299,10 @@ public class SegmentParser {
                         long traNumber = Long.parseLong(match.group(3));
                         tableName = null;
                         command = new ParsedCommand();
-                        command.setTraNum(traNumber);
-                        command.setStatementType(StatementType.EXECSQL);
                         command.setSegmentNumber(segmentNumber);
                         command.setCommandNumber(commandNumber);
+                        command.setTraNum(traNumber);
+                        command.setStatementType(StatementType.EXECSQL);
                         state = ParserState.EXECSQL;
                         continue;
                     }
@@ -313,7 +321,7 @@ public class SegmentParser {
                 }
 
             }
-
+            // разбираем сложные команды
             switch (state) {
                 case DESCRIBE:
                     parseDescribeField(tableName, line.trim());
@@ -326,18 +334,16 @@ public class SegmentParser {
                     break;
             }
         }
+        // генерируем событие завершения разбора сегмента
         this.eventsSupport.fireFinishSegmentParse(segmentName);
     }
 
     /**
      * Генерирует событие для разобранной команды
      *
-     * @param segmentNumber номер сегмента
-     * @param commandNumber номер оператора в логе
-     * @param command       команда для которой генерируется событие
+     * @param command команда для которой генерируется событие
      */
-    private void fireCommandEvent(long segmentNumber, long commandNumber, ParsedCommand command) {
-        // парсинг значений полей закончено
+    private void fireCommandEvent(ParsedCommand command) {
         switch (command.getStatementType()) {
             case INSERT: {
                 TableDescription table = tables.get(command.getTableName());
@@ -346,7 +352,8 @@ public class SegmentParser {
                 Map<String, Object> keyValues = command.getNewFieldValues().entrySet().stream()
                         .filter(v -> keyFieldNames.contains(v.getKey()))
                         .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
-                this.eventsSupport.fireInsertRecord(segmentNumber, commandNumber, command.getTraNum(), command.getTableName(), keyValues, command.getNewFieldValues());
+                this.eventsSupport.fireInsertRecord(command.getSegmentNumber(), command.getCommandNumber(),
+                        command.getTraNum(), command.getTableName(), keyValues, command.getNewFieldValues());
             }
             break;
             case UPDATE: {
@@ -356,7 +363,8 @@ public class SegmentParser {
                 Map<String, Object> keyValues = command.getOldFieldValues().entrySet().stream()
                         .filter(v -> keyFieldNames.contains(v.getKey()))
                         .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
-                this.eventsSupport.fireUpdateRecord(segmentNumber, commandNumber, command.getTraNum(), command.getTableName(), keyValues, command.getOldFieldValues(), command.getNewFieldValues());
+                this.eventsSupport.fireUpdateRecord(command.getSegmentNumber(), command.getCommandNumber(),
+                        command.getTraNum(), command.getTableName(), keyValues, command.getOldFieldValues(), command.getNewFieldValues());
             }
             break;
             case DELETE: {
@@ -366,11 +374,12 @@ public class SegmentParser {
                 Map<String, Object> keyValues = command.getOldFieldValues().entrySet().stream()
                         .filter(v -> keyFieldNames.contains(v.getKey()))
                         .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
-                this.eventsSupport.fireDeleteRecord(segmentNumber, commandNumber, command.getTraNum(), command.getTableName(), keyValues, command.getOldFieldValues());
+                this.eventsSupport.fireDeleteRecord(command.getSegmentNumber(), command.getCommandNumber(),
+                        command.getTraNum(), command.getTableName(), keyValues, command.getOldFieldValues());
             }
             break;
             case EXECSQL:
-                this.eventsSupport.fireExecuteSql(segmentNumber, commandNumber, command.getTraNum(), command.getSql());
+                this.eventsSupport.fireExecuteSql(command.getSegmentNumber(), command.getCommandNumber(), command.getTraNum(), command.getSql());
                 break;
         }
     }
@@ -526,7 +535,7 @@ public class SegmentParser {
      */
     private void parseDescribeField(String tableName, String line) {
         TableDescription table = tables.get(tableName);
-        // парсим описание поля
+        // разбираем описание поля
         Matcher match = patternFieldDesc.matcher(line);
         if (match.find()) {
             String fieldName = match.group(1);

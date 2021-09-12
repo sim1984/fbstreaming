@@ -76,7 +76,7 @@ public class SegmentProcessEventSupport {
      */
     public void fireStartTransaction(long segmentNumber, long commandNumber, long traNumber, long sessionNumber) {
         for (SegmentProcessEventListener listener : listeners) {
-            listener.startTransaction(traNumber);
+            listener.startTransaction(segmentNumber, commandNumber, traNumber, sessionNumber);
         }
     }
 
@@ -102,8 +102,30 @@ public class SegmentProcessEventSupport {
      */
     public void fireRollback(long segmentNumber, long commandNumber, long traNumber) {
         for (SegmentProcessEventListener listener : listeners) {
-            listener.rollback(traNumber);
+            listener.rollback(segmentNumber, commandNumber, traNumber);
         }
+    }
+
+    /**
+     * Событие - точка сохранения
+     *
+     * @param segmentNumber номер сегмента
+     * @param commandNumber номер команды
+     * @param traNumber номер транзакции
+     */
+    public void fireSave(long segmentNumber, long commandNumber, long traNumber) {
+
+    }
+
+    /**
+     * Событие - освобождение точки сохранения
+     *
+     * @param segmentNumber номер сегмента
+     * @param commandNumber номер команды
+     * @param traNumber номер транзакции
+     */
+    public void fireRelease(long segmentNumber, long commandNumber, long traNumber) {
+
     }
 
     /**
@@ -112,7 +134,7 @@ public class SegmentProcessEventSupport {
      * @param tableName имя таблицы
      * @param fields    поля таблицы
      */
-    public void fireDescribeTable(String tableName, Map<String, Object> fields) {
+    public void fireDescribeTable(long segmentNumber, long commandNumber, String tableName, Map<String, TableField> fields) {
         for (SegmentProcessEventListener listener : listeners) {
             listener.describeTable(tableName, fields);
         }

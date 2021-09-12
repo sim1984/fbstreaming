@@ -1,6 +1,7 @@
 package com.hqbird.fbstreaming.plugin.sql;
 
 import com.hqbird.fbstreaming.ProcessSegment.SegmentProcessEventListener;
+import com.hqbird.fbstreaming.ProcessSegment.TableField;
 import com.hqbird.fbstreaming.StatementType;
 import com.hqbird.fbstreaming.StreamSqlStatement;
 import com.hqbird.fbstreaming.StreamTableStatement;
@@ -48,7 +49,7 @@ public class StreamSqlScriptAdapter implements SegmentProcessEventListener {
     }
 
     @Override
-    public void startTransaction(long traNumber) {
+    public void startTransaction(long segmentNumber, long commandNumber, long traNumber, long sessionNumber) {
         StreamTransaction transaction = new StreamTransaction(traNumber);
         transactions.put(traNumber, transaction);
     }
@@ -87,13 +88,13 @@ public class StreamSqlScriptAdapter implements SegmentProcessEventListener {
     }
 
     @Override
-    public void rollback(long traNumber) {
+    public void rollback(long segmentNumber, long commandNumber, long traNumber) {
         // если произошёл откат просто удаляем транзакцию из коллекции
         transactions.remove(traNumber);
     }
 
     @Override
-    public void describeTable(String tableName, Map<String, Object> fields) {
+    public void describeTable(String tableName, Map<String, TableField> fields) {
         // мы не учитываем событие описание таблицы
     }
 

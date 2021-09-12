@@ -3,6 +3,7 @@ package com.hqbird.fbstreaming.plugin.rabbitmq;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.hqbird.fbstreaming.ProcessSegment.SegmentProcessEventListener;
+import com.hqbird.fbstreaming.ProcessSegment.TableField;
 import com.hqbird.fbstreaming.StatementType;
 import com.hqbird.fbstreaming.StreamTableStatement;
 import com.hqbird.fbstreaming.StreamTransaction;
@@ -75,7 +76,7 @@ public class StreamRabbitMQAdapter implements SegmentProcessEventListener {
     }
 
     @Override
-    public void startTransaction(long traNumber) {
+    public void startTransaction(long segmentNumber, long commandNumber, long traNumber, long sessionNumber) {
         StreamTransaction transaction = new StreamTransaction(traNumber);
         transactions.put(traNumber, transaction);
     }
@@ -98,13 +99,13 @@ public class StreamRabbitMQAdapter implements SegmentProcessEventListener {
     }
 
     @Override
-    public void rollback(long traNumber) {
+    public void rollback(long segmentNumber, long commandNumber, long traNumber) {
         // если произошёл откат просто удаляем транзакцию из коллекции
         transactions.remove(traNumber);
     }
 
     @Override
-    public void describeTable(String tableName, Map<String, Object> fields) {
+    public void describeTable(String tableName, Map<String, TableField> fields) {
        // мы не учитываем событие описание таблицы
     }
 
