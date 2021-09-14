@@ -94,40 +94,40 @@ public class StreamSqlScriptAdapter implements SegmentProcessEventListener {
     }
 
     @Override
-    public void describeTable(String tableName, Map<String, TableField> fields) {
+    public void describeTable(long segmentNumber, long commandNumber, String tableName, Map<String, TableField> fields) {
         // мы не учитываем событие описание таблицы
     }
 
     @Override
-    public void insertRecord(long traNumber, String tableName, Map<String, Object> keyValues, Map<String, Object> newValues) {
+    public void insertRecord(long segmentNumber, long commandNumber, long traNumber, String tableName, Map<String, Object> keyValues, Map<String, Object> newValues) {
         StreamTableStatement command = new StreamTableStatement(tableName, StatementType.INSERT, keyValues, null, newValues);
         StreamTransaction transaction = transactions.get(traNumber);
         transaction.addCommand(command);
     }
 
     @Override
-    public void updateRecord(long traNumber, String tableName, Map<String, Object> keyValues, Map<String, Object> oldValues, Map<String, Object> newValues) {
+    public void updateRecord(long segmentNumber, long commandNumber, long traNumber, String tableName, Map<String, Object> keyValues, Map<String, Object> oldValues, Map<String, Object> newValues) {
         StreamTableStatement command = new StreamTableStatement(tableName, StatementType.UPDATE, keyValues, oldValues, newValues);
         StreamTransaction transaction = transactions.get(traNumber);
         transaction.addCommand(command);
     }
 
     @Override
-    public void deleteRecord(long traNumber, String tableName, Map<String, Object> keyValues, Map<String, Object> oldValues) {
+    public void deleteRecord(long segmentNumber, long commandNumber, long traNumber, String tableName, Map<String, Object> keyValues, Map<String, Object> oldValues) {
         StreamTableStatement command = new StreamTableStatement(tableName, StatementType.DELETE, keyValues, oldValues, null);
         StreamTransaction transaction = transactions.get(traNumber);
         transaction.addCommand(command);
     }
 
     @Override
-    public void executeSql(long traNumber, String sql) {
+    public void executeSql(long segmentNumber, long commandNumber, long traNumber, String sql) {
         StreamSqlStatement command = new StreamSqlStatement(sql);
         StreamTransaction transaction = transactions.get(traNumber);
         transaction.addCommand(command);
     }
 
     @Override
-    public void setSequenceValue(String sequenceName, long seqValue) {
+    public void setSequenceValue(long segmentNumber, long commandNumber, String sequenceName, long seqValue) {
 
     }
 

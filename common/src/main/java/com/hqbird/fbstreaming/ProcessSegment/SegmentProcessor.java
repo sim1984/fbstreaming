@@ -7,6 +7,7 @@ import java.io.File;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.nio.channels.Channels;
+import java.nio.channels.FileLock;
 
 /**
  * Обработчик сегмента репликации
@@ -48,10 +49,20 @@ public class SegmentProcessor implements FileProcessor {
         this.parser.removeSegmentProcessEventListener(listener);
     }
 
+    /**
+     * Возвращает интерфейс фильтрации для имён таблиц
+     *
+     * @return фильтр для имён таблиц
+     */
     public TableFilterInterface getTableFilter() {
         return parser.getTableFilter();
     }
 
+    /**
+     * Устанавливает интерфейс фильтрации для имён таблиц
+     *
+     * @param tableFilter фильтр для имён таблиц
+     */
     public void setTableFilter(TableFilterInterface tableFilter) {
         parser.setTableFilter(tableFilter);
     }
@@ -70,6 +81,7 @@ public class SegmentProcessor implements FileProcessor {
         }
         try (
                 RandomAccessFile accessFile = new RandomAccessFile(fileToProcess, "rw");
+                FileLock lock = accessFile.getChannel().lock();
                 BufferedReader bufferedReader = new BufferedReader(Channels.newReader(accessFile.getChannel(), this.charsetName))
         ) {
 
