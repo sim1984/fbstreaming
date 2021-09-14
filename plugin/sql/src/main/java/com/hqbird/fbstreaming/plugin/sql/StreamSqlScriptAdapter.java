@@ -10,7 +10,9 @@ import com.hqbird.fbstreaming.StreamTransaction;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -18,13 +20,15 @@ import java.util.logging.Logger;
 public class StreamSqlScriptAdapter implements SegmentProcessEventListener {
     static Logger logger = Logger.getLogger(StreamSqlScriptAdapter.class.getName());
     private final String outgoingFolder;
-    private final Map<Long, StreamTransaction> transactions;
+    private final Map<Long, List<String>> transactions;
     private final TableStatementBuilder tableStatementBuilder;
+    private final Map<String, Map<String, TableField>> fieldDescriptions;
 
     public StreamSqlScriptAdapter(String outgoingFolder, TableStatementBuilder sqlBuilder) {
         this.outgoingFolder = outgoingFolder;
         this.tableStatementBuilder = sqlBuilder;
         this.transactions = new HashMap<>();
+        this.fieldDescriptions = new HashMap<>();
     }
 
     @Override
@@ -50,21 +54,19 @@ public class StreamSqlScriptAdapter implements SegmentProcessEventListener {
 
     @Override
     public void startTransaction(long segmentNumber, long commandNumber, long traNumber, long sessionNumber) {
-        StreamTransaction transaction = new StreamTransaction(traNumber);
+        List<String> transaction = new ArrayList<>();
         transactions.put(traNumber, transaction);
     }
 
     @Override
     public void commit(long segmentNumber, long commandNumber, long traNumber) {
         // если транзакция подтверждена записываем её в список для текущего сегмента
-        StreamTransaction transaction = transactions.remove(traNumber);
         StringBuilder scriptBuilder = new StringBuilder();
-        for (StreamTableStatement command : transaction.getTableStatements()) {
-            String sql = tableStatementBuilder.buildTableCommandSql(command);
-            if (sql != null) {
-                scriptBuilder.append(sql).append(";\n\n");
-            }
+        List<String> transaction = transactions.remove(traNumber);
+        for (String sql : transaction) {
+            scriptBuilder.append(sql).append(";\n\n");
         }
+
         if (scriptBuilder.length() == 0) {
             // не надо писать пустые файлы
             return;
@@ -95,35 +97,59 @@ public class StreamSqlScriptAdapter implements SegmentProcessEventListener {
 
     @Override
     public void describeTable(long segmentNumber, long commandNumber, String tableName, Map<String, TableField> fields) {
-        // мы не учитываем событие описание таблицы
+        // сохраняем описание полей таблицы
+        fieldDescriptions.put(tableName, fields);
     }
 
     @Override
-    public void insertRecord(long segmentNumber, long commandNumber, long traNumber, String tableName, Map<String, Object> keyValues, Map<String, Object> newValues) {
-        StreamTableStatement command = new StreamTableStatement(tableName, StatementType.INSERT, keyValues, null, newValues);
-        StreamTransaction transaction = transactions.get(traNumber);
-        transaction.addCommand(command);
+    public void insertRecord(long segmentNumber, long commandNumber, long traNumber, String tableName,
+                             Map<String, Object> keyValues, Map<String, Object> newValues) {
+        StreamTableStatement command = new StreamTableStatement(
+                tableName,
+                StatementType.INSERT,
+                keyValues,
+                null,
+                newValues
+        );
+        List<String> transaction = transactions.get(traNumber);
+        String sql = tableStatementBuilder.buildTableCommandSql(command, fieldDescriptions.get(tableName));
+        transaction.add(sql);
     }
 
     @Override
-    public void updateRecord(long segmentNumber, long commandNumber, long traNumber, String tableName, Map<String, Object> keyValues, Map<String, Object> oldValues, Map<String, Object> newValues) {
-        StreamTableStatement command = new StreamTableStatement(tableName, StatementType.UPDATE, keyValues, oldValues, newValues);
-        StreamTransaction transaction = transactions.get(traNumber);
-        transaction.addCommand(command);
+    public void updateRecord(long segmentNumber, long commandNumber, long traNumber, String tableName,
+                             Map<String, Object> keyValues, Map<String, Object> oldValues, Map<String, Object> newValues) {
+        StreamTableStatement command = new StreamTableStatement(
+                tableName,
+                StatementType.UPDATE,
+                keyValues,
+                oldValues,
+                newValues
+        );
+        List<String> transaction = transactions.get(traNumber);
+        String sql = tableStatementBuilder.buildTableCommandSql(command, fieldDescriptions.get(tableName));
+        transaction.add(sql);
     }
 
     @Override
-    public void deleteRecord(long segmentNumber, long commandNumber, long traNumber, String tableName, Map<String, Object> keyValues, Map<String, Object> oldValues) {
-        StreamTableStatement command = new StreamTableStatement(tableName, StatementType.DELETE, keyValues, oldValues, null);
-        StreamTransaction transaction = transactions.get(traNumber);
-        transaction.addCommand(command);
+    public void deleteRecord(long segmentNumber, long commandNumber, long traNumber, String tableName,
+                             Map<String, Object> keyValues, Map<String, Object> oldValues) {
+        StreamTableStatement command = new StreamTableStatement(
+                tableName,
+                StatementType.DELETE,
+                keyValues,
+                oldValues,
+                null
+        );
+        List<String> transaction = transactions.get(traNumber);
+        String sql = tableStatementBuilder.buildTableCommandSql(command, fieldDescriptions.get(tableName));
+        transaction.add(sql);
     }
 
     @Override
     public void executeSql(long segmentNumber, long commandNumber, long traNumber, String sql) {
-        StreamSqlStatement command = new StreamSqlStatement(sql);
-        StreamTransaction transaction = transactions.get(traNumber);
-        transaction.addCommand(command);
+        //List<String> transaction = transactions.get(traNumber);
+        //transaction.add(sql);
     }
 
     @Override

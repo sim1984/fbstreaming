@@ -188,9 +188,13 @@ public class SegmentParser {
                         String blobId = match.group(4);
                         long length = Long.parseLong(match.group(5));
                         if (length > 0) {
-                            line = bufferedReader.readLine();
-                            String hexString = line.trim();
-                            blobs.put(blobId, hexString);
+                            StringBuilder builder = new StringBuilder();
+                            while (length > 0) {
+                                line = bufferedReader.readLine().trim();
+                                builder.append(line);
+                                length = length - line.length() / 2;
+                            }
+                            blobs.put(blobId, builder.toString());
                         } else {
                             blobs.put(blobId, "");
                         }

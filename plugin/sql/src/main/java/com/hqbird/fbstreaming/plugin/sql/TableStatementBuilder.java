@@ -1,19 +1,21 @@
 package com.hqbird.fbstreaming.plugin.sql;
 
+import com.hqbird.fbstreaming.ProcessSegment.FieldType;
+import com.hqbird.fbstreaming.ProcessSegment.TableField;
 import com.hqbird.fbstreaming.StreamTableStatement;
 
 import java.util.Map;
 
 public class TableStatementBuilder {
 
-    public String buildTableCommandSql(StreamTableStatement statement) {
+    public String buildTableCommandSql(StreamTableStatement statement, Map<String, TableField> fields) {
         switch (statement.getStatementType()) {
             case INSERT:
-                return buildInsertStatement(statement);
+                return buildInsertStatement(statement, fields);
             case UPDATE:
-                return buildUpdateStatement(statement);
+                return buildUpdateStatement(statement, fields);
             case DELETE:
-                return buildDeleteStatement(statement);
+                return buildDeleteStatement(statement, fields);
             default:
                 return null;
         }
@@ -43,7 +45,7 @@ public class TableStatementBuilder {
         return "";
     }
 
-    private String buildInsertStatement(StreamTableStatement statement) {
+    private String buildInsertStatement(StreamTableStatement statement, Map<String, TableField> fields) {
 
         Map<String, Object> fieldValues = statement.getNewFieldValues();
         if (fieldValues.isEmpty()) {
@@ -53,6 +55,7 @@ public class TableStatementBuilder {
         StringBuilder fieldNameList = new StringBuilder();
         StringBuilder fieldValueList = new StringBuilder();
         for (Map.Entry<String, Object> fieldValue : fieldValues.entrySet()) {
+            TableField field = fields.get(fieldValue.getKey());
             if (fieldNameList.length() != 0) {
                 fieldNameList.append(",\n    ");
             } else {
@@ -67,9 +70,50 @@ public class TableStatementBuilder {
             if (fieldValue.getValue() == null) {
                 fieldValueList.append("NULL");
             } else if (fieldValue.getValue() instanceof String) {
-                fieldValueList.append("'");
-                fieldValueList.append(fieldValue.getValue().toString().replaceAll("'", "''"));
-                fieldValueList.append("'");
+                if (field.getFieldType() == FieldType.BLOB) {
+                    // с блобами сложнее. Сначала надо определить тип BLOB
+                    if (field.getSubType() == 1) {
+                        // текстовый
+                        String text = fieldValue.getValue().toString();
+                        int length = text.length();
+                        int pos = 0;
+                        while (length > 0) {
+                            // строковые литералы не могут быть длиннее 32767 байт
+                            // поэтому режем их и конкатенируем
+                            if (pos > 0) {
+                                fieldValueList.append(" || ");
+                            }
+                            String part = text.substring(pos, pos + 8191);
+                            length = length - part.length();
+                            pos = part.length() + 1;
+                            fieldValueList.append("'");
+                            fieldValueList.append(fieldValue.getValue().toString().replaceAll("'", "''"));
+                            fieldValueList.append("'");
+                        }
+                    } else {
+                        // бинарный
+                        String hexString = fieldValue.getValue().toString();
+                        int length = hexString.length();
+                        int pos = 0;
+                        while (length > 0) {
+                            // строковые литералы не могут быть длиннее 32767 байт
+                            // поэтому режем их и конкатенируем
+                            if (pos > 0) {
+                                fieldValueList.append(" || ");
+                            }
+                            String part = hexString.substring(pos, pos + 32766);
+                            length = length - part.length();
+                            pos = part.length() + 1;
+                            fieldValueList.append("x'");
+                            fieldValueList.append(fieldValue.getValue().toString());
+                            fieldValueList.append("'");
+                        }
+                    }
+                } else {
+                    fieldValueList.append("'");
+                    fieldValueList.append(fieldValue.getValue().toString().replaceAll("'", "''"));
+                    fieldValueList.append("'");
+                }
             } else {
                 fieldValueList.append(fieldValue.getValue());
             }
@@ -77,7 +121,7 @@ public class TableStatementBuilder {
         return String.format("INSERT INTO %s (%s\n)\n VALUES (%s\n)", statement.getTableName(), fieldNameList, fieldValueList);
     }
 
-    private String buildUpdateStatement(StreamTableStatement statement) {
+    private String buildUpdateStatement(StreamTableStatement statement, Map<String, TableField> fields) {
 
         Map<String, Object> fieldValues = statement.getNewFieldValues();
         if (fieldValues.isEmpty()) {
@@ -86,6 +130,7 @@ public class TableStatementBuilder {
         }
         StringBuilder set = new StringBuilder();
         for (Map.Entry<String, Object> fieldValue : fieldValues.entrySet()) {
+            TableField field = fields.get(fieldValue.getKey());
             if (set.length() != 0) {
                 set.append(",\n    ");
             } else {
@@ -95,9 +140,50 @@ public class TableStatementBuilder {
             if (fieldValue.getValue() == null) {
                 set.append("NULL");
             } else if (fieldValue.getValue() instanceof String) {
-                set.append("'");
-                set.append(fieldValue.getValue().toString().replaceAll("'", "''"));
-                set.append("'");
+                if (field.getFieldType() == FieldType.BLOB) {
+                    // с блобами сложнее. Сначала надо определить тип BLOB
+                    if (field.getSubType() == 1) {
+                        // текстовый
+                        String text = fieldValue.getValue().toString();
+                        int length = text.length();
+                        int pos = 0;
+                        while (length > 0) {
+                            // строковые литералы не могут быть длиннее 32767 байт
+                            // поэтому режем их и конкатенируем
+                            if (pos > 0) {
+                                set.append(" || ");
+                            }
+                            String part = text.substring(pos, pos + 8191);
+                            length = length - part.length();
+                            pos = part.length() + 1;
+                            set.append("'");
+                            set.append(fieldValue.getValue().toString().replaceAll("'", "''"));
+                            set.append("'");
+                        }
+                    } else {
+                        // бинарный
+                        String hexString = fieldValue.getValue().toString();
+                        int length = hexString.length();
+                        int pos = 0;
+                        while (length > 0) {
+                            // строковые литералы не могут быть длиннее 32767 байт
+                            // поэтому режем их и конкатенируем
+                            if (pos > 0) {
+                                set.append(" || ");
+                            }
+                            String part = hexString.substring(pos, pos + 32766);
+                            length = length - part.length();
+                            pos = part.length() + 1;
+                            set.append("x'");
+                            set.append(fieldValue.getValue().toString());
+                            set.append("'");
+                        }
+                    }
+                } else {
+                    set.append("'");
+                    set.append(fieldValue.getValue().toString().replaceAll("'", "''"));
+                    set.append("'");
+                }
             } else {
                 set.append(fieldValue.getValue());
             }
@@ -107,7 +193,7 @@ public class TableStatementBuilder {
         return sql;
     }
 
-    private String buildDeleteStatement(StreamTableStatement statement) {
+    private String buildDeleteStatement(StreamTableStatement statement, Map<String, TableField> fields) {
         String sql = String.format("DELETE FROM %s\n", statement.getTableName());
         sql += makeWhereClause(statement);
         return sql;

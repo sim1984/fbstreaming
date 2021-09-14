@@ -25,6 +25,7 @@ public class StreamRabbitMQAdapter implements SegmentProcessEventListener {
     private Channel channel = null;
     private final String queueName;
     private final Map<Long, StreamTransaction> transactions;
+    private final Map<String, Map<String, TableField>> fieldDescriptions;
 
     private static Gson getGson() {
         if (null == singleGson) {
@@ -39,6 +40,7 @@ public class StreamRabbitMQAdapter implements SegmentProcessEventListener {
         this.connection = connection;
         this.queueName = queueName;
         this.transactions = new HashMap<>();
+        this.fieldDescriptions = new HashMap<>();
     }
 
     @Override
@@ -106,26 +108,46 @@ public class StreamRabbitMQAdapter implements SegmentProcessEventListener {
 
     @Override
     public void describeTable(long segmentNumber, long commandNumber, String tableName, Map<String, TableField> fields) {
-        // мы не учитываем событие описание таблицы
+        // сохраняем описание полей таблицы
+        fieldDescriptions.put(tableName, fields);
     }
 
     @Override
-    public void insertRecord(long segmentNumber, long commandNumber, long traNumber, String tableName, Map<String, Object> keyValues, Map<String, Object> newValues) {
-        StreamTableStatement command = new StreamTableStatement(tableName, StatementType.INSERT, keyValues, null, newValues);
+    public void insertRecord(long segmentNumber, long commandNumber, long traNumber, String tableName,
+                             Map<String, Object> keyValues, Map<String, Object> newValues) {
+        StreamTableStatement command = new StreamTableStatement(
+                tableName,
+                StatementType.INSERT,
+                keyValues,
+                null,
+                newValues
+        );
         StreamTransaction transaction = transactions.get(traNumber);
         transaction.addCommand(command);
     }
 
     @Override
-    public void updateRecord(long segmentNumber, long commandNumber, long traNumber, String tableName, Map<String, Object> keyValues, Map<String, Object> oldValues, Map<String, Object> newValues) {
-        StreamTableStatement command = new StreamTableStatement(tableName, StatementType.UPDATE, keyValues, oldValues, newValues);
+    public void updateRecord(long segmentNumber, long commandNumber, long traNumber, String tableName,
+                             Map<String, Object> keyValues, Map<String, Object> oldValues, Map<String, Object> newValues) {
+        StreamTableStatement command = new StreamTableStatement(
+                tableName,
+                StatementType.UPDATE,
+                keyValues, oldValues,
+                newValues
+        );
         StreamTransaction transaction = transactions.get(traNumber);
         transaction.addCommand(command);
     }
 
     @Override
-    public void deleteRecord(long segmentNumber, long commandNumber, long traNumber, String tableName, Map<String, Object> keyValues, Map<String, Object> oldValues) {
-        StreamTableStatement command = new StreamTableStatement(tableName, StatementType.DELETE, keyValues, oldValues, null);
+    public void deleteRecord(long segmentNumber, long commandNumber, long traNumber, String tableName,
+                             Map<String, Object> keyValues, Map<String, Object> oldValues) {
+        StreamTableStatement command = new StreamTableStatement(
+                tableName,
+                StatementType.DELETE,
+                keyValues, oldValues,
+                null
+        );
         StreamTransaction transaction = transactions.get(traNumber);
         transaction.addCommand(command);
     }
