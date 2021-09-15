@@ -6,7 +6,7 @@ Firebird Streaming
 
 Данная библиотека может применяться для оповещения о событиях через систему очередей, или для написания собственного репликатора в другие СУБД.
 
-Альфа релиз можно скачать по ссылке https://github.com/sim1984/fbstreaming/files/7101299/release.zip
+Альфа релиз можно скачать по ссылке https://github.com/sim1984/fbstreaming/releases/download/v1.0/release.zip
 
 Папка `journals/incoming` содержит логи репликации после обработки их утилитой `fb_repl_print`.
 
@@ -90,11 +90,9 @@ java -jar fbstreaming-1.0.jar
           "NUMBULL": 156443509
         },
         "oldFieldValues": {}
-      },
-      ...
+      }
     ]
-  },
-  ....
+  }
 ]
 ```
 
