@@ -81,8 +81,8 @@ public class SegmentProcessor implements FileProcessor {
         }
         try (
                 RandomAccessFile accessFile = new RandomAccessFile(fileToProcess, "rw");
-                FileLock lock = accessFile.getChannel().lock();
-                BufferedReader bufferedReader = new BufferedReader(Channels.newReader(accessFile.getChannel(), this.charsetName))
+                BufferedReader bufferedReader = new BufferedReader(Channels.newReader(accessFile.getChannel(), this.charsetName));
+                FileLock lock = accessFile.getChannel().lock()
         ) {
 
             parser.processSegment(fileToProcess.getName(), bufferedReader);
