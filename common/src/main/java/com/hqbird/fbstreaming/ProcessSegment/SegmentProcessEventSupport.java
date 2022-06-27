@@ -71,12 +71,12 @@ public class SegmentProcessEventSupport {
      *
      * @param segmentNumber номер сегмента
      * @param commandNumber номер оператора в логе
-     * @param traNumber номер транзакции
+     * @param traNumber     номер транзакции
      * @param sessionNumber номер (идентификатор) сессии
      */
     public void fireStartTransaction(long segmentNumber, long commandNumber, long traNumber, long sessionNumber) {
         for (SegmentProcessEventListener listener : listeners) {
-            listener.startTransaction(traNumber);
+            listener.startTransaction(segmentNumber, commandNumber, traNumber, sessionNumber);
         }
     }
 
@@ -85,7 +85,7 @@ public class SegmentProcessEventSupport {
      *
      * @param segmentNumber номер сегмента
      * @param commandNumber номер оператора в логе
-     * @param traNumber номер транзакции
+     * @param traNumber     номер транзакции
      */
     public void fireCommit(long segmentNumber, long commandNumber, long traNumber) {
         for (SegmentProcessEventListener listener : listeners) {
@@ -98,78 +98,110 @@ public class SegmentProcessEventSupport {
      *
      * @param segmentNumber номер сегмента
      * @param commandNumber номер оператора в логе
-     * @param traNumber номер транзакции
+     * @param traNumber     номер транзакции
      */
     public void fireRollback(long segmentNumber, long commandNumber, long traNumber) {
         for (SegmentProcessEventListener listener : listeners) {
-            listener.rollback(traNumber);
+            listener.rollback(segmentNumber, commandNumber, traNumber);
         }
+    }
+
+    /**
+     * Событие - точка сохранения
+     *
+     * @param segmentNumber номер сегмента
+     * @param commandNumber номер команды
+     * @param traNumber     номер транзакции
+     */
+    public void fireSave(long segmentNumber, long commandNumber, long traNumber) {
+
+    }
+
+    /**
+     * Событие - освобождение точки сохранения
+     *
+     * @param segmentNumber номер сегмента
+     * @param commandNumber номер команды
+     * @param traNumber     номер транзакции
+     */
+    public void fireRelease(long segmentNumber, long commandNumber, long traNumber) {
+
     }
 
     /**
      * Событие - описание таблицы
      *
-     * @param tableName имя таблицы
-     * @param fields    поля таблицы
+     * @param segmentNumber номер сегмента
+     * @param commandNumber номер команды
+     * @param tableName     имя таблицы
+     * @param fields        поля таблицы
      */
-    public void fireDescribeTable(String tableName, Map<String, Object> fields) {
+    public void fireDescribeTable(long segmentNumber, long commandNumber, String tableName, Map<String, TableField> fields) {
         for (SegmentProcessEventListener listener : listeners) {
-            listener.describeTable(tableName, fields);
+            listener.describeTable(segmentNumber, commandNumber, tableName, fields);
         }
     }
 
     /**
      * Событие - вставка в таблицу новой записи (INSERT)
      *
-     * @param traNumber номер транзакции
-     * @param tableName имя таблицы
-     * @param keyValues значения ключевых полей
-     * @param newValues новые значения полей
+     * @param segmentNumber номер сегмента
+     * @param commandNumber номер команды
+     * @param traNumber     номер транзакции
+     * @param tableName     имя таблицы
+     * @param keyValues     значения ключевых полей
+     * @param newValues     новые значения полей
      */
     public void fireInsertRecord(long segmentNumber, long commandNumber, long traNumber, String tableName, Map<String, Object> keyValues, Map<String, Object> newValues) {
         for (SegmentProcessEventListener listener : listeners) {
-            listener.insertRecord(traNumber, tableName, keyValues, newValues);
+            listener.insertRecord(segmentNumber, commandNumber, traNumber, tableName, keyValues, newValues);
         }
     }
 
     /**
      * Событие - обновление записи в таблице (UPDATE)
      *
-     * @param traNumber номер транзакции
-     * @param tableName имя таблицы
-     * @param keyValues значения ключевых полей
-     * @param oldValues старые значения полей
-     * @param newValues новые значения полей
+     * @param segmentNumber номер сегмента
+     * @param commandNumber номер команды
+     * @param traNumber     номер транзакции
+     * @param tableName     имя таблицы
+     * @param keyValues     значения ключевых полей
+     * @param oldValues     старые значения полей
+     * @param newValues     новые значения полей
      */
     public void fireUpdateRecord(long segmentNumber, long commandNumber, long traNumber, String tableName, Map<String, Object> keyValues, Map<String, Object> oldValues, Map<String, Object> newValues) {
         for (SegmentProcessEventListener listener : listeners) {
-            listener.updateRecord(traNumber, tableName, keyValues, oldValues, newValues);
+            listener.updateRecord(segmentNumber, commandNumber, traNumber, tableName, keyValues, oldValues, newValues);
         }
     }
 
     /**
      * Событие - удаление записи из таблицы (DELETE)
      *
-     * @param traNumber номер транзакции
-     * @param tableName имя таблицы
-     * @param keyValues значения ключевых полей
-     * @param oldValues старые значения полей
+     * @param segmentNumber номер сегмента
+     * @param commandNumber номер команды
+     * @param traNumber     номер транзакции
+     * @param tableName     имя таблицы
+     * @param keyValues     значения ключевых полей
+     * @param oldValues     старые значения полей
      */
     public void fireDeleteRecord(long segmentNumber, long commandNumber, long traNumber, String tableName, Map<String, Object> keyValues, Map<String, Object> oldValues) {
         for (SegmentProcessEventListener listener : listeners) {
-            listener.deleteRecord(traNumber, tableName, keyValues, oldValues);
+            listener.deleteRecord(segmentNumber, commandNumber, traNumber, tableName, keyValues, oldValues);
         }
     }
 
     /**
      * Событие - выполнение SQL запрос
      *
-     * @param traNumber номер транзакции
-     * @param sql       SQL запрос
+     * @param segmentNumber номер сегмента
+     * @param commandNumber номер команды
+     * @param traNumber     номер транзакции
+     * @param sql           SQL запрос
      */
     public void fireExecuteSql(long segmentNumber, long commandNumber, long traNumber, String sql) {
         for (SegmentProcessEventListener listener : listeners) {
-            listener.executeSql(traNumber, sql);
+            listener.executeSql(segmentNumber, commandNumber, traNumber, sql);
         }
     }
 
@@ -178,12 +210,12 @@ public class SegmentProcessEventSupport {
      *
      * @param segmentNumber номер сегмента
      * @param commandNumber номер оператора в логе
-     * @param sequenceName имя последовательности
-     * @param seqValue     значение последовательности
+     * @param sequenceName  имя последовательности
+     * @param seqValue      значение последовательности
      */
     public void fireSetSequenceValue(long segmentNumber, long commandNumber, String sequenceName, long seqValue) {
         for (SegmentProcessEventListener listener : listeners) {
-            listener.setSequenceValue(sequenceName, seqValue);
+            listener.setSequenceValue(segmentNumber, commandNumber, sequenceName, seqValue);
         }
     }
 

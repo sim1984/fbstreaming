@@ -9,6 +9,8 @@ import java.util.stream.Collectors;
  * Описание (метаданные) таблицы
  */
 public class TableDescription {
+    private final long segmentNumber;
+    private final long commandNumber;
     private final String tableName;
     private final Map<String, TableField> fields;
 
@@ -18,7 +20,9 @@ public class TableDescription {
      * @param tableName имя таблицы
      * @param countFields количество полей
      */
-    TableDescription(String tableName, int countFields) {
+    TableDescription(long segmentNumber, long commandNumber, String tableName, int countFields) {
+        this.segmentNumber = segmentNumber;
+        this.commandNumber = commandNumber;
         this.tableName = tableName;
         this.fields = new HashMap<>(countFields);
     }
@@ -106,6 +110,22 @@ public class TableDescription {
      */
     public int getFieldCount() {
         return fields.size();
+    }
+
+    /**
+     *
+     * @return номер сегмента
+     */
+    public long getSegmentNumber() {
+        return segmentNumber;
+    }
+
+    /**
+     *
+     * @return номер команды
+     */
+    public long getCommandNumber() {
+        return commandNumber;
     }
 }
 

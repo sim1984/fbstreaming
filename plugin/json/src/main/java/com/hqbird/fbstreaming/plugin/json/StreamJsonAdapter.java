@@ -3,6 +3,7 @@ package com.hqbird.fbstreaming.plugin.json;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.hqbird.fbstreaming.ProcessSegment.SegmentProcessEventListener;
+import com.hqbird.fbstreaming.ProcessSegment.TableField;
 import com.hqbird.fbstreaming.StatementType;
 import com.hqbird.fbstreaming.StreamTableStatement;
 import com.hqbird.fbstreaming.StreamTransaction;
@@ -24,6 +25,7 @@ public class StreamJsonAdapter implements SegmentProcessEventListener {
     private String segmentName;
     private final Map<Long, StreamTransaction> transactions;
     private final Map<String, List<StreamTransaction>> segments;
+    private final Map<String, Map<String, TableField>> fieldDescriptions;
 
     private static Gson getGson() {
         if (null == singleGson) {
@@ -37,6 +39,7 @@ public class StreamJsonAdapter implements SegmentProcessEventListener {
         this.outgoingFolder = outgoingFolder;
         this.transactions = new HashMap<>();
         this.segments = new HashMap<>();
+        this.fieldDescriptions = new HashMap<>();
     }
 
     @Override
@@ -85,7 +88,7 @@ public class StreamJsonAdapter implements SegmentProcessEventListener {
     }
 
     @Override
-    public void startTransaction(long traNumber) {
+    public void startTransaction(long segmentNumber, long commandNumber, long traNumber, long sessionNumber) {
         StreamTransaction transaction = new StreamTransaction(traNumber);
         transactions.put(traNumber, transaction);
     }
@@ -101,44 +104,66 @@ public class StreamJsonAdapter implements SegmentProcessEventListener {
     }
 
     @Override
-    public void rollback(long traNumber) {
+    public void rollback(long segmentNumber, long commandNumber, long traNumber) {
         // если произошёл откат просто удаляем транзакцию из коллекции
         transactions.remove(traNumber);
     }
 
     @Override
-    public void describeTable(String tableName, Map<String, Object> fields) {
-        // мы не учитываем событие описание таблицы
+    public void describeTable(long segmentNumber, long commandNumber, String tableName, Map<String, TableField> fields) {
+        // сохраняем описание полей таблицы
+        fieldDescriptions.put(tableName, fields);
     }
 
     @Override
-    public void insertRecord(long traNumber, String tableName, Map<String, Object> keyValues, Map<String, Object> newValues) {
-        StreamTableStatement command = new StreamTableStatement(tableName, StatementType.INSERT, keyValues, null, newValues);
+    public void insertRecord(long segmentNumber, long commandNumber, long traNumber, String tableName,
+                             Map<String, Object> keyValues, Map<String, Object> newValues) {
+        StreamTableStatement command = new StreamTableStatement(
+                tableName,
+                StatementType.INSERT,
+                keyValues,
+                null,
+                newValues
+        );
         StreamTransaction transaction = transactions.get(traNumber);
         transaction.addCommand(command);
     }
 
     @Override
-    public void updateRecord(long traNumber, String tableName, Map<String, Object> keyValues, Map<String, Object> oldValues, Map<String, Object> newValues) {
-        StreamTableStatement command = new StreamTableStatement(tableName, StatementType.UPDATE, keyValues, oldValues, newValues);
+    public void updateRecord(long segmentNumber, long commandNumber, long traNumber, String tableName,
+                             Map<String, Object> keyValues, Map<String, Object> oldValues, Map<String, Object> newValues) {
+        StreamTableStatement command = new StreamTableStatement(
+                tableName,
+                StatementType.UPDATE,
+                keyValues,
+                oldValues,
+                newValues
+        );
         StreamTransaction transaction = transactions.get(traNumber);
         transaction.addCommand(command);
     }
 
     @Override
-    public void deleteRecord(long traNumber, String tableName, Map<String, Object> keyValues, Map<String, Object> oldValues) {
-        StreamTableStatement command = new StreamTableStatement(tableName, StatementType.DELETE, keyValues, oldValues, null);
+    public void deleteRecord(long segmentNumber, long commandNumber, long traNumber, String tableName,
+                             Map<String, Object> keyValues, Map<String, Object> oldValues) {
+        StreamTableStatement command = new StreamTableStatement(
+                tableName,
+                StatementType.DELETE,
+                keyValues,
+                oldValues,
+                null
+        );
         StreamTransaction transaction = transactions.get(traNumber);
         transaction.addCommand(command);
     }
 
     @Override
-    public void executeSql(long traNumber, String sql) {
+    public void executeSql(long segmentNumber, long commandNumber, long traNumber, String sql) {
         // мы не учитываем DDL запросы
     }
 
     @Override
-    public void setSequenceValue(String sequenceName, long seqValue) {
+    public void setSequenceValue(long segmentNumber, long commandNumber, String sequenceName, long seqValue) {
         // мы не учитываем DDL запросы
     }
 
@@ -150,8 +175,7 @@ public class StreamJsonAdapter implements SegmentProcessEventListener {
      * @param sessionNumber номер (идентификатор) сессии
      */
     @Override
-    public void disconnect(long segmentNumber, long commandNumber, long sessionNumber)
-    {
+    public void disconnect(long segmentNumber, long commandNumber, long sessionNumber) {
 
     }
 }

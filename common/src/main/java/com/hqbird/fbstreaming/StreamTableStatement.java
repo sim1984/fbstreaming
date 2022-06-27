@@ -1,5 +1,7 @@
 package com.hqbird.fbstreaming;
 
+import com.hqbird.fbstreaming.ProcessSegment.TableField;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -22,7 +24,8 @@ public class StreamTableStatement implements StreamStatement {
      * @param oldFieldValues старые значения полей
      * @param newFieldValues новые значения полей
      */
-    public StreamTableStatement(String tableName, StatementType statementType, Map<String, Object> keyValues, Map<String, Object> oldFieldValues, Map<String, Object> newFieldValues) {
+    public StreamTableStatement(String tableName, StatementType statementType, Map<String, Object> keyValues,
+                                Map<String, Object> oldFieldValues, Map<String, Object> newFieldValues) {
         this.tableName = tableName;
         this.statementType = statementType;
         this.keyValues = keyValues;

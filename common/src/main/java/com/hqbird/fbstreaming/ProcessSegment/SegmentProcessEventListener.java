@@ -31,80 +31,97 @@ public interface SegmentProcessEventListener {
     /**
      * Событие - старт транзакции
      *
-     * @param traNumber номер транзакции
+     * @param segmentNumber номер сегмента
+     * @param commandNumber номер команды
+     * @param traNumber     номер транзакции
+     * @param sessionNumber номер (идентификатор) сессии
      */
-    void startTransaction(long traNumber);
+    void startTransaction(long segmentNumber, long commandNumber, long traNumber, long sessionNumber);
 
     /**
      * Событие - подтверждение транзакции
      *
      * @param segmentNumber номер сегмента
      * @param commandNumber номер команды
-     * @param traNumber номер транзакции
+     * @param traNumber     номер транзакции
      */
     void commit(long segmentNumber, long commandNumber, long traNumber);
 
     /**
      * Событие - откат транзакции
      *
-     * @param traNumber номер транзакции
+     * @param segmentNumber номер сегмента
+     * @param commandNumber номер команды
+     * @param traNumber     номер транзакции
      */
-    void rollback(long traNumber);
+    void rollback(long segmentNumber, long commandNumber, long traNumber);
 
     /**
      * Событие - описание таблицы
      *
-     * @param tableName имя таблицы
-     * @param fields поля таблицы
+     * @param segmentNumber номер сегмента
+     * @param commandNumber номер команды
+     * @param tableName     имя таблицы
+     * @param fields        поля таблицы
      */
-    void describeTable(String tableName, Map<String, Object> fields);
+    void describeTable(long segmentNumber, long commandNumber, String tableName, Map<String, TableField> fields);
 
     /**
      * Событие - вставка в таблицу новой записи (INSERT)
      *
-     * @param traNumber номер транзакции
-     * @param tableName имя таблицы
-     * @param keyValues значения ключевых полей
-     * @param newValues новые значения полей
+     * @param segmentNumber номер сегмента
+     * @param commandNumber номер команды
+     * @param traNumber     номер транзакции
+     * @param tableName     имя таблицы
+     * @param keyValues     значения ключевых полей
+     * @param newValues     новые значения полей
      */
-    void insertRecord(long traNumber, String tableName, Map<String, Object> keyValues, Map<String, Object> newValues);
+    void insertRecord(long segmentNumber, long commandNumber, long traNumber, String tableName, Map<String, Object> keyValues, Map<String, Object> newValues);
 
     /**
      * Событие - обновление записи в таблице (UPDATE)
      *
-     * @param traNumber номер транзакции
-     * @param tableName имя таблицы
-     * @param keyValues значения ключевых полей
-     * @param oldValues старые значения полей
-     * @param newValues новые значения полей
+     * @param segmentNumber номер сегмента
+     * @param commandNumber номер команды
+     * @param traNumber     номер транзакции
+     * @param tableName     имя таблицы
+     * @param keyValues     значения ключевых полей
+     * @param oldValues     старые значения полей
+     * @param newValues     новые значения полей
      */
-    void updateRecord(long traNumber, String tableName, Map<String, Object> keyValues, Map<String, Object> oldValues, Map<String, Object> newValues);
+    void updateRecord(long segmentNumber, long commandNumber, long traNumber, String tableName, Map<String, Object> keyValues, Map<String, Object> oldValues, Map<String, Object> newValues);
 
     /**
      * Событие - удаление записи из таблицы (DELETE)
      *
+     * @param segmentNumber номер сегмента
+     * @param commandNumber номер команды
      * @param traNumber номер транзакции
      * @param tableName имя таблицы
      * @param keyValues значения ключевых полей
      * @param oldValues старые значения полей
      */
-    void deleteRecord(long traNumber, String tableName, Map<String, Object> keyValues, Map<String, Object> oldValues);
+    void deleteRecord(long segmentNumber, long commandNumber, long traNumber, String tableName, Map<String, Object> keyValues, Map<String, Object> oldValues);
 
     /**
      * Событие - выполнение SQL запрос
      *
+     * @param segmentNumber номер сегмента
+     * @param commandNumber номер команды
      * @param traNumber номер транзакции
-     * @param sql SQL запрос
+     * @param sql       SQL запрос
      */
-    void executeSql(long traNumber, String sql);
+    void executeSql(long segmentNumber, long commandNumber, long traNumber, String sql);
 
     /**
      * Событие - установка значения последовательности
      *
+     * @param segmentNumber номер сегмента
+     * @param commandNumber номер оператора в логе
      * @param sequenceName имя последовательности
-     * @param seqValue значение последовательности
+     * @param seqValue     значение последовательности
      */
-    void setSequenceValue(String sequenceName, long seqValue);
+    void setSequenceValue(long segmentNumber, long commandNumber, String sequenceName, long seqValue);
 
     /**
      * Событие - отключение БД
