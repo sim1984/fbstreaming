@@ -19,14 +19,16 @@
 *.tar.gz
 *.rar
 *.lck
+*.lst
+*.journal
 
 # idea files
 /.idea/*
 
 # target
-*/target/*
+**/target/**
 
-*/journals/*
+**/journals/**
 
-release/*
+release/**
 

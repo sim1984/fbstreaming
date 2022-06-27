@@ -23,10 +23,12 @@
         <module>plugin/json</module>
         <module>plugin/sql</module>
         <module>plugin/rabbitmq</module>
+        <module>plugin/ftslucene</module>
         <module>examples/JsonFiles</module>
         <module>examples/RabbitMQ/Receiver</module>
         <module>examples/RabbitMQ/Sender</module>
         <module>examples/SqlScripts</module>
+        <module>examples/LuceneFTS</module>
     </modules>
 
     <dependencyManagement>

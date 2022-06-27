@@ -8,12 +8,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="RabbitMQReceiver" />
         <module name="RabbitMQSender" />
+        <module name="ftslucene" />
         <module name="com.hqbird.fbstreaming.examples.rabbitmq.receiver" />
         <module name="rabbitmq-stream-plugin" />
         <module name="sql-stream-plugin" />
         <module name="json-stream-plugin" />
         <module name="fbstreaming" />
         <module name="SqlScripts" />
+        <module name="LuceneFTS" />
         <module name="JsonFiles" />
       </profile>
     </annotationProcessing>
@@ -26,9 +28,11 @@
       <module name="fbstreaming" target="1.8" />
       <module name="fbstreaming.pom" target="1.8" />
       <module name="FirebirdStreaming" target="1.8" />
+      <module name="ftslucene" target="1.8" />
       <module name="json-stream-plugin" target="1.8" />
       <module name="json-stream-plugin (1) (com.hqbird.fbstreaming.plugin.rabbitmq)" target="1.8" />
       <module name="JsonFiles" target="1.8" />
+      <module name="LuceneFTS" target="1.8" />
       <module name="mod" target="1.8" />
       <module name="rabbitmq-stream-plugin" target="1.8" />
       <module name="RabbitMQReceiver" target="1.8" />

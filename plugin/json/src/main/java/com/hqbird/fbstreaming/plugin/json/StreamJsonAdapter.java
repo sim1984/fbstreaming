@@ -95,7 +95,7 @@ public class StreamJsonAdapter implements SegmentProcessEventListener {
         // если транзакция подтверждена записываем её в список для текущего сегмента
         StreamTransaction transaction = transactions.remove(traNumber);
         if (!transaction.isEmpty()) {
-            // добавялем транзакцию в сегмент, только если в ней есть операторы
+            // добавляем транзакцию в сегмент, только если в ней есть операторы
             segments.get(segmentName).add(transaction);
         }
     }

@@ -9,6 +9,7 @@ import java.util.Properties;
 import java.util.regex.Pattern;
 
 public class SqlStreamPlugin implements FbStreamPlugin {
+    @Override
     public int invoke(Properties properties) throws Exception {
         final String incomingFolder = properties.getProperty("incomingFolder");
         final String outgoingFolder = properties.getProperty("outgoingFolder");
