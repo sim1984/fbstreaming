@@ -1,7 +1,5 @@
 package com.hqbird.fbstreaming;
 
-import org.jetbrains.annotations.NotNull;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -25,7 +23,6 @@ public class StreamingApp {
      * @return настройки
      * @throws IOException ошибка загрузки настроек
      */
-    @NotNull
     public static Properties getDefaultProperties() throws IOException {
         try (InputStream input = StreamingApp.class.getClassLoader().getResourceAsStream("config.properties")) {
             Properties prop = new Properties();
@@ -40,7 +37,6 @@ public class StreamingApp {
      * @return настройки
      * @throws IOException ошибка загрузки настроек
      */
-    @NotNull
     public static Properties getProperties() throws IOException {
         try (InputStream input = new FileInputStream("./config.properties")) {
             Properties prop = new Properties();

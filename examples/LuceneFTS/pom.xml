@@ -24,12 +24,14 @@
             <artifactId>fbstreaming</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.hqbird.fbstreaming.plugin.ftslucene</groupId>
-            <artifactId>ftslucene-stream-plugin</artifactId>
-        </dependency>
-        <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-nop</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.hqbird.fbstreaming.plugin.ftslucene</groupId>
+            <artifactId>ftslucene-stream-plugin</artifactId>
+            <version>1.0</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 

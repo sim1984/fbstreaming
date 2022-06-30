@@ -1,7 +1,5 @@
 package com.hqbird.fbstreaming;
 
-import com.hqbird.fbstreaming.ProcessSegment.TableField;
-
 import java.util.HashMap;
 import java.util.Map;
 
