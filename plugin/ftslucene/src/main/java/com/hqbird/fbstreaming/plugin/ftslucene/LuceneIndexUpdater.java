@@ -12,6 +12,7 @@ import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field;
 import org.apache.lucene.document.TextField;
 
+
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
@@ -154,6 +155,8 @@ public class LuceneIndexUpdater {
     }
 
     private IndexWriter createIndexWriter(FTSIndex ftsIndex) throws IOException {
+        // если не совместим попробовать # https://mvnrepository.com/artifact/org.apache.lucene/lucene-core
+        //'org.apache.lucene:lucene-core:jar:3.0.3'
         final Analyzer analyzer = analyzerFactory.getAnalyzer(ftsIndex.analyzerName);
         final IndexWriterConfig indexWriterConfig = new IndexWriterConfig(analyzer);
         Directory indexDirectory = FSDirectory.open(ftsIndex.indexDir);

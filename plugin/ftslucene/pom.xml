@@ -18,7 +18,7 @@
     <name>Firebird Streaming. FTS Lucene adapter plugin</name>
 
     <properties>
-        <lucene.version>8.9.0</lucene.version>
+        <lucene.version>9.2.0</lucene.version>
         <jaybird.version>4.0.6.java8</jaybird.version>
     </properties>
 
@@ -42,7 +42,7 @@
 
         <dependency>
             <groupId>org.apache.lucene</groupId>
-            <artifactId>lucene-analyzers-common</artifactId>
+            <artifactId>lucene-analysis-common</artifactId>
             <version>${lucene.version}</version>
         </dependency>
 
